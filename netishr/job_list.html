@@ -33,21 +33,17 @@
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
-                        <div class="dropdown profile-element">
-                            <span>
-                                <img alt="image" class="img-circle" src="../img/profile_small.jpg" />
-                            </span>
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear">
-                                    <span class="block m-t-xs">
-                                        <strong class="font-bold">Arnold Siboro</strong>
-                                    </span> <span class="text-muted text-xs block">HR Admin <b class="caret"></b></span>
-                                </span>
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Arnold Siboro</strong>
+                             </span> <span class="text-muted text-xs block">HR Admin <b class="caret"></b></span> </span>
                             </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="profile.html">Profile</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="mailbox.html">Mailbox</a></li>
+                                <li><a href="">Account</a></li>
+                                <li><a href="">Settings</a></li>
                                 <li class="divider"></li>
                                 <li><a href="login_two_columns.html">Logout</a></li>
                             </ul>
@@ -58,71 +54,135 @@
                     </li>
 
                     <li>
-                        <a href="index.html"><i class="fa fa-diamond"></i> <span class="nav-label">Dashboards</span></a>
+                        <a href="index.html"><i class="fa fa-diamond"></i><span class="nav-label">Main</span></a>
                     </li>
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Organisation</span> <span class="fa arrow"></span></a>
+                        <a href="index.html"><i class="fa fa-th-large"></i><span class="nav-label">Organisation</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active"><a href="index.html">Level</a></li>
-                            <li><a href="dashboard_2.html">Structure</a></li>
-                            <li><a href="dashboard_3.html">Charts</a></li>
+                            <li><a href="#">Level<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Branches</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Internal Groups</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Structure<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="job_levels.html">Job Levels/Sub-levels</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_roles.html">Job Roles/Role Bands</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_clans.html">Job Clans/Families</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_titles.html">Job Titles</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="org_charts.html">Charts</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Job</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label">Job</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="graph_flot.html">Competency Model</a></li>
-                            <li><a href="job_list.html">Job Description</a></li>
-                            <li><a href="graph_rickshaw.html">Workload Analysis</a></li>
-                            <li><a href="graph_chartjs.html">Accountability Matrix</a></li>
+                            <li><a href="#"><span class="nav-label">Competency Model</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="competency_dictionary.html">Competency Dictionary</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_roles.html">Competency Matrix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="job_description.html">Job Description</a></li>
+                            <li><a href="#">Workload Analysis</a></li>
+                            <li><a href="accountability_matrix.html">Accountability Matrix</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Person</a>
+                        <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">Person</a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="persons.html">Persons</a></li>
-                            <li><a href="persons-profiles.html">Profiles</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Recruitment</span>  </a>
+                        <a href="#"><i class="fa fa-pie-chart"></i> <span class="nav-label">Recruitment</span>  </a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="graph_flot.html">Manpower Planning</a></li>
-                            <li><a href="graph_morris.html">Recruitment Planning</a></li>
-                            <li><a href="graph_rickshaw.html">Applicants</a></li>
-                            <li><a href="graph_chartjs.html">Selection Process</a></li>
+                            <li><a href="#">Manpower Planning</a></li>
+                            <li><a href="#">Recruitment Planning</a></li>
+                            <li><a href="#">Applicants</a></li>
+                            <li><a href="#">Selection Process</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Performance</span></a>
+                        <a href="#"><i class="fa fa-flask"></i><span class="nav-label">Performance</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="form_basic.html">KPI</a></li>
-                            <li><a href="form_advanced.html">Planning</a></li>
-                            <li><a href="form_wizard.html">Coaching</a></li>
-                            <li><a href="form_file_upload.html">Evidence</a></li>
-                            <li><a href="form_editors.html">Evaluation</a></li>
-                            <li><a href="form_autocomplete.html">Performance Information</a></li>
+                            <li><a href="graph_flot.html"><span class="nav-label">KPI<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="competency_dictionary.html">Corporate Perspective/Objetives</a>
+                                    </li>
+                                    <li>
+                                        <a href="performance_kpi_view.html">Assign and view KPIs</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#"><span class="nav-label">Planning</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Process Targets (Competency)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Coaching</a></li>
+                            <li><a href="#">Evidence</a></li>
+                            <li><a href="#"><span class="nav-label">Evaluation</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Periodical Evaluation - Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Final Evaluation - Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Final Evaluation - Process Targets (Competency)</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">Performance Information</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Training</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="form_basic.html">Syllabus</a></li>
-                            <li><a href="form_advanced.html">Events</a></li>
-                            <li><a href="form_wizard.html">Individual Development Plan</a></li>
-                            <li><a href="form_file_upload.html">Training Plan</a></li>
-                            <li><a href="form_editors.html">Executed Training</a></li>
+                            <li><a href="#">Syllabus</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Individual Development Plan</a></li>
+                            <li><a href="#">Training Plan</a></li>
+                            <li><a href="#">Executed Training</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Career</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="contacts.html">Individual Career Plan</a></li>
-                            <li><a href="profile.html">Search Talent</a></li>
-                            <li><a href="profile_2.html">Talent Pool</a></li>
-                            <li><a href="contacts_2.html">Talent Development Program</a></li>
-                            <li><a href="projects.html">Talent Readiness</a></li>
-                            <li><a href="project_detail.html">Transfer</a></li>
+                            <li><a href="#">Individual Career Plan</a></li>
+                            <li><a href="#">Search Talent</a></li>
+                            <li><a href="#">Talent Pool</a></li>
+                            <li><a href="#">Talent Development Program</a></li>
+                            <li><a href="#">Talent Readiness</a></li>
+                            <li><a href="#">Transfer</a></li>
                         </ul>
                     </li>
                     <li>
@@ -217,11 +277,11 @@
                                 <li>
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="../img/a7.jpg">
+                                            <img alt="image" class="img-circle" src="img/a7.jpg">
                                         </a>
                                         <div class="media-body">
                                             <small class="pull-right">46h ago</small>
-                                            <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>.
+                                            <strong>Mike Loreipsum</strong> said Please finish your performance planning.
                                             <br>
                                             <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
                                         </div>
@@ -231,11 +291,11 @@
                                 <li>
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="../img/a4.jpg">
+                                            <img alt="image" class="img-circle" src="img/a4.jpg">
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right text-navy">5h ago</small>
-                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>.
+                                            <strong>Chris Johnatan Overtunk</strong> said Can you check my evidence?
                                             <br>
                                             <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
                                         </div>
@@ -245,11 +305,11 @@
                                 <li>
                                     <div class="dropdown-messages-box">
                                         <a href="profile.html" class="pull-left">
-                                            <img alt="image" class="img-circle" src="../img/profile.jpg">
+                                            <img alt="image" class="img-circle" src="img/profile.jpg">
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right">23h ago</small>
-                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>.
+                                            <strong>Monica Smith</strong> said Can I ask regarding my KPI?
                                             <br>
                                             <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
                                         </div>
@@ -258,7 +318,7 @@
                                 <li class="divider"></li>
                                 <li>
                                     <div class="text-center link-block">
-                                        <a href="mailbox.html">
+                                        <a href="messages.html">
                                             <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
                                         </a>
                                     </div>
@@ -273,7 +333,7 @@
                                 <li>
                                     <a href="mailbox.html">
                                         <div>
-                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                            <i class="fa fa-envelope fa-fw"></i> Monica Smith asks for leave approval
                                             <span class="pull-right text-muted small">4 minutes ago</span>
                                         </div>
                                     </a>
@@ -282,7 +342,7 @@
                                 <li>
                                     <a href="profile.html">
                                         <div>
-                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <i class="fa fa-twitter fa-fw"></i> John Doe asks for attendance approval
                                             <span class="pull-right text-muted small">12 minutes ago</span>
                                         </div>
                                     </a>
