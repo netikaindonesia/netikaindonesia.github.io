@@ -25,7 +25,7 @@
 
 <body>
 
-<div id="wrapper">
+    <div id="wrapper">
 
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
@@ -35,12 +35,13 @@
                             <img alt="image" class="img-circle" src="img/profile_small.jpg" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Arnold Siboro</strong>
-                             </span> <span class="text-muted text-xs block">HR Admin <b class="caret"></b></span> </span> </a>
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Arnold Siboro</strong>
+                             </span> <span class="text-muted text-xs block">HR Admin <b class="caret"></b></span> </span>
+                            </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="profile.html">Profile</a></li>
-                                <li><a href="contacts.html">Account</a></li>
-                                <li><a href="settings.html">Settings</a></li>
+                                <li><a href="">Account</a></li>
+                                <li><a href="">Settings</a></li>
                                 <li class="divider"></li>
                                 <li><a href="login_two_columns.html">Logout</a></li>
                             </ul>
@@ -51,7 +52,7 @@
                     </li>
 
                     <li>
-                        <a href="index.html"><i class="fa fa-diamond"></i><span class="nav-label">Dashboards</span></a>
+                        <a href="index.html"><i class="fa fa-diamond"></i><span class="nav-label">Main</span></a>
                     </li>
                     <li class="active">
                         <a href="index.html"><i class="fa fa-th-large"></i><span class="nav-label">Organisation</span><span class="fa arrow"></span></a>
@@ -64,7 +65,7 @@
                                     <li>
                                         <a href="#">Internal Groups</a>
                                     </li>
-                                </ul>                            
+                                </ul>
                             </li>
                             <li><a href="#">Structure<span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
@@ -80,7 +81,7 @@
                                     <li>
                                         <a href="job_titles.html">Job Titles</a>
                                     </li>
-                                </ul>                           
+                                </ul>
                             </li>
                             <li><a href="org_charts.html">Charts</a></li>
                         </ul>
@@ -128,7 +129,7 @@
                                         <a href="competency_dictionary.html">Corporate Perspective/Objetives</a>
                                     </li>
                                     <li>
-                                        <a href="job_roles.html">Assign and view KPIs</a>
+                                        <a href="performance_kpi_view.html">Assign and view KPIs</a>
                                     </li>
                                 </ul>
                             </li>
@@ -141,7 +142,7 @@
                                     <li>
                                         <a href="#">Process Targets (Competency)</a>
                                     </li>
-                                </ul>                                                        
+                                </ul>
                             </li>
                             <li><a href="#">Coaching</a></li>
                             <li><a href="#">Evidence</a></li>
@@ -157,7 +158,7 @@
                                         <a href="#">Final Evaluation - Process Targets (Competency)</a>
                                     </li>
 
-                                </ul>                            
+                                </ul>
                             </li>
                             <li><a href="#">Performance Information</a></li>
                         </ul>
@@ -203,7 +204,7 @@
                                     </li>
                                     <li>
                                         <a href="#">Benefits</a>
-                                    </li>                       
+                                    </li>
                                     <li>
                                         <a href="#">Business Trips</a>
                                     </li>
@@ -229,7 +230,7 @@
                                     </li>
                                     <li>
                                         <a href="#">Payslip</a>
-                                    </li>                       
+                                    </li>
                                 </ul>
                             </li>
                             <li>
@@ -246,155 +247,158 @@
                         </ul>
                     </li>
 
-                
+
                 </ul>
 
             </div>
         </nav>
 
-    <div id="page-wrapper" class="gray-bg">
-        <div class="row border-bottom">
-            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-                    <form role="search" class="navbar-form-custom" action="search_results.html">
-                        <div class="form-group">
-                            <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
-                        </div>
-                    </form>
-                </div>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li>
-                        <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR.</span>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-messages">
-                            <li>
-                                <div class="dropdown-messages-box">
-                                    <a href="profile.html" class="pull-left">
-                                        <img alt="image" class="img-circle" src="img/a7.jpg">
-                                    </a>
-                                    <div class="media-body">
-                                        <small class="pull-right">46h ago</small>
-                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
-                                        <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR.</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/a7.jpg">
+                                        </a>
+                                        <div class="media-body">
+                                            <small class="pull-right">46h ago</small>
+                                            <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>.
+                                            <br>
+                                            <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <div class="dropdown-messages-box">
-                                    <a href="profile.html" class="pull-left">
-                                        <img alt="image" class="img-circle" src="img/a4.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="pull-right text-navy">5h ago</small>
-                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
-                                        <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/a4.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right text-navy">5h ago</small>
+                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>.
+                                            <br>
+                                            <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <div class="dropdown-messages-box">
-                                    <a href="profile.html" class="pull-left">
-                                        <img alt="image" class="img-circle" src="img/profile.jpg">
-                                    </a>
-                                    <div class="media-body ">
-                                        <small class="pull-right">23h ago</small>
-                                        <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
-                                        <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="dropdown-messages-box">
+                                        <a href="profile.html" class="pull-left">
+                                            <img alt="image" class="img-circle" src="img/profile.jpg">
+                                        </a>
+                                        <div class="media-body ">
+                                            <small class="pull-right">23h ago</small>
+                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>.
+                                            <br>
+                                            <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <div class="text-center link-block">
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="mailbox.html">
+                                            <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
                                     <a href="mailbox.html">
-                                        <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
                                     </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-alerts">
-                            <li>
-                                <a href="mailbox.html">
-                                    <div>
-                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="profile.html">
-                                    <div>
-                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                        <span class="pull-right text-muted small">12 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="grid_options.html">
-                                    <div>
-                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <div class="text-center link-block">
-                                    <a href="notifications.html">
-                                        <strong>See All Alerts</strong>
-                                        <i class="fa fa-angle-right"></i>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <span class="pull-right text-muted small">12 minutes ago</span>
+                                        </div>
                                     </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="grid_options.html">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
 
 
-                    <li>
-                        <a href="login.html">
-                            <i class="fa fa-sign-out"></i> Log out
-                        </a>
-                    </li>
-                </ul>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
 
-            </nav>
-        </div>
-        <div class="row wrapper border-bottom white-bg page-heading">
-            <div class="col-lg-10">
-                <h2>Competency Dictionary</h2>
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a>E-commerce</a>
-                    </li>
-                    <li class="active">
-                        <strong>Competency Dictionary</strong>
-                    </li>
-                </ol>
+                </nav>
             </div>
-        </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Competency Dictionary</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a>E-commerce</a>
+                        </li>
+                        <li class="active">
+                            <strong>Competency Dictionary</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
 
-        <div class="wrapper wrapper-content animated fadeInRight ecommerce">
+            <div class="wrapper wrapper-content animated fadeInRight ecommerce">
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="tabs-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tabs-container">
                             <ul class="nav nav-tabs">
                                 <li class="active"><a data-toggle="tab" href="#tab-1"> Core</a></li>
                                 <li class=""><a data-toggle="tab" href="#tab-2"> Role</a></li>
@@ -427,58 +431,57 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    10GB of <strong>250GB</strong> Free.
+                </div>
+                <div>
+                    <strong>Copyright</strong> Netika Indonesia &copy; 2014-2017
                 </div>
             </div>
 
         </div>
-        <div class="footer">
-            <div class="pull-right">
-                10GB of <strong>250GB</strong> Free.
-            </div>
-            <div>
-                <strong>Copyright</strong> Netika Indonesia &copy; 2014-2017
-            </div>
-        </div>
-
     </div>
-</div>
 
 
 
-<!-- Mainly scripts -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-<!-- Custom and plugin javascript -->
-<script src="js/inspinia.js"></script>
-<script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
 
-<!-- SUMMERNOTE -->
-<script src="js/plugins/summernote/summernote.min.js"></script>
+    <!-- SUMMERNOTE -->
+    <script src="js/plugins/summernote/summernote.min.js"></script>
 
-<!-- Data picker -->
-<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- Data picker -->
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
-<script>
-    $(document).ready(function(){
+    <script>
+        $(document).ready(function () {
 
-        $('.summernote').summernote();
+            $('.summernote').summernote();
 
-        $('.input-group.date').datepicker({
-            todayBtn: "linked",
-            keyboardNavigation: false,
-            forceParse: false,
-            calendarWeeks: true,
-            autoclose: true
+            $('.input-group.date').datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
+
         });
-
-    });
-</script>
+    </script>
 
 </body>
 
 </html>
-
