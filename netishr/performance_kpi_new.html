@@ -445,19 +445,19 @@
                             </div>
                             <div class="ibox-content">
 
-
-                                <label class="font-noraml">Period:</label>
-                                <div>
-                                    <select data-placeholder="Choose a perspective..." class="chosen-select" tabindex="2">
-                                        <option value="">Select a period</option>
-                                        <option value="January 2016-December 2016">January 2016-December 2016</option>
-                                        <option value="January 2015-December 2015">January 2015-December 2015</option>
-                                        <option value="January 2014-December 2014">January 2014-December 2014</option>
-                                    </select>
-                                </div>
-
-                                <p></p>
                                 <div class="form-group">
+
+                                    <label class="font-noraml">Period:</label>
+                                    <div>
+                                        <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
+                                            <option value="">Select a period</option>
+                                            <option value="January 2016-December 2016">January 2016-December 2016</option>
+                                            <option value="January 2015-December 2015">January 2015-December 2015</option>
+                                            <option value="January 2014-December 2014">January 2014-December 2014</option>
+                                        </select>
+                                    </div>
+
+                                    <p></p>
                                     <label class="font-noraml">Job title:</label>
                                     <div>
                                         <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
@@ -472,6 +472,7 @@
                                             <option value="Business Development Analyst"> Business Development Analyst</option>
                                         </select>
                                     </div>
+                                    <!--
                                     <p></p>
                                     <label class="font-noraml">Perspective:</label>
                                     <div>
@@ -490,6 +491,27 @@
                                             <option value="Improve profitability">Finance</option>
                                             <option value="Improve cost efficiency">Customer</option>
                                             <option value="Increase customer acquisition">Internal Process</option>
+                                        </select>
+                                    </div>
+-->
+                                    <div class="hr-line-dashed"></div>
+
+                                    <label class="font-noraml">Direct superior:</label>
+                                    <div>
+                                        <!-- This direct superior is a static text that appears when the job title above is selected -->
+                                        <p class="form-control-static">Jajang Suharjang</p>
+                                    </div>
+
+                                    <!-- This is optional. If not selected, then the KPI created here is "indirect KPI" (KPI which is not derived from superior's KPI) -->
+                                    <label class="font-noraml">Parent KPI (optional):</label>
+                                    <div>
+                                        <select data-placeholder="Choose a parent KPI..." class="chosen-select" tabindex="2">
+                                            <option value="1">Select a KPI</option>
+                                            <option value="2">Lorem ipsum dolor</option>
+                                            <option value="3">Sit amet consectetur</option>
+                                            <option value="4">Adipiscing elit</option>
+                                            <option value="5">Etiam tristique</option>
+                                            <option value="6">Orci quis convallis pretium</option>
                                         </select>
                                     </div>
 
