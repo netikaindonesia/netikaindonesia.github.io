@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 *
 *  INSPINIA - Responsive Admin Theme
 *  version 2.6.2
@@ -17,6 +17,7 @@
     <title>NetisHR</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Table -->
@@ -63,7 +64,8 @@
                     <li class="active">
                         <a href="index.html"><i class="fa fa-th-large"></i><span class="nav-label">Organisation</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="#">Level<span class="fa arrow"></span></a>
+                            <li>
+                                <a href="#">Level<span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
                                         <a href="#">Branches</a>
@@ -73,7 +75,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="#">Structure<span class="fa arrow"></span></a>
+                            <li>
+                                <a href="#">Structure<span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
                                         <a href="job_levels.html">Job Levels/Sub-levels</a>
@@ -95,7 +98,8 @@
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label">Job</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="#"><span class="nav-label">Competency Model</span><span class="fa arrow"></span></a>
+                            <li>
+                                <a href="#"><span class="nav-label">Competency Model</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
                                         <a href="competency_dictionary.html">Competency Dictionary</a>
@@ -111,9 +115,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">Person</a>
+                        <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label"/>Person</a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="persons.html">Persons</a></li>
+                            <li><a href="persons_profile.html">Profiles</a></li>
                         </ul>
                     </li>
                     <li>
@@ -128,18 +133,19 @@
                     <li>
                         <a href="#"><i class="fa fa-flask"></i><span class="nav-label">Performance</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
-                            <li><a href="graph_flot.html"><span class="nav-label">KPI<span class="fa arrow"></span></a>
+                            <li>
+                                <a href="graph_flot.html"><span class="nav-label">KPI<span class="fa arrow"/></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="competency_dictionary.html">Corporate Perspective/Objetives</a>
+                                        <a href="performance_kpi_new.html">Corporate Perspective/Objetives</a>
                                     </li>
                                     <li>
                                         <a href="performance_kpi_view.html">Assign and view KPIs</a>
                                     </li>
                                 </ul>
                             </li>
-
-                            <li><a href="#"><span class="nav-label">Planning</span><span class="fa arrow"></span></a>
+                            <li>
+                                <a href="#"><span class="nav-label">Planning</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
                                         <a href="#">Result Targets (KPI)</a>
@@ -151,7 +157,8 @@
                             </li>
                             <li><a href="#">Coaching</a></li>
                             <li><a href="#">Evidence</a></li>
-                            <li><a href="#"><span class="nav-label">Evaluation</span><span class="fa arrow"></span></a>
+                            <li>
+                                <a href="#"><span class="nav-label">Evaluation</span><span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
                                         <a href="#">Periodical Evaluation - Result Targets (KPI)</a>
@@ -251,10 +258,7 @@
                             </li>
                         </ul>
                     </li>
-
-
                 </ul>
-
             </div>
         </nav>
 
@@ -388,29 +392,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
-                        <div class="col-lg-10">
+                        <div class="col-lg-12">
                             <h2>Human Resources Manager (HRM)</h2>
-                            <div class="col-sm-6">
+                            <div class="col-sm-5">
                                 <h4>- Executive: CEO</h4>
                                 <h4>- Direktorat: Direktur HR & GA</h4>
                                 <h4>- Departement: HR Manager</h4>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <h4>Job Grade : 5</h4>
                                 <h4>Level : Departement</h4>
                                 <h4>Sub Level : Departement HR</h4>
                             </div>
-                            <!--<ol class="breadcrumb col-sm-12">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a>Job</a>
-                                </li>
-                                <li class="active">
-                                    <strong>Job Description</strong>
-                                </li>
-                            </ol>-->
+                            <div class="col-sm-3 netis_right">
+                                <a href="" class="netis_setting"><i class="glyphicon glyphicon-wrench"></i></a>
+                                <button class="btn btn-primary">Download Report</button>
+                            </div>
                         </div>
                         <div class="col-lg-2">
 
@@ -450,15 +447,16 @@
                                                         </ul>
                                                     </div>
                                                     <div class="form-group netis_right">
-                                                        <button class="btn btn-primary netis_edit">Edit</button>
-                                                        <button class="btn btn-primary netis_saving">Save</button>
-                                                        <button class="btn btn-primary netis_cancel">Cancel</button>
+                                                        <button class="btn btn-primary netis_edit btn-sm">Edit</button>
+                                                        <button class="btn btn-primary netis_saving btn-sm">Save</button>
+                                                        <button class="btn btn-primary netis_cancel btn-sm">Cancel</button>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div id="authority" class="tab-pane">
                                                 <div class="panel-body">
-                                                    <button class="btn btn-primary netis_add" data-toggle="modal" data-target="#authority_new">Add New</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#authority_new">Filter</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#authority_new">Add New</button>
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="authority_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                         <div class="modal-dialog" role="document">
@@ -494,16 +492,16 @@
                                                                     <td>1.</td>
                                                                     <td>Kewenangan 1</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="gradeC">
                                                                     <td>2.</td>
                                                                     <td>Kewenangan 2</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -520,7 +518,8 @@
                                             </div>
                                             <div id="dimension" class="tab-pane">
                                                 <div class="panel-body">
-                                                    <button class="btn btn-primary netis_add" data-toggle="modal" data-target="#dimension_new">Add New</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#dimension_new">Filter</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#dimension_new">Add New</button>
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="dimension_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                         <div class="modal-dialog" role="document">
@@ -566,16 +565,16 @@
                                                                     <td>1.</td>
                                                                     <td>Dimensi 1</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="gradeC">
                                                                     <td>2.</td>
                                                                     <td>Dimensi 2</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -604,16 +603,16 @@
                                                                     <td>1.</td>
                                                                     <td>Dimensi 1</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="gradeC">
                                                                     <td>2.</td>
                                                                     <td>Dimensi 2</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -630,7 +629,8 @@
                                             </div>
                                             <div id="environtment" class="tab-pane">
                                                 <div class="panel-body">
-                                                    <button class="btn btn-primary netis_add" data-toggle="modal" data-target="#environtment_new">Add New</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#environtment_new">Filter</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#environtment_new">Add New</button>
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="environtment_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                         <div class="modal-dialog" role="document">
@@ -666,16 +666,16 @@
                                                                     <td>1.</td>
                                                                     <td>Lingkungan Kerja 1</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="gradeC">
                                                                     <td>2.</td>
                                                                     <td>Lingkungan Kerja 2</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -725,7 +725,8 @@
                                             </div>
                                             <div id="main_responsibility" class="tab-pane">
                                                 <div class="panel-body">
-                                                    <button class="btn btn-primary netis_add" data-toggle="modal" data-target="#main_responsibility_new">Add New</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#main_responsibility_new">Filter</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#main_responsibility_new">Add New</button>
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="main_responsibility_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                         <div class="modal-dialog" role="document">
@@ -773,8 +774,8 @@
                                                                     <td>Activity 1</td>
                                                                     <td>Key Measure 1</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="gradeC">
@@ -783,8 +784,8 @@
                                                                     <td>Activity 2</td>
                                                                     <td>Key Measure 2</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -803,7 +804,8 @@
                                             </div>
                                             <div id="working_relationship" class="tab-pane">
                                                 <div class="panel-body">
-                                                    <button class="btn btn-primary netis_add" data-toggle="modal" data-target="#working_relationship_new">Add New</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#working_relationship_new">Filter</button>
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#working_relationship_new">Add New</button>
                                                     <!-- Modal -->
                                                     <div class="modal fade" id="working_relationship_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                         <div class="modal-dialog" role="document">
@@ -855,8 +857,8 @@
                                                                     <td>Relasi Internal 1</td>
                                                                     <td>Pekerjaan 1</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="gradeC">
@@ -864,8 +866,8 @@
                                                                     <td>Relasi Internal 2</td>
                                                                     <td>Pekerjaan 2</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -897,8 +899,8 @@
                                                                     <td>Relasi Eksternal 1</td>
                                                                     <td>Pekerjaan 1</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                                 <tr class="gradeC">
@@ -906,8 +908,8 @@
                                                                     <td>Relasi Eksternal 2</td>
                                                                     <td>Pekerjaan 2</td>
                                                                     <td>
-                                                                        <button class="btn btn-primary">Edit</button>
-                                                                        <button class="btn btn-primary">Delete</button>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -954,7 +956,7 @@
                                                                         </label>
                                                                     </div>
                                                                     <div class="netis_right">
-                                                                        <button class="btn btn-primary" style="margin:0;" data-toggle="modal" data-target="#education_new">Edit</button>
+                                                                        <button class="btn btn-primary btn-sm" style="margin:0;" data-toggle="modal" data-target="#education_new">Edit</button>
                                                                     </div>
                                                                     <!-- Modal -->
                                                                     <div class="modal fade" id="education_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -1011,7 +1013,7 @@
                                                             </div>
                                                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                                                 <div class="netis_collapse_body">
-                                                                    <button class="btn btn-primary netis_add" data-toggle="modal" data-target="#experience_new">Add New</button>
+                                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#experience_new">Add New</button>
                                                                     <!-- Modal -->
                                                                     <div class="modal fade" id="experience_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                                         <div class="modal-dialog" role="document">
@@ -1031,7 +1033,7 @@
                                                                                     </div>
                                                                                     <div class="form-group row">
                                                                                         <label class="col-sm-4 control-label">For (on Year) : </label>
-                                                                                        <input class="form-control col-sm-6" type="number" min="0" placeholder="0" />
+                                                                                        <input type="number" class="col-sm-2 form-control" min="0" max="4" style="width:120px" placeholder="0" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="modal-footer">
@@ -1057,8 +1059,8 @@
                                                                                     <td>Field 1</td>
                                                                                     <td>1 Year</td>
                                                                                     <td>
-                                                                                        <button class="btn btn-primary">Edit</button>
-                                                                                        <button class="btn btn-primary">Delete</button>
+                                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr class="gradeC">
@@ -1066,8 +1068,8 @@
                                                                                     <td>Field 2</td>
                                                                                     <td>6 Year</td>
                                                                                     <td>
-                                                                                        <button class="btn btn-primary">Edit</button>
-                                                                                        <button class="btn btn-primary">Delete</button>
+                                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -1094,7 +1096,7 @@
                                                             </div>
                                                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                                                 <div class="netis_collapse_body">
-                                                                    <button class="btn btn-primary netis_add" data-toggle="modal" data-target="#skill_new">Add New</button>
+                                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#skill_new">Add New</button>
                                                                     <!-- Modal -->
                                                                     <div class="modal fade" id="skill_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                                                         <div class="modal-dialog" role="document">
@@ -1146,8 +1148,8 @@
                                                                                     <td>Skill 1</td>
                                                                                     <td>Senior Level</td>
                                                                                     <td>
-                                                                                        <button class="btn btn-primary">Edit</button>
-                                                                                        <button class="btn btn-primary">Delete</button>
+                                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr class="gradeC">
@@ -1155,8 +1157,8 @@
                                                                                     <td>Skill 2</td>
                                                                                     <td>Junior Level</td>
                                                                                     <td>
-                                                                                        <button class="btn btn-primary">Edit</button>
-                                                                                        <button class="btn btn-primary">Delete</button>
+                                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -1183,7 +1185,7 @@
                                                             </div>
                                                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                                                 <div class="netis_collapse_body">
-                                                                    <button class="btn btn-primary netis_competency_btn">Add New</button>
+                                                                    <button class="btn btn-primary netis_competency_btn btn-sm">Add New</button>
                                                                     <div class="table-responsive">
                                                                         <table class="table table-striped table-bordered table-hover dataTables-example">
                                                                             <thead>
@@ -1202,9 +1204,10 @@
                                                                                     <td>Category 1</td>
                                                                                     <td>Name 1</td>
                                                                                     <td>2</td>
+                                                                                    <td>Description 1</td>
                                                                                     <td>
-                                                                                        <button class="btn btn-primary">Edit</button>
-                                                                                        <button class="btn btn-primary">Delete</button>
+                                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr class="gradeC">
@@ -1212,9 +1215,10 @@
                                                                                     <td>Category 2</td>
                                                                                     <td>Name 2</td>
                                                                                     <td>4</td>
+                                                                                    <td>Description 2</td>
                                                                                     <td>
-                                                                                        <button class="btn btn-primary">Edit</button>
-                                                                                        <button class="btn btn-primary">Delete</button>
+                                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -1274,7 +1278,7 @@
                                                                         </label>
                                                                     </div>
                                                                     <div class="netis_right">
-                                                                        <button class="btn btn-primary" style="margin:0;" data-toggle="modal" data-target="#profile_new">Edit</button>
+                                                                        <button class="btn btn-primary btn-sm" style="margin:0;" data-toggle="modal" data-target="#profile_new">Edit</button>
                                                                     </div>
                                                                     <!-- Modal -->
                                                                     <div class="modal fade" id="profile_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -1364,10 +1368,282 @@
                                             </div>
                                             <div id="role_responsibility" class="tab-pane">
                                                 <div class="panel-body">
+                                                    <a href="job_roles.html" class="btn btn-primary netis_add">Add New</a>
+                                                    <div class="form-group netis_role">
+                                                        <label class="control-label">
+                                                            Role : Structural
+                                                        </label><br />
+                                                        <label class="control-label">
+                                                            Role Band :
+                                                        </label>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped table-bordered table-hover dataTables-example">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div id="enforcement" class="tab-pane">
                                                 <div class="panel-body">
+                                                    <button class="btn btn-primary netis_add btn-sm" data-toggle="modal" data-target="#enforcement_new">Add New</button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="enforcement_new" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                    <h4 class="modal-title" id="myModalLabel">Input Dimension</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Created date :</label>
+                                                                        <div class="input-group date" data-provide="datepicker">
+                                                                            <input type="text" class="form-control">
+                                                                            <div class="input-group-addon">
+                                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Revision :</label>
+                                                                        <input type="number" class="form-control" />
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <h2 class="control-label">Approved By</h2>
+                                                                        <hr />
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Level :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Level</option>
+                                                                            <option>Level 1</option>
+                                                                            <option>Level 2</option>
+                                                                            <option>Level 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Sub Level :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Sub Level</option>
+                                                                            <option>Sub Level 1</option>
+                                                                            <option>Sub Level 2</option>
+                                                                            <option>Sub Level 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Job Title :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Job Title</option>
+                                                                            <option>Job Title 1</option>
+                                                                            <option>Job Title 2</option>
+                                                                            <option>Job Title 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Person :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Job Title</option>
+                                                                            <option>Person 1</option>
+                                                                            <option>Person 2</option>
+                                                                            <option>Person 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <h2 class="control-label">Prepared By</h2>
+                                                                        <hr />
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Level :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Level</option>
+                                                                            <option>Level 1</option>
+                                                                            <option>Level 2</option>
+                                                                            <option>Level 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Sub Level :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Sub Level</option>
+                                                                            <option>Sub Level 1</option>
+                                                                            <option>Sub Level 2</option>
+                                                                            <option>Sub Level 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Job Title :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Job Title</option>
+                                                                            <option>Job Title 1</option>
+                                                                            <option>Job Title 2</option>
+                                                                            <option>Job Title 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Person :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Job Title</option>
+                                                                            <option>Person 1</option>
+                                                                            <option>Person 2</option>
+                                                                            <option>Person 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <h2 class="control-label">Acknowladge By</h2>
+                                                                        <hr />
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Level :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Level</option>
+                                                                            <option>Level 1</option>
+                                                                            <option>Level 2</option>
+                                                                            <option>Level 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Sub Level :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Sub Level</option>
+                                                                            <option>Sub Level 1</option>
+                                                                            <option>Sub Level 2</option>
+                                                                            <option>Sub Level 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Job Title :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Job Title</option>
+                                                                            <option>Job Title 1</option>
+                                                                            <option>Job Title 2</option>
+                                                                            <option>Job Title 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-4 control-label">Person :</label>
+                                                                        <select class="selectpicker" data-live-search="true">
+                                                                            <option>Please Select Job Title</option>
+                                                                            <option>Person 1</option>
+                                                                            <option>Person 2</option>
+                                                                            <option>Person 3</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-default netis_modal_close" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary netis_modal_saving" data-dismiss="modal">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group netis_role">
+                                                        <label class="control-label">
+                                                            Created Date : 21/10/2016
+                                                        </label><br />
+                                                        <label class="control-label">
+                                                            Revision : 3
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-sm-12 netis_enforcement">
+                                                        <div class="col-sm-4 text-center">
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Approved By
+                                                                </label>
+                                                                <p>
+                                                                    Budianto
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <img src="http://placehold.it/130x150">
+                                                            </div>
+                                                            <div class="form-group netis_role">
+                                                                <p>
+                                                                    Direktur HR & GA (DHR)
+                                                                </p>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <p>- Executive : CEO</p>
+                                                                <p>- Direktorat : Direktur HR & GA</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 text-center">
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Prepared By
+                                                                </label>
+                                                                <p>
+                                                                    Susianti
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <img src="http://placehold.it/130x150">
+                                                            </div>
+                                                            <div class="form-group netis_role">
+                                                                <p>
+                                                                    Human Resources Manager (HRM)
+                                                                </p>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <p>- Executive : CEO</p>
+                                                                <p>- Direktorat : Direktur HR & GA</p>
+                                                                <p>- Departement : Departement HR</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 text-center">
+                                                            <div class="form-group">
+                                                                <label class="control-label">
+                                                                    Acknowledged By
+                                                                </label>
+                                                                <p>
+                                                                    Bambang Suhatmojo
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <img src="http://placehold.it/130x150">
+                                                            </div>
+                                                            <div class="form-group netis_role">
+                                                                <p>
+                                                                    CEO
+                                                                </p>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <p>- Executive : CEO</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1830,116 +2106,95 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
 
-            <!-- Mainly scripts -->
-            <script src="js/jquery-2.1.1.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-            <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-            <script src="js/bootstrap-select.js"></script>
+    <!-- Table -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
 
-            <!-- Table -->
-            <script src="js/plugins/footable/footable.all.min.js"></script>
-            <script src="js/plugins/dataTables/datatables.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
 
-            <!-- Custom and plugin javascript -->
-            <script src="js/inspinia.js"></script>
-            <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- SUMMERNOTE -->
+    <script src="js/plugins/summernote/summernote.min.js"></script>
 
-            <!-- SUMMERNOTE -->
-            <script src="js/plugins/summernote/summernote.min.js"></script>
+    <!-- Page-Level Scripts -->
+    <script>
+        $(document).ready(function () {
+            $('.alert-success').hide();
+            $('.netis_saving').hide();
+            $('.netis_cancel').hide();
+            $('.summernote').summernote('disable');
 
-            <!-- Page-Level Scripts -->
-            <script>
-                $(document).ready(function () {
-                    $('.alert-success').hide();
-                    $('.netis_saving').hide();
-                    $('.netis_cancel').hide();
-                    $('.summernote').summernote('disable');
+            $('.netis_edit').click(function () {
+                $('.netis_saving').show();
+                $('.netis_cancel').show();
+                $('.netis_edit').hide();
+                $('.summernote').summernote('enable');
+            });
+            $('.netis_cancel').click(function () {
+                $('.netis_saving').hide();
+                $('.netis_cancel').hide();
+                $('.netis_edit').show();
+                $('.alert-success').hide();
+                $('.summernote').summernote('disable');
+            });
+            $('.netis_saving').click(function () {
+                $('.alert-success').show();
+                $('.netis_saving').hide();
+                $('.netis_cancel').hide();
+                $('.netis_edit').show();
+                $('.summernote').summernote('disable');
+            });
+            $('.netis_modal_saving').click(function () {
+                $('.alert-success').show();
+            });
+            $('.netis_modal_close').click(function () {
+                $('.alert-success').hide();
+            });
+            $('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    { extend: 'copy' },
+                    { extend: 'csv' },
+                    { extend: 'excel', title: 'ExampleFile' },
+                    { extend: 'pdf', title: 'ExampleFile' },
 
-                    $('.footable').footable();
-                    $('.footable2').footable();
-                    $('.summernote').summernote();
+                    {
+                        extend: 'print',
+                        customize: function (win) {
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
 
-                    $('.netis_edit').click(function () {
-                        $('.netis_saving').show();
-                        $('.netis_cancel').show();
-                        $('.netis_edit').hide();
-                        $('.summernote').summernote('enable');
-                    });
-                    $('.netis_cancel').click(function () {
-                        $('.netis_saving').hide();
-                        $('.netis_cancel').hide();
-                        $('.netis_edit').show();
-                        $('.alert-success').hide();
-                        $('.summernote').summernote('disable');
-                    });
-                    $('.netis_saving').click(function () {
-                        $('.alert-success').show();
-                        $('.netis_saving').hide();
-                        $('.netis_cancel').hide();
-                        $('.netis_edit').show();
-                        $('.summernote').summernote('disable');
-                    });
-                    $('.netis_modal_saving').click(function () {
-                        $('.alert-success').show();
-                    });
-                    $('.netis_modal_close').click(function () {
-                        $('.alert-success').hide();
-                    });
-                    $('.dataTables-example').DataTable({
-                        pageLength: 25,
-                        responsive: true,
-                        dom: '<"html5buttons"B>lTfgitp',
-                        buttons: [
-                            {
-                                extend: 'copy'
-                            },
-                            {
-                                extend: 'csv'
-                            },
-                            {
-                                extend: 'excel',
-                                title: 'ExampleFile'
-                            },
-                            {
-                                extend: 'pdf',
-                                title: 'ExampleFile'
-                            },
+                            $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                        }
+                    }
+                ]
 
-                            {
-                                extend: 'print',
-                                customize: function (win) {
-                                    $(win.document.body).addClass('white-bg');
-                                    $(win.document.body).css('font-size', '10px');
+            });
+        });
 
-                                    $(win.document.body).find('table')
-                                        .addClass('compact')
-                                        .css('font-size', 'inherit');
-                                }
-                            }
-                        ]
+        $('#myModal').on('shown.bs.modal', function() {
+            $('.datepicker').datepicker();
+        });
 
-                    });
-                    $('.html5buttons').hide();
-                    $('.dataTables_length').hide();
-                    $('#DataTables_Table_0_filter').hide();
-                    $('#DataTables_Table_1_filter').hide();
-                    $('#DataTables_Table_2_filter').hide();
-                    $('#DataTables_Table_3_filter').hide();
-                    $('#DataTables_Table_4_filter').hide();
-                    $('#DataTables_Table_5_filter').hide();
-                    $('#DataTables_Table_6_filter').hide();
-                    $('#DataTables_Table_7_filter').hide();
-                    $('#DataTables_Table_8_filter').hide();
-
-
-                });
-
-                $(".netis_competency_btn").click(function () {
-                    alert("Open page Competency");
-                });
-            </script>
+        $(".netis_competency_btn").click(function () {
+            alert("Open page Competency");
+        });
+    </script>
 
 
 </body>

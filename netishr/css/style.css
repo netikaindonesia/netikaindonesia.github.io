@@ -10259,7 +10259,44 @@ option {
             border-color: #94a0b4;
         }
 
-    .orchart_active,
-    .tree li a.orchart_active:hover {
-        background: #FFFF7F;
-    }
+        .orchart_active,
+        .tree li a.orchart_active:hover,
+        .tree li a:hover, .tree li a:hover + ul li a.orchart_active:hover {
+            background: #FFFF7F;
+        }
+
+.html5buttons,
+.dataTables_length,
+#DataTables_Table_0_filter,
+#DataTables_Table_1_filter,
+#DataTables_Table_2_filter,
+#DataTables_Table_3_filter,
+#DataTables_Table_4_filter,
+#DataTables_Table_5_filter,
+#DataTables_Table_6_filter,
+#DataTables_Table_7_filter,
+#DataTables_Table_8_filter,
+#DataTables_Table_9_filter,
+#DataTables_Table_10_filter {
+    display: none;
+}
+
+.tab_responsibility {
+    margin: 20px auto;
+}
+
+.tab_content_responsibility {
+    padding: 10px;
+    border-left: 1px solid #e7eaec;
+    border-right: 1px solid #e7eaec;
+    border-bottom: 1px solid #e7eaec;
+}
+
+.netis_role {
+    margin-top: 20px;
+}
+
+.netis_enforcement {
+    height: 400px;
+    padding: 0;
+}

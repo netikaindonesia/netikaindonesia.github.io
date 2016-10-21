@@ -11,42 +11,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-
-    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
-
-    <link href="css/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
-
-    <link href="css/plugins/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
-
-    <link href="css/plugins/cropper/cropper.min.css" rel="stylesheet">
-
-    <link href="css/plugins/switchery/switchery.css" rel="stylesheet">
-
-    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/plugins/nouslider/jquery.nouislider.css" rel="stylesheet">
-
-    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
-
-    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
-    <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
-
-    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
-
-    <link href="css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
-
-    <link href="css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
-
-    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
-
-    <link href="css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
-
-    <link href="css/plugins/dualListbox/bootstrap-duallistbox.min.css" rel="stylesheet">
+    <!-- FooTable -->
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
 
 </head>
 
@@ -411,7 +382,7 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a>Job</a>
+                            <a>E-commerce</a>
                         </li>
                         <li class="active">
                             <strong>Accountability Matrix</strong>
@@ -422,30 +393,204 @@
 
                 </div>
             </div>
-            <div class="wrapper wrapper-content animated fadeInRight">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>Business process, Activity and RACI</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
+
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1"> Business Process</a></li>
+                            <li class=""><a data-toggle="tab" href="#tab-2"> Activities</a></li>
+                            <li class=""><a data-toggle="tab" href="#tab-3"> Job Titles</a></li>
+                        </ul>
+                        <div class="tab-content">
+
+                            <div id="tab-1" class="tab-pane active">
+                                <div class="panel-body">
+                                    <div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+
+
+                                        <div class="ibox-content m-b-sm border-bottom">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="order_id">Title</label>
+                                                        <input type="text" id="order_id" name="order_id" value="" placeholder="Title" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="status">Type</label>
+                                                        <input type="text" id="status" name="status" value="" placeholder="Type" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="date_added">Date added</label>
+                                                        <div class="input-group date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                            <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="date_modified">Date modified</label>
+                                                        <div class="input-group date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="amount">Activity </label>
+                                                        <input type="text" id="amount" name="amount" value="" placeholder="Activity" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="amount">Job Title </label>
+                                                        <input type="text" id="amount" name="amount" value="" placeholder="Job Title" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="ibox">
+                                                    <div class="ibox-content">
+
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+
+                                                                    <th>Title</th>
+                                                                    <th>Type</th>
+                                                                    <th>No. of Job Titles</th>
+                                                                    <th>No. of Activities</th>
+                                                                    <th>Date modified</th>
+                                                                    <th>Status</th>
+                                                                    <th>Action</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        Ekspor bahan makanan
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="badge badge-primary">Satker</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        4
+                                                                    </td>
+                                                                    <td>
+                                                                        10
+                                                                    </td>
+                                                                    <td>
+                                                                        03/05/2015
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="label label-primary">Pending</span>
+                                                                    </td>
+                                                                    <td class="text-right">
+                                                                        <div class="btn-group">
+                                                                            <button class="btn-white btn btn-xs">View</button>
+                                                                            <button class="btn-white btn btn-xs">Edit</button>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Layanan Pengurusan Ijin
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="badge badge-primary">Satker</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        5
+                                                                    </td>
+                                                                    <td>
+                                                                        12
+                                                                    </td>
+                                                                    <td>
+                                                                        21/07/2015
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="label label-primary">Pending</span>
+                                                                    </td>
+                                                                    <td class="text-right">
+                                                                        <div class="btn-group">
+                                                                            <button class="btn-white btn btn-xs">View</button>
+                                                                            <button class="btn-white btn btn-xs">Edit</button>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Layanan Konsultasi
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="badge badge-info">Lintas Satker</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        6
+                                                                    </td>
+                                                                    <td>
+                                                                        15
+                                                                    </td>
+                                                                    <td>
+                                                                        04/08/2015
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="label label-primary">Pending</span>
+                                                                    </td>
+                                                                    <td class="text-right">
+                                                                        <div class="btn-group">
+                                                                            <button class="btn-white btn btn-xs">View</button>
+                                                                            <button class="btn-white btn btn-xs">Edit</button>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+
+
+
+
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td colspan="7">
+                                                                        <ul class="pagination pull-right"></ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
                                 </div>
                             </div>
-                            <div class="ibox-content">
 
-
+                            <div id="tab-2" class="tab-pane active">
                                 <div class="panel-body">
 
                                     <label class="font-noraml">Business process:</label>
@@ -456,113 +601,62 @@
                                             <option value="2">Layanan Pengurusan Ijin</option>
                                             <option value="3">Layanan Konsultasi</option>
                                         </select>
-
-                                        Or create a new one:
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bizprocess">New business process</button>
-                                        <div class="modal inmodal" id="bizprocess" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content animated bounceInRight">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <i class="fa fa-laptop modal-icon"></i>
-                                                        <h4 class="modal-title">New business process</h4>
-                                                        <small class="font-bold">Please enter new business process.</small>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Title: </label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Type: </label>
-                                                            <div class="col-sm-10">
-                                                                <select data-placeholder="Choose business process type...">
-                                                                    <option value="1">Satker</option>
-                                                                    <option value="2">Lintas satker</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
 
-                                    <div class="hr-line-dashed"></div>
-
-                                    <!-- This is loaded after a business process is selected above -->
-                                    <label class="font-noraml">Activity:</label>
-                                    <div>
-                                        <select data-placeholder="Choose an activity..." class="chosen-select" tabindex="2">
-                                            <option value="">Select an activity</option>
-                                            <option value="1">Mengumpulkan data kondisi pasar</option>
-                                            <option value="2">Mengidentifikasi harga Komoditas</option>
-                                            <option value="3">Melakukan negosiasi harga</option>
-                                            <option value="4"> Menyusun draft kontrak</option>
-                                        </select>
-
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#activity">New Activity</button>
-                                        <div class="modal inmodal" id="activity" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content animated bounceInRight">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <i class="fa fa-laptop modal-icon"></i>
-                                                        <h4 class="modal-title">New Activity</h4>
-                                                        <small class="font-bold">Please enter new activity.</small>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Title: </label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                            <label class="col-sm-2 control-label">Description: </label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                            <label class="col-sm-2 control-label">Performance indicator: </label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- This is loaded after an activity title is selected above -->
-                                    <label class="font-noraml">Activity description: </label>
-                                    <div>
-                                        <p class="form-control-static">Cras lorem justo, viverra nec mattis ut, accumsan in nisl. Suspendisse dolor massa, eleifend quis lorem in, rhoncus vulputate mauris. Nunc aliquam, neque quis lobortis tristique, lectus arcu pharetra nisi, sit amet lobortis felis tellus sit amet tortor. </p>
-                                    </div>
-
-                                    <!-- This is loaded after an activity title is selected above -->
-                                    <label class="font-noraml">Performance indicator: </label>
-                                    <div>
-                                        <p class="form-control-static"> Quisque facilisis mattis leo quis feugiat.</p>
-                                    </div>
-
-                                    <div class="hr-line-dashed"></div>
-
-                                    <!-- This is loaded after an activity title is selected above -->
-                                    <label class="font-noraml">Internal stakeholders: </label>
                                     <div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+
+
+                                        <div class="ibox-content m-b-sm border-bottom">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="order_id">Code</label>
+                                                        <input type="text" id="order_id" name="order_id" value="" placeholder="Order ID" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="status">Label</label>
+                                                        <input type="text" id="status" name="status" value="" placeholder="Status" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="customer">Description</label>
+                                                        <input type="text" id="customer" name="customer" value="" placeholder="Customer" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="date_added">Grade Range</label>
+                                                        <div class="input-group date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                            <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="date_modified">Date modified</label>
+                                                        <div class="input-group date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="amount">Status</label>
+                                                        <input type="text" id="amount" name="amount" value="" placeholder="Amount" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="ibox">
@@ -572,48 +666,219 @@
                                                             <thead>
                                                                 <tr>
 
-                                                                    <th>Code</th>
+                                                                    <th>Activity</th>
+                                                                    <th data-hide="all">Job Title(s)</th>
+                                                                    <th data-hide="all">Description</th>
+                                                                    <th>Status</th>
+                                                                    <th class="text-right">Action</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        Mengumpulkan data kondisi pasar
+                                                                    </td>
+                                                                    <td>
+                                                                        SM, ASM
+                                                                    </td>
+                                                                    <td>
+                                                                        Pellentesque finibus sit amet tortor lacinia ornare. In ut urna ligula.
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="label label-primary">Active</span>
+                                                                    </td>
+                                                                    <td class="text-right">
+                                                                        <div class="btn-group">
+
+                                                                            <button class="btn-white btn btn-xs">Edit</button>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Mengidentifikasi harga Komoditas
+                                                                    </td>
+                                                                    <td>
+                                                                        SM
+                                                                    </td>
+                                                                    <td>
+                                                                        Finibus sit amet tortor lacinia ornare. In ut urna ligula.
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="label label-primary">Active</span>
+                                                                    </td>
+                                                                    <td class="text-right">
+                                                                        <div class="btn-group">
+
+                                                                            <button class="btn-white btn btn-xs">Edit</button>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Melakukan negosiasi harga
+                                                                    </td>
+                                                                    <td>
+                                                                        DIVISI
+                                                                    </td>
+                                                                    <td>
+                                                                        In ut urna ligula.
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="label label-primary">Active</span>
+                                                                    </td>
+                                                                    <td class="text-right">
+                                                                        <div class="btn-group">
+
+                                                                            <button class="btn-white btn btn-xs">Edit</button>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        Menyusun draft kontrak
+                                                                    </td>
+                                                                    <td>
+                                                                        DEPARTEMENT
+                                                                    </td>
+                                                                    <td>
+                                                                        Sit amet tortor lacinia ornare.
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="label label-primary">Active</span>
+                                                                    </td>
+                                                                    <td class="text-right">
+                                                                        <div class="btn-group">
+
+                                                                            <button class="btn-white btn btn-xs">Edit</button>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+
+
+
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td colspan="7">
+                                                                        <ul class="pagination pull-right"></ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+                            <div id="tab-3" class="tab-pane">
+                                <div class="panel-body">
+
+                                    <label class="font-noraml">Business process:</label>
+                                    <div>
+                                        <select data-placeholder="Choose a business process..." class="chosen-select" tabindex="2">
+                                            <option value="">Select a business process</option>
+                                            <option value="1">Ekspor bahan makanan</option>
+                                            <option value="2">Layanan Pengurusan Ijin</option>
+                                            <option value="3">Layanan Konsultasi</option>
+                                        </select>
+                                    </div>
+
+                                    <label class="font-noraml">Activity:</label>
+                                    <div>
+                                        <select data-placeholder="Choose an activity..." class="chosen-select" tabindex="2">
+                                            <option value="">Select an activity</option>
+                                            <option value="1">Mengumpulkan data kondisi pasar</option>
+                                            <option value="2">Mengidentifikasi harga Komoditas</option>
+                                            <option value="3">Melakukan negosiasi harga</option>
+                                            <option value="4"> Menyusun draft kontrak</option>
+                                        </select>
+                                    </div>
+
+
+
+                                    <div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+
+                                        <div class="ibox-content m-b-sm border-bottom">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="order_id">Code</label>
+                                                        <input type="text" id="order_id" name="order_id" value="" placeholder="Order ID" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="status">Label</label>
+                                                        <input type="text" id="status" name="status" value="" placeholder="Status" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="customer">Description</label>
+                                                        <input type="text" id="customer" name="customer" value="" placeholder="Customer" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="date_added">Level</label>
+                                                        <div class="input-group date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                            <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="date_modified">Date modified</label>
+                                                        <div class="input-group date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="amount">Status</label>
+                                                        <input type="text" id="amount" name="amount" value="" placeholder="Amount" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="ibox">
+                                                    <div class="ibox-content">
+
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+
                                                                     <th>Job Title</th>
+                                                                    <th>Category</th>
                                                                     <th>Status</th>
                                                                     <th>R</th>
                                                                     <th>A</th>
                                                                     <th>C</th>
                                                                     <th>I</th>
-                                                                    <th>
-                                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#internalstakeholder">Add internal stakeholder</button>
-                                                                        <div class="modal inmodal" id="internalstakeholder" tabindex="-1" role="dialog" aria-hidden="true">
-                                                                            <div class="modal-dialog">
-                                                                                <div class="modal-content animated bounceInRight">
-                                                                                    <div class="modal-header">
-                                                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                                        <i class="fa fa-laptop modal-icon"></i>
-                                                                                        <h4 class="modal-title">Add internal stakeholders</h4>
-                                                                                        <small class="font-bold">Please select a stakeholder.</small>
-                                                                                    </div>
-                                                                                    <div class="modal-body">
-                                                                                        <div class="form-group">
-
-
-                                                                                            <label class="font-noraml">Job title:</label>
-                                                                                            <div>
-                                                                                                <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                                                                    <option value="">CEO</option>
-                                                                                                    <option value="1">FINDIR</option>
-                                                                                                    <option value="2">MARDIR</option>
-                                                                                                </select>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                    </div>
-                                                                                    <div class="modal-footer">
-                                                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                        <button type="button" class="btn btn-primary">Select</button>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </th>
+                                                                    <th class="text-right">Action</th>
 
                                                                 </tr>
                                                             </thead>
@@ -752,595 +1017,77 @@
                                         </div>
                                     </div>
 
-                                    <div class="hr-line-dashed"></div>
 
-                                    <!-- This is loaded after an activity title is selected above -->
-                                    <label class="font-noraml">External stakeholders: </label>
-                                    <div class="wrapper wrapper-content animated fadeInRight ecommerce">
-
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="ibox">
-                                                    <div class="ibox-content">
-
-                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                            <thead>
-                                                                <tr>
-
-                                                                    <th>Code</th>
-                                                                    <th>Name</th>
-                                                                    <th data-hide="all">Description</th>
-                                                                    <th>Status</th>
-                                                                    <th>R</th>
-                                                                    <th>A</th>
-                                                                    <th>C</th>
-                                                                    <th>I</th>
-                                                                    <th>
-                                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#externalstakeholder">Add Stakeholder</button>
-                                                                        <div class="modal inmodal" id="externalstakeholder" tabindex="-1" role="dialog" aria-hidden="true">
-                                                                            <div class="modal-dialog">
-                                                                                <div class="modal-content animated bounceInRight">
-                                                                                    <div class="modal-header">
-                                                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                                        <i class="fa fa-laptop modal-icon"></i>
-                                                                                        <h4 class="modal-title">Add Stakeholder</h4>
-                                                                                        <small class="font-bold">Please select a stakeholder.</small>
-                                                                                    </div>
-                                                                                    <div class="modal-body">
-                                                                                        <div class="form-group">
-
-
-                                                                                            <label class="font-noraml">Job title:</label>
-                                                                                            <div>
-                                                                                                <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                                                                    <option value="">Suspendisse dolor</option>
-                                                                                                    <option value="1">Praesent vel nunc</option>
-                                                                                                    <option value="2">Ut at risus tempus</option>
-                                                                                                </select>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <label class="font-noraml">If not listed above, add here:</label>
-                                                                                        <div class="form-group">
-                                                                                            <label class="col-sm-2 control-label">Name: </label>
-                                                                                            <div class="col-sm-10">
-                                                                                                <input type="text" class="form-control">
-                                                                                            </div>
-                                                                                            <label class="col-sm-2 control-label">Description: </label>
-                                                                                            <div class="col-sm-10">
-                                                                                                <input type="text" class="form-control">
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                    </div>
-                                                                                    <div class="modal-footer">
-                                                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                        <button type="button" class="btn btn-primary">Select</button>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </th>
-
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        SDO
-                                                                    </td>
-                                                                    <td>
-                                                                        Suspendisse dolor
-                                                                    </td>
-                                                                    <td>
-                                                                        Aliquam a bibendum purus. Phasellus euismod ultricies placerat. Morbi dignissim metus in lectus mollis interdum. Cras id sapien sagittis neque condimentum fringilla id a sapien.
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-check text-navy"></i>
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-check text-navy"></i>
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        PVN
-                                                                    </td>
-                                                                    <td>
-                                                                        Praesent vel nunc
-                                                                    </td>
-                                                                    <td>
-                                                                        Aliquam a bibendum purus. Phasellus euismod ultricies placerat. Morbi dignissim metus in lectus mollis interdum. Cras id sapien sagittis neque condimentum fringilla id a sapien.
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-check text-navy"></i>
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        UAR
-                                                                    </td>
-                                                                    <td>
-                                                                        Ut at risus tempus
-                                                                    </td>
-                                                                    <td>
-                                                                        Aliquam a bibendum purus. Phasellus euismod ultricies placerat. Morbi dignissim metus in lectus mollis interdum. Cras id sapien sagittis neque condimentum fringilla id a sapien.
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-check text-navy"></i>
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-
-
-
-                                                            </tbody>
-                                                            <tfoot>
-                                                                <tr>
-                                                                    <td colspan="7">
-                                                                        <ul class="pagination pull-right"></ul>
-                                                                    </td>
-                                                                </tr>
-                                                            </tfoot>
-                                                        </table>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
 
                                 </div>
-
-
-
                             </div>
                         </div>
 
+
                     </div>
                 </div>
-            </div>
-            <div class="footer">
-                <div class="pull-right">
-                    <strong>Version</strong> 2.x.xxxx.
-                </div>
-                <div>
-                    <strong>Copyright</strong> Netika Indonesia &copy; 2016
-                </div>
-            </div>
 
+
+
+
+
+
+
+                <div class="footer">
+                    <div class="pull-right">
+                        <strong>Version</strong> 2.x.xxxx.
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> Netika Indonesia &copy; 2016
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
 
-    <!-- Mainly scripts -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom and plugin javascript -->
-    <script src="js/inspinia.js"></script>
-    <script src="js/plugins/pace/pace.min.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Chosen -->
-    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+        <!-- Mainly scripts -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- JSKnob -->
-    <script src="js/plugins/jsKnob/jquery.knob.js"></script>
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
 
-    <!-- Input Mask-->
-    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+        <!-- Data picker -->
+        <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
 
-    <!-- Data picker -->
-    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+        <!-- FooTable -->
+        <script src="js/plugins/footable/footable.all.min.js"></script>
 
-    <!-- NouSlider -->
-    <script src="js/plugins/nouslider/jquery.nouislider.min.js"></script>
+        <!-- Page-Level Scripts -->
+        <script>
+            $(document).ready(function () {
 
-    <!-- Switchery -->
-    <script src="js/plugins/switchery/switchery.js"></script>
+                $('.footable').footable();
 
-    <!-- IonRangeSlider -->
-    <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
-
-    <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script>
-
-    <!-- MENU -->
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-
-    <!-- Color picker -->
-    <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
-
-    <!-- Clock picker -->
-    <script src="js/plugins/clockpicker/clockpicker.js"></script>
-
-    <!-- Image cropper -->
-    <script src="js/plugins/cropper/cropper.min.js"></script>
-
-    <!-- Date range use moment.js same as full calendar plugin -->
-    <script src="js/plugins/fullcalendar/moment.min.js"></script>
-
-    <!-- Date range picker -->
-    <script src="js/plugins/daterangepicker/daterangepicker.js"></script>
-
-    <!-- Select2 -->
-    <script src="js/plugins/select2/select2.full.min.js"></script>
-
-    <!-- TouchSpin -->
-    <script src="js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
-
-    <!-- Tags Input -->
-    <script src="js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
-
-    <!-- Dual Listbox -->
-    <script src="js/plugins/dualListbox/jquery.bootstrap-duallistbox.js"></script>
-
-    <script>
-        $(document).ready(function () {
-
-            $('.tagsinput').tagsinput({
-                tagClass: 'label label-primary'
-            });
-
-            var $image = $(".image-crop > img")
-            $($image).cropper({
-                aspectRatio: 1.618,
-                preview: ".img-preview",
-                done: function (data) {
-                    // Output the result data for cropping image.
-                }
-            });
-
-            var $inputImage = $("#inputImage");
-            if (window.FileReader) {
-                $inputImage.change(function () {
-                    var fileReader = new FileReader(),
-                        files = this.files,
-                        file;
-
-                    if (!files.length) {
-                        return;
-                    }
-
-                    file = files[0];
-
-                    if (/^image\/\w+$/.test(file.type)) {
-                        fileReader.readAsDataURL(file);
-                        fileReader.onload = function () {
-                            $inputImage.val("");
-                            $image.cropper("reset", true).cropper("replace", this.result);
-                        };
-                    } else {
-                        showMessage("Please choose an image file.");
-                    }
+                $('#date_added').datepicker({
+                    todayBtn: "linked",
+                    keyboardNavigation: false,
+                    forceParse: false,
+                    calendarWeeks: true,
+                    autoclose: true
                 });
-            } else {
-                $inputImage.addClass("hide");
-            }
 
-            $("#download").click(function () {
-                window.open($image.cropper("getDataURL"));
+                $('#date_modified').datepicker({
+                    todayBtn: "linked",
+                    keyboardNavigation: false,
+                    forceParse: false,
+                    calendarWeeks: true,
+                    autoclose: true
+                });
+
             });
-
-            $("#zoomIn").click(function () {
-                $image.cropper("zoom", 0.1);
-            });
-
-            $("#zoomOut").click(function () {
-                $image.cropper("zoom", -0.1);
-            });
-
-            $("#rotateLeft").click(function () {
-                $image.cropper("rotate", 45);
-            });
-
-            $("#rotateRight").click(function () {
-                $image.cropper("rotate", -45);
-            });
-
-            $("#setDrag").click(function () {
-                $image.cropper("setDragMode", "crop");
-            });
-
-            $('#data_1 .input-group.date').datepicker({
-                todayBtn: "linked",
-                keyboardNavigation: false,
-                forceParse: false,
-                calendarWeeks: true,
-                autoclose: true
-            });
-
-            $('#data_2 .input-group.date').datepicker({
-                startView: 1,
-                todayBtn: "linked",
-                keyboardNavigation: false,
-                forceParse: false,
-                autoclose: true,
-                format: "dd/mm/yyyy"
-            });
-
-            $('#data_3 .input-group.date').datepicker({
-                startView: 2,
-                todayBtn: "linked",
-                keyboardNavigation: false,
-                forceParse: false,
-                autoclose: true
-            });
-
-            $('#data_4 .input-group.date').datepicker({
-                minViewMode: 1,
-                keyboardNavigation: false,
-                forceParse: false,
-                autoclose: true,
-                todayHighlight: true
-            });
-
-            $('#data_5 .input-daterange').datepicker({
-                keyboardNavigation: false,
-                forceParse: false,
-                autoclose: true
-            });
-
-            var elem = document.querySelector('.js-switch');
-            var switchery = new Switchery(elem, {
-                color: '#1AB394'
-            });
-
-            var elem_2 = document.querySelector('.js-switch_2');
-            var switchery_2 = new Switchery(elem_2, {
-                color: '#ED5565'
-            });
-
-            var elem_3 = document.querySelector('.js-switch_3');
-            var switchery_3 = new Switchery(elem_3, {
-                color: '#1AB394'
-            });
-
-            $('.i-checks').iCheck({
-                checkboxClass: 'icheckbox_square-green',
-                radioClass: 'iradio_square-green'
-            });
-
-            $('.demo1').colorpicker();
-
-            var divStyle = $('.back-change')[0].style;
-            $('#demo_apidemo').colorpicker({
-                color: divStyle.backgroundColor
-            }).on('changeColor', function (ev) {
-                divStyle.backgroundColor = ev.color.toHex();
-            });
-
-            $('.clockpicker').clockpicker();
-
-            $('input[name="daterange"]').daterangepicker();
-
-            $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
-
-            $('#reportrange').daterangepicker({
-                format: 'MM/DD/YYYY',
-                startDate: moment().subtract(29, 'days'),
-                endDate: moment(),
-                minDate: '01/01/2012',
-                maxDate: '12/31/2015',
-                dateLimit: {
-                    days: 60
-                },
-                showDropdowns: true,
-                showWeekNumbers: true,
-                timePicker: false,
-                timePickerIncrement: 1,
-                timePicker12Hour: true,
-                ranges: {
-                    'Today': [moment(), moment()],
-                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                    'This Month': [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                },
-                opens: 'right',
-                drops: 'down',
-                buttonClasses: ['btn', 'btn-sm'],
-                applyClass: 'btn-primary',
-                cancelClass: 'btn-default',
-                separator: ' to ',
-                locale: {
-                    applyLabel: 'Submit',
-                    cancelLabel: 'Cancel',
-                    fromLabel: 'From',
-                    toLabel: 'To',
-                    customRangeLabel: 'Custom',
-                    daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-                    monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-                    firstDay: 1
-                }
-            }, function (start, end, label) {
-                console.log(start.toISOString(), end.toISOString(), label);
-                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-            });
-
-            $(".select2_demo_1").select2();
-            $(".select2_demo_2").select2();
-            $(".select2_demo_3").select2({
-                placeholder: "Select a state",
-                allowClear: true
-            });
-
-
-            $(".touchspin1").TouchSpin({
-                buttondown_class: 'btn btn-white',
-                buttonup_class: 'btn btn-white'
-            });
-
-            $(".touchspin2").TouchSpin({
-                min: 0,
-                max: 100,
-                step: 0.1,
-                decimals: 2,
-                boostat: 5,
-                maxboostedstep: 10,
-                postfix: '%',
-                buttondown_class: 'btn btn-white',
-                buttonup_class: 'btn btn-white'
-            });
-
-            $(".touchspin3").TouchSpin({
-                verticalbuttons: true,
-                buttondown_class: 'btn btn-white',
-                buttonup_class: 'btn btn-white'
-            });
-
-            $('.dual_select').bootstrapDualListbox({
-                selectorMinimalHeight: 160
-            });
-
-
-        });
-
-        $('.chosen-select').chosen({
-            width: "100%"
-        });
-
-        $("#ionrange_1").ionRangeSlider({
-            min: 0,
-            max: 5000,
-            type: 'double',
-            prefix: "$",
-            maxPostfix: "+",
-            prettify: false,
-            hasGrid: true
-        });
-
-        $("#ionrange_2").ionRangeSlider({
-            min: 0,
-            max: 10,
-            type: 'single',
-            step: 0.1,
-            postfix: " carats",
-            prettify: false,
-            hasGrid: true
-        });
-
-        $("#ionrange_3").ionRangeSlider({
-            min: -50,
-            max: 50,
-            from: 0,
-            postfix: "°",
-            prettify: false,
-            hasGrid: true
-        });
-
-        $("#ionrange_4").ionRangeSlider({
-            values: [
-                "January", "February", "March",
-                "April", "May", "June",
-                "July", "August", "September",
-                "October", "November", "December"
-            ],
-            type: 'single',
-            hasGrid: true
-        });
-
-        $("#ionrange_5").ionRangeSlider({
-            min: 10000,
-            max: 100000,
-            step: 100,
-            postfix: " km",
-            from: 55000,
-            hideMinMax: true,
-            hideFromTo: false
-        });
-
-        $(".dial").knob();
-
-        var basic_slider = document.getElementById('basic_slider');
-
-        noUiSlider.create(basic_slider, {
-            start: 40,
-            behaviour: 'tap',
-            connect: 'upper',
-            range: {
-                'min': 20,
-                'max': 80
-            }
-        });
-
-        var range_slider = document.getElementById('range_slider');
-
-        noUiSlider.create(range_slider, {
-            start: [40, 60],
-            behaviour: 'drag',
-            connect: true,
-            range: {
-                'min': 20,
-                'max': 80
-            }
-        });
-
-        var drag_fixed = document.getElementById('drag-fixed');
-
-        noUiSlider.create(drag_fixed, {
-            start: [40, 60],
-            behaviour: 'drag-fixed',
-            connect: true,
-            range: {
-                'min': 20,
-                'max': 80
-            }
-        });
-    </script>
+        </script>
 
 </body>
 
