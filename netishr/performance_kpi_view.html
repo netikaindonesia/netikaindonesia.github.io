@@ -414,6 +414,14 @@
                                 <input type="text" id="quantity" name="quantity" value="" placeholder="Action Plan" class="form-control">
                             </div>
                         </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="control-label" for="quantity">KPI</label>
+                                <input type="text" id="quantity" name="quantity" value="" placeholder="Action Plan" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label class="control-label" for="quantity">Target</label>
@@ -424,8 +432,11 @@
                             <div class="form-group">
                                 <label class="control-label" for="status">Status</label>
                                 <select name="status" id="status" class="form-control">
-                                    <option value="1" selected>Enabled</option>
-                                    <option value="0">Disabled</option>
+                                    <option value="1" selected>Draft</option>
+                                    <option value="2">Pending</option>
+                                    <option value="3">Returned</option>
+                                    <option value="4">Approved</option>
+                                    <option value="5">Rejected</option>
                                 </select>
                             </div>
                         </div>
@@ -434,9 +445,9 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="form-group">
-                                <label class="control-label">Parent Job Title</label>
+                                <label class="control-label">Parent Job Title: </label>
                                 <select data-placeholder="Choose parent job title..." class="chosen-select">
-                                    <option value="1">Select a KPI</option>
+                                    <option value="1">Select a job title</option>
                                     <option value="2">Lorem ipsum dolor</option>
                                     <option value="3">Sit amet consectetur</option>
                                     <option value="4">Adipiscing elit</option>
@@ -447,8 +458,8 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
-                                <!-- load KPIs of the job title selected above -->
-                                <label class="control-label">Parent KPI</label>
+                                <!-- load KPIs of the Parent Job Title selected above -->
+                                <label class="control-label">Parent KPI: </label>
                                 <select data-placeholder="Choose a parent KPI..." class="chosen-select">
                                     <option value="1">Select a KPI</option>
                                     <option value="2">Lorem ipsum dolor</option>
@@ -475,6 +486,7 @@
                                             <th data-toggle="true">Code</th>
                                             <th data-toggle="true">Action Plan</th>
                                             <th>KPI</th>
+                                            <th data-hide="phone,tablet">Parent KPI</th>
                                             <th data-hide="phone,tablet">Target</th>
                                             <th data-hide="phone,tablet">Definition</th>
                                             <th data-hide="phone,tablet">Formula</th>
@@ -498,6 +510,9 @@
                                                 Vestibulum
                                             </td>
                                             <td>
+                                                Fringilla (Head of HR)
+                                            </td>
+                                            <td>
                                                 80
                                             </td>
                                             <td>
@@ -507,11 +522,10 @@
                                                 ABC
                                             </td>
                                             <td>
-                                                <span class="label label-primary">Enable</span>
+                                                <span class="label label-success">Approved</span>
                                             </td>
                                             <td class="text-right">
                                                 <div class="btn-group">
-                                                    <button class="btn-white btn btn-xs">View</button>
                                                     <button class="btn-white btn btn-xs">Edit</button>
                                                 </div>
                                             </td>
@@ -527,6 +541,10 @@
                                                 Nunc fringilla.
                                             </td>
                                             <td>
+                                                Vestibulum (Head of HR)
+                                            </td>
+
+                                            <td>
                                                 120
                                             </td>
                                             <td>
@@ -536,11 +554,10 @@
                                                 DEF
                                             </td>
                                             <td>
-                                                <span class="label label-primary">Enable</span>
+                                                <span class="label label-success">Approved</span>
                                             </td>
                                             <td class="text-right">
                                                 <div class="btn-group">
-                                                    <button class="btn-white btn btn-xs">View</button>
                                                     <button class="btn-white btn btn-xs">Edit</button>
                                                 </div>
                                             </td>
@@ -556,21 +573,23 @@
                                                 Nulla sollicitudin
                                             </td>
                                             <td>
+                                                Imperdiet sollicitudin (Head of HR)
+                                            </td>
+                                            <td>
                                                 100
                                             </td>
                                             <td>
-                                                Donec pretium elementum metus.
+                                                Donec pretium elementum metus
                                             </td>
                                             <td>
                                                 JKL
                                             </td>
                                             <td>
-                                                <span class="label label-danger">Disabled</span>
+                                                <span class="label label-primary">Pending</span>
                                             </td>
                                             <td class="text-right">
                                                 <div class="btn-group">
-                                                    <button class="btn-white btn btn-xs">View</button>
-                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                    <button class="btn-white btn btn-xs">Cancel</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -579,10 +598,13 @@
                                                 1.1.2.4
                                             </td>
                                             <td>
-                                                Donec viverra commodo.
+                                                Donec viverra commodo
                                             </td>
                                             <td>
-                                                Curabitur ac augue urna.
+                                                Curabitur ac augue urna
+                                            </td>
+                                            <td>
+                                                Pretium augue urna (Head of HR)
                                             </td>
                                             <td>
                                                 1000
@@ -594,11 +616,75 @@
                                                 MNO
                                             </td>
                                             <td>
-                                                <span class="label label-primary">Enable</span>
+                                                <span class="label label-danger">Rejected</span>
                                             </td>
                                             <td class="text-right">
                                                 <div class="btn-group">
                                                     <button class="btn-white btn btn-xs">View</button>
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1.1.2.5
+                                            </td>
+                                            <td>
+                                                Viverra donec commodo
+                                            </td>
+                                            <td>
+                                                Augue urna curabitur ac
+                                            </td>
+                                            <td>
+                                                N/A
+                                            </td>
+                                            <td>
+                                                1000
+                                            </td>
+                                            <td>
+                                                Nulla facilisi.
+                                            </td>
+                                            <td>
+                                                MNO
+                                            </td>
+                                            <td>
+                                                <span class="label label-warning">Returned</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <button class="btn-white btn btn-xs">View</button>
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1.1.2.5
+                                            </td>
+                                            <td>
+                                                Commodo donec
+                                            </td>
+                                            <td>
+                                                Urna Augue ac
+                                            </td>
+                                            <td>
+                                                N/A
+                                            </td>
+                                            <td>
+                                                1000
+                                            </td>
+                                            <td>
+                                                Nulla facilisi.
+                                            </td>
+                                            <td>
+                                                MNO
+                                            </td>
+                                            <td>
+                                                <span class="label label-default">Draft</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <button class="btn-white btn btn-xs">Submit</button>
                                                     <button class="btn-white btn btn-xs">Edit</button>
                                                 </div>
                                             </td>

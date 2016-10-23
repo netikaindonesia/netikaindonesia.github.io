@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Accountability Matrix</title>
+    <title>NetisHR | Balanced Score Card</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -407,17 +407,20 @@
                 </nav>
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                    <h2>Accountability Matrix</h2>
+                <div class="col-lg-12">
+                    <h2>Balanced Score Card</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a>Job</a>
+                            <a>Performance</a>
+                        </li>
+                        <li>
+                            <a>KPI</a>
                         </li>
                         <li class="active">
-                            <strong>Accountability Matrix</strong>
+                            <strong>Balanced Score Card</strong>
                         </li>
                     </ol>
                 </div>
@@ -430,7 +433,7 @@
                     <div class="col-lg-12">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
-                                <h5>Business process, Activity and RACI</h5>
+                                <h5>Visions, Perspectives and Objectives</h5>
                                 <div class="ibox-tools">
                                     <a class="collapse-link">
                                         <i class="fa fa-chevron-up"></i>
@@ -451,25 +454,25 @@
 
                                 <div class="panel-body">
 
-                                    <label class="font-noraml">Business process:</label>
+                                    <label class="font-noraml">Vision:</label>
                                     <div>
-                                        <select data-placeholder="Choose a business process..." class="chosen-select" tabindex="2">
-                                            <option value="">Select a business process</option>
+                                        <select data-placeholder="Choose a vision..." class="chosen-select" tabindex="2">
+                                            <option value="">Select a vision</option>
                                             <option value="1">Ekspor bahan makanan</option>
                                             <option value="2">Layanan Pengurusan Ijin</option>
                                             <option value="3">Layanan Konsultasi</option>
                                         </select>
 
                                         Or create a new one:
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bizprocess">New business process</button>
-                                        <div class="modal inmodal" id="bizprocess" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#vision">New vision</button>
+                                        <div class="modal inmodal" id="vision" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content animated bounceInRight">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                                         <i class="fa fa-laptop modal-icon"></i>
-                                                        <h4 class="modal-title">New business process</h4>
-                                                        <small class="font-bold">Please enter new business process.</small>
+                                                        <h4 class="modal-title">New vision</h4>
+                                                        <small class="font-bold">Please enter a new vision.</small>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="form-group">
@@ -496,31 +499,29 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
 
-                                    <div class="hr-line-dashed"></div>
-
-                                    <!-- This is loaded after a business process is selected above -->
-                                    <label class="font-noraml">Activity:</label>
+                                    <label class="font-noraml">Perspective:</label>
                                     <div>
-                                        <select data-placeholder="Choose an activity..." class="chosen-select" tabindex="2">
-                                            <option value="">Select an activity</option>
-                                            <option value="1">Mengumpulkan data kondisi pasar</option>
-                                            <option value="2">Mengidentifikasi harga Komoditas</option>
-                                            <option value="3">Melakukan negosiasi harga</option>
-                                            <option value="4"> Menyusun draft kontrak</option>
+                                        <select data-placeholder="Choose a perspective..." class="chosen-select" tabindex="2">
+                                            <option value="">Select a perspective</option>
+                                            <option value="1">Financial</option>
+                                            <option value="2">Customer</option>
+                                            <option value="3">Internal Process</option>
+                                            <option value="4">Learning and Growth</option>
                                         </select>
 
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#activity">New Activity</button>
-                                        <div class="modal inmodal" id="activity" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <!--
+                                        Or create a new one:
+                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#perspective">New perspective</button>
+                                        <div class="modal inmodal" id="perspective" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content animated bounceInRight">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                                         <i class="fa fa-laptop modal-icon"></i>
-                                                        <h4 class="modal-title">New Activity</h4>
-                                                        <small class="font-bold">Please enter new activity.</small>
+                                                        <h4 class="modal-title">New Perspective</h4>
+                                                        <small class="font-bold">Please enter new perspective.</small>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="form-group">
@@ -532,13 +533,7 @@
                                                             <div class="col-sm-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
-                                                            <label class="col-sm-2 control-label">Performance indicator: </label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
                                                         </div>
-
-
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
@@ -547,25 +542,13 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        -->
+
                                     </div>
 
-                                    <!-- This is loaded after an activity title is selected above -->
-                                    <label class="font-noraml">Activity description: </label>
-                                    <div>
-                                        <p class="form-control-static">Cras lorem justo, viverra nec mattis ut, accumsan in nisl. Suspendisse dolor massa, eleifend quis lorem in, rhoncus vulputate mauris. Nunc aliquam, neque quis lobortis tristique, lectus arcu pharetra nisi, sit amet lobortis felis tellus sit amet tortor. </p>
-                                    </div>
 
-                                    <!-- This is loaded after an activity title is selected above -->
-                                    <label class="font-noraml">Performance indicator: </label>
-                                    <div>
-                                        <p class="form-control-static"> Quisque facilisis mattis leo quis feugiat.</p>
-                                    </div>
-
-                                    <div class="hr-line-dashed"></div>
-
-                                    <!-- This is loaded after an activity title is selected above -->
-                                    <label class="font-noraml">Internal stakeholders: </label>
                                     <div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="ibox">
@@ -583,39 +566,37 @@
                                                                     <th>C</th>
                                                                     <th>I</th>
                                                                     <th>
-                                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#internalstakeholder">Add internal stakeholder</button>
-                                                                        <div class="modal inmodal" id="internalstakeholder" tabindex="-1" role="dialog" aria-hidden="true">
+                                                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#objective">New objective</button>
+                                                                        <div class="modal inmodal" id="objective" tabindex="-1" role="dialog" aria-hidden="true">
                                                                             <div class="modal-dialog">
                                                                                 <div class="modal-content animated bounceInRight">
                                                                                     <div class="modal-header">
                                                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                                                                         <i class="fa fa-laptop modal-icon"></i>
-                                                                                        <h4 class="modal-title">Add internal stakeholders</h4>
-                                                                                        <small class="font-bold">Please select a stakeholder.</small>
+                                                                                        <h4 class="modal-title">New Objective</h4>
+                                                                                        <small class="font-bold">Please enter new objective.</small>
                                                                                     </div>
                                                                                     <div class="modal-body">
                                                                                         <div class="form-group">
-
-
-                                                                                            <label class="font-noraml">Job title:</label>
-                                                                                            <div>
-                                                                                                <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                                                                    <option value="">CEO</option>
-                                                                                                    <option value="1">FINDIR</option>
-                                                                                                    <option value="2">MARDIR</option>
-                                                                                                </select>
+                                                                                            <label class="col-sm-2 control-label">Title: </label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                            <label class="col-sm-2 control-label">Description: </label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control">
                                                                                             </div>
                                                                                         </div>
+
 
                                                                                     </div>
                                                                                     <div class="modal-footer">
                                                                                         <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                        <button type="button" class="btn btn-primary">Select</button>
+                                                                                        <button type="button" class="btn btn-primary">Save changes</button>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
                                                                     </th>
 
                                                                 </tr>
@@ -755,194 +736,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="hr-line-dashed"></div>
 
-                                    <!-- This is loaded after an activity title is selected above -->
-                                    <label class="font-noraml">External stakeholders: </label>
-                                    <div class="wrapper wrapper-content animated fadeInRight ecommerce">
-
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="ibox">
-                                                    <div class="ibox-content">
-
-                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                            <thead>
-                                                                <tr>
-
-                                                                    <th>Code</th>
-                                                                    <th>Name</th>
-                                                                    <th data-hide="all">Description</th>
-                                                                    <th>Status</th>
-                                                                    <th>R</th>
-                                                                    <th>A</th>
-                                                                    <th>C</th>
-                                                                    <th>I</th>
-                                                                    <th>
-                                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#externalstakeholder">Add Stakeholder</button>
-                                                                        <div class="modal inmodal" id="externalstakeholder" tabindex="-1" role="dialog" aria-hidden="true">
-                                                                            <div class="modal-dialog">
-                                                                                <div class="modal-content animated bounceInRight">
-                                                                                    <div class="modal-header">
-                                                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                                        <i class="fa fa-laptop modal-icon"></i>
-                                                                                        <h4 class="modal-title">Add Stakeholder</h4>
-                                                                                        <small class="font-bold">Please select a stakeholder.</small>
-                                                                                    </div>
-                                                                                    <div class="modal-body">
-                                                                                        <div class="form-group">
-
-
-                                                                                            <label class="font-noraml">Job title:</label>
-                                                                                            <div>
-                                                                                                <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                                                                    <option value="">Suspendisse dolor</option>
-                                                                                                    <option value="1">Praesent vel nunc</option>
-                                                                                                    <option value="2">Ut at risus tempus</option>
-                                                                                                </select>
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                        <label class="font-noraml">If not listed above, add here:</label>
-                                                                                        <div class="form-group">
-                                                                                            <label class="col-sm-2 control-label">Name: </label>
-                                                                                            <div class="col-sm-10">
-                                                                                                <input type="text" class="form-control">
-                                                                                            </div>
-                                                                                            <label class="col-sm-2 control-label">Description: </label>
-                                                                                            <div class="col-sm-10">
-                                                                                                <input type="text" class="form-control">
-                                                                                            </div>
-                                                                                        </div>
-
-                                                                                    </div>
-                                                                                    <div class="modal-footer">
-                                                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                        <button type="button" class="btn btn-primary">Select</button>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </th>
-
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        SDO
-                                                                    </td>
-                                                                    <td>
-                                                                        Suspendisse dolor
-                                                                    </td>
-                                                                    <td>
-                                                                        Aliquam a bibendum purus. Phasellus euismod ultricies placerat. Morbi dignissim metus in lectus mollis interdum. Cras id sapien sagittis neque condimentum fringilla id a sapien.
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-check text-navy"></i>
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-check text-navy"></i>
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        PVN
-                                                                    </td>
-                                                                    <td>
-                                                                        Praesent vel nunc
-                                                                    </td>
-                                                                    <td>
-                                                                        Aliquam a bibendum purus. Phasellus euismod ultricies placerat. Morbi dignissim metus in lectus mollis interdum. Cras id sapien sagittis neque condimentum fringilla id a sapien.
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-check text-navy"></i>
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        UAR
-                                                                    </td>
-                                                                    <td>
-                                                                        Ut at risus tempus
-                                                                    </td>
-                                                                    <td>
-                                                                        Aliquam a bibendum purus. Phasellus euismod ultricies placerat. Morbi dignissim metus in lectus mollis interdum. Cras id sapien sagittis neque condimentum fringilla id a sapien.
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-                                                                        <i class="fa fa-check text-navy"></i>
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-
-
-
-                                                            </tbody>
-                                                            <tfoot>
-                                                                <tr>
-                                                                    <td colspan="7">
-                                                                        <ul class="pagination pull-right"></ul>
-                                                                    </td>
-                                                                </tr>
-                                                            </tfoot>
-                                                        </table>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
 
                                 </div>
