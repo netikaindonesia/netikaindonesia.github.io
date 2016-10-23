@@ -394,13 +394,16 @@
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Settings</h2>
+                            <h2>Performance Management Periods</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">Home</a>
                                 </li>
+                                <li>
+                                    <a href="administrator.html">Administrator</a>
+                                </li>
                                 <li class="active">
-                                    <strong>Settings</strong>
+                                    <strong>Performance Management Periods</strong>
                                 </li>
                             </ol>
                         </div>
@@ -411,120 +414,160 @@
 
                     <div class="wrapper wrapper-content">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>General</h5>
+                                        <h5>Performance Management Period</h5>
                                         <div class="ibox-tools">
-                                            <span class="label label-warning-light pull-right">10 Messages</span>
+                                            <span class="label label-warning-light pull-right">3 periods</span>
                                         </div>
                                     </div>
                                     <div class="ibox-content">
-                                        <div><a href="corporate_calendar.html">Corporate Annual Calendar</a>
-                                            <div class="small">Calendar of corporate events</div>
+                                        <label class="font-noraml">Select a period: </label>
+                                        <div>
+                                            <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
+                                                <option value="January 2016-December 2016">January 2016-December 2016</option>
+                                                <option selected value="January 2015-December 2015">January 2015-December 2015</option>
+                                                <option value="January 2014-December 2014">January 2014-December 2014</option>
+                                            </select>
                                         </div>
-                                        <p></p>
-                                        <div><a href="performance_mgmt_periods.html">Performance Management Periods</a>
-                                            <div class="small">Manage performance management periods</div>
-                                        </div>
-                                        <p></p>
-                                        <div>Users Management
-                                            <div class="small">Calendar of corporate events</div>
-                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <label class="font-noraml">Evaluation cycle:</label>
+                                        <div>
+                                            <!-- This cycle is a static text that appears when a period above is selected -->
+                                            <p class="form-control-static">Quarterly
 
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Organisation</h5>
-                                        <div class="ibox-tools">
-                                            <!--<span class="label label-warning-light pull-right">10 Messages</span>-->
+                                                <button class="btn-white btn btn-xs">Edit</button>
+
+
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="ibox-content">
-                                        Upload Job Titles
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Job</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-7">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Person</h5>
-                                        <div class="ibox-tools">
-                                        </div>
+                                        <h5>Planning phase</h5>
                                     </div>
                                     <div class="ibox-content">
-                                        Upload Persons
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Recruitment</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        Upload Applicants
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Performance</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                    </div>
-                                </div>
-                            </div>
+
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
 
-                            <div class="col-lg-4">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Training</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        Category
-                                        <br> Institution
-                                        <br> Instructor
+
+
                                     </div>
                                 </div>
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Career</h5>
+                                        <h5>Coaching/Evaluation Phases</h5>
                                         <div class="ibox-tools">
+                                            <span class="label label-warning-light pull-right">4 phases</span>
                                         </div>
                                     </div>
                                     <div class="ibox-content">
-                                        Policy Setting
-                                    </div>
-                                    <div class="ibox float-e-margins">
-                                        <div class="ibox-title">
-                                            <h5>Renumeration</h5>
-                                            <div class="ibox-tools">
+                                        <table>
+
+                                            <label class="font-noraml">Select a phase: </label>
+                                            <div>
+                                                <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
+                                                    <option value="1">1</option>
+                                                    <option selected value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                </select>
                                             </div>
-                                        </div>
-                                        <div class="ibox-content">
-                                            Personnel Administration
-                                            <br> Payroll
-                                        </div>
+
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
                                     </div>
                                 </div>
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title">
+                                        <h5>Final Evaluation Phases</h5>
+                                    </div>
+                                    <div class="ibox-content">
 
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                </div>
                             </div>
+
+
                         </div>
                         <div class="footer">
                             <div class="pull-right">
