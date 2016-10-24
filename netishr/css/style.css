@@ -10094,15 +10094,15 @@ body.md-skin {
         opacity: 1;
     }
 
-.netis_center {
+/*.netis_center {
     text-align: center;
 }
 
 .netis_right {
     text-align: right;
-}
+}*/
 
-.tab_jobdesc .netis_right button {
+/*.tab_jobdesc .netis_right button {
     margin-top: 20px;
 }
 
@@ -10134,22 +10134,15 @@ hr {
     padding: 10px;
 }
 
-#DataTables_Table_0_filter,
-#DataTables_Table_0_filter,
-#DataTables_Table_0_filter,
-.dataTables_wrapper {
-    padding-bottom: 0;
-}
-
 option {
     padding: 10px;
     cursor: pointer;
-}
+}*/
 
-.netis_collapse_body {
+/*.netis_collapse_body {
     padding: 15px;
     height: auto;
-}
+}*/
 
 .panel-title a {
     width: 100%;
@@ -10232,11 +10225,13 @@ option {
 
 .tree li a {
     border: 1px solid #ccc;
+    background: #1ab394;
     padding: 15px;
     text-decoration: none;
-    color: #666;
+    opacity: 0.5;
+    color: white;
     font-family: arial, verdana, tahoma;
-    font-size: 11px;
+    font-size: 14px;
     display: inline-block;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -10246,24 +10241,27 @@ option {
     -moz-transition: all 0.5s;
 }
 
-    .tree li a:hover, .tree li a:hover + ul li a {
-        background: #c8e4f8;
-        color: #000;
+    .tree li a.orchart_active1, .tree li a.orchart_active1:hover .tree li a:hover, .tree li a:hover + ul li a {
+        background: #1ab394;
+        color: white;
+        opacity: 1;
         border: 1px solid #94a0b4;
     }
 
-        .tree li a:hover + ul li::after,
-        .tree li a:hover + ul li::before,
-        .tree li a:hover + ul::before,
-        .tree li a:hover + ul ul::before {
-            border-color: #94a0b4;
-        }
+    .tree li a:hover + ul li::after,
+    .tree li a:hover + ul li::before,
+    .tree li a:hover + ul::before,
+    .tree li a:hover + ul ul::before {
+        border-color: #94a0b4;
+    }
 
-        .orchart_active,
-        .tree li a.orchart_active:hover,
-        .tree li a:hover, .tree li a:hover + ul li a.orchart_active:hover {
-            background: #FFFF7F;
-        }
+    .tree li a.orchart_active,
+    .tree li a.orchart_active:hover,
+    .tree li a:hover, .tree li a:hover + ul li a.orchart_active:hover {
+        background: #FFFFAA;
+        color: black;
+        opacity: 1;
+    }
 
 .html5buttons,
 .dataTables_length,
@@ -10281,7 +10279,11 @@ option {
     display: none;
 }
 
-.tab_responsibility {
+#main_function ul {
+    margin-left: 20px;
+}
+
+/*.tab_responsibility {
     margin: 20px auto;
 }
 
@@ -10299,4 +10301,4 @@ option {
 .netis_enforcement {
     height: 400px;
     padding: 0;
-}
+}*/
