@@ -6,15 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Account</title>
+    <title>NetisHR | Tabs </title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
 
 </head>
 
@@ -263,7 +260,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR.</span>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -376,13 +373,16 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Account</h2>
+                    <h2>Tabs</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
+                        <li>
+                            <a>UI Elements</a>
+                        </li>
                         <li class="active">
-                            <strong>Account</strong>
+                            <strong>Tabs</strong>
                         </li>
                     </ol>
                 </div>
@@ -390,214 +390,65 @@
 
                 </div>
             </div>
-            <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="wrapper wrapper-content animated fadeIn">
+
+
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="ibox float-e-margins">
-                            <!-- Show this ibox part when this user has more than one role -->
-                            <div class="ibox-title">
-                                <h5>Switch Role</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
+                    <div class="col-lg-6">
+                        <div class="tabs-container">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tab-1"> Organisation units</a></li>
+                                <li class=""><a data-toggle="tab" href="#tab-2">Job Titles/Persons</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane active">
+                                    <div class="panel-body">
+                                        <strong>Chart showing organization units</strong>
+
+                                        <p>(Chart showing the company, parent/child companies, branches, departments as well as groups within the company)</p>
+                                    </div>
+                                </div>
+                                <div id="tab-2" class="tab-pane">
+                                    <div class="panel-body">
+                                        <strong>Chart showing Job Titles/Persons</strong>
+
+                                        <p>(Chart showing job titles and persons. Gives a switch to show without or with persons)</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="ibox-content">
-                                <form class="form-horizontal">
-                                    <p>You hold more than one role. Select current active role.</p>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Active role: </label>
-                                        <select data-placeholder="Choose a role..." class="chosen-select">
-                                            <option value="1">User</option>
-                                            <option value="1">HR Admin</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="ibox float-e-margins">
-                            <!-- Show this ibox part when this user has more than one job title -->
-                            <div class="ibox-title">
-                                <h5>Switch Job Title</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <form class="form-horizontal">
-                                    <p>You hold more than one job title. Select current active job title.</p>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Active job tile: </label>
-                                        <select data-placeholder="Choose a job title..." class="chosen-select">
-                                            <option value="1">Head of HR</option>
-                                            <option value="2">HR Manager</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>Change Email Address</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <form class="form-horizontal">
-                                    <p>Your email address is also your login username. To authorise this change you need to verify your password even though you are already logged in.</p>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Email</label>
 
-                                        <div class="col-lg-10">
-                                            <input type="email" placeholder="arnold.siboro@netikaindonesia.com" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Password</label>
 
-                                        <div class="col-lg-10">
-                                            <input type="password" placeholder="Password" class="form-control"><span class="help-block m-b-none">8 or more alphanumerics</span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-lg-offset-2 col-lg-10">
-                                            <div class="i-checks">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-lg-offset-2 col-lg-10">
-                                            <button class="btn btn-sm btn-white" type="submit">Change Email</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>Change Password</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <form class="form-horizontal">
-                                    <p>Your email address is also your login username. To authorise this change you need to verify your password even though you are already logged in.</p>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Current Password</label>
-
-                                        <div class="col-lg-10">
-                                            <input type="password" placeholder="Password" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">New Password</label>
-
-                                        <div class="col-lg-10">
-                                            <input type="password" placeholder="Password" class="form-control"><span class="help-block m-b-none">8 or more alphanumerics</span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Confirm Password</label>
-
-                                        <div class="col-lg-10">
-                                            <input type="password" placeholder="Password" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-lg-offset-2 col-lg-10">
-                                            <div class="i-checks">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-lg-offset-2 col-lg-10">
-                                            <button class="btn btn-sm btn-white" type="submit">Change Password</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="pull-right">
-                    <strong>Version</strong> 2.x.xxxx.
-                </div>
-                <div>
-                    <strong>Copyright</strong> Netika Indonesia &copy; 2016
-                </div>
-            </div>
 
+
+
+
+                </div>
+                <div class="footer">
+                    <div class="pull-right">
+                        <strong>Version</strong> 2.x.xxxx.
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> Netika Indonesia &copy; 2016
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
 
 
-    <!-- Mainly scripts -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <!-- Mainly scripts -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Custom and plugin javascript -->
-    <script src="js/inspinia.js"></script>
-    <script src="js/plugins/pace/pace.min.js"></script>
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
 
-    <!-- iCheck -->
-    <script src="js/plugins/iCheck/icheck.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.i-checks').iCheck({
-                checkboxClass: 'icheckbox_square-green',
-                radioClass: 'iradio_square-green',
-            });
-        });
-    </script>
+
 </body>
 
 </html>
