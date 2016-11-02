@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Calendar</title>
+    <title>NetisHR | My Calendar</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -158,16 +158,16 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-8">
-                    <h2>Calendar</h2>
+                    <h2>My Calendar</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            Administrator
+                            Remuneration
                         </li>
                         <li class="active">
-                            <strong>Corporate Calendar</strong>
+                            <strong>My Calendar</strong>
                         </li>
                     </ol>
                 </div>
@@ -177,38 +177,200 @@
                     <div class="col-lg-3">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
-                                <h5>Public Holidays</h5>
+                                <h5>Allowances</h5>
                                 <div class="ibox-tools">
+
+
+                                    <div class="form-group">
+                                        <select data-placeholder="Choose year..." class="chosen-select">
+                                            <option value="2">2016</option>
+                                            <option value="3">2017</option>
+                                            <option value="4">2018</option>
+                                        </select>
+                                    </div>
+
 
                                 </div>
                             </div>
                             <div class="ibox-content">
-                                <strong>Tahun Baru</strong>
-                                <br> Tue, December 31, 2016
-                                <strong>Cuti Bersama</strong>
-                                <br> Tue, July 1,2,3, 2016
+                                <strong>Annual Leave</strong>
+                                <br> Remaining 2016: 12.0 from 12.0
+                                <br>Residual from 2015: 1.0 of 3.0
+
                             </div>
                         </div>
                         <div class="ibox float-e-margins">
+
                             <div class="ibox-title">
-                                <h5>Corporate Holidays</h5>
-                                <div class="ibox-tools">
-
-
-
-                                </div>
-                            </div>
+                                <h5>Upcoming absences</h5></div>
                             <div class="ibox-content">
-                                <strong>Company Anniversary</strong>
-                                <br>Wed, August 1, 2016
+                                Vacation 1 day
+                                <br>Wed Nov 2, 2016
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-9">
                         <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>Striped Table </h5>
+                            <div class="ibox-title"> Show corporate calendar
+
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked class="onoffswitch-checkbox" id="example1">
+                                    <label class="onoffswitch-label" for="example1">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+
+                                <div class="pull-right">
+
+                                    Apply:
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#applyleave">Leave</button>
+                                    <div class="modal inmodal" id="applyleave" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content animated bounceInRight">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <i class="fa fa-laptop modal-icon"></i>
+                                                    <h4 class="modal-title">New group</h4>
+                                                    <small class="font-bold">Please enter new group.</small>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Type:</label>
+                                                        <div>
+                                                            <select data-placeholder="Choose type..." class="chosen-select" tabindex="2">
+                                                                <option value="1">Company</option>
+                                                                <option value="2">Branch</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Name: </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Description: </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#applyovertime">Overtime</button>
+                                    <div class="modal inmodal" id="applyovertime" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content animated bounceInRight">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <i class="fa fa-laptop modal-icon"></i>
+                                                    <h4 class="modal-title">New group</h4>
+                                                    <small class="font-bold">Please enter new group.</small>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Type:</label>
+                                                        <div>
+                                                            <select data-placeholder="Choose type..." class="chosen-select" tabindex="2">
+                                                                <option value="1">Company</option>
+                                                                <option value="2">Branch</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Name: </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Description: </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#applyattendance">Attendance</button>
+                                    <div class="modal inmodal" id="applyovertime" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content animated bounceInRight">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <i class="fa fa-laptop modal-icon"></i>
+                                                    <h4 class="modal-title">New group</h4>
+                                                    <small class="font-bold">Please enter new group.</small>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Type:</label>
+                                                        <div>
+                                                            <select data-placeholder="Choose type..." class="chosen-select" tabindex="2">
+                                                                <option value="1">Company</option>
+                                                                <option value="2">Branch</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Name: </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Description: </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+
+
                                 <div class="ibox-tools">
+
+                                    <!--
                                     <a class="collapse-link">
                                         <i class="fa fa-chevron-up"></i>
                                     </a>
@@ -224,6 +386,7 @@
                                     <a class="close-link">
                                         <i class="fa fa-times"></i>
                                     </a>
+-->
                                 </div>
                             </div>
                             <div class="ibox-content">
