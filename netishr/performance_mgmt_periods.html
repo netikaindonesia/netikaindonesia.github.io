@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>NetisHR</title>
+    <title>NetisHR | Performance Management Periods</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -25,16 +25,240 @@
     <!-- Gritter -->
     <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
 
+    <!-- X-editable CDN styles -->
+    <link href="css/bootstrap-editable.css" rel="stylesheet" />
+
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+
 
 </head>
 
 <body>
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
-			<div w3-include-html="navigation.html"></div>
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Arnold Siboro</strong>
+                             </span> <span class="text-muted text-xs block">HR Admin <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="account.html">Account</a></li>
+                                <li><a href="mysettings.html">Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login_two_columns.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            NHR
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="index.html"><i class="fa fa-diamond"></i><span class="nav-label">Main</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-th-large"></i><span class="nav-label">Organisation</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="organisation_units.html">Units</a></li>
+                            <li><a href="#">Structure<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="job_levels.html">Job Levels/Sub-levels</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_roles.html">Job Roles/Role Bands</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_clans.html">Job Clans/Families</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_titles.html">Job Titles</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="organisation_diagrams.html">Diagrams</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label">Job</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="#"><span class="nav-label">Competency Model</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="competency_dictionary.html">Competency Dictionary</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Competency Matrix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="job_description.html">Job Description</a></li>
+                            <li><a href="#">Workload Analysis</a></li>
+                            <li><a href="accountability_matrix.html">Accountability Matrix</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">Person</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="persons.html">Staffs</a></li>
+                            <li><a href="#">Applicants</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-pie-chart"></i> <span class="nav-label">Recruitment</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="#">Manpower Planning</a></li>
+                            <li><a href="#">Recruitment Planning</a></li>
+                            <li><a href="#">Selection Process</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-flask"></i><span class="nav-label">Performance</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="graph_flot.html"><span class="nav-label">Indicators<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="performance_kpi_view.html">KPIs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">OKRs</a>
+                                    </li>
+                                    <li>
+                                        <a href="performance_bsc.html">BSCs</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#"><span class="nav-label">Planning</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="performance_planning.html">Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Process Targets (Competency)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="performance_coaching.html">Coaching</a></li>
+                            <li><a href="#">Evidence</a></li>
+                            <li><a href="#"><span class="nav-label">Evaluation</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Periodical Evaluation - Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Final Evaluation - Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Final Evaluation - Process Targets (Competency)</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">Performance Information</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Training</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="#">Syllabus</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Individual Development Plan</a></li>
+                            <li><a href="#">Training Plans and Execution</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Career</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="#">Individual Career Plan</a></li>
+                            <li><a href="#">Search Talent</a></li>
+                            <li><a href="#">Talent Pool</a></li>
+                            <li><a href="#">Talent Development Program</a></li>
+                            <li><a href="#">Talent Readiness</a></li>
+                            <li><a href="#">Transfer</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Remuneration </span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li>
+                                <a href="#">Personnel Administration <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="mycalendar.html">My Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Work Shifts</a>
+                                    </li>
+                                    <!--
+<li>
+                                <a href="#">Leaves</a>
+                            </li>
+                            <li>
+                                <a href="#">Overtimes</a>
+                            </li>
+                            <li>
+                                <a href="#">Attendances</a>
+                            </li>
+-->
+                                    <li>
+                                        <a href="#">Benefits</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Business Trips</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Payroll <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Salary Entry</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tax Calculation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Overtime Calculation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Salary Calculation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Payslip</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="administrator.html"><i class="fa fa-diamond"></i><span class="nav-label">Administrator</span></a>
+                    </li>
+                    <!-- This menu below is to be accessed only by site manager -->
+                    <li>
+                        <a href="site_management.html"><i class="fa fa-diamond"></i><span class="nav-label">Site Management</span></a>
+                    </li>
+                    <!-- This menu below is to be accessed only by system manager -->
+                    <li>
+                        <a href="system_management.html"><i class="fa fa-diamond"></i><span class="nav-label">System Management</span></a>
+                    </li>
+
+
+                </ul>
+
+            </div>
         </nav>
+
         <div id="page-wrapper" class="gray-bg dashbard-1">
             <div class="row border-bottom">
                 <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -243,14 +467,22 @@
 
                                         </div>
                                     </div>
+                                    
+                                    
                                     <div class="ibox-content">
                                         <!-- Evaluation cycle is loaded after Performance Management Period is selected above -->
-                                        <label class="font-noraml">Evaluation cycle:</label>
                                         <div>
-                                            <!-- This cycle is a static text. When "Edit" button is clicked, allow cycle to be selected from among these: monthly, quarterly, half-yearly, yearly -->
-                                            <p class="form-control-static">Quarterly
-                                                <button class="btn-white btn btn-xs">Edit</button>
-                                            </p>
+
+                                        
+                                            <div><label class="font-noraml">KPI Evaluation cycle:&nbsp;&nbsp;</label>
+                                            <a href="#" id="yesno" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">not selected</a>
+                                            </div>
+
+                                            
+                                            
+                                            <div><label class="font-noraml">Competency Evaluation cycle:&nbsp;&nbsp;</label><a href="#" id="yesno" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">not selected</a>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -872,6 +1104,9 @@
         <script src="js/plugins/peity/jquery.peity.min.js"></script>
         <script src="js/demo/peity-demo.js"></script>
 
+        <!-- X-editable CDN styles -->
+        <script src="js/bootstrap-editable.min.js"></script>
+
         <!-- Custom and plugin javascript -->
         <script src="js/inspinia.js"></script>
         <script src="js/plugins/pace/pace.min.js"></script>
@@ -893,6 +1128,9 @@
 
         <!-- Toastr -->
         <script src="js/plugins/toastr/toastr.min.js"></script>
+        
+        <!-- Chosen -->
+        <script src="js/plugins/chosen/chosen.jquery.js"></script>
 
 
         <script>
@@ -997,13 +1235,129 @@
                     data: doughnutData,
                     options: doughnutOptions
                 });
+                
+                $('.chosen-select').chosen({
+                    width: "100%"
+                });
+
+
 
             });
         </script>
-			<script src="js/w3data.js"></script>
-	<script>
-		w3IncludeHTML();
-	</script>
+        
+            <-- X-Editable scripts --></-->
+    <script>
+        $(function () {
+
+
+            //turn to inline mode
+            $.fn.editable.defaults.mode = 'inline';
+
+            //defaults
+            $.fn.editable.defaults.url = '#';
+
+            //editables
+            $('#username').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'username',
+                title: 'Enter username'
+            });
+
+            $('#firstname').editable({
+                validate: function (value) {
+                    if ($.trim(value) == '') return 'This field is required';
+                }
+            });
+
+            $('#yesno').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'No'
+                    },
+                    {
+                        value: 1,
+                        text: 'Yes'
+                    }
+                ],
+                display: function (value, sourceData) {
+                    var colors = {
+                            "": "gray",
+                            1: "green",
+                            2: "blue"
+                        },
+                        elem = $.grep(sourceData, function (o) {
+                            return o.value == value;
+                        });
+
+                    if (elem.length) {
+                        $(this).text(elem[0].text).css("color", colors[value]);
+                    } else {
+                        $(this).empty();
+                    }
+                }
+            });
+
+            $('#dob').editable();
+
+            $('#event').editable({
+                placement: 'right',
+                combodate: {
+                    firstItem: 'name'
+                }
+            });
+
+            $('#comments').editable({
+                showbuttons: 'bottom'
+            });
+
+            $('#fruits').editable({
+                pk: 1,
+                limit: 3,
+                source: [
+                    {
+                        value: 1,
+                        text: 'banana'
+                    },
+                    {
+                        value: 2,
+                        text: 'peach'
+                    },
+                    {
+                        value: 3,
+                        text: 'apple'
+                    },
+                    {
+                        value: 4,
+                        text: 'watermelon'
+                    },
+                    {
+                        value: 5,
+                        text: 'orange'
+                    }
+                ]
+            });
+
+            $('#user .editable').on('hidden', function (e, reason) {
+                if (reason === 'save' || reason === 'nochange') {
+                    var $next = $(this).closest('tr').next().find('.editable');
+                    if ($('#autoopen').is(':checked')) {
+                        setTimeout(function () {
+                            $next.editable('show');
+                        }, 300);
+                    } else {
+                        $next.focus();
+                    }
+                }
+            });
+
+        });
+    </script>
+
+
 
 </body>
 
