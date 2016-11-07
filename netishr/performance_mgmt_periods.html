@@ -389,7 +389,7 @@
                 </nav>
             </div>
             <div class="row">
-
+                
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
@@ -413,16 +413,13 @@
 
                     <div class="wrapper wrapper-content">
                         <div class="row">
-                            <div class="col-lg-5">
+                            
+                            
+                            <div class="col-lg-12">
+                             
                                 <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Performance Management Period</h5>
-                                        <div class="ibox-tools">
-                                            <span class="label label-warning-light pull-right">3 periods</span>
-                                        </div>
-                                    </div>
                                     <div class="ibox-content">
-                                        <label class="font-noraml">Select a period: </label>
+                                        <label class="font-noraml">Select a performance management period: </label>
                                         <div>
                                             <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
                                                 <option value="January 2016-December 2016">January 2016-December 2016</option>
@@ -463,93 +460,92 @@
                                                 </div>
                                             </div>
 
-
-
                                         </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="ibox-content">
-                                        <!-- Evaluation cycle is loaded after Performance Management Period is selected above -->
-                                        <div>
-
-                                        
-                                            <div><label class="font-noraml">KPI Evaluation cycle:&nbsp;&nbsp;</label>
-                                            <a href="#" id="yesno" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">not selected</a>
-                                            </div>
-
-                                            
-                                            
-                                            <div><label class="font-noraml">Competency Evaluation cycle:&nbsp;&nbsp;</label><a href="#" id="yesno" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">not selected</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <!-- Planning phase can be set anytime, not necessarily within the selected Performance Management Period -->
-                                        <h5>Planning phase</h5>
-                                    </div>
-                                    <div class="ibox-content">
-
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <label class="control-label" for="date_added">From:</label>
-                                                            <div class="input-group date">
-                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="form-group">
-                                                            <label class="control-label" for="date_added">To:</label>
-                                                            <div class="input-group date">
-                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-
-
                                     </div>
                                 </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
+                                <div class="tabs-container">
+                                    <div class="tabs-left">
 
-                                        <!-- Coaching phase must bet set selected within performance management period -->
-                                        <!-- Planning phase can be set anytime, not necessarily within the selected Performance Management Period -->
-                                        <h5>Coaching/Evaluation Phases</h5>
-                                        <div class="ibox-tools">
-                                            <span class="label label-warning-light pull-right">4 phases</span>
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <table>
-
-                                            <label class="font-noraml">Select a phase: </label>
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab-1">KPI</a></li>
+                                            <li class=""><a data-toggle="tab" href="#tab-2">Competency</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="tab-1" class="tab-pane active">
+                                                <div class="panel-body">
+                                                                            
+                                                    <div class="col-lg-6">
+                                                        
+                                             <label>Select KPI evaluation cycle: </label>
                                             <div>
-                                                <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
-                                                    <option value="1">1</option>
-                                                    <option selected value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="3">4</option>
+                                                <select data-placeholder="Choose a cycle..." class="chosen-select" tabindex="2">
+                                                    <option value="1">monthly</option>
+                                                    <option selected value="2">quarterly</option>
+                                                    <option value="3">half-yearly</option>
+                                                    <option value="3">yearly</option>
                                                 </select>
                                             </div>
 
-
+                                                        
+                                                        <label>Planning phase</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                
+                                                        <label>Final Evaluation Phases</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                            </div>
+                                                    <div class="col-lg-6">
+                                        <!-- Coaching phase must bet set selected within performance management period -->
+                                        <!-- Planning phase can be set anytime, not necessarily within the selected Performance Management Period -->
+                                         <label>Coaching/Evaluation Phases</label>
+                                        <p></p>        
+                                        <label class="font-noraml">Phase 1</label>
+                                        <table>
                                             <tbody>
                                                 <tr>
                                                     <td>
@@ -574,15 +570,59 @@
                                             </tbody>
                                         </table>
 
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <!-- Final evaluation phase must be set anytime, not necessarily within the selected Performance Management Period -->
-                                        <h5>Final Evaluation Phases</h5>
-                                    </div>
-                                    <div class="ibox-content">
+                                        <label class="font-noraml">Phase 2</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
+                                        <label class="font-noraml">Phase 3</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                                        
+                                        <label class="font-noraml">Phase 4</label>
                                         <table>
                                             <tbody>
                                                 <tr>
@@ -609,6 +649,208 @@
                                         </table>
 
 
+                                                        
+                            </div>      
+                                                    
+                                                </div>
+
+                                            </div>
+                                            <div id="tab-2" class="tab-pane">
+                                                <div class="panel-body">
+                                                                            
+                                                    <div class="col-lg-6">
+                                                        
+                                             <label>Select competency evaluation cycle: </label>
+                                            <div>
+                                                <select data-placeholder="Choose a cycle..." class="chosen-select" tabindex="2">
+                                                    <option value="1">monthly</option>
+                                                    <option selected value="2">quarterly</option>
+                                                    <option value="3">half-yearly</option>
+                                                    <option value="3">yearly</option>
+                                                </select>
+                                            </div>
+
+                                                        
+                                                        <label>Planning phase</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                
+                                                        <label>Final Evaluation Phases</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                            </div>
+                                                    <div class="col-lg-6">
+                                        <!-- Coaching phase must bet set selected within performance management period -->
+                                        <!-- Planning phase can be set anytime, not necessarily within the selected Performance Management Period -->
+                                         <label>Coaching/Evaluation Phases</label>
+                                        <p></p>        
+                                        <label class="font-noraml">Phase 1</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <label class="font-noraml">Phase 2</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <label class="font-noraml">Phase 3</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                                        
+                                        <label class="font-noraml">Phase 4</label>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">From:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="date_added">To:</label>
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+                                                        
+                            </div>      
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>      
+                                
+                            </div>
+                            
+                           <div class="col-lg-12">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-content">
+                                    <div>
+                                        <button class="btn btn-white btn-xs" type="submit">Cancel</button>
+                                        <button class="btn btn-primary btn-xs" type="submit">Save changes</button>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
