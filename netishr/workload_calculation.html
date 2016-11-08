@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Workload Analysis PIC</title>
+    <title>NetisHR | Workload Calculation</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -46,6 +46,9 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- X-editable CDN styles -->
+    <link href="css/bootstrap-editable.css" rel="stylesheet" />
 
 
 </head>
@@ -400,7 +403,7 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Workload Analysis PIC</h2>
+                    <h2>Workload Calculation</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
@@ -409,7 +412,7 @@
                             <a>Job</a>
                         </li>
                         <li class="active">
-                            <strong>Workload Analysis PIC</strong>
+                            <strong>Workload Calculation</strong>
                         </li>
                     </ol>
                 </div>
@@ -426,7 +429,8 @@
                             <div class="ibox-content">
 
                                 <div class="form-group">
-                                    <!-- Initially select first staff -->
+                                    <!-- Show the job titles assigned to logged in user -->
+                                    <!-- When logged in user has HR Admin privilege, show all job titles -->
                                     <div>
                                         <label class="control-label" for="status">Select a job title: </label>
                                         <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
@@ -436,48 +440,116 @@
                                         </select>
                                     </div>
                                 </div>
+
+<!-- Fill out the following table according to the job title selected above -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Activity</th>
+                                            <th>Role</th>
+                                            <th>Routine</th>
+                                            <th>Trigger factor</th>
+                                            <th>Cycle</th>
+                                            <th>Frequency</th>
+                                            <th>Hour(s) per occurence</th>
+                                            <th>Hour(s) per year</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Lorem Ipsum</td>
+                                            <td>R</td>
+                                            <td>
+                                                <div class="switch">
+                                                    <div class="onoffswitch">
+                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="example1">
+                                                        <label class="onoffswitch-label" for="example1">
+                                                            <span class="onoffswitch-inner"></span>
+                                                            <span class="onoffswitch-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>N/A</td>
+                                            <td>
+                                                <a href="#" id="yesno" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">not selected</a>
+                                            </td>
+                                            <td>
+                                            <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter boss' name" class="editable editable-click"></a>
+                                            </td>
+                                            <td>
+                                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter boss' name" class="editable editable-click"></a>
+                                            </td>
+                                            <td>XX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1.1</td>
+                                            <td>Ipsum Lorem</td>
+                                            <td>A</td>
+                                            <td>
+                                            <div class="switch">
+                                                    <div class="onoffswitch">
+                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="example1">
+                                                        <label class="onoffswitch-label" for="example1">
+                                                            <span class="onoffswitch-inner"></span>
+                                                            <span class="onoffswitch-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>N/A</td>
+                                            <td>
+                                            <a href="#" id="yesno" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">not selected</a>
+                                            </td>
+                                            <td>
+                                            <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter boss' name" class="editable editable-click"></a>
+                                            </td>
+                                            <td>
+                                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter boss' name" class="editable editable-click"></a>
+                                            </td>
+                                            <td>YY</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Lorem Ipsum</td>
+                                            <td>I</td>
+                                            <td>
+                                            <div class="switch">
+                                                    <div class="onoffswitch">
+                                                        <input type="checkbox" checked class="onoffswitch-checkbox" id="example1">
+                                                        <label class="onoffswitch-label" for="example1">
+                                                            <span class="onoffswitch-inner"></span>
+                                                            <span class="onoffswitch-switch"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Blah blah</td>
+                                            <td>
+                                            <a href="#" id="yesno" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">not selected</a>
+                                            </td>
+                                            <td>
+                                            <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter boss' name" class="editable editable-click"></a>
+                                            </td>
+                                            <td>
+                                                <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter boss' name" class="editable editable-click"></a>
+                                            </td>
+                                            <td>ZZ</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
 
-
+                <!--
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="ibox">
-                            <div class="ibox-content">
-                                <p>
-                                    Select one or more job titles whose workload analysis is to be done by the person holding the job title above.
-                                </p>
-                                <p>
-
-
-                                    <input type="checkbox" class="js-switch" checked />&nbsp;Show direct subordinates only
-                                </p>
-
-                                <form id="form" action="#" class="wizard-big">
-                                    <select class="form-control dual_select" multiple>
-                                        <option value="1">Jobtitle1</option>
-                                        <option value="2">Jobtitle2</option>
-                                        <option value="3">Jobtitle3</option>
-                                        <option selected value="4">Jobtitle4</option>
-                                        <option selected value="5">Jobtitle5</option>
-                                        <option value="6">Jobtitle6</option>
-                                        <option value="7">Jobtitle7</option>
-                                        <option value="8">Jobtitle8</option>
-                                        <option value="9">Jobtitle9</option>
-                                        <option value="10">Jobtitle110</option>
-                                        <option value="11">Jobtitle11</option>
-                                        <option value="12">Jobtitle12</option>
-                                    </select>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-
                     <div class="col-lg-12">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title  back-change">
@@ -490,6 +562,7 @@
 
                     </div>
                 </div>
+-->
             </div>
             <div class="footer">
                 <div class="pull-right">
@@ -506,6 +579,10 @@
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- X-editable CDN styles -->
+    <script src="js/bootstrap-editable.min.js"></script>
 
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
@@ -878,6 +955,126 @@
                 'min': 20,
                 'max': 80
             }
+        });
+    </script>
+    
+        <-- X-Editable scripts --></-->
+    <script>
+        $(function () {
+
+
+            //turn to inline mode
+            $.fn.editable.defaults.mode = 'inline';
+
+            //defaults
+            $.fn.editable.defaults.url = '#';
+
+            //editables
+            $('#username').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'username',
+                title: 'Enter username'
+            });
+
+            $('#firstname').editable({
+                validate: function (value) {
+                    if ($.trim(value) == '') return 'This field is required';
+                }
+            });
+
+            $('#yesno').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Monthly'
+                    },
+                    {
+                        value: 1,
+                        text: 'Quarterly'
+                    },
+                    {
+                        value: 2,
+                        text: 'Half-yearly'
+                    },
+                    {
+                        value: 3,
+                        text: 'Yearly'
+                    }
+                ],
+                display: function (value, sourceData) {
+                    var colors = {
+                            "": "gray",
+                            1: "green",
+                            2: "blue"
+                        },
+                        elem = $.grep(sourceData, function (o) {
+                            return o.value == value;
+                        });
+
+                    if (elem.length) {
+                        $(this).text(elem[0].text).css("color", colors[value]);
+                    } else {
+                        $(this).empty();
+                    }
+                }
+            });
+
+            $('#dob').editable();
+
+            $('#event').editable({
+                placement: 'right',
+                combodate: {
+                    firstItem: 'name'
+                }
+            });
+
+            $('#comments').editable({
+                showbuttons: 'bottom'
+            });
+
+            $('#fruits').editable({
+                pk: 1,
+                limit: 3,
+                source: [
+                    {
+                        value: 1,
+                        text: 'banana'
+                    },
+                    {
+                        value: 2,
+                        text: 'peach'
+                    },
+                    {
+                        value: 3,
+                        text: 'apple'
+                    },
+                    {
+                        value: 4,
+                        text: 'watermelon'
+                    },
+                    {
+                        value: 5,
+                        text: 'orange'
+                    }
+                ]
+            });
+
+            $('#user .editable').on('hidden', function (e, reason) {
+                if (reason === 'save' || reason === 'nochange') {
+                    var $next = $(this).closest('tr').next().find('.editable');
+                    if ($('#autoopen').is(':checked')) {
+                        setTimeout(function () {
+                            $next.editable('show');
+                        }, 300);
+                    } else {
+                        $next.focus();
+                    }
+                }
+            });
+
         });
     </script>
 
