@@ -26,9 +26,232 @@
     <div id="wrapper">
 
         <nav class="navbar-default navbar-static-side" role="navigation">
-		    <div class="sidebar-collapse ">
-				<div w3-include-html="navigation.html"></div>
-			</div>
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Arnold Siboro</strong>
+                             </span> <span class="text-muted text-xs block">HR Admin <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="account.html">Account</a></li>
+                                <li><a href="mysettings.html">Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login_two_columns.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            NHR
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="index.html"><i class="fa fa-diamond"></i><span class="nav-label">Main</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-th-large"></i><span class="nav-label">Organisation</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="organisation_units.html">Units</a></li>
+                            <li><a href="#">Structure<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="job_levels.html">Job Levels/Sub-levels</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_roles.html">Job Roles/Role Bands</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_clans.html">Job Clans/Families</a>
+                                    </li>
+                                    <li>
+                                        <a href="job_titles.html">Job Titles</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="organisation_diagrams.html">Diagrams</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i><span class="nav-label">Job</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="#"><span class="nav-label">Competency Model</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="competency_dictionary.html">Competency Dictionary</a>
+                                    </li>
+                                    <li>
+                                        <a href="competency_matrix.html">Competency Matrix</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="job_description.html">Job Description</a></li>
+                            <li><a href="#"><span class="nav-label">Workload Analysis</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="workloadanalysis_pic.html">PIC Assignment</a>
+                                    </li>
+                                    <li>
+                                        <a href="workload_calculation.html">Workload Calculation</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="accountability_matrix.html">Accountability Matrix</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">Person</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="persons.html">Staffs</a></li>
+                            <li><a href="#">Applicants</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-pie-chart"></i> <span class="nav-label">Recruitment</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="#">Manpower Planning</a></li>
+                            <li><a href="#">Recruitment Planning</a></li>
+                            <li><a href="#">Selection Process</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-flask"></i><span class="nav-label">Performance</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="graph_flot.html"><span class="nav-label">Indicators<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="performance_kpi_view.html">KPIs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">OKRs</a>
+                                    </li>
+                                    <li>
+                                        <a href="performance_bsc.html">BSCs</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#"><span class="nav-label">Planning</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="performance_planning.html">Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Process Targets (Competency)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="performance_coaching.html">Coaching</a></li>
+                            <li><a href="#">Evidence</a></li>
+                            <li><a href="#"><span class="nav-label">Evaluation</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Periodical Evaluation - Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Final Evaluation - Result Targets (KPI)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Final Evaluation - Process Targets (Competency)</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">Performance Information</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Training</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="#">Syllabus</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Individual Development Plan</a></li>
+                            <li><a href="#">Training Plans and Execution</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">Career</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li><a href="#">Individual Career Plan</a></li>
+                            <li><a href="#">Search Talent</a></li>
+                            <li><a href="#">Talent Pool</a></li>
+                            <li><a href="#">Talent Development Program</a></li>
+                            <li><a href="#">Talent Readiness</a></li>
+                            <li><a href="#">Transfer</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Remuneration </span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level  ">
+                            <li>
+                                <a href="#">Personnel Administration <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="mycalendar.html">My Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Work Shifts</a>
+                                    </li>
+                                    <!--
+<li>
+                                <a href="#">Leaves</a>
+                            </li>
+                            <li>
+                                <a href="#">Overtimes</a>
+                            </li>
+                            <li>
+                                <a href="#">Attendances</a>
+                            </li>
+-->
+                                    <li>
+                                        <a href="#">Benefits</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Business Trips</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Payroll <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Salary Entry</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tax Calculation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Overtime Calculation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Salary Calculation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Payslip</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="administrator.html"><i class="fa fa-diamond"></i><span class="nav-label">Administrator</span></a>
+                    </li>
+                    <!-- This menu below is to be accessed only by site manager -->
+                    <li>
+                        <a href="site_management.html"><i class="fa fa-diamond"></i><span class="nav-label">Site Management</span></a>
+                    </li>
+                    <!-- This menu below is to be accessed only by system manager -->
+                    <li>
+                        <a href="system_management.html"><i class="fa fa-diamond"></i><span class="nav-label">System Management</span></a>
+                    </li>
+
+
+                </ul>
+
+            </div>
         </nav>
 
         <div id="page-wrapper" class="gray-bg">
@@ -182,8 +405,8 @@
                                         <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
                                 </span>
                                 </div>
-								<br>
-								<button type="button" class="btn btn-primary btn-xs">New Person</button>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-xs">New Person</button>
                                 <div class="clients-list">
                                     <ul class="nav nav-tabs">
                                         <span class="pull-right small text-muted">16 persons</span>
@@ -195,25 +418,25 @@
                                             <div class="full-height-scroll">
                                                 <div class="table-responsive">
                                                     <table class="table table-striped table-hover">
-														<thead>
-															<th>
-															</th>
-															<th>
+                                                        <thead>
+                                                            <th>
+                                                            </th>
+                                                            <th>
                                                                 NIP
-															</th>                                                            
-															<th>
-																Name
-															</th>
-															<th>
-																Organization Unit
-															</th>
-															<th>
-																Job Title
-															</th>
-															<th>
-																Action
-															</th>
-														</thead>													
+                                                            </th>
+                                                            <th>
+                                                                Name
+                                                            </th>
+                                                            <th>
+                                                                Organization Unit
+                                                            </th>
+                                                            <th>
+                                                                Job Title
+                                                            </th>
+                                                            <th>
+                                                                Action
+                                                            </th>
+                                                        </thead>
                                                         <tbody>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
@@ -221,10 +444,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -234,10 +461,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -247,10 +478,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -260,10 +495,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -273,10 +512,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -286,10 +529,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -299,10 +546,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -312,10 +563,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -325,10 +580,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -338,10 +597,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -351,10 +614,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -364,10 +631,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -377,10 +648,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -390,14 +665,18 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
-														</tbody>
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -406,25 +685,25 @@
                                             <div class="full-height-scroll">
                                                 <div class="table-responsive">
                                                     <table class="table table-striped table-hover">
-														<thead>
-															<th>
-															</th>
-															<th>
+                                                        <thead>
+                                                            <th>
+                                                            </th>
+                                                            <th>
                                                                 NIP
-															</th>                                                            
-															<th>
-																Name
-															</th>
-															<th>
-																Organization Unit
-															</th>
-															<th>
-																Job Title
-															</th>
-															<th>
-																Action
-															</th>
-														</thead>													
+                                                            </th>
+                                                            <th>
+                                                                Name
+                                                            </th>
+                                                            <th>
+                                                                Organization Unit
+                                                            </th>
+                                                            <th>
+                                                                Job Title
+                                                            </th>
+                                                            <th>
+                                                                Action
+                                                            </th>
+                                                        </thead>
                                                         <tbody>
                                                             <tr>
                                                                 <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
@@ -432,10 +711,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -445,10 +728,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -458,10 +745,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -471,10 +762,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -484,10 +779,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -497,10 +796,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -510,10 +813,14 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
                                                                 <td> IT Team</td>
                                                                 <td> IT Developer</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -523,14 +830,18 @@
                                                                 <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
                                                                 <td> Marketing Communication</td>
                                                                 <td> Staff</td>
-																<td>
+                                                                <td>
                                                                     <div class="btn-group">
-                                                                        <a href="persons_profile.html"><button class="btn-white btn btn-xs">Detail</button></a>
-                                                                        <a><button class="btn-white btn btn-xs">Delete</button><a>
+                                                                        <a href="persons_profile.html">
+                                                                            <button class="btn-white btn btn-xs">Detail</button>
+                                                                        </a>
+                                                                        <a>
+                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                            <a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
-														</tbody>
+                                                        </tbody>
                                                     </table>
                                                 </div>
                                             </div>
@@ -557,13 +868,13 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-8">
-												<h4>
+                                                <h4>
 													NIP : 10033
 												</h4>
-												<h4>
+                                                <h4>
 													Job Title : IT Developer
 												</h4>
-												<h4>
+                                                <h4>
 													Organization Unit : IT Team
 												</h4>
                                             </div>
@@ -576,10 +887,10 @@
                                                 <ul class="list-group clear-list">
                                                     <li class="list-group-item fist-item">
                                                         <span class="pull-right"> Permanent </span> Employment Type
-                                                    </li>         
+                                                    </li>
                                                     <li class="list-group-item">
                                                         <span class="pull-right"> DKI Jakarta</span> Placement
-                                                    </li>                                           
+                                                    </li>
                                                     <li class="list-group-item">
                                                         <span class="pull-right"> Male </span> Gender
                                                     </li>
@@ -589,37 +900,37 @@
                                                     <li class="list-group-item">
                                                         <span class="pull-right"> Indonesia </span> Country of Birth
                                                     </li>
-													<li class="list-group-item">
+                                                    <li class="list-group-item">
                                                         <span class="pull-right"> Medan </span> City of Birth
                                                     </li>
-													<li class="list-group-item">
+                                                    <li class="list-group-item">
                                                         <span class="pull-right"> 20 February 1991</span> Date of Birth
                                                     </li>
-													<li class="list-group-item">
+                                                    <li class="list-group-item">
                                                         <span class="pull-right"> Indonesia</span> Language
                                                     </li>
-													<li class="list-group-item">
+                                                    <li class="list-group-item">
                                                         <span class="pull-right"> Indonesia</span> Nationality
-                                                    </li>													
+                                                    </li>
                                                 </ul>
                                                 <strong>Contact Information</strong>
                                                 <ul class="list-group clear-list">
                                                     <li class="list-group-item fist-item">
                                                         <span class="pull-right"> 021123123</span> Telephone Number
-                                                    </li>														
+                                                    </li>
                                                     <li class="list-group-item fist-item">
                                                         <span class="pull-right"> 08111123123</span> Mobile Phone Number
-                                                    </li>														
+                                                    </li>
                                                     <li class="list-group-item fist-item">
                                                         <span class="pull-right"> 021123123</span> Work Number
-                                                    </li>			
+                                                    </li>
                                                     <li class="list-group-item fist-item">
                                                         <span class="pull-right"> Toto.Kartono@netikaindonesia.com </span> Email
                                                     </li>
                                                 </ul>
 
-                                                </div>
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -651,10 +962,10 @@
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
-	<script src="js/w3data.js"></script>
-	<script>
-		w3IncludeHTML();
-	</script>
+    <script src="js/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
 </body>
 
 </html>
