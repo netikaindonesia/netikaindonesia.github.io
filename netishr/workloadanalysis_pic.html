@@ -419,113 +419,76 @@
             </div>
             <div class="wrapper wrapper-content animated fadeInRight">
 
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="ibox">
+                            <div class="ibox-content">
+
+                                <div class="form-group">
+                                    <!-- Initially select first staff -->
+                                    <div>
+                                        <label class="control-label" for="status">Select a person-in-charge: </label>
+                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                            <option value="1">DIR-BR Director of Business Development - Tono Kartono</option>
+                                            <option selected value="2">DIR-FIN Director of Finance - Jono Karjono</option>
+                                            <option value="3">DIR-HR Director of HR - Sono Karsono</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="ibox">
                             <div class="ibox-content">
                                 <p>
-
-                                    <input type="checkbox" class="js-switch" />&nbsp;Show only if analysis is not done
-
-                                    <div class="btn-group">
-                                        <a href="#" class="btn-primary btn-xs" data-toggle="modal" data-target="#setallsuperiors">Set all direct superiors as PIC</a>
-
-                                        <div class="modal inmodal fade" id="setallsuperiors" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog modal-sm">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <h4 class="modal-title">Confirmation</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Are you sure to set all direct superiors to be the PIC of the subordinates?</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
-                                                        <button type="button" class="btn btn-primary">Yes</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    Select one or more job titles whose workload analysis is to be done by the person selected above.
+                                </p>
+                                <p>
 
 
-
-                                    </div>
+                                    <input type="checkbox" class="js-switch" checked />&nbsp;Show direct subordinates only
                                 </p>
 
-                                <table class="footable table table-stripped toggle-arrow-tiny">
-                                    <thead>
-                                        <tr>
-
-                                            <th data-toggle="true">Job Title</th>
-                                            <th data-toggle="true">PIC</th>
-                                            <th data-hide="all">Analysis status</th>
-                                            <th class="text-right">
-
-
-
-
-
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <a href="workloadanalysis_pic_new.html" class="btn-primary btn-xs">New Assignment</a>
-                                                    </div>
-                                                </td>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>President Director</td>
-                                            <td>Tono Kartono - President Director</td>
-                                            <td><span class="label label-warning">Not done</span></td>
-                                            <td>
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                    </div>
-                                                </td>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Finance Manager</td>
-                                            <td>Jono Sujono - Finance Director</td>
-                                            <td><span class="label label-primary">Done</span></td>
-                                            <td>
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                    </div>
-                                                </td>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Customer Service Staff</td>
-                                            <td>Toto Karwoto - Marketing Manager</td>
-                                            <td><span class="label label-primary">Done</span></td>
-                                            <td>
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                    </div>
-                                                </td>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="5">
-                                                <ul class="pagination pull-right"></ul>
-                                            </td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-
-
+                                <form id="form" action="#" class="wizard-big">
+                                    <select class="form-control dual_select" multiple>
+                                        <option value="1">Jobtitle1</option>
+                                        <option value="2">Jobtitle2</option>
+                                        <option value="3">Jobtitle3</option>
+                                        <option selected value="4">Jobtitle4</option>
+                                        <option selected value="5">Jobtitle5</option>
+                                        <option value="6">Jobtitle6</option>
+                                        <option value="7">Jobtitle7</option>
+                                        <option value="8">Jobtitle8</option>
+                                        <option value="9">Jobtitle9</option>
+                                        <option value="10">Jobtitle110</option>
+                                        <option value="11">Jobtitle11</option>
+                                        <option value="12">Jobtitle12</option>
+                                    </select>
+                                </form>
                             </div>
                         </div>
                     </div>
 
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title  back-change">
+                                <div>
+                                    <button class="btn btn-white btn-xs" type="submit">Cancel</button>
+                                    <button class="btn btn-primary btn-xs" type="submit">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="footer">
