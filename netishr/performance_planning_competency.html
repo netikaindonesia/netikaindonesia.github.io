@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>NetisHR | Competency Matrix</title>
+    <title>NetisHR | Performance Planning (Competency)</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -29,8 +29,9 @@
     <link href="css/bootstrap-select.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
-    <!-- Chosen -->
-    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+    <!-- X-editable CDN styles -->
+    <link href="css/bootstrap-editable.css" rel="stylesheet" />
 
 
 </head>
@@ -64,7 +65,7 @@
                     <li>
                         <a href="index.html"><i class="fa fa-diamond"></i><span class="nav-label">Main</span></a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="index.html"><i class="fa fa-th-large"></i><span class="nav-label">Organisation</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li><a href="organisation_units.html">Units</a></li>
@@ -101,7 +102,16 @@
                                 </ul>
                             </li>
                             <li><a href="job_description.html">Job Description</a></li>
-                            <li><a href="#">Workload Analysis</a></li>
+                            <li><a href="#"><span class="nav-label">Workload Analysis</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="workloadanalysis_pic.html">PIC Assignment</a>
+                                    </li>
+                                    <li>
+                                        <a href="workload_calculation.html">Workload Calculation</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a href="accountability_matrix.html">Accountability Matrix</a></li>
                         </ul>
                     </li>
@@ -388,19 +398,16 @@
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Competency Matrix</h2>
+                            <h2>Performance Planning (Competency)</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li>
-                                    <a>Job</a>
-                                </li>
-                                <li>
-                                    <a>Competency Model</a>
+                                    <a>Performance</a>
                                 </li>
                                 <li class="active">
-                                    <strong>Competency Matrix</strong>
+                                    <strong>Performance Planning (Competency)</strong>
                                 </li>
                             </ol>
                         </div>
@@ -417,7 +424,9 @@
                             </div>
                             -->
 
+
                             <div class="col-lg-12">
+
                                 <div class="ibox float-e-margins">
 
                                     <div class="ibox-content m-b-sm border-bottom">
@@ -429,207 +438,37 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <!-- Initially select first staff -->
-                                                    <div>
-                                                        <label class="control-label" for="status">Select a job title: </label>
-                                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                            <option value="1">DIR-BR Director of Business Development</option>
-                                                            <option selected value="2">DIR-FIN Director of Finance</option>
-                                                            <option value="3">DIR-HR Director of HR</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="hr-line-dashed"></div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
                                             <div class="col-sm-8">
                                                 <div class="form-group">
-                                                    <!-- Initially select first competency in first category -->
+                                                    <!-- Initially select currently logged in user -->
+                                                    <!-- If logged in user is HR Admin, enable selection of all staffs -->
+                                                    <!-- If logged in user is superior, enable selection of all subordinates -->
+
+
+
+
                                                     <div>
-                                                        <label class="control-label" for="status">Select a competency: </label>
-                                                        <select data-placeholder="Choose a competency..." class="chosen-select" tabindex="2">
-                                                            <!-- <Category> - <Code> - <CompetencyName> -->
-                                                            <option selected value="1">Core - FLX - Flexibility</option>
-                                                            <option value="2">Core - ACH - Achievement Orientation</option>
-                                                            <option value="3">Core - TL - Team Leadership </option>
+                                                        <label class="control-label" for="status">Select a person: </label>
+                                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                                            <option value="1">DIR-BR Director of Business Development - Tono Kartono</option>
+                                                            <option selected value="2">DIR-FIN Director of Finance - Jono Karjono</option>
+                                                            <option value="3">DIR-HR Director of HR - Sono Karsono</option>
                                                         </select>
                                                     </div>
-                                                    <div>
-                                                        <!-- When a competency is selected above, show its description below -->
-                                                        <div>
-                                                            A concern for working well or for exceeding the standards of excellence. The standards includes ability improvement / one's own past performance (striving for improvement); an objective measure (results orientation); exceeds the performance of others (competitiveness); challenging one's goals; or even do something what anyone has never done (innovation) that affects employee productivity positively
-                                                        </div>
-
-
-                                                    </div>
 
                                                 </div>
-
                                             </div>
+                                            <!--
                                             <div class="col-sm-4">
                                                 <div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <a href="#" class="btn-primary btn-xs">Select</a>
+                                                    <label class="control-label" for="status">Select KPI or comptency: </label>
+                                                    <select class="select2_demo_1 form-control">
+                                                        <option value="1">KPI</option>
+                                                        <option value="2">Competency</option>
+                                                    </select>
                                                 </div>
                                             </div>
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <!-- When "Select" button is clicked above, add the competency to the list below -->
-                                                <div class="table-responsive">
-                                                    <table class="footable table table-stripped toggle-arrow-tiny">
-                                                        <thead>
-                                                            <tr>
-
-                                                                <th data-toggle="true">Code</th>
-                                                                <th data-toggle="true">Competency name</th>
-                                                                <th data-hide="all">Description</th>
-                                                                <th data-hide="all">Indicator levels</th>
-                                                                <th data-toggle="true">Target level</th>
-                                                                <th></th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>TW</td>
-                                                                <td>Teamwork</td>
-                                                                <td>Implies the intention to work cooperatively with others, to be part of a team, have a common goal, a commitment to achieve goals and to work together as opposed to working separately and competitively. For this competency to be effective, the intention should be genuine. This competency may be considered whenever the subject is a member of a group of people functioning as a team. Team, as well as in Team Leadership (TL), is broadly defined as working groups or groups that perform a process together.</td>
-                                                                <td>
-                                                                    <table class="table table-striped">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Level 1 (Basic)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
-                                                                                    <p> 2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 2 (Basic Application)</td>
-                                                                                <td>
-                                                                                    <p>1. Focuses to achieve the target that has been set</p>
-                                                                                    <p>2. Uses the own specific method to measure the outcome against the standard of excellence (which is not of management)</p>
-                                                                                    <p>4. Enable conistently to achieve the target</p>
-                                                                                    <p>5. Keeps track of and measures outcomes against a standard of excellence not imposed by others (competitive)</p>
-                                                                                    <p>6. Continously try to anticipate challenges that lay ahead with speed & foresight</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 3 (Skillful Application)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes specific changes in the system or in own work methods to improve performance</p>
-                                                                                    <p>2. Shows How to make improvements / work process without reducing the quality of the work, is to achieve better results</p>
-                                                                                    <p>3. Making commitment to work on every issues</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 4 (Mastery)</td>
-                                                                                <td>
-                                                                                    <p>1. Sets the challenging target clearly (not unrealistic or impossible)</p>
-                                                                                    <p>2. Refers to specific measures of baseline performance compared with better performance at a later point in time (e.g., “When I took over, efficiency was 20% - now it is up to 85%.”)</p>
-                                                                                    <p>3. Setting out to achieve a unique standard (e.g., “No one had ever done it before”)</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 5 (Expert)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
-                                                                                    <p>2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
-
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td>None
-                                                                </td>
-                                                                <td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Set target</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>CSO</td>
-                                                                <td>Customer Service Orientation</td>
-                                                                <td>Implies the intention to work cooperatively with others, to be part of a team, have a common goal, a commitment to achieve goals and to work together as opposed to working separately and competitively. For this competency to be effective, the intention should be genuine. This competency may be considered whenever the subject is a member of a group of people functioning as a team. Team, as well as in Team Leadership (TL), is broadly defined as working groups or groups that perform a process together.</td>
-                                                                <td>
-                                                                    <table class="table table-striped">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Level 1 (Basic)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
-                                                                                    <p> 2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 2 (Basic Application)</td>
-                                                                                <td>
-                                                                                    <p>1. Focuses to achieve the target that has been set</p>
-                                                                                    <p>2. Uses the own specific method to measure the outcome against the standard of excellence (which is not of management)</p>
-                                                                                    <p>4. Enable conistently to achieve the target</p>
-                                                                                    <p>5. Keeps track of and measures outcomes against a standard of excellence not imposed by others (competitive)</p>
-                                                                                    <p>6. Continously try to anticipate challenges that lay ahead with speed & foresight</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 3 (Skillful Application)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes specific changes in the system or in own work methods to improve performance</p>
-                                                                                    <p>2. Shows How to make improvements / work process without reducing the quality of the work, is to achieve better results</p>
-                                                                                    <p>3. Making commitment to work on every issues</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 4 (Mastery)</td>
-                                                                                <td>
-                                                                                    <p>1. Sets the challenging target clearly (not unrealistic or impossible)</p>
-                                                                                    <p>2. Refers to specific measures of baseline performance compared with better performance at a later point in time (e.g., “When I took over, efficiency was 20% - now it is up to 85%.”)</p>
-                                                                                    <p>3. Setting out to achieve a unique standard (e.g., “No one had ever done it before”)</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 5 (Expert)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
-                                                                                    <p>2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
-
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td>None</td>
-                                                                <td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Set target</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tfoot>
-                                                            <tr>
-                                                                <td colspan="5">
-                                                                    <ul class="pagination pull-right"></ul>
-                                                                </td>
-                                                            </tr>
-                                                        </tfoot>
-                                                    </table>
-                                                </div>
-                                            </div>
+                                            -->
                                         </div>
 
                                     </div>
@@ -637,6 +476,318 @@
                                 </div>
 
 
+                                <div class="tabs-container">
+                                    <!-- Show the KPIs of the job title selected above -->
+                                    <div class="tabs-left">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#tab-1"> CHSE Concern for Health, Safety and Environment</a></li>
+                                            <li class=""><a data-toggle="tab" href="#tab-2"> CRT Creativity</a></li>
+                                            <li class=""><a data-toggle="tab" href="#tab-3"> CT Conceptual Thinking	</a></li>
+                                            <li class=""><a data-toggle="tab" href="#tab-4"> BP Budget and Purchasing</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="tab-1" class="tab-pane active">
+                                                <div class="panel-body">
+                                                    <label class="control-label">Category:</label> Core Competency
+                                                    <br>
+                                                    <label class="control-label">Required level:</label> 5
+                                                    <br>
+                                                    <label class="control-label">Current level:</label>
+                                                    <a href="#" id="currentlevel" data-type="text" data-pk="1" data-title="Current level" class="editable editable-click"></a>
+                                                    <p></p>
+                                                    <label class="control-label">Overall target:</label>
+                                                    <a href="#" id="annualtarget" data-type="text" data-pk="1" data-title="Annual Target" class="editable editable-click"></a>
+                                                    <br>
+
+                                                    <label class="control-label">Overall weight:</label>
+                                                    <a href="#" id="annualweight" data-type="text" data-pk="1" data-title="Annual Weight" class="editable editable-click"></a>
+
+                                                    <p></p>
+                                                    <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
+                                                    <label class="control-label">Per phase planning:</label>
+
+                                                    <div>
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Evaluation phase</th>
+                                                                    <th>Date</th>
+                                                                    <th>Target level</th>
+                                                                    <th>Weight</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>January 1-March 31</td>
+                                                                    <td>
+                                                                        <a href="#" id="period1target" data-type="text" data-pk="1" data-title="Period 1 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>April 1-June 30</td>
+                                                                    <td>
+                                                                        <a href="#" id="period2target" data-type="text" data-pk="1" data-title="Period 2 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>July 1-September 30</td>
+                                                                    <td>
+                                                                        <a href="#" id="period3target" data-type="text" data-pk="1" data-title="Period 3 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>October 1-December 31</td>
+                                                                    <td>
+                                                                        <a href="#" id="period4target" data-type="text" data-pk="1" data-title="Period 4 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div id="tab-2" class="tab-pane">
+                                                <div class="panel-body">
+                                                    <p></p>
+                                                    <label class="font-noraml">Annual target:</label>
+                                                    <div>
+                                                        <a href="#" id="annualtarget" data-type="text" data-pk="1" data-title="Annual Target" class="editable editable-click"></a>
+                                                    </div>
+                                                    <p></p>
+                                                    <label class="font-noraml">Annual weight:</label>
+                                                    <div>
+                                                        <a href="#" id="annualweight" data-type="text" data-pk="1" data-title="Annual Weight" class="editable editable-click"></a>
+                                                    </div>
+
+                                                    <p></p>
+                                                    <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
+                                                    <label class="font-noraml">Per period planning:</label>
+
+                                                    <div>
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Period</th>
+                                                                    <th>Date</th>
+                                                                    <th>Target</th>
+                                                                    <th>Weight</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>January 1-March 31</td>
+                                                                    <td>
+                                                                        <a href="#" id="period1target" data-type="text" data-pk="1" data-title="Period 1 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>April 1-June 30</td>
+                                                                    <td>
+                                                                        <a href="#" id="period2target" data-type="text" data-pk="1" data-title="Period 2 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>July 1-September 30</td>
+                                                                    <td>
+                                                                        <a href="#" id="period3target" data-type="text" data-pk="1" data-title="Period 3 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>October 1-December 31</td>
+                                                                    <td>
+                                                                        <a href="#" id="period4target" data-type="text" data-pk="1" data-title="Period 4 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div id="tab-3" class="tab-pane">
+                                                <div class="panel-body">
+                                                    <p></p>
+                                                    <label class="font-noraml">Annual target:</label>
+                                                    <div>
+                                                        <a href="#" id="annualtarget" data-type="text" data-pk="1" data-title="Annual Target" class="editable editable-click"></a>
+                                                    </div>
+                                                    <p></p>
+                                                    <label class="font-noraml">Annual weight:</label>
+                                                    <div>
+                                                        <a href="#" id="annualweight" data-type="text" data-pk="1" data-title="Annual Weight" class="editable editable-click"></a>
+                                                    </div>
+
+                                                    <p></p>
+                                                    <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
+                                                    <label class="font-noraml">Per period planning:</label>
+
+                                                    <div>
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Period</th>
+                                                                    <th>Date</th>
+                                                                    <th>Target</th>
+                                                                    <th>Weight</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>January 1-March 31</td>
+                                                                    <td>
+                                                                        <a href="#" id="period1target" data-type="text" data-pk="1" data-title="Period 1 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>April 1-June 30</td>
+                                                                    <td>
+                                                                        <a href="#" id="period2target" data-type="text" data-pk="1" data-title="Period 2 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>July 1-September 30</td>
+                                                                    <td>
+                                                                        <a href="#" id="period3target" data-type="text" data-pk="1" data-title="Period 3 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>October 1-December 31</td>
+                                                                    <td>
+                                                                        <a href="#" id="period4target" data-type="text" data-pk="1" data-title="Period 4 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div id="tab-4" class="tab-pane">
+                                                <div class="panel-body">
+                                                    <p></p>
+                                                    <label class="font-noraml">Annual target:</label>
+                                                    <div>
+                                                        <a href="#" id="annualtarget" data-type="text" data-pk="1" data-title="Annual Target" class="editable editable-click"></a>
+                                                    </div>
+                                                    <p></p>
+                                                    <label class="font-noraml">Annual weight:</label>
+                                                    <div>
+                                                        <a href="#" id="annualweight" data-type="text" data-pk="1" data-title="Annual Weight" class="editable editable-click"></a>
+                                                    </div>
+
+                                                    <p></p>
+                                                    <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
+                                                    <label class="font-noraml">Per period planning:</label>
+
+                                                    <div>
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Period</th>
+                                                                    <th>Date</th>
+                                                                    <th>Target</th>
+                                                                    <th>Weight</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>January 1-March 31</td>
+                                                                    <td>
+                                                                        <a href="#" id="period1target" data-type="text" data-pk="1" data-title="Period 1 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>April 1-June 30</td>
+                                                                    <td>
+                                                                        <a href="#" id="period2target" data-type="text" data-pk="1" data-title="Period 2 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>July 1-September 30</td>
+                                                                    <td>
+                                                                        <a href="#" id="period3target" data-type="text" data-pk="1" data-title="Period 3 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>October 1-December 31</td>
+                                                                    <td>
+                                                                        <a href="#" id="period4target" data-type="text" data-pk="1" data-title="Period 4 Target" class="editable editable-click"></a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal fade" id="modal_mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
@@ -1110,11 +1261,14 @@
             <script src="js/inspinia.js"></script>
             <script src="js/plugins/pace/pace.min.js"></script>
 
-            <!-- SUMMERNOTE -->
-            <script src="js/plugins/summernote/summernote.min.js"></script>
-
             <!-- Chosen -->
             <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+            <!-- X-editable CDN styles -->
+            <script src="js/bootstrap-editable.min.js"></script>
+
+            <!-- SUMMERNOTE -->
+            <script src="js/plugins/summernote/summernote.min.js"></script>
 
             <!-- Page-Level Scripts -->
             <script>
@@ -1206,10 +1360,118 @@
                 $(".netis_competency_btn").click(function () {
                     alert("Open page Competency");
                 });
+
                 $('.chosen-select').chosen({
                     width: "100%"
                 });
             </script>
+
+            <!-- X-Editable scripts -->
+            <script>
+                $(function () {
+
+
+                    //turn to inline mode
+                    $.fn.editable.defaults.mode = 'inline';
+
+                    //defaults
+                    $.fn.editable.defaults.url = '#';
+
+                    //editables
+                    $('#currentlevel').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'currentlevel',
+                        title: 'Enter level'
+                    });
+                    $('#annualtarget').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'annualtarget',
+                        title: 'Enter target'
+                    });
+                    $('#annualweight').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'annualweight',
+                        title: 'Enter weight'
+                    });
+                    $('#period1target').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'period1target',
+                        title: 'Enter target'
+                    });
+                    $('#period1weight').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'period1weight',
+                        title: 'Enter weight'
+                    });
+                    $('#period2target').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'period2target',
+                        title: 'Enter target'
+                    });
+                    $('#period2weight').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'period2weight',
+                        title: 'Enter weight'
+                    });
+                    $('#period3target').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'period3target',
+                        title: 'Enter target'
+                    });
+                    $('#period3weight').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'period3weight',
+                        title: 'Enter weight'
+                    });
+                    $('#period4target').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'period4target',
+                        title: 'Enter target'
+                    });
+                    $('#period4weight').editable({
+                        url: '#',
+                        type: 'text',
+                        pk: 1,
+                        name: 'period4weight',
+                        title: 'Enter weight'
+                    });
+
+                    $('#user .editable').on('hidden', function (e, reason) {
+                        if (reason === 'save' || reason === 'nochange') {
+                            var $next = $(this).closest('tr').next().find('.editable');
+                            if ($('#autoopen').is(':checked')) {
+                                setTimeout(function () {
+                                    $next.editable('show');
+                                }, 300);
+                            } else {
+                                $next.focus();
+                            }
+                        }
+                    });
+
+                });
+            </script>
+
 
 
 </body>
