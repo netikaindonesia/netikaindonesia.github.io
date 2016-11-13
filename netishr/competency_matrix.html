@@ -449,15 +449,23 @@
                                             <div class="col-sm-8">
                                                 <div class="form-group">
                                                     <!-- Initially select first competency in first category -->
-                                                    <div>
-                                                        <label class="control-label" for="status">Select a competency: </label>
-                                                        <select data-placeholder="Choose a competency..." class="chosen-select" tabindex="2">
+                                                    <label class="control-label" for="status">Select a competency title: </label>
+
+                                                    <div class="input-group">
+                                                        <select data-placeholder="Choose a subordinate..." class="chosen-select input-sm form-control" tabindex="2">
                                                             <!-- <Category> - <Code> - <CompetencyName> -->
                                                             <option selected value="1">Core - FLX - Flexibility</option>
                                                             <option value="2">Core - ACH - Achievement Orientation</option>
                                                             <option value="3">Core - TL - Team Leadership </option>
                                                         </select>
+                                                        <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-white"> <i class="fa fa-plus"></i> Select</button>
+                                </span>
                                                     </div>
+
+
+
+
                                                     <div>
                                                         <!-- When a competency is selected above, show its description below -->
                                                         <div>
@@ -469,13 +477,6 @@
 
                                                 </div>
 
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div>
-                                                    <p></p>
-                                                    <p></p>
-                                                    <a href="#" class="btn-primary btn-xs">Select</a>
-                                                </div>
                                             </div>
 
                                         </div>
