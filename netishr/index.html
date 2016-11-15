@@ -125,15 +125,15 @@
                         <a href="#"><i class="fa fa-user"></i> <span class="nav-label">Person</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
                             <li><a href="persons.html">Staffs</a></li>
-                            <li><a href="#">Applicants</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-graduation-cap"></i> <span class="nav-label">Recruitment</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
-                            <li><a href="#">Manpower Planning</a></li>
-                            <li><a href="#">Recruitment Planning</a></li>
-                            <li><a href="#">Selection Process</a></li>
+                            <li><a href="manpowerplanning.html">Manpower Planning</a></li>
+                            <li><a href="recruitmentplanning.html">Recruitment Planning</a></li>
+                            <li><a href="selectionprocess.html">Selection Process</a></li>
+                            <li><a href="applicants.html">Applicants</a></li>
                         </ul>
                     </li>
                     <li>
@@ -405,45 +405,58 @@
             <div class="row  border-bottom white-bg dashboard-header">
 
                 <div class="col-md-3">
-                    <h2>Welcome Arnold</h2>
-                    <small>You have 42 messages and 6 notifications.</small>
+                    <h2>Welcome, Arnold</h2>
+                    <small>You have 6 new notifications.</small>
                     <ul class="list-group clear-list m-t">
                         <li class="list-group-item fist-item">
                             <span class="pull-right">
                                     09:00 pm
                                 </span>
-                            <span class="label label-success">1</span> Please contact me
+                            <span class="label label-success">1</span> Apply cuti bersama
                         </li>
                         <li class="list-group-item">
                             <span class="pull-right">
                                     10:16 am
                                 </span>
-                            <span class="label label-info">2</span> Sign a contract
+                            <span class="label label-info">2</span> Submit attendance
                         </li>
                         <li class="list-group-item">
                             <span class="pull-right">
                                     08:22 pm
                                 </span>
-                            <span class="label label-primary">3</span> Open new shop
+                            <span class="label label-primary">3</span> Medical checkup deadline
                         </li>
                         <li class="list-group-item">
                             <span class="pull-right">
                                     11:06 pm
                                 </span>
-                            <span class="label label-default">4</span> Call back to Sylvia
+                            <span class="label label-default">4</span> Performance coaching deadline
                         </li>
                         <li class="list-group-item">
                             <span class="pull-right">
                                     12:00 am
                                 </span>
-                            <span class="label label-primary">5</span> Write a letter to Sandra
+                            <span class="label label-primary">5</span> Update bank details
+                        </li>
+                        <li class="list-group-item">
+                            <a href="notifications.html">
+                                <button class="btn btn-primary btn-block m-t">See All Notifications</button>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <div class="flot-chart dashboard-chart">
+
+                        <h4>
+                            Attendance chart
+                        </h4>
+                        <p>
+                            See your punctuality tendency.
+                        </p>
                         <div class="flot-chart-content" id="flot-dashboard-chart"></div>
                     </div>
+                    <!--
                     <div class="row text-left">
                         <div class="col-xs-4">
                             <div class=" m-l-md">
@@ -461,6 +474,7 @@
                         </div>
 
                     </div>
+-->
                 </div>
                 <div class="col-md-3">
                     <div class="statistic-box">
@@ -622,8 +636,26 @@
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
                                         <h5>Approval requests</h5>
+                                        <a href="workflow.html"><span class="label label-warning-light ">10 Requests</span></a>
                                         <div class="ibox-tools">
-                                            <a href="workflow.html"><span class="label label-warning-light pull-right">10 Requests</span></a>
+                                            <div class="ibox-tools">
+                                                <a class="collapse-link">
+                                                    <i class="fa fa-chevron-up"></i>
+                                                </a>
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    <i class="fa fa-wrench"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-user">
+                                                    <li><a href="#">Config option 1</a>
+                                                    </li>
+                                                    <li><a href="#">Config option 2</a>
+                                                    </li>
+                                                </ul>
+                                                <a class="close-link">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="ibox-content">
@@ -740,44 +772,8 @@
                             <div class="col-lg-4">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>New data for the report</h5> <span class="label label-primary">IN+</span>
-                                        <div class="ibox-tools">
-                                            <a class="collapse-link">
-                                                <i class="fa fa-chevron-up"></i>
-                                            </a>
-                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                <i class="fa fa-wrench"></i>
-                                            </a>
-                                            <ul class="dropdown-menu dropdown-user">
-                                                <li><a href="#">Config option 1</a>
-                                                </li>
-                                                <li><a href="#">Config option 2</a>
-                                                </li>
-                                            </ul>
-                                            <a class="close-link">
-                                                <i class="fa fa-times"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div>
-
-                                            <div class="pull-right text-right">
-
-                                                <span class="bar_dashboard">5,3,9,6,5,9,7,3,5,2,4,7,3,2,7,9,6,4,5,7,3,2,1,0,9,5,6,8,3,2,1</span>
-                                                <br/>
-                                                <small class="font-bold">$ 20 054.43</small>
-                                            </div>
-                                            <h4>NYS report new data!
-                                            <br/>
-                                            <small class="m-r"><a href="graph_flot.html"> Check the stock price! </a> </small>
-                                        </h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Read below comments</h5>
+                                        <h5>Messages</h5>
+                                        <span class="label label-warning-light">10 messages</span>
                                         <div class="ibox-tools">
                                             <a class="collapse-link">
                                                 <i class="fa fa-chevron-up"></i>
@@ -826,6 +822,9 @@
                                                 <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 minuts ago</small>
                                             </li>
                                         </ul>
+                                        <a href="messages.html">
+                                            <button class="btn btn-primary btn-block m-t">Go to Messages</button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1356,10 +1355,10 @@
 
 
             var data1 = [
-                [0, 4], [1, 8], [2, 5], [3, 10], [4, 4], [5, 16], [6, 5], [7, 11], [8, 6], [9, 11], [10, 30], [11, 10], [12, 13], [13, 4], [14, 3], [15, 3], [16, 6]
+                [1, 0.23], [2, 0.10], [3, 0.40], [4, 0], [5, 0.20], [6, 0.35], [7, 1.5], [8, 2.45], [9, 0.1], [10, 0.40], [11, 0.15], [12, 0.20]
             ];
             var data2 = [
-                [0, 1], [1, 0], [2, 2], [3, 0], [4, 1], [5, 3], [6, 1], [7, 5], [8, 2], [9, 3], [10, 2], [11, 1], [12, 0], [13, 2], [14, 8], [15, 0], [16, 0]
+                [1, 0.23], [2, 0.23], [3, 0.23], [4, 0.23], [5, 0.23], [6, 0.23], [7, 0.23], [8, 0.23], [9, 0.23], [10, 0.23], [11, 0.23], [12, 0.23]
             ];
             $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
                 data1, data2
@@ -1379,7 +1378,9 @@
                         radius: 0,
                         show: true
                     },
-                    shadowSize: 2
+                    shadowSize: 2,
+
+                    label: ["#month", "average"],
                 },
                 grid: {
                     hoverable: true,

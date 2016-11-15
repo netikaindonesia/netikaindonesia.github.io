@@ -421,6 +421,7 @@
                 <div class="row">
                         <div class="ibox float-e-margins">
                             <div class="ibox-content">
+                                <button type="button" class="btn btn-primary btn">Delete Person</button>
                                 <div class="row m-t-lg">
 					                <div class="tabs-container">
     									<div class="tabs-left">
@@ -529,6 +530,12 @@
 													<label class="col-sm-2 control-label">Placement</label>
 													<div class="col-sm-10">
 														<p class="form-control-static"><a href="#" id="Placement" data-type="select" data-pk="1" data-title="Enter Placement" class="editable editable-click">DKI Jakarta</a></p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">Status</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="Status" data-type="select" data-pk="1" data-title="Enter Status" class="editable editable-click">Active</a></p>
 													</div>
 												</div>
 												</fieldset>
@@ -910,7 +917,19 @@
                     }
                 ]
             });              
-            //editables
+             $('#Status').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Active'
+                    },
+                    {
+                        value: 1,
+                        text: 'Inactive'
+                    }
+                ]
+            });             //editables
             $('#NIP').editable({
                 url: '#',
                 type: 'text',
