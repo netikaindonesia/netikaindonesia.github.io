@@ -6,13 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Job Settings</title>
+    <title>NetisHR | Performance Information</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
-
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -260,7 +258,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR</span>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR.</span>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -373,16 +371,16 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Job Settings</h2>
+                    <h2>Performance Information</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a><a href="administrator.html">Administration</a>
+                            <a>Performance</a>
                         </li>
                         <li class="active">
-                            <strong>Job Settings</strong>
+                            <strong>Performance Information</strong>
                         </li>
                     </ol>
                 </div>
@@ -391,11 +389,12 @@
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRight">
-                <div class="row">
-                    <div class="col-lg-12">
+                <!--
+<div class="row">
+                    <div class="col-lg-6">
                         <div class="ibox float-e-margins">
                             <div class="ibox-title">
-                                <h5>Various General Settings</h5>
+                                <h5>Basic Table</h5>
                                 <div class="ibox-tools">
                                     <a class="collapse-link">
                                         <i class="fa fa-chevron-up"></i>
@@ -409,234 +408,372 @@
                                         <li><a href="#">Config option 2</a>
                                         </li>
                                     </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="ibox-content">
 
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Striped Table </h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">Config option 1</a>
+                                        </li>
+                                        <li><a href="#">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Data</th>
+                                            <th>User</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><span class="line">5,3,2,-1,-3,-2,2,3,5,2</span></td>
+                                            <td>Samantha</td>
+                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><span class="line">5,3,9,6,5,9,7,3,5,2</span></td>
+                                            <td>Jacob</td>
+                                            <td class="text-warning"> <i class="fa fa-level-down"></i> -20% </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><span class="line">1,6,3,9,5,9,5,3,9,6,4</span></td>
+                                            <td>Damien</td>
+                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 26% </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Border Table </h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">Config option 1</a>
+                                        </li>
+                                        <li><a href="#">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Hover Table  </h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">Config option 1</a>
+                                        </li>
+                                        <li><a href="#">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Data</th>
+                                            <th>User</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><span class="pie">0.52,1.041</span></td>
+                                            <td>Samantha</td>
+                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><span class="pie">226,134</span></td>
+                                            <td>Jacob</td>
+                                            <td class="text-warning"> <i class="fa fa-level-down"></i> -20% </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><span class="pie">0.52/1.561</span></td>
+                                            <td>Damien</td>
+                                            <td class="text-navy"> <i class="fa fa-level-up"></i> 26% </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <!--
+                            <div class="ibox-title">
+                                <h5>Custom responsive table </h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">Config option 1</a>
+                                        </li>
+                                        <li><a href="#">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+-->
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <!--
+                                    <div class="col-sm-5 m-b-xs">
+                                        <select class="input-sm form-control input-s-sm inline">
+                                            <option value="0">Option 1</option>
+                                            <option value="1">Option 2</option>
+                                            <option value="2">Option 3</option>
+                                            <option value="3">Option 4</option>
+                                        </select>
+                                    </div>
+-->
+                                    <div class="col-sm-4 m-b-xs">
+                                        <div data-toggle="buttons" class="btn-group">
+                                            <label class="btn btn-sm btn-white">
+                                                <input type="radio" id="option1" name="options"> All </label>
+                                            <label class="btn btn-sm btn-white active">
+                                                <input type="radio" id="option2" name="options"> Planning submitted </label>
+                                            <label class="btn btn-sm btn-white">
+                                                <input type="radio" id="option3" name="options"> Evaluation done </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> Go!</button> </span></div>
+                                    </div>
+                                </div>
                                 <div class="table-responsive">
-                                    <table class="table table-striped table-bordered table-hover ">
+                                    <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Item</th>
-                                                <th>Description</th>
-                                                <th>Value</th>
+                                                <th>ID No.</th>
+                                                <th>Name </th>
+                                                <th>Job Title</th>
+                                                <th>Planning</th>
+                                                <th>Coaching</th>
+                                                <th>Evaluation</th>
+                                                <th>Total Score</th>
+                                                <th>Score Details</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="gradeX">
-                                                <td>AutoPayslipPassword</td>
-                                                <td>0 or 1, 0 means Admin has the password
+                                            <tr>
+                                                <td>201301010001</td>
+                                                <td>Tono Kartono</td>
+                                                <td>Director of Business Development</td>
+                                                <td><span class="pie">85/100</span>
+
                                                 </td>
-                                                <td>0</td>
-
-                                                <td class="text-right">
+                                                <td><span class="pie">75/100</span></td>
+                                                <td><span class="pie">15/100</span></td>
+                                                <td>83%</td>
+                                                <td>
                                                     <div class="btn-group">
-
-
-                                                        <!-- I am trying to create a dialog box for entering value which has validity, but it turns out to be not easy, so leaving this like this for now -->
-
-                                                        <!--
-                                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">Edit</button>
-                                                        <div class="modal fade" id="newindicator" aria-hidden="true">
-                                                            <div class="modal-dialog">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-body">
-                                                                        <div class="row">
-                                                                            <h3>Setting value</h3>
-
-                                                                            <p>Please value</p>
-
-                                                                            <form role="form">
-                                                                                <div class="form-group">
-                                                                                    <label class="col-sm-2 control-label">Item: </label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
-                                                                                    <label class="col-sm-2 control-label">Description: </label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
-
-                                                                                    <table class="table table-striped table-bordered table-hover ">
-                                                                                        <thead>
-                                                                                            <tr>
-                                                                                                <th>Value</th>
-                                                                                                <th>Start</th>
-                                                                                                <th>End</th>
-                                                                                                <th></th>
-                                                                                            </tr>
-                                                                                        </thead>
-                                                                                        <tbody>
-                                                                                            <tr class="gradeX">
-                                                                                                <td>1</td>
-                                                                                                <td>October 1, 2016
-                                                                                                </td>
-                                                                                                <td>Unlimited</td>
-
-                                                                                                <td class="text-right">
-                                                                                                    <div class="btn-group">
-                                                                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                                                                        <button class="btn-white btn btn-xs">Delete</button>
-                                                                                                    </div>
-                                                                                                </td>
-
-                                                                                            </tr>
-                                                                                            <tr class="gradeC">
-                                                                                                <td>2</td>
-                                                                                                <td>October 1, 2016
-                                                                                                </td>
-                                                                                                <td>Unlimited</td>
-
-                                                                                                <td class="text-right">
-                                                                                                    <div class="btn-group">
-                                                                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                                                                        <button class="btn-white btn btn-xs">Delete</button>
-                                                                                                    </div>
-                                                                                                </td>
-
-                                                                                            </tr>
-                                                                                            <tr class="gradeA">
-                                                                                                <td>1</td>
-                                                                                                <td>October 1, 2016
-                                                                                                </td>
-                                                                                                <td>Unlimited</td>
-
-                                                                                                <td class="text-right">
-                                                                                                    <div class="btn-group">
-                                                                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                                                                        <button class="btn-white btn btn-xs">Delete</button>
-                                                                                                    </div>
-                                                                                                </td>
-
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-
-
-
-                                                                                    <div>
-                                                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                                                                    </div>
-                                                                                </div>
-
-
-
-                                                                            </form>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        -->
-
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-
-
+                                                        <a href="performance_information_kpi.html" style="text-decoration : none; color : #000000;">
+                                                            <button class="btn-white btn btn-xs">KPI</button>
+                                                        </a>
+                                                        <a href="performance_information_competency.html" style="text-decoration : none; color : #000000;">
+                                                            <button class="btn-white btn btn-xs">Competency</button>
+                                                        </a>
                                                     </div>
                                                 </td>
-
                                             </tr>
-                                            <tr class="gradeC">
-                                                <td>BossName</td>
-                                                <td>String
-                                                </td>
-                                                <td>Your Boss Name Here</td>
-
-                                                <td class="text-right">
+                                            <tr>
+                                                <td>201303020001</td>
+                                                <td>Jono Karjono</td>
+                                                <td>Director of Finance</td>
+                                                <td><span class="pie">70/100</span></td>
+                                                <td><span class="pie">85/100</span></td>
+                                                <td><span class="pie">45/100</span></td>
+                                                <td>76%</td>
+                                                <td>
                                                     <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
+                                                        <a href="performance_information_kpi.html" style="text-decoration : none; color : #000000;">
+                                                            <button class="btn-white btn btn-xs">KPI</button>
+                                                        </a>
+                                                        <a href="performance_information_competency.html" style="text-decoration : none; color : #000000;">
+                                                            <button class="btn-white btn btn-xs">Competency</button>
+                                                        </a>
                                                     </div>
                                                 </td>
-
                                             </tr>
-                                            <tr class="gradeA">
-                                                <td>BossTaxIDNumber</td>
-                                                <td>Numeric
-                                                </td>
-                                                <td>00000</td>
-
-                                                <td class="text-right">
+                                            <tr>
+                                                <td>201402010001</td>
+                                                <td>Nono Karnono</td>
+                                                <td>IT Manager</td>
+                                                <td><span class="pie">75/100</span></td>
+                                                <td><span class="pie">55/100</span></td>
+                                                <td><span class="pie">45/100</span></td>
+                                                <td>90%</td>
+                                                <td>
                                                     <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
+                                                        <a href="performance_information_kpi.html" style="text-decoration : none; color : #000000;">
+                                                            <button class="btn-white btn btn-xs">KPI</button>
+                                                        </a>
+                                                        <a href="performance_information_competency.html" style="text-decoration : none; color : #000000;">
+                                                            <button class="btn-white btn btn-xs">Competency</button>
+                                                        </a>
                                                     </div>
                                                 </td>
-
                                             </tr>
-                                            <tr class="gradeA">
-                                                <td>CompanyTaxIDNumber</td>
-                                                <td>Numeric
-                                                </td>
-                                                <td>00000</td>
-
-                                                <td class="text-right">
+                                            <tr>
+                                                <td>201401050001</td>
+                                                <td>Sono Karsono</td>
+                                                <td>HR Manager</td>
+                                                <td><span class="pie">80/100</span></td>
+                                                <td><span class="pie">75/100</span></td>
+                                                <td><span class="pie">15/100</span></td>
+                                                <td>80%</td>
+                                                <td>
                                                     <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
+                                                        <a href="performance_information_kpi.html" style="text-decoration : none; color : #000000;">
+                                                            <button class="btn-white btn btn-xs">KPI</button>
+                                                        </a>
+                                                        <a href="performance_information_competency.html" style="text-decoration : none; color : #000000;">
+                                                            <button class="btn-white btn btn-xs">Competency</button>
+                                                        </a>
                                                     </div>
                                                 </td>
-
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionMarried0</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>2025000</td>
-
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionMarried1</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>2025000</td>
-
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionMarried2</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>2025000</td>
-
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionMarried3</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>2025000</td>
-
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionSingle</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>24300000</td>
-
-                                                <td class="text-right">
-                                                    <div class="btn-group">
-                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                    </div>
-                                                </td>
-
                                             </tr>
                                         </tbody>
                                     </table>
@@ -645,7 +782,9 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
             <div class="footer">
                 <div class="pull-right">
@@ -667,55 +806,26 @@
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <script src="js/plugins/dataTables/datatables.min.js"></script>
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
 
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 
-    <!-- Page-Level Scripts -->
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- Peity -->
+    <script src="js/demo/peity-demo.js"></script>
+
     <script>
         $(document).ready(function () {
-            $('.dataTables-example').DataTable({
-                pageLength: 25,
-                responsive: true,
-                dom: '<"html5buttons"B>lTfgitp',
-                buttons: [
-                    {
-                        extend: 'copy'
-                    },
-                    {
-                        extend: 'csv'
-                    },
-                    {
-                        extend: 'excel',
-                        title: 'ExampleFile'
-                    },
-                    {
-                        extend: 'pdf',
-                        title: 'ExampleFile'
-                    },
-
-                    {
-                        extend: 'print',
-                        customize: function (win) {
-                            $(win.document.body).addClass('white-bg');
-                            $(win.document.body).css('font-size', '10px');
-
-                            $(win.document.body).find('table')
-                                .addClass('compact')
-                                .css('font-size', 'inherit');
-                        }
-                    }
-                ]
-
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
             });
-
         });
-    </script>
-    <script src="js/w3data.js"></script>
-    <script>
-        w3IncludeHTML();
     </script>
 
 </body>
