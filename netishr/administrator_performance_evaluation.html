@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>NetisHR | Competency Dictionary</title>
+    <title>NetisHR | Performance Evaluation Setting </title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -28,6 +28,10 @@
     <link href="css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
     <link href="css/bootstrap-select.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
 
 </head>
 
@@ -364,19 +368,19 @@
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Performance Management Periods</h2>
+                            <h2>Performance Evaluation Setting</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li>
-                                    <a>Administrator</a>
+                                    <a href="administrator.html">Administration</a>
                                 </li>
                                 <li>
                                     <a>Performance</a>
                                 </li>
                                 <li class="active">
-                                    <strong>Performance Management Periods</strong>
+                                    <strong>Performance Evaluation Setting</strong>
                                 </li>
                             </ol>
                         </div>
@@ -394,253 +398,537 @@
                             -->
 
                             <div class="col-lg-12">
-                                <div class="ibox float-e-margins">
 
-                                    <div class="ibox-content m-b-sm border-bottom">
-                                        <div class="panel-body">
-                                            <table class="footable table table-stripped toggle-arrow-tiny">
-                                                <thead>
-                                                    <tr>
 
-                                                        <th data-toggle="true">Period</th>
-                                                        <th data-hide="all">KPI evaluation cycle</th>
-                                                        <th data-hide="all">KPI evaluation phases</th>
-                                                        <th data-hide="all">Competency evaluation cycle</th>
-                                                        <th data-hide="all">Competency evaluation phases</th>
-                                                        <th>
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>January 2016-December 2016</td>
-                                                        <td>Quarterly</td>
-                                                        <td>
-                                                            <table class="table table-striped">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Planning phase</td>
-                                                                        <td>December 25, 2015-December 29, 2015
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Coaching phase 1</td>
-                                                                        <td>January 1, 2016-January 15, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Evaluation phase 1</td>
-                                                                        <td>January 16, 2016-March 30, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Coaching phase 2</td>
-                                                                        <td>April 1, 2016-April 15, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Evaluation phase 2</td>
-                                                                        <td>April 16, 2016-June 30, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Coaching phase 3</td>
-                                                                        <td>July 1, 2016-July 15, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Evaluation phase 3</td>
-                                                                        <td>July 16, 2016-September 30, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Coaching phase 4</td>
-                                                                        <td>October 1, 2016-October 15, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Evaluation phase 4</td>
-                                                                        <td>October 16, 2016-December 30, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Final evaluation</td>
-                                                                        <td>January 1, 2017-January 5, 2017
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                        <td>Yearly</td>
-                                                        <td>
-                                                            <table class="table table-striped">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Planning phase</td>
-                                                                        <td>December 25, 2015-December 29, 2015
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Coaching phase 1</td>
-                                                                        <td>January 1, 2016-January 15, 2016
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Evaluation phase 1</td>
-                                                                        <td>January 16, 2016-December 30, 2016
-                                                                        </td>
-                                                                        <tr>
-                                                                            <td>Final evaluation</td>
-                                                                            <td>January 1, 2017-January 5, 2017
-                                                                            </td>
-                                                                        </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-
-                                                        <td>
-                                                            <td class="text-right">
-                                                                <div class="btn-group">
-                                                                    <button class="btn-white btn btn-xs">Edit</button>
-                                                                    <button class="btn-white btn btn-xs">Delete</button>
-                                                                </div>
-                                                            </td>
-                                                        </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>January 2015-December 2015</td>
-                                                            <td>Quarterly</td>
-                                                            <td>
-                                                                <table class="table table-striped">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Planning phase</td>
-                                                                            <td>December 25, 2014-December 29, 2014
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Coaching phase 1</td>
-                                                                            <td>January 1, 2015-January 15, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Evaluation phase 1</td>
-                                                                            <td>January 16, 2015-March 30, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Coaching phase 2</td>
-                                                                            <td>April 1, 2015-April 15, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Evaluation phase 2</td>
-                                                                            <td>April 16, 2015-June 30, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Coaching phase 3</td>
-                                                                            <td>July 1, 2015-July 15, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Evaluation phase 3</td>
-                                                                            <td>July 16, 2015-September 30, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Coaching phase 4</td>
-                                                                            <td>October 1, 2015-October 15, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Evaluation phase 4</td>
-                                                                            <td>October 16, 2015-December 30, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Final evaluation</td>
-                                                                            <td>January 1, 2016-January 5, 2016
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                            <td>Quarterly</td>
-                                                            <td>
-                                                                <table class="table table-striped">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Planning phase</td>
-                                                                            <td>December 25, 2014-December 29, 2014
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Coaching phase 1</td>
-                                                                            <td>January 1, 2015-January 15, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Evaluation phase 1</td>
-                                                                            <td>January 16, 2015-March 30, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Coaching phase 2</td>
-                                                                            <td>April 1, 2015-April 15, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Evaluation phase 2</td>
-                                                                            <td>April 16, 2015-June 30, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Coaching phase 3</td>
-                                                                            <td>July 1, 2015-July 15, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Evaluation phase 3</td>
-                                                                            <td>July 16, 2015-September 30, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Coaching phase 4</td>
-                                                                            <td>October 1, 2015-October 15, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Evaluation phase 4</td>
-                                                                            <td>October 16, 2015-December 30, 2015
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Final evaluation</td>
-                                                                            <td>January 1, 2016-January 5, 2016
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                            <td>
-                                                                <td class="text-right">
-                                                                    <div class="btn-group">
-                                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                                        <button class="btn-white btn btn-xs">Delete</button>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="tabs-container">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a data-toggle="tab" href="#tab-1">Score rules</a></li>
+                                                <li class=""><a data-toggle="tab" href="#tab-2">Result rules</a></li>
+                                                <li class=""><a data-toggle="tab" href="#tab-3">Rating rules</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="tab-1" class="tab-pane active">
+                                                    <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newjoblevel">Create new score rule</button>
+                                                        <div class="modal" id="newjoblevel">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content animated">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                        <i class="fa fa-laptop modal-icon"></i>
+                                                                        <h4 class="modal-title">New pay item</h4>
+                                                                        <small class="font-bold">Please enter info for new pay item.</small>
                                                                     </div>
-                                                                </td>
-                                                            </td>
-                                                        </tr>
-                                                </tbody>
-                                                <tfoot>
-                                                    <tr>
-                                                        <td colspan="5">
-                                                            <ul class="pagination pull-right"></ul>
-                                                        </td>
-                                                    </tr>
-                                                </tfoot>
-                                            </table>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-2 control-label">Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">General</option>
+                                                                                </select>
+
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Name: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay/Tax Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Wages</option>
+                                                                                    <option value="1">Allowances</option>
+                                                                                    <option value="1">Deductions</option>
+                                                                                    <option value="1">Non-taxable allowances</option>
+                                                                                    <option value="1">Post-tax deductions</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay/Tax Subtype: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Other dues</option>
+                                                                                    <option value="1">Other deductions</option>
+                                                                                    <option value="1">Unpaid leave</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Code: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Description: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay Item Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Manual Entry</option>
+                                                                                    <option value="2">Payroll Setting Value</option>
+                                                                                    <option value="3">Percentage of Payroll Setting</option>
+                                                                                    <option value="4">Percentage of Payroll Setting (Total Value Limited)</option>
+                                                                                    <option selected="selected" value="5">Percentage of Basic Salary</option>
+                                                                                    <option value="6">Percentage of Basic Salary (Total Value Limited)</option>
+                                                                                    <option value="8">Specific Value</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Percentage: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Cutoff Applied: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Yes</option>
+                                                                                    <option value="2">No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <!-- When "Select" button is clicked above, add the competency to the list below -->
+                                                                <div class="table-responsive">
+                                                                    <table class="footable table table-stripped toggle-arrow-tiny">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th data-toggle="true">No.</th>
+                                                                                <th data-toggle="true">Condition</th>
+                                                                                <th data-toggle="true">Score</th>
+                                                                                <th data-toggle="true">Remark</th>
+                                                                                <th></th>
+
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>P &lt; 75%</td>
+                                                                                <td>1</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>2</td>
+                                                                                <td>75 =&lt; P &lt; 85%</td>
+                                                                                <td>2</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>3</td>
+                                                                                <td>85 =&lt; P &lt; 95%</td>
+                                                                                <td>3</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>4</td>
+                                                                                <td>95 =&lt; P &lt; 100%</td>
+                                                                                <td>4</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                            <tr>
+                                                                                <td colspan="5">
+                                                                                    <ul class="pagination pull-right"></ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        P: Achievement (actual/target) in percentage
+                                                        <br> W: Weight
+
+                                                    </div>
+
+                                                </div>
+                                                <div id="tab-2" class="tab-pane active">
+                                                    <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newjoblevel">Create new result rule</button>
+                                                        <div class="modal" id="newjoblevel">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content animated">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                        <i class="fa fa-laptop modal-icon"></i>
+                                                                        <h4 class="modal-title">New pay item</h4>
+                                                                        <small class="font-bold">Please enter info for new pay item.</small>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-2 control-label">Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">General</option>
+                                                                                </select>
+
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Name: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay/Tax Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Wages</option>
+                                                                                    <option value="1">Allowances</option>
+                                                                                    <option value="1">Deductions</option>
+                                                                                    <option value="1">Non-taxable allowances</option>
+                                                                                    <option value="1">Post-tax deductions</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay/Tax Subtype: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Other dues</option>
+                                                                                    <option value="1">Other deductions</option>
+                                                                                    <option value="1">Unpaid leave</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Code: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Description: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay Item Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Manual Entry</option>
+                                                                                    <option value="2">Payroll Setting Value</option>
+                                                                                    <option value="3">Percentage of Payroll Setting</option>
+                                                                                    <option value="4">Percentage of Payroll Setting (Total Value Limited)</option>
+                                                                                    <option selected="selected" value="5">Percentage of Basic Salary</option>
+                                                                                    <option value="6">Percentage of Basic Salary (Total Value Limited)</option>
+                                                                                    <option value="8">Specific Value</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Percentage: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Cutoff Applied: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Yes</option>
+                                                                                    <option value="2">No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="row">
+
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <!-- When "Select" button is clicked above, add the competency to the list below -->
+                                                                    <div class="table-responsive">
+                                                                        <table class="footable table table-stripped toggle-arrow-tiny">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th data-toggle="true">No.</th>
+                                                                                    <th data-toggle="true">Condition</th>
+                                                                                    <th data-toggle="true">Score</th>
+                                                                                    <th data-toggle="true">Remark</th>
+                                                                                    <th></th>
+
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td>N * W * 100</td>
+                                                                                    <td>1</td>
+                                                                                    <td></td>
+                                                                                    <td>
+                                                                                        <td class="text-right">
+                                                                                            <div class="btn-group">
+                                                                                                <button class="btn-white btn btn-xs">Delete</button>
+                                                                                            </div>
+
+                                                                                        </td>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            <tfoot>
+                                                                                <tr>
+                                                                                    <td colspan="5">
+                                                                                        <ul class="pagination pull-right"></ul>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tfoot>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            P: Achievement (actual/target) in percentage
+                                                            <br> W: Weight
+                                                            <br> S: Score
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="tab-3" class="tab-pane active">
+                                                    <div class="panel-body">
+                                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newjoblevel">Create new rating rule</button>
+                                                        <div class="modal" id="newjoblevel">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content animated">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                        <i class="fa fa-laptop modal-icon"></i>
+                                                                        <h4 class="modal-title">New pay item</h4>
+                                                                        <small class="font-bold">Please enter info for new pay item.</small>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-2 control-label">Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">General</option>
+                                                                                </select>
+
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Name: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay/Tax Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Wages</option>
+                                                                                    <option value="1">Allowances</option>
+                                                                                    <option value="1">Deductions</option>
+                                                                                    <option value="1">Non-taxable allowances</option>
+                                                                                    <option value="1">Post-tax deductions</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay/Tax Subtype: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Other dues</option>
+                                                                                    <option value="1">Other deductions</option>
+                                                                                    <option value="1">Unpaid leave</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Code: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Description: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Pay Item Type: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Manual Entry</option>
+                                                                                    <option value="2">Payroll Setting Value</option>
+                                                                                    <option value="3">Percentage of Payroll Setting</option>
+                                                                                    <option value="4">Percentage of Payroll Setting (Total Value Limited)</option>
+                                                                                    <option selected="selected" value="5">Percentage of Basic Salary</option>
+                                                                                    <option value="6">Percentage of Basic Salary (Total Value Limited)</option>
+                                                                                    <option value="8">Specific Value</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Percentage: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <label class="col-sm-2 control-label">Cutoff Applied: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Yes</option>
+                                                                                    <option value="2">No</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <!-- When "Select" button is clicked above, add the competency to the list below -->
+                                                                <div class="table-responsive">
+                                                                    <table class="footable table table-stripped toggle-arrow-tiny">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th data-toggle="true">No.</th>
+                                                                                <th data-toggle="true">Condition</th>
+                                                                                <th data-toggle="true">Score</th>
+                                                                                <th data-toggle="true">Remark</th>
+                                                                                <th></th>
+
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1</td>
+                                                                                <td>100 =&lt; R &lt; 150</td>
+                                                                                <td>Kurang</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>2</td>
+                                                                                <td>150 =&lt; R &lt; 200%</td>
+                                                                                <td>Pengembangan</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>3</td>
+                                                                                <td>200 =&lt; R &lt; 250%</td>
+                                                                                <td>Baik</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>4</td>
+                                                                                <td>250 =&lt; R &lt; 300%</td>
+                                                                                <td>Sangat Baik</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>4</td>
+                                                                                <td>300 =&lt; R &lt; 400%</td>
+                                                                                <td>Istimewa</td>
+                                                                                <td></td>
+                                                                                <td>
+                                                                                    <td class="text-right">
+
+                                                                                        <div class="btn-group">
+                                                                                            <button class="btn-white btn btn-xs">Delete</button>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                            <tr>
+                                                                                <td colspan="5">
+                                                                                    <ul class="pagination pull-right"></ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        R: Result
+                                                        <br> AVERAGE(): average of all R's
+                                                        <br> TOTAL(): total of all R's
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-content">
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+
+
+
+
+
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1121,6 +1409,9 @@
             <!-- SUMMERNOTE -->
             <script src="js/plugins/summernote/summernote.min.js"></script>
 
+            <!-- Chosen -->
+            <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
             <!-- Page-Level Scripts -->
             <script>
                 $(document).ready(function () {
@@ -1211,7 +1502,11 @@
                 $(".netis_competency_btn").click(function () {
                     alert("Open page Competency");
                 });
+                $('.chosen-select').chosen({
+                    width: "100%"
+                });
             </script>
+
 
 </body>
 
