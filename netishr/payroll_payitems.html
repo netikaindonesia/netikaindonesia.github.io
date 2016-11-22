@@ -424,66 +424,94 @@
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         <div class="form-group">
-                                                                            <label class="col-sm-2 control-label">Type: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
-                                                                                    <option value="1">General</option>
-                                                                                </select>
+                                                                            <div class="row">
+                                                                                <label class="col-sm-2 control-label">Type: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                        <option value="1">General</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
 
+                                                                            <div class="row">
+                                                                                <label class="col-sm-2 control-label">Name: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
                                                                             </div>
-                                                                            <label class="col-sm-2 control-label">Name: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <input type="text" class="form-control">
+
+                                                                            <div class="row">
+                                                                                <label class="col-sm-2 control-label">Pay/Tax Type: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <select data-placeholder="Choose a pay/tax type..." class="chosen-select" tabindex="2">
+                                                                                        <option value="1" selected>Wages</option>
+                                                                                        <option value="2">Allowances</option>
+                                                                                        <option value="3">Deductions</option>
+                                                                                        <option value="4">Tax</option>
+                                                                                        <option value="5">Non-taxable allowances</option>
+                                                                                        <option value="6">Post-tax deductions</option>
+                                                                                        <option value="7">Employer Contributions</option>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
-                                                                            <label class="col-sm-2 control-label">Pay/Tax Type: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
-                                                                                    <option value="1">Wages</option>
-                                                                                    <option value="1">Allowances</option>
-                                                                                    <option value="1">Deductions</option>
-                                                                                    <option value="1">Non-taxable allowances</option>
-                                                                                    <option value="1">Post-tax deductions</option>
-                                                                                </select>
+
+                                                                            <div class="row">
+                                                                                <!-- Show here items for Pay/tax type selectd above -->
+                                                                                <label class="col-sm-2 control-label">Pay/Tax Subtype: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                        <option value="1" selected>Basic Salary</option>
+                                                                                        <option value="2">Other Incomes</option>
+                                                                                        <option value="3">Tantiem, Bonus, THR </option>
+                                                                                        <option value="4">Received in kind imposed cuts PPh Article 21</option>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
-                                                                            <label class="col-sm-2 control-label">Pay/Tax Subtype: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
-                                                                                    <option value="1">Other dues</option>
-                                                                                    <option value="1">Other deductions</option>
-                                                                                    <option value="1">Unpaid leave</option>
-                                                                                </select>
+
+                                                                            <div class="row">
+                                                                                <label class="col-sm-2 control-label">Code: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
                                                                             </div>
-                                                                            <label class="col-sm-2 control-label">Code: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <input type="text" class="form-control">
+
+                                                                            <div class="row">
+                                                                                <label class="col-sm-2 control-label">Description: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
                                                                             </div>
-                                                                            <label class="col-sm-2 control-label">Description: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <input type="text" class="form-control">
+
+                                                                            <div class="row">
+                                                                                <label class="col-sm-2 control-label">Pay Item Type: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                        <option value="1">Manual Entry</option>
+                                                                                        <option value="2">Payroll Setting Value</option>
+                                                                                        <option value="3">Percentage of Payroll Setting</option>
+                                                                                        <option value="4">Percentage of Payroll Setting (Total Value Limited)</option>
+                                                                                        <option selected="selected" value="5">Percentage of Basic Salary</option>
+                                                                                        <option value="6">Percentage of Basic Salary (Total Value Limited)</option>
+                                                                                        <option value="7">Specific Value</option>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
-                                                                            <label class="col-sm-2 control-label">Pay Item Type: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
-                                                                                    <option value="1">Manual Entry</option>
-                                                                                    <option value="2">Payroll Setting Value</option>
-                                                                                    <option value="3">Percentage of Payroll Setting</option>
-                                                                                    <option value="4">Percentage of Payroll Setting (Total Value Limited)</option>
-                                                                                    <option selected="selected" value="5">Percentage of Basic Salary</option>
-                                                                                    <option value="6">Percentage of Basic Salary (Total Value Limited)</option>
-                                                                                    <option value="8">Specific Value</option>
-                                                                                </select>
+
+                                                                            <div class="row">
+                                                                                <label class="col-sm-2 control-label">Percentage: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+
+                                                                                <label class="col-sm-2 control-label">Cutoff Applied: </label>
+                                                                                <div class="col-sm-10">
+                                                                                    <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
+                                                                                        <option value="1">Yes</option>
+                                                                                        <option value="2">No</option>
+                                                                                    </select>
+                                                                                </div>
                                                                             </div>
-                                                                            <label class="col-sm-2 control-label">Percentage: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <input type="text" class="form-control">
-                                                                            </div>
-                                                                            <label class="col-sm-2 control-label">Cutoff Applied: </label>
-                                                                            <div class="col-sm-10">
-                                                                                <select data-placeholder="Choose a type..." class="chosen-select" tabindex="2">
-                                                                                    <option value="1">Yes</option>
-                                                                                    <option value="2">No</option>
-                                                                                </select>
-                                                                            </div>
+
                                                                         </div>
                                                                     </div>
                                                                     <div class="modal-footer">

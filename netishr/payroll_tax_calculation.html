@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Salary Entry</title>
+    <title>NetisHR | Tax Calculation</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -353,7 +353,7 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Salary Entry</h2>
+                    <h2>Tax Calculation</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
@@ -362,7 +362,7 @@
                             <a>Remuneration</a>
                         </li>
                         <li class="active">
-                            <strong>Salary Entry</strong>
+                            <strong>Tax Calculation</strong>
                         </li>
                     </ol>
                 </div>
@@ -465,13 +465,18 @@
 
                                     <h1>
                                         Ann Smith
-                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newjoblevel">Copy from previous</button></h1>
+                                    </h1>
                                     <small class="text-muted">ID: 201301011234 | Job title: Finance Manager</small>
                                     <p>
+                                        
                                         <div class="table-responsive">
                                             <table class="footable table table-stripped toggle-arrow-tiny">
                                                 <thead>
                                                     <tr>
+                                                    <th colspan="4">Gross Salary</th>
+                                                        </tr>
+                                                    <tr>
+                                                        <th data-toggle="true"></th>
                                                         <th data-toggle="true">Code</th>
                                                         <th data-toggle="true">Payitem Type</th>
                                                         <th data-toggle="true">Pay Item</th>
@@ -481,6 +486,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td>1</td>
                                                         <td>BS_W</td>
                                                         <td>Wages</td>
                                                         <td>Basic Salary</td>
@@ -489,6 +495,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
+                                                        <td>2</td>
                                                         <td>THR_A</td>
                                                         <td>Allowances</td>
                                                         <td>Tantiem, Bonus, THR</td>
@@ -498,14 +505,110 @@
                                                     </tr>
                                                 </tbody>
                                                 <tfoot>
-                                                    <tr>
-                                                        <td colspan="5">
-                                                            <ul class="pagination pull-right"></ul>
-                                                        </td>
+                                                    <tr >
+                                                        <td  colspan="4">Total:</td>
                                                     </tr>
                                                 </tfoot>
                                             </table>
                                         </div>
+                                        <div class="table-responsive">
+                                            <table class="footable table table-stripped toggle-arrow-tiny">
+                                                <thead>
+                                                    <tr>
+                                                    <th colspan="4">Deductions</th>
+                                                        </tr>
+                                                    <tr>
+                                                        <th data-toggle="true"></th>
+                                                        <th data-toggle="true">Code</th>
+                                                        <th data-toggle="true">Payitem Type</th>
+                                                        <th data-toggle="true">Pay Item</th>
+                                                        <th data-toggle="true">Amount</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>BS_W</td>
+                                                        <td>Wages</td>
+                                                        <td>Basic Salary</td>
+                                                        <td>
+                                                            <a href="#" id="amount1" data-type="text" data-pk="1" data-title="Enter amount" class="editable editable-click"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>THR_A</td>
+                                                        <td>Allowances</td>
+                                                        <td>Tantiem, Bonus, THR</td>
+                                                        <td>
+                                                        <a href="#" id="amount2" data-type="text" data-pk="1" data-title="Enter amount" class="editable editable-click"></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr >
+                                                        <td  colspan="4">Total:</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+
+                                                                            <div class="table-responsive">
+                                            <table class="footable table table-stripped toggle-arrow-tiny">
+                                                <thead>
+                                                    <tr>
+                                                    <th colspan="4">Income Tax Calculation</th>
+                                                        </tr>
+                                                    <tr>
+                                                        <th data-toggle="true"></th>
+                                                        <th data-toggle="true">Code</th>
+                                                        <th data-toggle="true">Payitem Type</th>
+                                                        <th data-toggle="true">Pay Item</th>
+                                                        <th data-toggle="true">Amount</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>BS_W</td>
+                                                        <td>Wages</td>
+                                                        <td>Basic Salary</td>
+                                                        <td>
+                                                            <a href="#" id="amount1" data-type="text" data-pk="1" data-title="Enter amount" class="editable editable-click"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>THR_A</td>
+                                                        <td>Allowances</td>
+                                                        <td>Tantiem, Bonus, THR</td>
+                                                        <td>
+                                                        <a href="#" id="amount2" data-type="text" data-pk="1" data-title="Enter amount" class="editable editable-click"></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                                                            <div class="table-responsive">
+                                            <table class="footable table table-stripped toggle-arrow-tiny">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>Income Tax Article 21 on the taxable annualized</td>
+                                                        <td>1234567</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>Income Tax Article 21 payable</td>
+                                                        <td>1234567</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
                                     </p>
 
                                 </div>

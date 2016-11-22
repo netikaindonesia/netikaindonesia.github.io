@@ -6,19 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | General Settings</title>
+    <title>NetisHR | Tax Calculation</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <!-- FooTable -->
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- X-editable CDN styles -->
-    <link href="css/bootstrap-editable.css" rel="stylesheet" />
-
 
 </head>
 
@@ -239,7 +236,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR</span>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -352,16 +349,16 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>General Settings</h2>
+                    <h2>Pax Calculation</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a><a href="administrator.html">Administration</a>
+                            <a href="administrator.html">Administration</a>
                         </li>
                         <li class="active">
-                            <strong>General Settings</strong>
+                            <strong>Pax Calculation</strong>
                         </li>
                     </ol>
                 </div>
@@ -370,158 +367,235 @@
                 </div>
             </div>
             <div class="wrapper wrapper-content animated fadeInRight">
+
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-sm-12">
                         <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>Various General Settings</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="ibox-content">
 
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-bordered table-hover ">
-                                        <thead>
-                                            <tr>
-                                                <th>Item</th>
-                                                <th>Description</th>
-                                                <th>Value</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="gradeX">
-                                                <td>Income tax rule</td>
-                                                <td>Rule on which income tax calculation is made
-                                                </td>
-                                                <td>
-                                                <a href="#" id="incometax" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">Indonesia</a>
-                                                </td>
+                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newjoblevel">Calculate</button>
+
+                                <div class="form-group">
+
+                                    <!-- When "Select" button is clicked above, add the competency to the list below -->
+                                    <div class="table-responsive">
 
 
-                                            </tr>
-                                            <tr class="gradeX">
-                                                <td>AutoPayslipPassword</td>
-                                                <td>When "No", it means admin has the password</td>
-                                                <td>
-                                                <a href="#" id="yesno" data-type="select" data-pk="1" data-value="" data-title="Select 0 or 1" class="editable editable-click" style="color: gray;">not selected</a>
-                                                </td>
 
-                                            </tr>
-                                            <tr class="gradeC">
-                                                <td>BossName</td>
-                                                <td>String</td>
-                                                <td>
-                                                    <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter boss' name" class="editable editable-click"></a>
-                                                </td>
+                                        <table class="footable table table-stripped toggle-arrow-tiny">
+                                            <thead>
+                                                <tr>
+                                                    <th rowspan="2" data-toggle="true">ID</th>
+                                                    <th rowspan="2" data-toggle="true">Name</th>
+                                                    <th rowspan="2" data-toggle="true">Job Title</th>
+                                                    <th colspan="2" data-toggle="true">Date</th>
+                                                    <th colspan="2" data-toggle="true">Time</th>
+                                                    <th rowspan="2" data-toggle="true">Length</th>
+                                                    <th rowspan="2" data-toggle="true">Overtime fee
+                                                </tr>
+                                                <tr>
+                                                    <th>From</th>
+                                                    <th>To</th>
+                                                    <th>From</th>
+                                                    <th>To</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>201304010012</td>
+                                                    <td>Nana Karyana</td>
+                                                    <td>Finance Manager</td>
+                                                    <td>August 12, 2016</td>
+                                                    <td>August 12, 2016</td>
+                                                    <td>17:10</td>
+                                                    <td>23:20</td>
+                                                    <td>6:10</td>
+                                                    <td>50,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>201304010013</td>
+                                                    <td>Nono Karyono</td>
+                                                    <td>IT Manager</td>
+                                                    <td>August 13, 2016</td>
+                                                    <td>August 13, 2016</td>
+                                                    <td>17:10</td>
+                                                    <td>20:20</td>
+                                                    <td>3:10</td>
+                                                    <td>50,000</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <ul class="pagination pull-right"></ul>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
 
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>BossTaxIDNumber</td>
-                                                <td>Numeric
-                                                </td>
-                                                <td>
-                                                    <a href="#" id="username" data-type="text" data-pk="1" data-title="Enter boss' tax ID no." class="editable editable-click"></a>
-                                                </td>
 
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>CompanyTaxIDNumber</td>
-                                                <td>Numeric
-                                                </td>
-                                                <td>00000</td>
+                                        <!--
+                                        <table class="footable table table-stripped toggle-arrow-tiny">
+                                            <thead>
+                                                <tr>
 
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionMarried0</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>2025000</td>
+                                                    <th data-toggle="true">Code</th>
+                                                    <th data-toggle="true">Competency name</th>
+                                                    <th data-hide="all">Description</th>
+                                                    <th data-hide="all">Indicator levels</th>
+                                                    <th data-toggle="true">Target level</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>TW</td>
+                                                    <td>Teamwork</td>
+                                                    <td>Implies the intention to work cooperatively with others, to be part of a team, have a common goal, a commitment to achieve goals and to work together as opposed to working separately and competitively. For this competency to be effective, the intention should be genuine. This competency may be considered whenever the subject is a member of a group of people functioning as a team. Team, as well as in Team Leadership (TL), is broadly defined as working groups or groups that perform a process together.</td>
+                                                    <td>
+                                                        <table class="table table-striped">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Level 1 (Basic)</td>
+                                                                    <td>
+                                                                        <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
+                                                                        <p> 2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Level 2 (Basic Application)</td>
+                                                                    <td>
+                                                                        <p>1. Focuses to achieve the target that has been set</p>
+                                                                        <p>2. Uses the own specific method to measure the outcome against the standard of excellence (which is not of management)</p>
+                                                                        <p>4. Enable conistently to achieve the target</p>
+                                                                        <p>5. Keeps track of and measures outcomes against a standard of excellence not imposed by others (competitive)</p>
+                                                                        <p>6. Continously try to anticipate challenges that lay ahead with speed & foresight</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Level 3 (Skillful Application)</td>
+                                                                    <td>
+                                                                        <p>1. Makes specific changes in the system or in own work methods to improve performance</p>
+                                                                        <p>2. Shows How to make improvements / work process without reducing the quality of the work, is to achieve better results</p>
+                                                                        <p>3. Making commitment to work on every issues</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Level 4 (Mastery)</td>
+                                                                    <td>
+                                                                        <p>1. Sets the challenging target clearly (not unrealistic or impossible)</p>
+                                                                        <p>2. Refers to specific measures of baseline performance compared with better performance at a later point in time (e.g., “When I took over, efficiency was 20% - now it is up to 85%.”)</p>
+                                                                        <p>3. Setting out to achieve a unique standard (e.g., “No one had ever done it before”)</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Level 5 (Expert)</td>
+                                                                    <td>
+                                                                        <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
+                                                                        <p>2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
 
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionMarried1</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>2025000</td>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                    <td>None
+                                                    </td>
+                                                    <td>
+                                                        <td class="text-right">
+                                                            <div class="btn-group">
+                                                                <button class="btn-white btn btn-xs">Set target</button>
+                                                                <button class="btn-white btn btn-xs">Delete</button>
+                                                            </div>
+                                                        </td>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CSO</td>
+                                                    <td>Customer Service Orientation</td>
+                                                    <td>Implies the intention to work cooperatively with others, to be part of a team, have a common goal, a commitment to achieve goals and to work together as opposed to working separately and competitively. For this competency to be effective, the intention should be genuine. This competency may be considered whenever the subject is a member of a group of people functioning as a team. Team, as well as in Team Leadership (TL), is broadly defined as working groups or groups that perform a process together.</td>
+                                                    <td>
+                                                        <table class="table table-striped">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Level 1 (Basic)</td>
+                                                                    <td>
+                                                                        <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
+                                                                        <p> 2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Level 2 (Basic Application)</td>
+                                                                    <td>
+                                                                        <p>1. Focuses to achieve the target that has been set</p>
+                                                                        <p>2. Uses the own specific method to measure the outcome against the standard of excellence (which is not of management)</p>
+                                                                        <p>4. Enable conistently to achieve the target</p>
+                                                                        <p>5. Keeps track of and measures outcomes against a standard of excellence not imposed by others (competitive)</p>
+                                                                        <p>6. Continously try to anticipate challenges that lay ahead with speed & foresight</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Level 3 (Skillful Application)</td>
+                                                                    <td>
+                                                                        <p>1. Makes specific changes in the system or in own work methods to improve performance</p>
+                                                                        <p>2. Shows How to make improvements / work process without reducing the quality of the work, is to achieve better results</p>
+                                                                        <p>3. Making commitment to work on every issues</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Level 4 (Mastery)</td>
+                                                                    <td>
+                                                                        <p>1. Sets the challenging target clearly (not unrealistic or impossible)</p>
+                                                                        <p>2. Refers to specific measures of baseline performance compared with better performance at a later point in time (e.g., “When I took over, efficiency was 20% - now it is up to 85%.”)</p>
+                                                                        <p>3. Setting out to achieve a unique standard (e.g., “No one had ever done it before”)</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Level 5 (Expert)</td>
+                                                                    <td>
+                                                                        <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
+                                                                        <p>2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
 
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionMarried2</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>2025000</td>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                    <td>None</td>
+                                                    <td>
+                                                        <td class="text-right">
+                                                            <div class="btn-group">
+                                                                <button class="btn-white btn btn-xs">Set target</button>
+                                                                <button class="btn-white btn btn-xs">Delete</button>
+                                                            </div>
+                                                        </td>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <ul class="pagination pull-right"></ul>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+-->
+                                    </div>
 
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionMarried3</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>2025000</td>
 
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>DeductionSingle</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>24300000</td>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
 
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>ExpiredContractIncludedInPayroll</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>ExpiredContractIncludedInPayroll</td>
-                                                <td>Individual Income Tax Deductions Per Year</td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>Income1</td>
-                                                <td>First Income's Limit</td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>Income2</td>
-                                                <td>Second Income's Limit</td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>Income3</td>
-                                                <td>Third Income's Limit</td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>Income4</td>
-                                                <td>Fourth Income's Limit</td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>IncomeTaxAllowancePaySlipCode</td>
-                                                <td>Third Income's Limit</td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr class="gradeA">
-                                                <td>InIncomeTaxPaySlipCodecome3</td>
-                                                <td>Third Income's Limit</td>
-                                                <td>1</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
-
                             </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
             <div class="footer">
                 <div class="pull-right">
@@ -543,11 +617,8 @@
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <script src="js/plugins/dataTables/datatables.min.js"></script>
-
-    <!-- X-editable CDN styles -->
-    <script src="js/bootstrap-editable.min.js"></script>
-
+    <!-- FooTable -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
 
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
@@ -556,150 +627,12 @@
     <!-- Page-Level Scripts -->
     <script>
         $(document).ready(function () {
-            $('.dataTables-example').DataTable({
-                pageLength: 25,
-                responsive: true,
-                dom: '<"html5buttons"B>lTfgitp',
-                buttons: [
-                    {
-                        extend: 'copy'
-                    },
-                    {
-                        extend: 'csv'
-                    },
-                    {
-                        extend: 'excel',
-                        title: 'ExampleFile'
-                    },
-                    {
-                        extend: 'pdf',
-                        title: 'ExampleFile'
-                    },
 
-                    {
-                        extend: 'print',
-                        customize: function (win) {
-                            $(win.document.body).addClass('white-bg');
-                            $(win.document.body).css('font-size', '10px');
-
-                            $(win.document.body).find('table')
-                                .addClass('compact')
-                                .css('font-size', 'inherit');
-                        }
-                    }
-                ]
-
-            });
+            $('.footable').footable();
+            $('.footable2').footable();
 
         });
     </script>
-
-    <-- X-Editable scripts --></-->
-    <script>
-        $(function () {
-
-
-            //turn to inline mode
-            $.fn.editable.defaults.mode = 'inline';
-
-            //defaults
-            $.fn.editable.defaults.url = '#';
-
-            //editables
-            $('#username').editable({
-                url: '#',
-                type: 'text',
-                pk: 1,
-                name: 'username',
-                title: 'Enter username'
-            });
-
-            $('#firstname').editable({
-                validate: function (value) {
-                    if ($.trim(value) == '') return 'This field is required';
-                }
-            });
-
-            $('#incometax').editable({
-                prepend: "Indonesia",
-                source: [
-                    {
-                    }
-                ],
-                display: function (value, sourceData) {
-                    var colors = {
-                            "": "gray",
-                            1: "green",
-                            2: "blue"
-                        },
-                        elem = $.grep(sourceData, function (o) {
-                            return o.value == value;
-                        });
-
-                    if (elem.length) {
-                        $(this).text(elem[0].text).css("color", colors[value]);
-                    } else {
-                        $(this).empty();
-                    }
-                }
-            });
-
-            $('#dob').editable();
-
-            $('#event').editable({
-                placement: 'right',
-                combodate: {
-                    firstItem: 'name'
-                }
-            });
-
-            $('#comments').editable({
-                showbuttons: 'bottom'
-            });
-
-            $('#fruits').editable({
-                pk: 1,
-                limit: 3,
-                source: [
-                    {
-                        value: 1,
-                        text: 'banana'
-                    },
-                    {
-                        value: 2,
-                        text: 'peach'
-                    },
-                    {
-                        value: 3,
-                        text: 'apple'
-                    },
-                    {
-                        value: 4,
-                        text: 'watermelon'
-                    },
-                    {
-                        value: 5,
-                        text: 'orange'
-                    }
-                ]
-            });
-
-            $('#user .editable').on('hidden', function (e, reason) {
-                if (reason === 'save' || reason === 'nochange') {
-                    var $next = $(this).closest('tr').next().find('.editable');
-                    if ($('#autoopen').is(':checked')) {
-                        setTimeout(function () {
-                            $next.editable('show');
-                        }, 300);
-                    } else {
-                        $next.focus();
-                    }
-                }
-            });
-
-        });
-    </script>
-
 
 </body>
 
