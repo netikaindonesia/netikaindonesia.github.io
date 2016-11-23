@@ -379,6 +379,18 @@
 										<div class="tab-content ">
 											<div id="tab-1" class="tab-pane active">
 												<fieldset class="form-horizontal">
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">Recruitment ID</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="recruitmentid" data-type="select" data-pk="1" data-title="Enter REcruitment ID" class="editable editable-click">X01</a></p>
+													</div>
+												</div>                                             
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">Job Title Application</label>
+													<div class="col-sm-10">
+                                                        Marketing Team
+													</div>
+												</div>                                             
 												<div class="form-group">
 													<label class="col-sm-2 control-label">Applicant Code</label>
 													<div class="col-sm-10">
@@ -448,12 +460,6 @@
 														<p class="form-control-static"><button type="button" class="btn btn-primary btn-xs">Browse</button> <a>MyPhoto.Jpg</a></p>
 													</div>
 												</div>   
-                                                <div class="form-group">
-													<label class="col-sm-2 control-label">Job Title Application</label>
-													<div class="col-sm-10">
-														<p class="form-control-static"><a href="#" id="jobtitleapplication" data-type="select" data-pk="1" data-title="Enter Job Title Application" class="editable editable-click">Marketing Team</a></p>
-													</div>
-												</div>                                             
 												<div class="form-group">
 													<label class="col-sm-2 control-label">Comment</label>
 													<div class="col-sm-10">
@@ -611,6 +617,23 @@
                     {
                         value: 1,
                         text: 'HR Team'
+                    }
+                ]
+            });   
+            $('#recruitmentid').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'X01'
+                    },
+                    {
+                        value: 1,
+                        text: 'X02'
+                    },
+                    {
+                        value: 1,
+                        text: 'X03'
                     }
                 ]
             });   
