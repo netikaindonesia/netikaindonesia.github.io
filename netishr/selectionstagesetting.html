@@ -6,12 +6,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Tabs </title>
+    <title>NetisHR | Selection Stage Settings</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+
 
 </head>
 
@@ -232,7 +240,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR.</span>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -246,7 +254,7 @@
                                         </a>
                                         <div class="media-body">
                                             <small class="pull-right">46h ago</small>
-                                            <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>.
+                                            <strong>Mike Loreipsum</strong> said Please finish your performance planning.
                                             <br>
                                             <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
                                         </div>
@@ -260,7 +268,7 @@
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right text-navy">5h ago</small>
-                                            <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>.
+                                            <strong>Chris Johnatan Overtunk</strong> said Can you check my evidence?
                                             <br>
                                             <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
                                         </div>
@@ -274,7 +282,7 @@
                                         </a>
                                         <div class="media-body ">
                                             <small class="pull-right">23h ago</small>
-                                            <strong>Monica Smith</strong> love <strong>Kim Smith</strong>.
+                                            <strong>Monica Smith</strong> said Can I ask regarding my KPI?
                                             <br>
                                             <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
                                         </div>
@@ -283,7 +291,7 @@
                                 <li class="divider"></li>
                                 <li>
                                     <div class="text-center link-block">
-                                        <a href="mailbox.html">
+                                        <a href="messages.html">
                                             <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
                                         </a>
                                     </div>
@@ -298,7 +306,7 @@
                                 <li>
                                     <a href="mailbox.html">
                                         <div>
-                                            <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                            <i class="fa fa-envelope fa-fw"></i> Monica Smith asks for leave approval
                                             <span class="pull-right text-muted small">4 minutes ago</span>
                                         </div>
                                     </a>
@@ -307,7 +315,7 @@
                                 <li>
                                     <a href="profile.html">
                                         <div>
-                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <i class="fa fa-twitter fa-fw"></i> John Doe asks for attendance approval
                                             <span class="pull-right text-muted small">12 minutes ago</span>
                                         </div>
                                     </a>
@@ -345,16 +353,16 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Tabs</h2>
+                    <h2>Selection Stage Setting</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
-                        <li>
-                            <a>UI Elements</a>
+                        <li class="active">
+                            <a href="administrator.html">Administrator</a>
                         </li>
                         <li class="active">
-                            <strong>Tabs</strong>
+                            <strong>Selection Stage Settings</strong>
                         </li>
                     </ol>
                 </div>
@@ -362,68 +370,216 @@
 
                 </div>
             </div>
-            <div class="wrapper wrapper-content animated fadeIn">
-
-
+            <div class="wrapper wrapper-content animated fadeInRight">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="tabs-container">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a data-toggle="tab" href="#tab-1">Groups and Units</a></li>
-                                <li class=""><a data-toggle="tab" href="#tab-2">Job Titles/Persons</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div id="tab-1" class="tab-pane active">
-                                    <div class="panel-body">
-                                        <strong>Chart showing groups and units</strong>
-
-                                        <p>(Chart showing the company, parent/child companies, branches, departments as well as groups within the company)</p>
-                                        <!-- Perhaps use https://codepen.io/siiron/pen/aLkdE ? -->
+                    <div class="col-lg-12">
+                        <div class="ibox">
+                            <div class="ibox-content">
+                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newInformation">New Selection Process</button>
+                                <div class="modal inmodal" id="newInformation" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content animated bounceInRight">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <i class="fa fa-laptop modal-icon"></i>
+                                                <h4 class="modal-title"> New Person Information </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="order_id">Code</label>
+                                                    <input type="text" id="order_id" name="order_id" value="" placeholder="Code" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="Group">Group</label>
+                                                    <input type="text" id="status" name="status" value="" placeholder="Label" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="Label">Label</label>
+                                                    <input type="text" id="status" name="status" value="" placeholder="Label" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="Type">Type</label>
+                                                    <div>
+                                                        <select class="form-control">
+                                                            <option value="">Select</option>
+                                                            <option value="1">Text</option>
+                                                            <option value="2">Integer</option>
+                                                            <option value="2">Address</option>
+                                                            <option value="2">Family_Type</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="Type">Use</label>
+                                                    <div>
+                                                        <select class="form-control">
+                                                            <option value="">Select</option>
+                                                            <option value="1">Person</option>
+                                                            <option value="2">Applicant</option>
+                                                            <option value="2">Person and Applicant</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div id="tab-2" class="tab-pane">
-                                    <div class="panel-body">
-                                        <strong>Chart showing Job Titles and Persons</strong>
+                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                    <thead>
+                                        <tr>
+                                            <th>Label</th>
+                                            <th>Order</th>                                            
+                                            <th>Status</th>
+                                            <th class="text-right">
+                                                Action
+                                            </th>
 
-                                        <p>(Chart showing job titles and persons. Gives a switch to show without or with persons)</p>
-                                    </div>
-                                </div>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Administration Screening
+                                            </td>
+                                            <td>1</td>                                            
+                                            <td>
+                                                <span class="label label-primary">Active</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Written Test
+                                            </td>
+                                            <td>2</td>                                            
+                                            <td>
+                                                <span class="label label-primary">Active</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                First Interview
+                                             </td>
+                                            <td>3</td>                                            
+                                            <td>
+                                                <span class="label label-primary">Active</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Second Interview
+                                            </td>
+                                            <td>4</td>                                            
+                                            <td>
+                                                <span class="label label-primary">Active</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Medical Check Up
+                                            </td>
+                                            <td>5</td>                                            
+                                            <td>
+                                                <span class="label label-primary">Active</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Contract Proposal
+                                            </td>
+                                            <td>6</td>                                            
+                                            <td>
+                                                <span class="label label-primary">Active</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="btn-group">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="7">
+                                                <ul class="pagination pull-right"></ul>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
                             </div>
-
-
                         </div>
                     </div>
-
-
-
-
                 </div>
-                <div class="footer">
-                    <div class="pull-right">
-                        <strong>Version</strong> 2.x.xxxx.
-                    </div>
-                    <div>
-                        <strong>Copyright</strong> Netika Indonesia &copy; 2016
-                    </div>
-                </div>
-
             </div>
+
+            <div class="footer">
+                <div class="pull-right">
+                    <strong>Version</strong> 2.x.xxxx.
+                </div>
+                <div>
+                    <strong>Copyright</strong> Netika Indonesia &copy; 2016
+                </div>
+            </div>
+
         </div>
+    </div>
 
 
-        <!-- Mainly scripts -->
-        <script src="js/jquery-2.1.1.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-        <!-- Custom and plugin javascript -->
-        <script src="js/inspinia.js"></script>
-        <script src="js/plugins/pace/pace.min.js"></script>
-        <script src="js/w3data.js"></script>
-        <script>
-            w3IncludeHTML();
-        </script>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
+    <script src="js/plugins/select2/select2.full.min.js"></script>
+    <script>
+        $(".select2_demo_1").select2();
+        $(".select2_demo_2").select2();
+    </script>
 
 </body>
 

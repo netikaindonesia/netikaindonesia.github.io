@@ -116,7 +116,6 @@
                             <li><a href="manpowerplanning.html">Manpower Planning</a></li>
                             <li><a href="recruitmentplanning.html">Recruitment Planning</a></li>
                             <li><a href="selectionprocess.html">Selection Process</a></li>
-                            <li><a href="applicants.html">Applicants</a></li>
                         </ul>
                     </li>
                     <li>
@@ -192,19 +191,19 @@
                                 <a href="#">Payroll <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="#">Salary Entry</a>
+                                        <a href="payroll_salary_entry.html">Salary Entry</a>
                                     </li>
                                     <li>
-                                        <a href="#">Tax Calculation</a>
+                                        <a href="payroll_tax_calculation.html">Tax Calculation</a>
                                     </li>
                                     <li>
-                                        <a href="#">Overtime Calculation</a>
+                                        <a href="payroll_overtime_calculation.html">Overtime Calculation</a>
                                     </li>
                                     <li>
-                                        <a href="#">Salary Calculation</a>
+                                        <a href="payroll_salary_calculation.html">Salary Calculation</a>
                                     </li>
                                     <li>
-                                        <a href="#">Payslip</a>
+                                        <a href="payroll_salary_calculation_details.html">Payslip</a>
                                     </li>
                                 </ul>
                             </li>
@@ -227,6 +226,7 @@
 
             </div>
         </nav>
+
         <div id="page-wrapper" class="gray-bg dashbard-1">
             <div class="row border-bottom">
                 <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -413,11 +413,14 @@
                     <div class="col-sm-12">
                         <div class="ibox">
                             <div class="ibox-content">
-                                <div class="input-group col-lg-6">
+                                <div class="input-group col-lg-8">
                                     <input type="text" placeholder="Search Job Title " class="input form-control">
                                     <span class="input-group-btn">
                                             <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
-                                        </span>
+                                     </span>
+                                    <div class="col-lg-4 text-right">
+                                        <a href="recruitmentplanning.html" class="btn btn-primary">Go to Recruitment Planning</a>
+                                    </div>
                                 </div>
                                 <br>
                                 <table class="footable table table-stripped toggle-arrow-tiny">
@@ -455,7 +458,7 @@
                                             <td>
                                                 <div class="btn-group">
                                                     <a href="#">
-                                                        <button class="btn-white btn btn-xs" data-toggle="modal" data-target="#Edit">Edit</button>
+                                                        <button data-toggle="modal" data-target="#Edit" class="btn-white btn btn-xs">Edit</button>
                                                     </a>
                                                 </div>
                                             </td>

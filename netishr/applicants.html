@@ -6,18 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Persons</title>
+    <title>NetisHR | Applicants</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <!-- Toastr style -->
-    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
-
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-
 
 </head>
 
@@ -114,7 +108,6 @@
                             <li><a href="manpowerplanning.html">Manpower Planning</a></li>
                             <li><a href="recruitmentplanning.html">Recruitment Planning</a></li>
                             <li><a href="selectionprocess.html">Selection Process</a></li>
-                            <li><a href="applicants.html">Applicants</a></li>
                         </ul>
                     </li>
                     <li>
@@ -190,19 +183,19 @@
                                 <a href="#">Payroll <span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="#">Salary Entry</a>
+                                        <a href="payroll_salary_entry.html">Salary Entry</a>
                                     </li>
                                     <li>
-                                        <a href="#">Tax Calculation</a>
+                                        <a href="payroll_tax_calculation.html">Tax Calculation</a>
                                     </li>
                                     <li>
-                                        <a href="#">Overtime Calculation</a>
+                                        <a href="payroll_overtime_calculation.html">Overtime Calculation</a>
                                     </li>
                                     <li>
-                                        <a href="#">Salary Calculation</a>
+                                        <a href="payroll_salary_calculation.html">Salary Calculation</a>
                                     </li>
                                     <li>
-                                        <a href="#">Payslip</a>
+                                        <a href="payroll_salary_calculation_details.html">Payslip</a>
                                     </li>
                                 </ul>
                             </li>
@@ -225,6 +218,7 @@
 
             </div>
         </nav>
+
         <div id="page-wrapper" class="gray-bg dashbard-1">
             <div class="row border-bottom">
                 <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -351,13 +345,16 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Persons</h2>
+                    <h2>Applicants</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
+                        <li>
+                            <a href="selectionprocess.html">selection Process</a>
+                        </li>                        
                         <li class="active">
-                            <strong>Persons</strong>
+                            <strong>Applicants</strong>
                         </li>
                     </ol>
                 </div>
@@ -365,485 +362,122 @@
 
                 </div>
             </div>
-            <div class="wrapper wrapper-content  animated fadeInRight">
+            <div class="wrapper wrapper-content animated fadeIn">
                 <div class="row">
-                    <div class="col-sm-8">
-                        <div class="ibox">
+                        <div class="ibox float-e-margins">
                             <div class="ibox-content">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Search client " class="input form-control">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
-                                </span>
-                                </div>
-                                <br>
-                                <a href="persons_profile.html">
-                                    <button type="button" class="btn btn-primary btn-xs">New Person</button>
-                                </a>
-                                <div class="clients-list">
-                                    <ul class="nav nav-tabs">
-                                        <span class="pull-right small text-muted">16 persons</span>
-                                        <li class="active"><a data-toggle="tab" href="#tab-1"><i class="fa fa-user"></i> Active</a></li>
-                                        <li class=""><a data-toggle="tab" href="#tab-2"><i class="fa fa-briefcase"></i> Inactive</a></li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div id="tab-1" class="tab-pane active">
-                                            <div class="full-height-scroll">
-                                                <div class="table-responsive">
-                                                    <table class="table table-striped table-hover">
-                                                        <thead>
-                                                            <th>
-                                                            </th>
-                                                            <th>
-                                                                NIP
-                                                            </th>
-                                                            <th>
-                                                                Name
-                                                            </th>
-                                                            <th>
-                                                                Organization Unit
-                                                            </th>
-                                                            <th>
-                                                                Job Title
-                                                            </th>
-                                                            <th>
-                                                                Action
-                                                            </th>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
+                                <button type="button" class="btn btn-primary btn">Save</button>
+                                <button type="button" class="btn btn-danger btn">Reject Person</button>
+                                <button type="button" class="btn btn-primary btn">Move to Written Test</button>
+                                <div class="row m-t-lg">
+					                <div class="tabs-container">
+    									<div class="tabs-left">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a data-toggle="tab" href="#tab-1"><i class="fa fa-user"></i> Main Information</a></li>
+                                                <li><a data-toggle="tab" href="#tab-2"><i class="fa fa-user"></i> Education Information(Notes: Termasuk additional Person information)</a></li>
+                                            </ul>
+										<div class="tab-content ">
+											<div id="tab-1" class="tab-pane active">
+												<fieldset class="form-horizontal">
+												<div class="form-group">
+													<label class="col-sm-2 control-label">Applicant Code</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="applicantcode" data-type="text" data-pk="1" data-title="Enter applicant' code" class="editable editable-click">001</a></p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">Name</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="name" data-type="text" data-pk="1" data-title="Enter boss' name" class="editable editable-click">Tono Kartono</a></p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">Title</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="Title" data-type="select" data-pk="1" data-title="Enter Title" class="editable editable-click">Mr</a></p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">Gender</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="Gender" data-type="select" data-pk="1" data-title="Enter Gender" class="editable editable-click">Male</a></p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">Religion</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="Religion" data-type="select" data-pk="1" data-title="Enter Religion" class="editable editable-click">Islam</a></p>
+													</div>
+												</div>
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">Country of Birth</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="Country" data-type="select" data-pk="1" data-title="Enter Country of Birth" class="editable editable-click">Indonesia</a></p>
+													</div>
+												</div>
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">City of Birth</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="City" data-type="text" data-pk="1" data-title="Enter City" class="editable editable-click">DKI Jakarta</a></p>
+													</div>
+												</div>
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">Date of Birth</label>
+													<div class="col-sm-3">
+                                                            <div class="input-group date">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                <input id="date_added" type="text" class="form-control" value="03/04/2014">
+                                                            </div>
+													</div>
+												</div>
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">Language</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="Language" data-type="select" data-pk="1" data-title="Enter Language" class="editable editable-click">Indonesia</a></p>
+													</div>
+												</div>
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">Nationality</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="Nationality" data-type="select" data-pk="1" data-title="Enter Nationality" class="editable editable-click">Indonesia</a></p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">Photo</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><button type="button" class="btn btn-primary btn-xs">Browse</button> <a>MyPhoto.Jpg</a></p>
+													</div>
+												</div>   
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">Job Title Application</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="jobtitleapplication" data-type="select" data-pk="1" data-title="Enter Job Title Application" class="editable editable-click">Marketing Team</a></p>
+													</div>
+												</div>                                             
+												<div class="form-group">
+													<label class="col-sm-2 control-label">Comment</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="comment" data-type="text" data-pk="1" data-title="Enter applicant' code" class="editable editable-click">Good Background</a></p>
+													</div>
+												</div>
+                                                <div class="form-group">
+													<label class="col-sm-2 control-label">Application Status</label>
+													<div class="col-sm-10">
+														<p class="form-control-static"><a href="#" id="applicationstatus" data-type="select" data-pk="1" data-title="Enter Job Title Application" class="editable editable-click">Administration Screening</a></p>
+													</div>
+												</div>      												
+                                            </fieldset>
+											</div>
+											<div id="tab-2" class="tab-pane">
+											</div>
                                         </div>
-                                        <div id="tab-2" class="tab-pane">
-                                            <div class="full-height-scroll">
-                                                <div class="table-responsive">
-                                                    <table class="table table-striped table-hover">
-                                                        <thead>
-                                                            <th>
-                                                            </th>
-                                                            <th>
-                                                                NIP
-                                                            </th>
-                                                            <th>
-                                                                Name
-                                                            </th>
-                                                            <th>
-                                                                Organization Unit
-                                                            </th>
-                                                            <th>
-                                                                Job Title
-                                                            </th>
-                                                            <th>
-                                                                Action
-                                                            </th>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a2.jpg"> </td>
-                                                                <td> 10033 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tono Kartono</a></td>
-                                                                <td> IT Team</td>
-                                                                <td> IT Developer</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="client-avatar"><img alt="image" src="img/a3.jpg"> </td>
-                                                                <td> 10022 </td>
-                                                                <td><a data-toggle="tab" href="#contact-1" class="client-link">Tini Kartini</a></td>
-                                                                <td> Marketing Communication</td>
-                                                                <td> Staff</td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a href="persons_profile.html">
-                                                                            <button class="btn-white btn btn-xs">Detail</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="ibox ">
-
-                            <div class="ibox-content">
-                                <div class="tab-content">
-                                    <div id="contact-1" class="tab-pane active">
-                                        <div class="row m-b-lg">
-                                            <div class="col-lg-4 text-center">
-
-                                                <h2>Tono Kartono</h2>
-
-                                                <div class="m-b-sm">
-                                                    <img alt="image" class="img-circle" src="img/a2.jpg" style="width: 62px">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <h4>
-													NIP : 10033
-												</h4>
-                                                <h4>
-													Job Title : IT Developer
-												</h4>
-                                                <h4>
-													Organization Unit : IT Team
-												</h4>
-                                            </div>
-                                        </div>
-                                        <div class="client-detail">
-                                            <div class="full-height-scroll">
-
-                                                <strong>Person Information</strong>
-
-                                                <ul class="list-group clear-list">
-                                                    <li class="list-group-item fist-item">
-                                                        <span class="pull-right"> Permanent </span> Employment Type
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="pull-right"> DKI Jakarta</span> Placement
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="pull-right"> Male </span> Gender
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="pull-right"> Moslem </span> Religion
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="pull-right"> Indonesia </span> Country of Birth
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="pull-right"> Medan </span> City of Birth
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="pull-right"> 20 February 1991</span> Date of Birth
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="pull-right"> Indonesia</span> Language
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <span class="pull-right"> Indonesia</span> Nationality
-                                                    </li>
-                                                </ul>
-                                                <strong>Contact Information</strong>
-                                                <ul class="list-group clear-list">
-                                                    <li class="list-group-item fist-item">
-                                                        <span class="pull-right"> 021123123</span> Telephone Number
-                                                    </li>
-                                                    <li class="list-group-item fist-item">
-                                                        <span class="pull-right"> 08111123123</span> Mobile Phone Number
-                                                    </li>
-                                                    <li class="list-group-item fist-item">
-                                                        <span class="pull-right"> 021123123</span> Work Number
-                                                    </li>
-                                                    <li class="list-group-item fist-item">
-                                                        <span class="pull-right"> Toto.Kartono@netikaindonesia.com </span> Email
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
+									</div>
                                     </div>
                                 </div>
-                            </div>
+							</div>
                         </div>
-                    </div>
                 </div>
+
             </div>
             <div class="footer">
                 <div class="pull-right">
@@ -861,18 +495,323 @@
 
     <!-- Mainly scripts -->
     <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
 
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
-    <script src="js/w3data.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
     <script>
-        w3IncludeHTML();
+        $(document).ready(function () {
+
+
+            $("#sparkline1").sparkline([34, 43, 43, 35, 44, 32, 44, 48], {
+                type: 'line',
+                width: '100%',
+                height: '50',
+                lineColor: '#1ab394',
+                fillColor: "transparent"
+            });
+
+
+        });
     </script>
+		<script src="js/w3data.js"></script>
+	<script>
+		w3IncludeHTML();
+	</script>
+
+    <!-- X-editable CDN styles -->
+    <script src="js/bootstrap-editable.min.js"></script>
+
+    <-- X-Editable scripts --></-->
+    <script>
+        $(function () {
+
+
+            //turn to inline mode
+            $.fn.editable.defaults.mode = 'inline';
+
+            //defaults
+            $.fn.editable.defaults.url = '#';
+
+            //editables
+            $('#name').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'name',
+                title: 'Enter name'
+                //contoh validasi
+                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+            });
+
+            //editables
+            $('#applicantcode').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'name',
+                title: 'Enter name'
+                //contoh validasi
+                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+            });            
+
+             //editables
+            $('#comment').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'name',
+                title: 'Enter name'
+                //contoh validasi
+                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+            });
+
+            //editables
+            $('#City').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'City',
+                title: 'Enter City'
+                //contoh validasi
+                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+            });
+
+            $('#Title').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Mr'
+                    },
+                    {
+                        value: 1,
+                        text: 'Mrs'
+                    }
+                ]
+            });
+            $('#jobtitleapplication').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Marketing Team'
+                    },
+                    {
+                        value: 1,
+                        text: 'IT Team'
+                    },
+                    {
+                        value: 1,
+                        text: 'HR Team'
+                    }
+                ]
+            });   
+            $('#applicationstatus').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Administration Screening'
+                    },
+                    {
+                        value: 1,
+                        text: 'Written Test'
+                    },
+                    {
+                        value: 1,
+                        text: 'First Interview'
+                    },
+                    {
+                        value: 2,
+                        text: 'Second Interview'
+                    },
+                    {
+                        value: 3,
+                        text: 'Medical CheckUp'
+                    },
+                    {
+                        value: 4,
+                        text: 'Contract Proposal'
+                    },
+                    {
+                        value: 5,
+                        text: 'Closed'
+                    },
+                    {
+                        value: 6,
+                        text: 'Reject'
+                    }
+                ]
+            }); 
+            $('#Gender').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Male'
+                    },
+                    {
+                        value: 1,
+                        text: 'Female'
+                    }
+                ]
+            });
+            $('#Religion').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Moslem'
+                    },
+                    {
+                        value: 1,
+                        text: 'Christian'
+                    }
+                ]
+            });
+             $('#Country').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Indonesia'
+                    },
+                    {
+                        value: 1,
+                        text: 'Malaysia'
+                    },
+                    {
+                        value: 2,
+                        text: 'Other'
+                    }
+                ]
+            });
+             $('#Language').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Indonesia'
+                    },
+                    {
+                        value: 1,
+                        text: 'English'
+                    },
+                    {
+                        value: 2,
+                        text: 'Other'
+                    }
+                ]
+            });    
+             $('#Nationality').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Indonesia'
+                    },
+                    {
+                        value: 1,
+                        text: 'English'
+                    },
+                    {
+                        value: 2,
+                        text: 'Other'
+                    }
+                ]
+            });    
+             $('#Job_Title').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'IT Developer'
+                    },
+                    {
+                        value: 1,
+                        text: 'Finance Staff'
+                    },
+                    {
+                        value: 2,
+                        text: 'HC Staff'
+                    }
+                ]
+            });        
+             $('#Orgazanition_Unit').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'IT Team'
+                    },
+                    {
+                        value: 1,
+                        text: 'Finance Team'
+                    },
+                    {
+                        value: 2,
+                        text: 'HC Team'
+                    }
+                ]
+            });        
+             $('#Employment_Type').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Permanent'
+                    },
+                    {
+                        value: 1,
+                        text: 'Contract'
+                    }
+                ]
+            });             
+             $('#Placement').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'DKI Jakarta'
+                    },
+                    {
+                        value: 1,
+                        text: 'Bandung'
+                    }
+                ]
+            });              
+             $('#Status').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'Active'
+                    },
+                    {
+                        value: 1,
+                        text: 'Inactive'
+                    }
+                ]
+            });             //editables
+            $('#NIP').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'name',
+                title: 'Enter name'
+                //contoh validasi
+                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+            });        });
+    </script>
+
 </body>
 
 </html>
