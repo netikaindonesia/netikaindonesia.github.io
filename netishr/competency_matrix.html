@@ -389,260 +389,258 @@
                         </div>
                     </div>
 
-                    <div class="wrapper wrapper-content">
-                        <div class="row">
-                            <!--
+                    <div class="row">
+                        <!--
                             <div class="alert alert-success">
                                 <strong>Success!</strong> Indicates a successful or positive action.
                             </div>
                             -->
 
-                            <div class="col-lg-12">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-content m-b-sm border-bottom">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <!-- Get this data Settings (mysettings.html) -->
-                                                <!-- Get this data Settings (mysettings.html) -->
-                                                <label class="control-label">Performance Management Period:</label>&nbsp;&nbsp; January 1, 2016 - December 31, 2016
-                                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newevidence">Change period</button>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <!-- Initially select first staff -->
-                                                    <div>
-                                                        <label class="control-label" for="status">Select a job title: </label>
-                                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                            <option value="1">DIR-BR Director of Business Development</option>
-                                                            <option selected value="2">DIR-FIN Director of Finance</option>
-                                                            <option value="3">DIR-HR Director of HR</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="hr-line-dashed"></div>
 
-                                                </div>
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content m-b-sm border-bottom">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <!-- Get this data Settings (mysettings.html) -->
+                                        <!-- Get this data Settings (mysettings.html) -->
+                                        <label class="control-label">Performance Management Period:</label>&nbsp;&nbsp; January 1, 2016 - December 31, 2016
+                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newevidence">Change period</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <!-- Initially select first staff -->
+                                            <div>
+                                                <label class="control-label" for="status">Select a job title: </label>
+                                                <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                                    <option value="1">DIR-BR Director of Business Development</option>
+                                                    <option selected value="2">DIR-FIN Director of Finance</option>
+                                                    <option value="3">DIR-HR Director of HR</option>
+                                                </select>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                                <div class="form-group">
-                                                    <!-- Initially select first competency in first category -->
-                                                    <label class="control-label" for="status">Select a competency title: </label>
+                                            <div class="hr-line-dashed"></div>
 
-                                                    <div class="input-group">
-                                                        <select data-placeholder="Choose a subordinate..." class="chosen-select input-sm form-control" tabindex="2">
-                                                            <!-- <Category> - <Code> - <CompetencyName> -->
-                                                            <option selected value="1">Core - FLX - Flexibility</option>
-                                                            <option value="2">Core - ACH - Achievement Orientation</option>
-                                                            <option value="3">Core - TL - Team Leadership </option>
-                                                        </select>
-                                                        <span class="input-group-btn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <!-- Initially select first competency in first category -->
+                                            <label class="control-label" for="status">Select a competency title: </label>
+
+                                            <div class="input-group">
+                                                <select data-placeholder="Choose a subordinate..." class="chosen-select input-sm form-control" tabindex="2">
+                                                    <!-- <Category> - <Code> - <CompetencyName> -->
+                                                    <option selected value="1">Core - FLX - Flexibility</option>
+                                                    <option value="2">Core - ACH - Achievement Orientation</option>
+                                                    <option value="3">Core - TL - Team Leadership </option>
+                                                </select>
+                                                <span class="input-group-btn">
                                         <button type="button" class="btn btn-sm btn-white"> <i class="fa fa-plus"></i> Select</button>
                                 </span>
-                                                    </div>
+                                            </div>
 
 
 
 
-                                                    <div>
-                                                        <!-- When a competency is selected above, show its description below -->
-                                                        <div>
-                                                            A concern for working well or for exceeding the standards of excellence. The standards includes ability improvement / one's own past performance (striving for improvement); an objective measure (results orientation); exceeds the performance of others (competitiveness); challenging one's goals; or even do something what anyone has never done (innovation) that affects employee productivity positively
-                                                        </div>
-
-
-                                                    </div>
-
+                                            <div>
+                                                <!-- When a competency is selected above, show its description below -->
+                                                <div>
+                                                    A concern for working well or for exceeding the standards of excellence. The standards includes ability improvement / one's own past performance (striving for improvement); an objective measure (results orientation); exceeds the performance of others (competitiveness); challenging one's goals; or even do something what anyone has never done (innovation) that affects employee productivity positively
                                                 </div>
+
 
                                             </div>
 
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <!-- When "Select" button is clicked above, add the competency to the list below -->
-                                                <div class="table-responsive">
-                                                    <table class="footable table table-stripped toggle-arrow-tiny">
-                                                        <thead>
-                                                            <tr>
 
-                                                                <th data-toggle="true">Code</th>
-                                                                <th data-toggle="true">Competency name</th>
-                                                                <th data-hide="all">Description</th>
-                                                                <th data-hide="all">Indicator levels</th>
-                                                                <th data-toggle="true">Target level</th>
-                                                                <th></th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>TW</td>
-                                                                <td>Teamwork</td>
-                                                                <td>Implies the intention to work cooperatively with others, to be part of a team, have a common goal, a commitment to achieve goals and to work together as opposed to working separately and competitively. For this competency to be effective, the intention should be genuine. This competency may be considered whenever the subject is a member of a group of people functioning as a team. Team, as well as in Team Leadership (TL), is broadly defined as working groups or groups that perform a process together.</td>
-                                                                <td>
-                                                                    <table class="table table-striped">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Level 1 (Basic)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
-                                                                                    <p> 2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 2 (Basic Application)</td>
-                                                                                <td>
-                                                                                    <p>1. Focuses to achieve the target that has been set</p>
-                                                                                    <p>2. Uses the own specific method to measure the outcome against the standard of excellence (which is not of management)</p>
-                                                                                    <p>4. Enable conistently to achieve the target</p>
-                                                                                    <p>5. Keeps track of and measures outcomes against a standard of excellence not imposed by others (competitive)</p>
-                                                                                    <p>6. Continously try to anticipate challenges that lay ahead with speed & foresight</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 3 (Skillful Application)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes specific changes in the system or in own work methods to improve performance</p>
-                                                                                    <p>2. Shows How to make improvements / work process without reducing the quality of the work, is to achieve better results</p>
-                                                                                    <p>3. Making commitment to work on every issues</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 4 (Mastery)</td>
-                                                                                <td>
-                                                                                    <p>1. Sets the challenging target clearly (not unrealistic or impossible)</p>
-                                                                                    <p>2. Refers to specific measures of baseline performance compared with better performance at a later point in time (e.g., “When I took over, efficiency was 20% - now it is up to 85%.”)</p>
-                                                                                    <p>3. Setting out to achieve a unique standard (e.g., “No one had ever done it before”)</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 5 (Expert)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
-                                                                                    <p>2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
-
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td>None
-                                                                </td>
-                                                                <td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Set target</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>CSO</td>
-                                                                <td>Customer Service Orientation</td>
-                                                                <td>Implies the intention to work cooperatively with others, to be part of a team, have a common goal, a commitment to achieve goals and to work together as opposed to working separately and competitively. For this competency to be effective, the intention should be genuine. This competency may be considered whenever the subject is a member of a group of people functioning as a team. Team, as well as in Team Leadership (TL), is broadly defined as working groups or groups that perform a process together.</td>
-                                                                <td>
-                                                                    <table class="table table-striped">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>Level 1 (Basic)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
-                                                                                    <p> 2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 2 (Basic Application)</td>
-                                                                                <td>
-                                                                                    <p>1. Focuses to achieve the target that has been set</p>
-                                                                                    <p>2. Uses the own specific method to measure the outcome against the standard of excellence (which is not of management)</p>
-                                                                                    <p>4. Enable conistently to achieve the target</p>
-                                                                                    <p>5. Keeps track of and measures outcomes against a standard of excellence not imposed by others (competitive)</p>
-                                                                                    <p>6. Continously try to anticipate challenges that lay ahead with speed & foresight</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 3 (Skillful Application)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes specific changes in the system or in own work methods to improve performance</p>
-                                                                                    <p>2. Shows How to make improvements / work process without reducing the quality of the work, is to achieve better results</p>
-                                                                                    <p>3. Making commitment to work on every issues</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 4 (Mastery)</td>
-                                                                                <td>
-                                                                                    <p>1. Sets the challenging target clearly (not unrealistic or impossible)</p>
-                                                                                    <p>2. Refers to specific measures of baseline performance compared with better performance at a later point in time (e.g., “When I took over, efficiency was 20% - now it is up to 85%.”)</p>
-                                                                                    <p>3. Setting out to achieve a unique standard (e.g., “No one had ever done it before”)</p>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>Level 5 (Expert)</td>
-                                                                                <td>
-                                                                                    <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
-                                                                                    <p>2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
-
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </td>
-                                                                <td>None</td>
-                                                                <td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-                                                                            <button class="btn-white btn btn-xs">Set target</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tfoot>
-                                                            <tr>
-                                                                <td colspan="5">
-                                                                    <ul class="pagination pull-right"></ul>
-                                                                </td>
-                                                            </tr>
-                                                        </tfoot>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
 
-
                                 </div>
-                                <div class="modal fade" id="modal_mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <textarea class="form-control" rows="6"></textarea>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">Save</button>
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <!-- When "Select" button is clicked above, add the competency to the list below -->
+                                        <div class="table-responsive">
+                                            <table class="footable table table-stripped toggle-arrow-tiny">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th data-toggle="true">Code</th>
+                                                        <th data-toggle="true">Competency name</th>
+                                                        <th data-hide="all">Description</th>
+                                                        <th data-hide="all">Indicator levels</th>
+                                                        <th data-toggle="true">Target level</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>TW</td>
+                                                        <td>Teamwork</td>
+                                                        <td>Implies the intention to work cooperatively with others, to be part of a team, have a common goal, a commitment to achieve goals and to work together as opposed to working separately and competitively. For this competency to be effective, the intention should be genuine. This competency may be considered whenever the subject is a member of a group of people functioning as a team. Team, as well as in Team Leadership (TL), is broadly defined as working groups or groups that perform a process together.</td>
+                                                        <td>
+                                                            <table class="table table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Level 1 (Basic)</td>
+                                                                        <td>
+                                                                            <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
+                                                                            <p> 2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Level 2 (Basic Application)</td>
+                                                                        <td>
+                                                                            <p>1. Focuses to achieve the target that has been set</p>
+                                                                            <p>2. Uses the own specific method to measure the outcome against the standard of excellence (which is not of management)</p>
+                                                                            <p>4. Enable conistently to achieve the target</p>
+                                                                            <p>5. Keeps track of and measures outcomes against a standard of excellence not imposed by others (competitive)</p>
+                                                                            <p>6. Continously try to anticipate challenges that lay ahead with speed & foresight</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Level 3 (Skillful Application)</td>
+                                                                        <td>
+                                                                            <p>1. Makes specific changes in the system or in own work methods to improve performance</p>
+                                                                            <p>2. Shows How to make improvements / work process without reducing the quality of the work, is to achieve better results</p>
+                                                                            <p>3. Making commitment to work on every issues</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Level 4 (Mastery)</td>
+                                                                        <td>
+                                                                            <p>1. Sets the challenging target clearly (not unrealistic or impossible)</p>
+                                                                            <p>2. Refers to specific measures of baseline performance compared with better performance at a later point in time (e.g., “When I took over, efficiency was 20% - now it is up to 85%.”)</p>
+                                                                            <p>3. Setting out to achieve a unique standard (e.g., “No one had ever done it before”)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Level 5 (Expert)</td>
+                                                                        <td>
+                                                                            <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
+                                                                            <p>2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td>None
+                                                        </td>
+                                                        <td>
+                                                            <td class="text-right">
+                                                                <div class="btn-group">
+                                                                    <button class="btn-white btn btn-xs">Set target</button>
+                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                </div>
+                                                            </td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CSO</td>
+                                                        <td>Customer Service Orientation</td>
+                                                        <td>Implies the intention to work cooperatively with others, to be part of a team, have a common goal, a commitment to achieve goals and to work together as opposed to working separately and competitively. For this competency to be effective, the intention should be genuine. This competency may be considered whenever the subject is a member of a group of people functioning as a team. Team, as well as in Team Leadership (TL), is broadly defined as working groups or groups that perform a process together.</td>
+                                                        <td>
+                                                            <table class="table table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Level 1 (Basic)</td>
+                                                                        <td>
+                                                                            <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
+                                                                            <p> 2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Level 2 (Basic Application)</td>
+                                                                        <td>
+                                                                            <p>1. Focuses to achieve the target that has been set</p>
+                                                                            <p>2. Uses the own specific method to measure the outcome against the standard of excellence (which is not of management)</p>
+                                                                            <p>4. Enable conistently to achieve the target</p>
+                                                                            <p>5. Keeps track of and measures outcomes against a standard of excellence not imposed by others (competitive)</p>
+                                                                            <p>6. Continously try to anticipate challenges that lay ahead with speed & foresight</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Level 3 (Skillful Application)</td>
+                                                                        <td>
+                                                                            <p>1. Makes specific changes in the system or in own work methods to improve performance</p>
+                                                                            <p>2. Shows How to make improvements / work process without reducing the quality of the work, is to achieve better results</p>
+                                                                            <p>3. Making commitment to work on every issues</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Level 4 (Mastery)</td>
+                                                                        <td>
+                                                                            <p>1. Sets the challenging target clearly (not unrealistic or impossible)</p>
+                                                                            <p>2. Refers to specific measures of baseline performance compared with better performance at a later point in time (e.g., “When I took over, efficiency was 20% - now it is up to 85%.”)</p>
+                                                                            <p>3. Setting out to achieve a unique standard (e.g., “No one had ever done it before”)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Level 5 (Expert)</td>
+                                                                        <td>
+                                                                            <p>1. Makes decisions, sets priorities or chooses goals on the basis of calculated inputs and outputs (e.g. makes explicit considerations of potential profit, and risks or return-on-investment)</p>
+                                                                            <p>2. Analyze for business outcomes Commits significant resources and/or time (in the face of uncertainty) to increase benefits, (i.e., improve performance, reach a challenging goal, etc.).</p>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td>None</td>
+                                                        <td>
+                                                            <td class="text-right">
+                                                                <div class="btn-group">
+                                                                    <button class="btn-white btn btn-xs">Set target</button>
+                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                </div>
+                                                            </td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td colspan="5">
+                                                            <ul class="pagination pull-right"></ul>
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="footer">
-                                    <div class="pull-right">
-                                        <strong>Version</strong> 2.x.xxxx.
+                            </div>
+
+
+                        </div>
+                        <div class="modal fade" id="modal_mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                                     </div>
-                                    <div>
-                                        <strong>Copyright</strong> Netika Indonesia &copy; 2016
+                                    <div class="modal-body">
+                                        <textarea class="form-control" rows="6"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="footer">
+                            <div class="pull-right">
+                                <strong>Version</strong> 2.x.xxxx.
+                            </div>
+                            <div>
+                                <strong>Copyright</strong> Netika Indonesia &copy; 2016
+                            </div>
+                        </div>
+
                     </div>
                     <div class="small-chat-box fadeInRight animated">
                         <div class="heading" draggable="true">

@@ -370,803 +370,787 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="tabs-container">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#tab-1"> Job Roles</a></li>
-                            <li class=""><a data-toggle="tab" href="#tab-2">Job Role Bands</a></li>
-                            <li class=""><a data-toggle="tab" href="#tab-3">Managerial/Functional Responsibility</a></li>
-                        </ul>
-                        <div class="tab-content">
-                            <div id="tab-1" class="tab-pane active">
-                                <div class="panel-body">
-                                    <strong>List of Job Roles</strong>
-                                    <div class="wrapper wrapper-content animated fadeInRight ecommerce">
-                                        <div class="ibox-content m-b-sm border-bottom">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="order_id">Code</label>
-                                                        <input type="text" id="order_id" name="order_id" value="" placeholder="Code" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="status">Label</label>
-                                                        <input type="text" id="status" name="status" value="" placeholder="Label" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="customer">Description</label>
-                                                        <input type="text" id="customer" name="customer" value="" placeholder="Description" class="form-control">
-                                                    </div>
-                                                </div>
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab-1"> Job Roles</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-2">Job Role Bands</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-3">Managerial/Functional Responsibility</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="ibox-content m-b-sm border-bottom">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="order_id">Code</label>
+                                                <input type="text" id="order_id" name="order_id" value="" placeholder="Code" class="form-control">
                                             </div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="date_modified">Date modified</label>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="amount">Status</label>
-                                                        <input type="text" id="amount" name="amount" value="" placeholder="Status" class="form-control">
-                                                    </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="status">Label</label>
+                                                <input type="text" id="status" name="status" value="" placeholder="Label" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="customer">Description</label>
+                                                <input type="text" id="customer" name="customer" value="" placeholder="Description" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="date_modified">Date modified</label>
+                                                <div class="input-group date">
+                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    <input id="date_modified" type="text" class="form-control" value="03/06/2014">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="ibox">
-                                                    <div class="ibox-content">
-                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                            <thead>
-                                                                <tr>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="amount">Status</label>
+                                                <input type="text" id="amount" name="amount" value="" placeholder="Status" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="ibox">
+                                            <div class="ibox-content">
+                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                    <thead>
+                                                        <tr>
 
-                                                                    <th>Code</th>
-                                                                    <th>Label</th>
-                                                                    <th data-hide="phone">Description</th>
-                                                                    <th data-hide="all">Last update</th>
-                                                                    <th data-hide="phone">Status</th>
-                                                                    <th class="text-right">Action</th>
+                                                            <th>Code</th>
+                                                            <th>Label</th>
+                                                            <th data-hide="phone">Description</th>
+                                                            <th data-hide="all">Last update</th>
+                                                            <th data-hide="phone">Status</th>
+                                                            <th class="text-right">Action</th>
 
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        S
-                                                                    </td>
-                                                                    <td>
-                                                                        STRUKTURAL
-                                                                    </td>
-                                                                    <td>
-                                                                        Pellentesque finibus sit amet tortor lacinia ornare. In ut urna ligula.
-                                                                    </td>
-                                                                    <td>
-                                                                        03/04/2015
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                S
+                                                            </td>
+                                                            <td>
+                                                                STRUKTURAL
+                                                            </td>
+                                                            <td>
+                                                                Pellentesque finibus sit amet tortor lacinia ornare. In ut urna ligula.
+                                                            </td>
+                                                            <td>
+                                                                03/04/2015
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-primary">Active</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <div class="btn-group">
 
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        F
-                                                                    </td>
-                                                                    <td>
-                                                                        FUNGSIONAL
-                                                                    </td>
-                                                                    <td>
-                                                                        Finibus sit amet tortor lacinia ornare. In ut urna ligula.
-                                                                    </td>
-                                                                    <td>
-                                                                        03/05/2015
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
+                                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                F
+                                                            </td>
+                                                            <td>
+                                                                FUNGSIONAL
+                                                            </td>
+                                                            <td>
+                                                                Finibus sit amet tortor lacinia ornare. In ut urna ligula.
+                                                            </td>
+                                                            <td>
+                                                                03/05/2015
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-primary">Active</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <div class="btn-group">
 
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                        </table>
-                                                    </div>
-                                                </div>
+                                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="tab-2" class="tab-pane">
-                                <div class="panel-body">
-                                    <strong>List of Job Role Bands</strong>
-                                    <div class="wrapper wrapper-content animated fadeInRight ecommerce">
-                                        <div class="ibox-content m-b-sm border-bottom">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="order_id">Code</label>
-                                                        <input type="text" id="order_id" name="order_id" value="" placeholder="Code" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="status">Label</label>
-                                                        <input type="text" id="status" name="status" value="" placeholder="Label" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="customer">Description</label>
-                                                        <input type="text" id="customer" name="customer" value="" placeholder="Description" class="form-control">
-                                                    </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="ibox-content m-b-sm border-bottom">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="order_id">Code</label>
+                                                <input type="text" id="order_id" name="order_id" value="" placeholder="Code" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="status">Label</label>
+                                                <input type="text" id="status" name="status" value="" placeholder="Label" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="customer">Description</label>
+                                                <input type="text" id="customer" name="customer" value="" placeholder="Description" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="date_added">Role</label>
+                                                <input type="text" id="customer" name="customer" value="" placeholder="Role" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="date_added">Level</label>
+                                                <input type="text" id="customer" name="customer" value="" placeholder="Level" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="date_modified">Date modified</label>
+                                                <div class="input-group date">
+                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    <input id="date_modified" type="text" class="form-control" value="03/06/2014">
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="date_added">Role</label>
-                                                        <input type="text" id="customer" name="customer" value="" placeholder="Role" class="form-control">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="amount">Status</label>
+                                                <input type="text" id="amount" name="amount" value="" placeholder="Status" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="ibox">
+                                            <div class="ibox-content">
+                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Code</th>
+                                                            <th>Label</th>
+                                                            <th data-hide="phone">Description</th>
+                                                            <th data-hide="phone">Role</th>
+                                                            <th data-hide="phone">Level</th>
+                                                            <th data-hide="all">Last update</th>
+                                                            <th data-hide="phone">Status</th>
+                                                            <th class="text-right">Action</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                EX
+                                                            </td>
+                                                            <td>
+                                                                Executive
+                                                            </td>
+                                                            <td>
+                                                                Pellentesque finibus sit amet tortor lacinia ornare. In ut urna ligula.
+                                                            </td>
+                                                            <td>
+                                                                S - Structural
+                                                            </td>
+                                                            <td>
+                                                                01-EXE - EXECUTIVE
+                                                            </td>
+                                                            <td>
+                                                                03/05/2015
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-primary">Active</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <div class="btn-group">
+
+                                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                SP
+                                                            </td>
+                                                            <td>
+                                                                Specialist
+                                                            </td>
+                                                            <td>
+                                                                Finibus sit amet tortor lacinia ornare. In ut urna ligula.
+                                                            </td>
+                                                            <td>
+                                                                F - Functional
+                                                            </td>
+                                                            <td>
+                                                                04-DEPT - DEPARTEMENT
+                                                            </td>
+                                                            <td>
+                                                                08/05/2015
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-primary">Active</span>
+                                                            </td>
+                                                            <td class="text-right">
+                                                                <div class="btn-group">
+
+                                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="7">
+                                                                <ul class="pagination pull-right"></ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="ibox">
+                                    <div class="ibox-title">
+                                        <h5><b>Executive</b></h5>
+                                        <div class="ibox-tools">
+                                            <button class="btn btn-primary btn-xs netis_add" data-toggle="modal" data-target="#executive_new">Add New</button>
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <!-- Modal -->
+                                        <div class="modal inmodal" id="executive_new" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content animated bounceInRight">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                        <i class="fa fa-file-text modal-icon"></i>
+                                                        <h4 class="modal-title">Executive Responsibility</h4>
+                                                        <small class="font-bold">Please input Input Responsibility for </small>
+                                                        <label class="text-navy">Executive</label>
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="date_added">Level</label>
-                                                        <input type="text" id="customer" name="customer" value="" placeholder="Level" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="date_modified">Date modified</label>
-                                                        <div class="input-group date">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
+                                                    <div class="modal-body">
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-4 control-label">Role :</label>
+                                                            <select class="selectpicker" data-live-search="true">
+                                                                <option>Please Select Job Title</option>
+                                                                <option>Structural</option>
+                                                                <option>Functional</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-4 control-label">Responsibility: </label>
+                                                            <textarea class="col-sm-8 form-control" rows="5"></textarea>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                        <label class="control-label" for="amount">Status</label>
-                                                        <input type="text" id="amount" name="amount" value="" placeholder="Status" class="form-control">
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="ibox">
-                                                    <div class="ibox-content">
+                                        <div class="tabs-container tab_responsibility" data-example-id="togglable-tabs">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#staff_structural" data-toggle="tab">Structural</a></li>
+                                                <li class=""><a href="#staff_fungsional" data-toggle="tab">Fungsional</a></li>
+                                            </ul>
+                                            <div class="tab-content tab_content_responsibility">
+                                                <div class="tab-pane active" id="staff_structural">
+                                                    <div class="table-responsive">
                                                         <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Code</th>
-                                                                    <th>Label</th>
-                                                                    <th data-hide="phone">Description</th>
-                                                                    <th data-hide="phone">Role</th>
-                                                                    <th data-hide="phone">Level</th>
-                                                                    <th data-hide="all">Last update</th>
-                                                                    <th data-hide="phone">Status</th>
-                                                                    <th class="text-right">Action</th>
-
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
                                                                     <td>
-                                                                        EX
-                                                                    </td>
-                                                                    <td>
-                                                                        Executive
-                                                                    </td>
-                                                                    <td>
-                                                                        Pellentesque finibus sit amet tortor lacinia ornare. In ut urna ligula.
-                                                                    </td>
-                                                                    <td>
-                                                                        S - Structural
-                                                                    </td>
-                                                                    <td>
-                                                                        01-EXE - EXECUTIVE
-                                                                    </td>
-                                                                    <td>
-                                                                        03/05/2015
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
                                                                     <td>
-                                                                        SP
-                                                                    </td>
-                                                                    <td>
-                                                                        Specialist
-                                                                    </td>
-                                                                    <td>
-                                                                        Finibus sit amet tortor lacinia ornare. In ut urna ligula.
-                                                                    </td>
-                                                                    <td>
-                                                                        F - Functional
-                                                                    </td>
-                                                                    <td>
-                                                                        04-DEPT - DEPARTEMENT
-                                                                    </td>
-                                                                    <td>
-                                                                        08/05/2015
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="label label-primary">Active</span>
-                                                                    </td>
-                                                                    <td class="text-right">
-                                                                        <div class="btn-group">
-
-                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                        </div>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
-                                                                    <td colspan="7">
-                                                                        <ul class="pagination pull-right"></ul>
-                                                                    </td>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
                                                                 </tr>
                                                             </tfoot>
                                                         </table>
-
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="staff_fungsional">
+                                                    <div class="table-responsive">
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="tab-3" class="tab-pane">
-                                <div class="panel-body">
-                                    <div class="col-sm-12">
-                                        <div class="ibox">
-                                            <div class="ibox-title">
-                                                <h5><b>Executive</b></h5>
-                                                <div class="ibox-tools">
-                                                    <button class="btn btn-primary btn-xs netis_add" data-toggle="modal" data-target="#executive_new">Add New</button>
-                                                    <a class="collapse-link">
-                                                        <i class="fa fa-chevron-up"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="ibox-content">
-                                                <!-- Modal -->
-                                                <div class="modal inmodal" id="executive_new" tabindex="-1" role="dialog" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content animated bounceInRight">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                <i class="fa fa-file-text modal-icon"></i>
-                                                                <h4 class="modal-title">Executive Responsibility</h4>
-                                                                <small class="font-bold">Please input Input Responsibility for </small>
-                                                                <label class="text-navy">Executive</label>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-4 control-label">Role :</label>
-                                                                    <select class="selectpicker" data-live-search="true">
-                                                                        <option>Please Select Job Title</option>
-                                                                        <option>Structural</option>
-                                                                        <option>Functional</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-4 control-label">Responsibility: </label>
-                                                                    <textarea class="col-sm-8 form-control" rows="5"></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
-                                                            </div>
+                                <div class="ibox">
+                                    <div class="ibox-title">
+                                        <h5><b>Direktorat</b></h5>
+                                        <div class="ibox-tools">
+                                            <button class="btn btn-primary btn-xs netis_add" data-toggle="modal" data-target="#direktorat_new">Add New</button>
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <!-- Modal -->
+                                        <div class="modal inmodal" id="direktorat_new" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content animated bounceInRight">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                        <i class="fa fa-file-text modal-icon"></i>
+                                                        <h4 class="modal-title">Direktorat Responsibility</h4>
+                                                        <small class="font-bold">Please input Input Responsibility for </small>
+                                                        <label class="text-navy">Direktorat</label>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-4 control-label">Role :</label>
+                                                            <select class="selectpicker" data-live-search="true">
+                                                                <option>Please Select Job Title</option>
+                                                                <option>Structural</option>
+                                                                <option>Functional</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-4 control-label">Responsibility: </label>
+                                                            <textarea class="col-sm-8 form-control" rows="5"></textarea>
                                                         </div>
                                                     </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
+                                                    </div>
                                                 </div>
-                                                <div class="tabs-container tab_responsibility" data-example-id="togglable-tabs">
-                                                    <ul class="nav nav-tabs">
-                                                        <li class="active"><a href="#staff_structural" data-toggle="tab">Structural</a></li>
-                                                        <li class=""><a href="#staff_fungsional" data-toggle="tab">Fungsional</a></li>
-                                                    </ul>
-                                                    <div class="tab-content tab_content_responsibility">
-                                                        <div class="tab-pane active" id="staff_structural">
-                                                            <div class="table-responsive">
-                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeX">
-                                                                            <td>1.</td>
-                                                                            <td>Responsibility 1</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="gradeC">
-                                                                            <td>2.</td>
-                                                                            <td>Responsibility 2</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="staff_fungsional">
-                                                            <div class="table-responsive">
-                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeX">
-                                                                            <td>1.</td>
-                                                                            <td>Responsibility 1</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="gradeC">
-                                                                            <td>2.</td>
-                                                                            <td>Responsibility 2</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
-                                                            </div>
-                                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs-container tab_responsibility" data-example-id="togglable-tabs">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#staff_structural" data-toggle="tab">Structural</a></li>
+                                                <li class=""><a href="#staff_fungsional" data-toggle="tab">Fungsional</a></li>
+                                            </ul>
+                                            <div class="tab-content tab_content_responsibility">
+                                                <div class="tab-pane active" id="staff_structural">
+                                                    <div class="table-responsive">
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="staff_fungsional">
+                                                    <div class="table-responsive">
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
-                                        <div class="ibox">
-                                            <div class="ibox-title">
-                                                <h5><b>Direktorat</b></h5>
-                                                <div class="ibox-tools">
-                                                    <button class="btn btn-primary btn-xs netis_add" data-toggle="modal" data-target="#direktorat_new">Add New</button>
-                                                    <a class="collapse-link">
-                                                        <i class="fa fa-chevron-up"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="ibox-content">
-                                                <!-- Modal -->
-                                                <div class="modal inmodal" id="direktorat_new" tabindex="-1" role="dialog" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content animated bounceInRight">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                <i class="fa fa-file-text modal-icon"></i>
-                                                                <h4 class="modal-title">Direktorat Responsibility</h4>
-                                                                <small class="font-bold">Please input Input Responsibility for </small>
-                                                                <label class="text-navy">Direktorat</label>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-4 control-label">Role :</label>
-                                                                    <select class="selectpicker" data-live-search="true">
-                                                                        <option>Please Select Job Title</option>
-                                                                        <option>Structural</option>
-                                                                        <option>Functional</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-4 control-label">Responsibility: </label>
-                                                                    <textarea class="col-sm-8 form-control" rows="5"></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
-                                                            </div>
+                                </div>
+                                <div class="ibox">
+                                    <div class="ibox-title">
+                                        <h5><b>Departement</b></h5>
+                                        <div class="ibox-tools">
+                                            <button class="btn btn-primary btn-xs netis_add" data-toggle="modal" data-target="#departement_new">Add New</button>
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <!-- Modal -->
+                                        <div class="modal inmodal" id="departement_new" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content animated bounceInRight">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                        <i class="fa fa-file-text modal-icon"></i>
+                                                        <h4 class="modal-title">Departement Responsibility</h4>
+                                                        <small class="font-bold">Please input Input Responsibility for </small>
+                                                        <label class="text-navy">Departement</label>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-4 control-label">Role :</label>
+                                                            <select class="selectpicker" data-live-search="true">
+                                                                <option>Please Select Job Title</option>
+                                                                <option>Structural</option>
+                                                                <option>Functional</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-4 control-label">Responsibility: </label>
+                                                            <textarea class="col-sm-8 form-control" rows="5"></textarea>
                                                         </div>
                                                     </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
+                                                    </div>
                                                 </div>
-                                                <div class="tabs-container tab_responsibility" data-example-id="togglable-tabs">
-                                                    <ul class="nav nav-tabs">
-                                                        <li class="active"><a href="#staff_structural" data-toggle="tab">Structural</a></li>
-                                                        <li class=""><a href="#staff_fungsional" data-toggle="tab">Fungsional</a></li>
-                                                    </ul>
-                                                    <div class="tab-content tab_content_responsibility">
-                                                        <div class="tab-pane active" id="staff_structural">
-                                                            <div class="table-responsive">
-                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeX">
-                                                                            <td>1.</td>
-                                                                            <td>Responsibility 1</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="gradeC">
-                                                                            <td>2.</td>
-                                                                            <td>Responsibility 2</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="staff_fungsional">
-                                                            <div class="table-responsive">
-                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeX">
-                                                                            <td>1.</td>
-                                                                            <td>Responsibility 1</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="gradeC">
-                                                                            <td>2.</td>
-                                                                            <td>Responsibility 2</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
-                                                            </div>
-                                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs-container tab_responsibility" data-example-id="togglable-tabs">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#staff_structural" data-toggle="tab">Structural</a></li>
+                                                <li class=""><a href="#staff_fungsional" data-toggle="tab">Fungsional</a></li>
+                                            </ul>
+                                            <div class="tab-content tab_content_responsibility">
+                                                <div class="tab-pane active" id="staff_structural">
+                                                    <div class="table-responsive">
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="staff_fungsional">
+                                                    <div class="table-responsive">
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
-                                        <div class="ibox">
-                                            <div class="ibox-title">
-                                                <h5><b>Departement</b></h5>
-                                                <div class="ibox-tools">
-                                                    <button class="btn btn-primary btn-xs netis_add" data-toggle="modal" data-target="#departement_new">Add New</button>
-                                                    <a class="collapse-link">
-                                                        <i class="fa fa-chevron-up"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="ibox-content">
-                                                <!-- Modal -->
-                                                <div class="modal inmodal" id="departement_new" tabindex="-1" role="dialog" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content animated bounceInRight">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                <i class="fa fa-file-text modal-icon"></i>
-                                                                <h4 class="modal-title">Departement Responsibility</h4>
-                                                                <small class="font-bold">Please input Input Responsibility for </small>
-                                                                <label class="text-navy">Departement</label>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-4 control-label">Role :</label>
-                                                                    <select class="selectpicker" data-live-search="true">
-                                                                        <option>Please Select Job Title</option>
-                                                                        <option>Structural</option>
-                                                                        <option>Functional</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-4 control-label">Responsibility: </label>
-                                                                    <textarea class="col-sm-8 form-control" rows="5"></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
-                                                            </div>
+                                </div>
+                                <div class="ibox">
+                                    <div class="ibox-title">
+                                        <h5><b>Staff</b></h5>
+                                        <div class="ibox-tools">
+                                            <button class="btn btn-primary btn-xs netis_add" data-toggle="modal" data-target="#staff_new">Add New</button>
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <!-- Modal -->
+                                        <div class="modal inmodal" id="staff_new" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content animated bounceInRight">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                        <i class="fa fa-file-text modal-icon"></i>
+                                                        <h4 class="modal-title">Staff Responsibility</h4>
+                                                        <small class="font-bold">Please input Input Responsibility for </small>
+                                                        <label class="text-navy">Staff</label>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-4 control-label">Role :</label>
+                                                            <select class="selectpicker" data-live-search="true">
+                                                                <option>Please Select Job Title</option>
+                                                                <option>Structural</option>
+                                                                <option>Functional</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-sm-4 control-label">Responsibility: </label>
+                                                            <textarea class="col-sm-8 form-control" rows="5"></textarea>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="tabs-container tab_responsibility" data-example-id="togglable-tabs">
-                                                    <ul class="nav nav-tabs">
-                                                        <li class="active"><a href="#staff_structural" data-toggle="tab">Structural</a></li>
-                                                        <li class=""><a href="#staff_fungsional" data-toggle="tab">Fungsional</a></li>
-                                                    </ul>
-                                                    <div class="tab-content tab_content_responsibility">
-                                                        <div class="tab-pane active" id="staff_structural">
-                                                            <div class="table-responsive">
-                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeX">
-                                                                            <td>1.</td>
-                                                                            <td>Responsibility 1</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="gradeC">
-                                                                            <td>2.</td>
-                                                                            <td>Responsibility 2</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="staff_fungsional">
-                                                            <div class="table-responsive">
-                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeX">
-                                                                            <td>1.</td>
-                                                                            <td>Responsibility 1</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="gradeC">
-                                                                            <td>2.</td>
-                                                                            <td>Responsibility 2</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
-                                                            </div>
-                                                        </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="ibox">
-                                            <div class="ibox-title">
-                                                <h5><b>Staff</b></h5>
-                                                <div class="ibox-tools">
-                                                    <button class="btn btn-primary btn-xs netis_add" data-toggle="modal" data-target="#staff_new">Add New</button>
-                                                    <a class="collapse-link">
-                                                        <i class="fa fa-chevron-up"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="ibox-content">
-                                                <!-- Modal -->
-                                                <div class="modal inmodal" id="staff_new" tabindex="-1" role="dialog" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content animated bounceInRight">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                <i class="fa fa-file-text modal-icon"></i>
-                                                                <h4 class="modal-title">Staff Responsibility</h4>
-                                                                <small class="font-bold">Please input Input Responsibility for </small>
-                                                                <label class="text-navy">Staff</label>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-4 control-label">Role :</label>
-                                                                    <select class="selectpicker" data-live-search="true">
-                                                                        <option>Please Select Job Title</option>
-                                                                        <option>Structural</option>
-                                                                        <option>Functional</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-sm-4 control-label">Responsibility: </label>
-                                                                    <textarea class="col-sm-8 form-control" rows="5"></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
-                                                            </div>
-                                                        </div>
+                                        <div class="tabs-container tab_responsibility" data-example-id="togglable-tabs">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#staff_structural" data-toggle="tab">Structural</a></li>
+                                                <li class=""><a href="#staff_fungsional" data-toggle="tab">Fungsional</a></li>
+                                            </ul>
+                                            <div class="tab-content tab_content_responsibility">
+                                                <div class="tab-pane active" id="staff_structural">
+                                                    <div class="table-responsive">
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
                                                     </div>
                                                 </div>
-                                                <div class="tabs-container tab_responsibility" data-example-id="togglable-tabs">
-                                                    <ul class="nav nav-tabs">
-                                                        <li class="active"><a href="#staff_structural" data-toggle="tab">Structural</a></li>
-                                                        <li class=""><a href="#staff_fungsional" data-toggle="tab">Fungsional</a></li>
-                                                    </ul>
-                                                    <div class="tab-content tab_content_responsibility">
-                                                        <div class="tab-pane active" id="staff_structural">
-                                                            <div class="table-responsive">
-                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeX">
-                                                                            <td>1.</td>
-                                                                            <td>Responsibility 1</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="gradeC">
-                                                                            <td>2.</td>
-                                                                            <td>Responsibility 2</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="staff_fungsional">
-                                                            <div class="table-responsive">
-                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr class="gradeX">
-                                                                            <td>1.</td>
-                                                                            <td>Responsibility 1</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="gradeC">
-                                                                            <td>2.</td>
-                                                                            <td>Responsibility 2</td>
-                                                                            <td>
-                                                                                <button class="btn btn-default btn-xs">Edit</button>
-                                                                                <button class="btn btn-default btn-xs">Delete</button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <tfoot>
-                                                                        <tr>
-                                                                            <th>No</th>
-                                                                            <th>Responsibility</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                    </tfoot>
-                                                                </table>
-                                                            </div>
-                                                        </div>
+                                                <div class="tab-pane fade" id="staff_fungsional">
+                                                    <div class="table-responsive">
+                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="gradeX">
+                                                                    <td>1.</td>
+                                                                    <td>Responsibility 1</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="gradeC">
+                                                                    <td>2.</td>
+                                                                    <td>Responsibility 2</td>
+                                                                    <td>
+                                                                        <button class="btn btn-default btn-xs">Edit</button>
+                                                                        <button class="btn btn-default btn-xs">Delete</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Responsibility</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
