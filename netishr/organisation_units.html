@@ -362,116 +362,110 @@
 
                 </div>
             </div>
-            <div class="wrapper wrapper-content  animated fadeInRight">
-                <div class="row">
-                    <div class="col-md-4">
+            <div class="row">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Units</h5>
+                    </div>
+                    <div class="ibox-content">
+
                         <div id="nestable-menu">
                             <button type="button" data-action="expand-all" class="btn btn-white btn-sm">Expand All</button>
                             <button type="button" data-action="collapse-all" class="btn btn-white btn-sm">Collapse All</button>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="ibox ">
-                            <div class="ibox-title">
-                                <h5>Units</h5>
-                            </div>
-                            <div class="ibox-content">
-
-                                <p class="m-b-lg">
-                                    Units are sub-organisation within a branch.
-                                </p>
-
-                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">New Unit</button>
-                                <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content animated bounceInRight">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                <i class="fa fa-laptop modal-icon"></i>
-                                                <h4 class="modal-title">New group</h4>
-                                                <small class="font-bold">Please enter new group.</small>
-                                            </div>
-                                            <div class="modal-body">
-
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Type:</label>
-                                                    <div>
-                                                        <select data-placeholder="Choose type..." class="chosen-select" tabindex="2">
-                                                            <option value="1">Company</option>
-                                                            <option value="2">Branch</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
 
 
+                        <p class="m-b-lg">
+                            Units are sub-organisation within a branch.
+                        </p>
 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Name: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Description: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
+                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">New Unit</button>
+                        <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content animated bounceInRight">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <i class="fa fa-laptop modal-icon"></i>
+                                        <h4 class="modal-title">New group</h4>
+                                        <small class="font-bold">Please enter new group.</small>
+                                    </div>
+                                    <div class="modal-body">
 
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Type:</label>
+                                            <div>
+                                                <select data-placeholder="Choose type..." class="chosen-select" tabindex="2">
+                                                    <option value="1">Company</option>
+                                                    <option value="2">Branch</option>
+                                                </select>
                                             </div>
                                         </div>
+
+
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Name: </label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Description: </label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
                                     </div>
                                 </div>
-
-
-                                <div class="dd" id="nestable">
-                                    <ol class="dd-list">
-                                        <li class="dd-item" data-id="1">
-                                            <div class="dd-handle">1 - Lorem ipsum</div>
-                                        </li>
-                                        <li class="dd-item" data-id="2">
-                                            <div class="dd-handle">2 - Dolor sit</div>
-                                            <ol class="dd-list">
-                                                <li class="dd-item" data-id="3">
-                                                    <div class="dd-handle">3 - Adipiscing elit</div>
-                                                </li>
-                                                <li class="dd-item" data-id="4">
-                                                    <div class="dd-handle">4 - Nonummy nibh</div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                        <li class="dd-item" data-id="5">
-                                            <div class="dd-handle">5 - Consectetuer</div>
-                                            <ol class="dd-list">
-                                                <li class="dd-item" data-id="6">
-                                                    <div class="dd-handle">6 - Aliquam erat</div>
-                                                </li>
-                                                <li class="dd-item" data-id="7">
-                                                    <div class="dd-handle">7 - Veniam quis</div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                        <li class="dd-item" data-id="8">
-                                            <div class="dd-handle">8 - Tation ullamcorper</div>
-                                        </li>
-                                        <li class="dd-item" data-id="9">
-                                            <div class="dd-handle">9 - Ea commodo</div>
-                                        </li>
-                                    </ol>
-                                </div>
-                                <div class="m-t-md">
-                                    <h5>Serialised Output</h5>
-                                </div>
-                                <textarea id="nestable-output" class="form-control"></textarea>
-
                             </div>
                         </div>
+
+
+                        <div class="dd" id="nestable">
+                            <ol class="dd-list">
+                                <li class="dd-item" data-id="1">
+                                    <div class="dd-handle">1 - Lorem ipsum</div>
+                                </li>
+                                <li class="dd-item" data-id="2">
+                                    <div class="dd-handle">2 - Dolor sit</div>
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="3">
+                                            <div class="dd-handle">3 - Adipiscing elit</div>
+                                        </li>
+                                        <li class="dd-item" data-id="4">
+                                            <div class="dd-handle">4 - Nonummy nibh</div>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="dd-item" data-id="5">
+                                    <div class="dd-handle">5 - Consectetuer</div>
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="6">
+                                            <div class="dd-handle">6 - Aliquam erat</div>
+                                        </li>
+                                        <li class="dd-item" data-id="7">
+                                            <div class="dd-handle">7 - Veniam quis</div>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="dd-item" data-id="8">
+                                    <div class="dd-handle">8 - Tation ullamcorper</div>
+                                </li>
+                                <li class="dd-item" data-id="9">
+                                    <div class="dd-handle">9 - Ea commodo</div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="m-t-md">
+                            <h5>Serialised Output</h5>
+                        </div>
+                        <textarea id="nestable-output" class="form-control"></textarea>
+
                     </div>
                 </div>
             </div>

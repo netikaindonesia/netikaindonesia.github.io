@@ -443,243 +443,385 @@
 
                 </div>
             </div>
-            <div class="wrapper wrapper-content  animated fadeInRight">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>Categories and Names</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Categories and Names</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="ibox-content">
-                                <label class="font-noraml">Category</label>
+                        </div>
+                        <div class="ibox-content">
+                            <label class="font-noraml">Category</label>
+                            <div>
+                                <select data-placeholder="Choose a perspective..." class="chosen-select" tabindex="2">
+                                    <option value="">Select a category</option>
+                                    <option value="Core">Core</option>
+                                    <option value="Role">Role</option>
+                                    <option value="Job Specific (Behaviour)">Job Specific (Behaviour)</option>
+                                    <option value="Job Specific (Technical)">Job Specific (Technical)</option>
+                                </select>
+
                                 <div>
-                                    <select data-placeholder="Choose a perspective..." class="chosen-select" tabindex="2">
-                                        <option value="">Select a category</option>
-                                        <option value="Core">Core</option>
-                                        <option value="Role">Role</option>
-                                        <option value="Job Specific (Behaviour)">Job Specific (Behaviour)</option>
-                                        <option value="Job Specific (Technical)">Job Specific (Technical)</option>
-                                    </select>
-
-                                    <div>
-                                        Or create
-                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newcategory">New category</button>
-                                        <div class="modal inmodal" id="newcategory" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content animated bounceInRight">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <i class="fa fa-laptop modal-icon"></i>
-                                                        <h4 class="modal-title">New Category</h4>
-                                                        <small class="font-bold">Please enter new category.</small>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Name: </label>
-                                                            <div class="col-sm-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
+                                    Or create
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newcategory">New category</button>
+                                    <div class="modal inmodal" id="newcategory" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content animated bounceInRight">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <i class="fa fa-laptop modal-icon"></i>
+                                                    <h4 class="modal-title">New Category</h4>
+                                                    <small class="font-bold">Please enter new category.</small>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-2 control-label">Name: </label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control">
                                                         </div>
+                                                    </div>
 
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
-
-                                <label class="font-noraml">Code</label>
-                                <input type="text" id="quantity" name="quantity" value="" placeholder="Code" class="form-control">
-                                <label class="font-noraml">Name</label>
-                                <input type="text" id="quantity" name="quantity" value="" placeholder="Name" class="form-control">
-                                <label class="font-noraml">Description</label>
-                                <input type="text" id="quantity" name="quantity" value="" placeholder="Description" class="form-control">
 
 
                             </div>
+
+                            <label class="font-noraml">Code</label>
+                            <input type="text" id="quantity" name="quantity" value="" placeholder="Code" class="form-control">
+                            <label class="font-noraml">Name</label>
+                            <input type="text" id="quantity" name="quantity" value="" placeholder="Name" class="form-control">
+                            <label class="font-noraml">Description</label>
+                            <input type="text" id="quantity" name="quantity" value="" placeholder="Description" class="form-control">
+
+
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <div class="ibox">
-                            <div class="ibox-title">
-                                <h5>Levels and Indicators</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h5>Levels and Indicators</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
                             </div>
+                        </div>
 
-                            <div class="ibox-content">
+                        <div class="ibox-content">
 
 
-                                <div class="clients-list">
-                                    <ul class="nav nav-tabs">
-                                        <li class="active"><a data-toggle="tab" href="#tab-1"><i class="fa fa-briefcase"></i>1</a></li>
-                                        <li class=""><a data-toggle="tab" href="#tab-2"><i class="fa fa-briefcase"></i>2</a></li>
-                                        <li class=""><a data-toggle="tab" href="#tab-3"><i class="fa fa-briefcase"></i>3</a></li>
-                                        <li class=""><a data-toggle="tab" href="#tab-4"><i class="fa fa-briefcase"></i>4</a></li>
-                                        <li class=""><a data-toggle="tab" href="#tab-5"><i class="fa fa-briefcase"></i>5</a></li>
-                                        <li class="">
-                                            <button type="button" class="btn-xs btn-primary"><i class="fa fa-plus"></i></button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div id="tab-1" class="tab-pane active">
-                                            <div>
-                                                <button type="button" class="btn-xs btn-primary">Delete</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level below</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                            <div class="clients-list">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#tab-1"><i class="fa fa-briefcase"></i>1</a></li>
+                                    <li class=""><a data-toggle="tab" href="#tab-2"><i class="fa fa-briefcase"></i>2</a></li>
+                                    <li class=""><a data-toggle="tab" href="#tab-3"><i class="fa fa-briefcase"></i>3</a></li>
+                                    <li class=""><a data-toggle="tab" href="#tab-4"><i class="fa fa-briefcase"></i>4</a></li>
+                                    <li class=""><a data-toggle="tab" href="#tab-5"><i class="fa fa-briefcase"></i>5</a></li>
+                                    <li class="">
+                                        <button type="button" class="btn-xs btn-primary"><i class="fa fa-plus"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="tab-1" class="tab-pane active">
+                                        <div>
+                                            <button type="button" class="btn-xs btn-primary">Delete</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level below</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                                        </div>
+                                        <form method="get" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level name: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
+                                                </div>
                                             </div>
-                                            <form method="get" class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level name: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level description: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
                                                 </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level description: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="hr-line-dashed"></div>
-                                                    <label class="col-sm-2 control-label">Indicators: </label>
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>No</th>
-                                                                <th>Description</th>
-                                                                <th>
-                                                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">New indicator</button>
-                                                                    <div class="modal fade" id="newindicator" aria-hidden="true">
-                                                                        <div class="modal-dialog">
-                                                                            <div class="modal-content">
-                                                                                <div class="modal-body">
-                                                                                    <div class="row">
-                                                                                        <h3>New indicator</h3>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="hr-line-dashed"></div>
+                                                <label class="col-sm-2 control-label">Indicators: </label>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>Description</th>
+                                                            <th>
+                                                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">New indicator</button>
+                                                                <div class="modal fade" id="newindicator" aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-body">
+                                                                                <div class="row">
+                                                                                    <h3>New indicator</h3>
 
-                                                                                        <p>Please enter new indicator.</p>
+                                                                                    <p>Please enter new indicator.</p>
 
-                                                                                        <form role="form">
-                                                                                            <div class="form-group">
-                                                                                                <label class="col-sm-2 control-label">Description: </label>
-                                                                                                <div class="col-sm-10">
-                                                                                                    <input type="text" class="form-control">
-                                                                                                </div>
+                                                                                    <form role="form">
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-2 control-label">Description: </label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control">
                                                                                             </div>
-                                                                                            <div>
-                                                                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                                                                            </div>
-                                                                                        </form>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </form>
 
-                                                                                    </div>
                                                                                 </div>
+                                                                            </div>
 
 
-                                                                                <!--
+                                                                            <!--
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
                                                                     <button type="button" class="btn btn-primary">Save changes</button>
                                                                 </div>
                                                                 -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Meet the challenges at work with an active and positive spirit (passionate)</td>
+                                                            <td class="text-right">
+                                                                <div class="btn-group">
+                                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Tries to do the job well or right consistently (smart)</td>
+                                                            <td class="text-right">
+                                                                <div class="btn-group">
+                                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </form>
+                                        <p>
+                                            <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary btn-xs">Save changes</button>
+                                        </p>
+
+                                    </div>
+                                    <div id="tab-2" class="tab-pane">
+                                        <div>
+                                            <button type="button" class="btn-xs btn-primary">Delete</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level below</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                                        </div>
+
+                                        <form method="get" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level name: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level description: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="hr-line-dashed"></div>
+                                                <label class="col-sm-2 control-label">Indicators: </label>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>Description</th>
+                                                            <th>
+                                                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">New indicator</button>
+                                                                <div class="modal fade" id="newindicator" aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-body">
+                                                                                <div class="row">
+                                                                                    <h3>New indicator</h3>
+
+                                                                                    <p>Please enter new indicator.</p>
+
+                                                                                    <form role="form">
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-2 control-label">Description: </label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </form>
+
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>Meet the challenges at work with an active and positive spirit (passionate)</td>
-                                                                <td class="text-right">
-                                                                    <div class="btn-group">
-                                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                                        <button class="btn-white btn btn-xs">Delete</button>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>Tries to do the job well or right consistently (smart)</td>
-                                                                <td class="text-right">
-                                                                    <div class="btn-group">
-                                                                        <button class="btn-white btn btn-xs">Edit</button>
-                                                                        <button class="btn-white btn btn-xs">Delete</button>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </form>
-                                            <p>
-                                                <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary btn-xs">Save changes</button>
-                                            </p>
-
-                                        </div>
-                                        <div id="tab-2" class="tab-pane">
-                                            <div>
-                                                <button type="button" class="btn-xs btn-primary">Delete</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level below</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
                                             </div>
+                                        </form>
+                                        <p>
+                                            <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary btn-xs">Save changes</button>
+                                        </p>
 
-                                            <form method="get" class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level name: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
+                                    </div>
+                                    <div id="tab-3" class="tab-pane">
+                                        <div>
+                                            <button type="button" class="btn-xs btn-primary">Delete</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level below</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                                        </div>
+
+                                        <form method="get" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level name: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
                                                 </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level description: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level description: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
                                                 </div>
-                                                <div class="form-group">
-                                                    <div class="hr-line-dashed"></div>
-                                                    <label class="col-sm-2 control-label">Indicators: </label>
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>No</th>
-                                                                <th>Description</th>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="hr-line-dashed"></div>
+                                                <label class="col-sm-2 control-label">Indicators: </label>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>Description</th>
+                                                            <th>
+                                                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">New indicator</button>
+                                                                <div class="modal fade" id="newindicator" aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-body">
+                                                                                <div class="row">
+                                                                                    <h3>New indicator</h3>
+
+                                                                                    <p>Please enter new indicator.</p>
+
+                                                                                    <form role="form">
+                                                                                        <div class="form-group">
+                                                                                            <label class="col-sm-2 control-label">Description: </label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div>
+                                                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                        </div>
+                                                                                    </form>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </form>
+                                        <p>
+                                            <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary btn-xs">Save changes</button>
+                                        </p>
+
+                                    </div>
+                                    <div id="tab-4" class="tab-pane">
+                                        <div>
+                                            <button type="button" class="btn-xs btn-primary">Delete</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level below</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                                        </div>
+
+                                        <form method="get" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level name: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level description: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="hr-line-dashed"></div>
+                                                <label class="col-sm-2 control-label">Indicators: </label>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>Description</th>
+                                                            <th>
                                                                 <th>
                                                                     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">New indicator</button>
                                                                     <div class="modal fade" id="newindicator" aria-hidden="true">
@@ -710,47 +852,49 @@
                                                                         </div>
                                                                     </div>
                                                                 </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </form>
-                                            <p>
-                                                <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary btn-xs">Save changes</button>
-                                            </p>
-
-                                        </div>
-                                        <div id="tab-3" class="tab-pane">
-                                            <div>
-                                                <button type="button" class="btn-xs btn-primary">Delete</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level below</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
                                             </div>
+                                        </form>
+                                        <p>
+                                            <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary btn-xs">Save changes</button>
+                                        </p>
 
-                                            <form method="get" class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level name: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
+                                    </div>
+                                    <div id="tab-5" class="tab-pane">
+                                        <div>
+                                            <button type="button" class="btn-xs btn-primary">Delete</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level below</button>
+                                            <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                                        </div>
+                                        <form method="get" class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level name: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
                                                 </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level description: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Level description: </label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control">
                                                 </div>
-                                                <div class="form-group">
-                                                    <div class="hr-line-dashed"></div>
-                                                    <label class="col-sm-2 control-label">Indicators: </label>
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>No</th>
-                                                                <th>Description</th>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="hr-line-dashed"></div>
+                                                <label class="col-sm-2 control-label">Indicators: </label>
+
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No</th>
+                                                            <th>Description</th>
+                                                            <th>
                                                                 <th>
                                                                     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">New indicator</button>
                                                                     <div class="modal fade" id="newindicator" aria-hidden="true">
@@ -781,174 +925,28 @@
                                                                         </div>
                                                                     </div>
                                                                 </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </form>
-                                            <p>
-                                                <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary btn-xs">Save changes</button>
-                                            </p>
-
-                                        </div>
-                                        <div id="tab-4" class="tab-pane">
-                                            <div>
-                                                <button type="button" class="btn-xs btn-primary">Delete</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level below</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level up</button>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
                                             </div>
-
-                                            <form method="get" class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level name: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level description: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="hr-line-dashed"></div>
-                                                    <label class="col-sm-2 control-label">Indicators: </label>
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>No</th>
-                                                                <th>Description</th>
-                                                                <th>
-                                                                    <th>
-                                                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">New indicator</button>
-                                                                        <div class="modal fade" id="newindicator" aria-hidden="true">
-                                                                            <div class="modal-dialog">
-                                                                                <div class="modal-content">
-                                                                                    <div class="modal-body">
-                                                                                        <div class="row">
-                                                                                            <h3>New indicator</h3>
-
-                                                                                            <p>Please enter new indicator.</p>
-
-                                                                                            <form role="form">
-                                                                                                <div class="form-group">
-                                                                                                    <label class="col-sm-2 control-label">Description: </label>
-                                                                                                    <div class="col-sm-10">
-                                                                                                        <input type="text" class="form-control">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div>
-                                                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                                                                </div>
-                                                                                            </form>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </th>
-                                                                </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </form>
-                                            <p>
-                                                <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary btn-xs">Save changes</button>
-                                            </p>
-
-                                        </div>
-                                        <div id="tab-5" class="tab-pane">
-                                            <div>
-                                                <button type="button" class="btn-xs btn-primary">Delete</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level below</button>
-                                                <button type="button" class="btn-xs btn-primary">Move to level up</button>
-                                            </div>
-                                            <form method="get" class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level name: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Level description: </label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="hr-line-dashed"></div>
-                                                    <label class="col-sm-2 control-label">Indicators: </label>
-
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>No</th>
-                                                                <th>Description</th>
-                                                                <th>
-                                                                    <th>
-                                                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">New indicator</button>
-                                                                        <div class="modal fade" id="newindicator" aria-hidden="true">
-                                                                            <div class="modal-dialog">
-                                                                                <div class="modal-content">
-                                                                                    <div class="modal-body">
-                                                                                        <div class="row">
-                                                                                            <h3>New indicator</h3>
-
-                                                                                            <p>Please enter new indicator.</p>
-
-                                                                                            <form role="form">
-                                                                                                <div class="form-group">
-                                                                                                    <label class="col-sm-2 control-label">Description: </label>
-                                                                                                    <div class="col-sm-10">
-                                                                                                        <input type="text" class="form-control">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div>
-                                                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                                                                </div>
-                                                                                            </form>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </th>
-                                                                </th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </form>
-                                            <p>
-                                                <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary btn-xs">Save changes</button>
-                                            </p>
-
-                                        </div>
+                                        </form>
+                                        <p>
+                                            <button type="button" class="btn btn-white btn-xs" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary btn-xs">Save changes</button>
+                                        </p>
 
                                     </div>
 
                                 </div>
+
                             </div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
             <div class="footer">
                 <div class="pull-right">

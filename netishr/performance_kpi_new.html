@@ -397,56 +397,53 @@
 
                 </div>
             </div>
-            <div class="wrapper wrapper-content animated fadeInRight">
-                <div class="row">
-                    <div class="col-lg-12">
+            <div class="row">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>New KPI</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
 
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>New KPI</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li><a href="#">Config option 1</a>
-                                        </li>
-                                        <li><a href="#">Config option 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="form-group">
+
+
+                            <!-- Get this data Settings (mysettings.html) -->
+                            <!-- Get this data Settings (mysettings.html) -->
+                            <label class="control-label">Performance Management Period:</label>&nbsp;&nbsp; January 1, 2016 - December 31, 2016
+                            <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newevidence">Change period</button>
+
+                            <p></p>
+
+                            <div class="form-group">
+                                <!-- When logged in user is HR Admin, put all job titles on this combo box -->
+                                <!-- When logged in user is a superior, put job titles of himself/herself and of all subordinates -->
+                                <!-- When logged in user is just a subordinate, put only his/her job title -->
+                                <label class="control-label">Job title: </label>
+                                <select data-placeholder="Choose a job title..." class="chosen-select">
+                                    <option value="1">Select a job title</option>
+                                    <option value="2">Lorem ipsum dolor</option>
+                                    <option value="3">Sit amet consectetur</option>
+                                    <option value="4">Adipiscing elit</option>
+                                    <option value="5">Etiam tristique</option>
+                                    <option value="6">Orci quis convallis pretium</option>
+                                </select>
                             </div>
-                            <div class="ibox-content">
 
-                                <div class="form-group">
-
-
-                                    <!-- Get this data Settings (mysettings.html) -->
-                                    <!-- Get this data Settings (mysettings.html) -->
-                                    <label class="control-label">Performance Management Period:</label>&nbsp;&nbsp; January 1, 2016 - December 31, 2016
-                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newevidence">Change period</button>
-
-                                    <p></p>
-
-                                    <div class="form-group">
-                                        <!-- When logged in user is HR Admin, put all job titles on this combo box -->
-                                        <!-- When logged in user is a superior, put job titles of himself/herself and of all subordinates -->
-                                        <!-- When logged in user is just a subordinate, put only his/her job title -->
-                                        <label class="control-label">Job title: </label>
-                                        <select data-placeholder="Choose a job title..." class="chosen-select">
-                                            <option value="1">Select a job title</option>
-                                            <option value="2">Lorem ipsum dolor</option>
-                                            <option value="3">Sit amet consectetur</option>
-                                            <option value="4">Adipiscing elit</option>
-                                            <option value="5">Etiam tristique</option>
-                                            <option value="6">Orci quis convallis pretium</option>
-                                        </select>
-                                    </div>
-
-                                    <!--
+                            <!--
                                     <label class="font-noraml">Job title:</label>
                                     <div>
                                         <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
@@ -464,7 +461,7 @@
 -->
 
 
-                                    <!--
+                            <!--
                                     <p></p>
                                     <label class="font-noraml">Perspective:</label>
                                     <div>
@@ -486,74 +483,71 @@
                                         </select>
                                     </div>
 -->
-                                    <div class="hr-line-dashed"></div>
+                            <div class="hr-line-dashed"></div>
 
-                                    <label class="control-label">Direct superior:</label>
-                                    <div>
-                                        <!-- Fill out this with the direct superior of the job title selected above -->
-                                        <p class="form-control-static">Jajang Suharjang</p>
-                                    </div>
-
-
-
-                                    <!-- This is optional. If not selected, then the KPI created here is "indirect KPI" (KPI which is not derived from superior's KPI) -->
-                                    <label class="font-noraml">Parent KPI (optional):</label>
-                                    <div>
-                                        <select data-placeholder="Choose a parent KPI..." class="chosen-select" tabindex="2">
-                                            <option value="1">Select a KPI</option>
-                                            <option value="2">Lorem ipsum dolor</option>
-                                            <option value="3">Sit amet consectetur</option>
-                                            <option value="4">Adipiscing elit</option>
-                                            <option value="5">Etiam tristique</option>
-                                            <option value="6">Orci quis convallis pretium</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="hr-line-dashed"></div>
-
-                                    <p></p>
-                                    <label class="control-label">Action plan:</label>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <p></p>
-                                    <label class="control-label">KPI:</label>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <p></p>
-                                    <label class="control-label">Target:</label>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <p></p>
-                                    <label class="control-label">Definition:</label>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <p></p>
-                                    <label class="control-label">Formula:</label>
-                                    <div>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="hr-line-dashed"></div>
-                                    <div>
-                                        <button class="btn btn-white" type="submit">Cancel</button>
-                                        <button class="btn btn-primary" type="submit">Save changes</button>
-                                    </div>
-
-
-
-                                </div>
-
-
+                            <label class="control-label">Direct superior:</label>
+                            <div>
+                                <!-- Fill out this with the direct superior of the job title selected above -->
+                                <p class="form-control-static">Jajang Suharjang</p>
                             </div>
+
+
+
+                            <!-- This is optional. If not selected, then the KPI created here is "indirect KPI" (KPI which is not derived from superior's KPI) -->
+                            <label class="font-noraml">Parent KPI (optional):</label>
+                            <div>
+                                <select data-placeholder="Choose a parent KPI..." class="chosen-select" tabindex="2">
+                                    <option value="1">Select a KPI</option>
+                                    <option value="2">Lorem ipsum dolor</option>
+                                    <option value="3">Sit amet consectetur</option>
+                                    <option value="4">Adipiscing elit</option>
+                                    <option value="5">Etiam tristique</option>
+                                    <option value="6">Orci quis convallis pretium</option>
+                                </select>
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+
+                            <p></p>
+                            <label class="control-label">Action plan:</label>
+                            <div>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <p></p>
+                            <label class="control-label">KPI:</label>
+                            <div>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <p></p>
+                            <label class="control-label">Target:</label>
+                            <div>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <p></p>
+                            <label class="control-label">Definition:</label>
+                            <div>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <p></p>
+                            <label class="control-label">Formula:</label>
+                            <div>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+                            <div>
+                                <button class="btn btn-white" type="submit">Cancel</button>
+                                <button class="btn btn-primary" type="submit">Save changes</button>
+                            </div>
+
+
+
                         </div>
+
 
                     </div>
                 </div>

@@ -382,56 +382,43 @@
                                 </li>
                             </ol>
                         </div>
-                        <div class="col-lg-2">
-
-                        </div>
                     </div>
+                    <div class="row">
 
-                    <div class="wrapper wrapper-content">
-                        <div class="row">
-                            <!--
-                            <div class="alert alert-success">
-                                <strong>Success!</strong> Indicates a successful or positive action.
-                            </div>
-                            -->
+                        <div class="ibox float-e-margins">
+
+                            <div class="ibox-content m-b-sm border-bottom">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <!-- Get this data Settings (mysettings.html) -->
+                                        <!-- Get this data Settings (mysettings.html) -->
+                                        <!-- Get this data Settings (mysettings.html) -->
+                                        <label class="control-label">Performance Management Period:</label>&nbsp;&nbsp; January 1, 2016 - December 31, 2016
+                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newevidence">Change period</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group">
+                                            <!-- Initially select currently logged in user -->
+                                            <!-- If logged in user is HR Admin, enable selection of all staffs -->
+                                            <!-- If logged in user is superior, enable selection of all subordinates -->
 
 
-                            <div class="col-lg-12">
 
-                                <div class="ibox float-e-margins">
 
-                                    <div class="ibox-content m-b-sm border-bottom">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <!-- Get this data Settings (mysettings.html) -->
-                                                <!-- Get this data Settings (mysettings.html) -->
-                                                <!-- Get this data Settings (mysettings.html) -->
-                                                <label class="control-label">Performance Management Period:</label>&nbsp;&nbsp; January 1, 2016 - December 31, 2016
-                                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newevidence">Change period</button>
+                                            <div>
+                                                <label class="control-label" for="status">Select a person: </label>
+                                                <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                                    <option value="1">DIR-BR Director of Business Development - Tono Kartono</option>
+                                                    <option selected value="2">DIR-FIN Director of Finance - Jono Karjono</option>
+                                                    <option value="3">DIR-HR Director of HR - Sono Karsono</option>
+                                                </select>
                                             </div>
+
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                                <div class="form-group">
-                                                    <!-- Initially select currently logged in user -->
-                                                    <!-- If logged in user is HR Admin, enable selection of all staffs -->
-                                                    <!-- If logged in user is superior, enable selection of all subordinates -->
-
-
-
-
-                                                    <div>
-                                                        <label class="control-label" for="status">Select a person: </label>
-                                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                                            <option value="1">DIR-BR Director of Business Development - Tono Kartono</option>
-                                                            <option selected value="2">DIR-FIN Director of Finance - Jono Karjono</option>
-                                                            <option value="3">DIR-HR Director of HR - Sono Karsono</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <!--
+                                    </div>
+                                    <!--
                                             <div class="col-sm-4">
                                                 <div>
                                                     <label class="control-label" for="status">Select KPI or comptency: </label>
@@ -442,390 +429,387 @@
                                                 </div>
                                             </div>
                                             -->
-                                        </div>
-
-                                    </div>
-
                                 </div>
 
+                            </div>
 
-                                <div class="tabs-container">
-                                    <!-- Show the KPIs of the job title selected above -->
-                                    <div class="tabs-left">
-                                        <ul class="nav nav-tabs">
-                                            <li class="active"><a data-toggle="tab" href="#tab-1"> CHSE Concern for Health, Safety and Environment</a></li>
-                                            <li class=""><a data-toggle="tab" href="#tab-2"> CRT Creativity</a></li>
-                                            <li class=""><a data-toggle="tab" href="#tab-3"> CT Conceptual Thinking	</a></li>
-                                            <li class=""><a data-toggle="tab" href="#tab-4"> BP Budget and Purchasing</a></li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div id="tab-1" class="tab-pane active">
-                                                <div class="panel-body">
-                                                    <label class="control-label">Category:</label> Core Competency
-                                                    <br>
-                                                    <label class="control-label">Required level:</label> 5
-                                                    <br>
-                                                    <label class="control-label">Current level:</label>
-                                                    3
-                                                    <p></p>
-                                                    <label class="control-label">Overall target:</label>
-                                                    5
-                                                    <br>
+                        </div>
 
-                                                    <label class="control-label">Overall weight:</label>
-                                                    30
+                        <div class="tabs-container">
+                            <!-- Show the KPIs of the job title selected above -->
+                            <div class="tabs-left">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#tab-1"> CHSE Concern for Health, Safety and Environment</a></li>
+                                    <li class=""><a data-toggle="tab" href="#tab-2"> CRT Creativity</a></li>
+                                    <li class=""><a data-toggle="tab" href="#tab-3"> CT Conceptual Thinking	</a></li>
+                                    <li class=""><a data-toggle="tab" href="#tab-4"> BP Budget and Purchasing</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="tab-1" class="tab-pane active">
+                                        <div class="panel-body">
+                                            <label class="control-label">Category:</label> Core Competency
+                                            <br>
+                                            <label class="control-label">Required level:</label> 5
+                                            <br>
+                                            <label class="control-label">Current level:</label>
+                                            3
+                                            <p></p>
+                                            <label class="control-label">Overall target:</label>
+                                            5
+                                            <br>
 
-                                                    <p></p>
-                                                    <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
-                                                    <label class="control-label">Per phase planning:</label>
+                                            <label class="control-label">Overall weight:</label>
+                                            30
 
-                                                    <div>
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Evaluation phase</th>
-                                                                    <th>Date</th>
-                                                                    <th>Target level</th>
-                                                                    <th>Weight</th>
-                                                                    <th>Actual</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>January 1-March 31</td>
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>25</td>
-                                                                    <td>
-                                                                        <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>April 1-June 30</td>
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>25</td>
+                                            <p></p>
+                                            <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
+                                            <label class="control-label">Per phase planning:</label>
 
-                                                                    <td>
-                                                                        <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>July 1-September 30</td>
-                                                                    <td>
-                                                                        4
-                                                                    </td>
-                                                                    <td>25</td>
+                                            <div>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Evaluation phase</th>
+                                                            <th>Date</th>
+                                                            <th>Target level</th>
+                                                            <th>Weight</th>
+                                                            <th>Actual</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>January 1-March 31</td>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>25</td>
+                                                            <td>
+                                                                <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>April 1-June 30</td>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>25</td>
 
-                                                                    <td>
-                                                                        <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>4</td>
-                                                                    <td>October 1-December 31</td>
-                                                                    <td>
-                                                                        5
-                                                                    </td>
-                                                                    <td>25</td>
+                                                            <td>
+                                                                <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>July 1-September 30</td>
+                                                            <td>
+                                                                4
+                                                            </td>
+                                                            <td>25</td>
 
-                                                                    <td>
-                                                                        <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                            <td>
+                                                                <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>October 1-December 31</td>
+                                                            <td>
+                                                                5
+                                                            </td>
+                                                            <td>25</td>
 
-                                                </div>
+                                                            <td>
+                                                                <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <div id="tab-2" class="tab-pane">
-                                                <div class="panel-body">
-                                                    <label class="control-label">Category:</label> Core Competency
-                                                    <br>
-                                                    <label class="control-label">Required level:</label> 5
-                                                    <br>
-                                                    <label class="control-label">Current level:</label>
-                                                    3
-                                                    <p></p>
-                                                    <label class="control-label">Overall target:</label>
-                                                    5
-                                                    <br>
 
-                                                    <label class="control-label">Overall weight:</label>
-                                                    30
-                                                    <p></p>
-                                                    <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
-                                                    <label class="control-label">Per phase planning:</label>
+                                        </div>
+                                    </div>
+                                    <div id="tab-2" class="tab-pane">
+                                        <div class="panel-body">
+                                            <label class="control-label">Category:</label> Core Competency
+                                            <br>
+                                            <label class="control-label">Required level:</label> 5
+                                            <br>
+                                            <label class="control-label">Current level:</label>
+                                            3
+                                            <p></p>
+                                            <label class="control-label">Overall target:</label>
+                                            5
+                                            <br>
 
-                                                    <div>
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Evaluation phase</th>
-                                                                    <th>Date</th>
-                                                                    <th>Target level</th>
-                                                                    <th>Weight</th>
-                                                                    <th>Actual</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>January 1-March 31</td>
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>25</td>
-                                                                    <td>
-                                                                        <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>April 1-June 30</td>
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>25</td>
+                                            <label class="control-label">Overall weight:</label>
+                                            30
+                                            <p></p>
+                                            <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
+                                            <label class="control-label">Per phase planning:</label>
 
-                                                                    <td>
-                                                                        <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>July 1-September 30</td>
-                                                                    <td>
-                                                                        4
-                                                                    </td>
-                                                                    <td>25</td>
+                                            <div>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Evaluation phase</th>
+                                                            <th>Date</th>
+                                                            <th>Target level</th>
+                                                            <th>Weight</th>
+                                                            <th>Actual</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>January 1-March 31</td>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>25</td>
+                                                            <td>
+                                                                <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>April 1-June 30</td>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>25</td>
 
-                                                                    <td>
-                                                                        <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>4</td>
-                                                                    <td>October 1-December 31</td>
-                                                                    <td>
-                                                                        5
-                                                                    </td>
-                                                                    <td>25</td>
+                                                            <td>
+                                                                <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>July 1-September 30</td>
+                                                            <td>
+                                                                4
+                                                            </td>
+                                                            <td>25</td>
 
-                                                                    <td>
-                                                                        <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                            <td>
+                                                                <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>October 1-December 31</td>
+                                                            <td>
+                                                                5
+                                                            </td>
+                                                            <td>25</td>
 
-                                                </div>
+                                                            <td>
+                                                                <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <div id="tab-3" class="tab-pane">
-                                                <div class="panel-body">
-                                                    <label class="control-label">Category:</label> Core Competency
-                                                    <br>
-                                                    <label class="control-label">Required level:</label> 5
-                                                    <br>
-                                                    <label class="control-label">Current level:</label>
-                                                    3
-                                                    <p></p>
-                                                    <label class="control-label">Overall target:</label>
-                                                    5
-                                                    <br>
 
-                                                    <label class="control-label">Overall weight:</label>
-                                                    20
+                                        </div>
+                                    </div>
+                                    <div id="tab-3" class="tab-pane">
+                                        <div class="panel-body">
+                                            <label class="control-label">Category:</label> Core Competency
+                                            <br>
+                                            <label class="control-label">Required level:</label> 5
+                                            <br>
+                                            <label class="control-label">Current level:</label>
+                                            3
+                                            <p></p>
+                                            <label class="control-label">Overall target:</label>
+                                            5
+                                            <br>
 
-                                                    <p></p>
-                                                    <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
-                                                    <label class="control-label">Per phase planning:</label>
+                                            <label class="control-label">Overall weight:</label>
+                                            20
 
-                                                    <div>
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Evaluation phase</th>
-                                                                    <th>Date</th>
-                                                                    <th>Target level</th>
-                                                                    <th>Weight</th>
-                                                                    <th>Actual</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>January 1-March 31</td>
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>25</td>
-                                                                    <td>
-                                                                        <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>April 1-June 30</td>
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>25</td>
+                                            <p></p>
+                                            <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
+                                            <label class="control-label">Per phase planning:</label>
 
-                                                                    <td>
-                                                                        <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>July 1-September 30</td>
-                                                                    <td>
-                                                                        4
-                                                                    </td>
-                                                                    <td>25</td>
+                                            <div>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Evaluation phase</th>
+                                                            <th>Date</th>
+                                                            <th>Target level</th>
+                                                            <th>Weight</th>
+                                                            <th>Actual</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>January 1-March 31</td>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>25</td>
+                                                            <td>
+                                                                <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>April 1-June 30</td>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>25</td>
 
-                                                                    <td>
-                                                                        <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>4</td>
-                                                                    <td>October 1-December 31</td>
-                                                                    <td>
-                                                                        5
-                                                                    </td>
-                                                                    <td>25</td>
+                                                            <td>
+                                                                <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>July 1-September 30</td>
+                                                            <td>
+                                                                4
+                                                            </td>
+                                                            <td>25</td>
 
-                                                                    <td>
-                                                                        <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                            <td>
+                                                                <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>October 1-December 31</td>
+                                                            <td>
+                                                                5
+                                                            </td>
+                                                            <td>25</td>
 
-                                                </div>
+                                                            <td>
+                                                                <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <div id="tab-4" class="tab-pane">
-                                                <div class="panel-body">
-                                                    <label class="control-label">Category:</label> Core Competency
-                                                    <br>
-                                                    <label class="control-label">Required level:</label> 5
-                                                    <br>
-                                                    <label class="control-label">Current level:</label>
-                                                    2
-                                                    <p></p>
-                                                    <label class="control-label">Overall target:</label>
-                                                    4
-                                                    <br>
 
-                                                    <label class="control-label">Overall weight:</label>
-                                                    20
+                                        </div>
+                                    </div>
+                                    <div id="tab-4" class="tab-pane">
+                                        <div class="panel-body">
+                                            <label class="control-label">Category:</label> Core Competency
+                                            <br>
+                                            <label class="control-label">Required level:</label> 5
+                                            <br>
+                                            <label class="control-label">Current level:</label>
+                                            2
+                                            <p></p>
+                                            <label class="control-label">Overall target:</label>
+                                            4
+                                            <br>
 
-                                                    <p></p>
-                                                    <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
-                                                    <label class="control-label">Per phase planning:</label>
+                                            <label class="control-label">Overall weight:</label>
+                                            20
 
-                                                    <div>
-                                                        <table class="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Evaluation phase</th>
-                                                                    <th>Date</th>
-                                                                    <th>Target level</th>
-                                                                    <th>Weight</th>
-                                                                    <th>Actual</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>1</td>
-                                                                    <td>January 1-March 31</td>
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>25</td>
-                                                                    <td>
-                                                                        <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>2</td>
-                                                                    <td>April 1-June 30</td>
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>25</td>
+                                            <p></p>
+                                            <!-- This is a sample for quarterly cycle, so there are 4 evaluation periods. Show accordingly for montlhy, half-yearly and yearly -->
+                                            <label class="control-label">Per phase planning:</label>
 
-                                                                    <td>
-                                                                        <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>3</td>
-                                                                    <td>July 1-September 30</td>
-                                                                    <td>
-                                                                        4
-                                                                    </td>
-                                                                    <td>25</td>
+                                            <div>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Evaluation phase</th>
+                                                            <th>Date</th>
+                                                            <th>Target level</th>
+                                                            <th>Weight</th>
+                                                            <th>Actual</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>January 1-March 31</td>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>25</td>
+                                                            <td>
+                                                                <a href="#" id="period1weight" data-type="text" data-pk="1" data-title="Period 1 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>April 1-June 30</td>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>25</td>
 
-                                                                    <td>
-                                                                        <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>4</td>
-                                                                    <td>October 1-December 31</td>
-                                                                    <td>
-                                                                        5
-                                                                    </td>
-                                                                    <td>25</td>
+                                                            <td>
+                                                                <a href="#" id="period2weight" data-type="text" data-pk="1" data-title="Period 2 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>July 1-September 30</td>
+                                                            <td>
+                                                                4
+                                                            </td>
+                                                            <td>25</td>
 
-                                                                    <td>
-                                                                        <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                            <td>
+                                                                <a href="#" id="period3weight" data-type="text" data-pk="1" data-title="Period 3 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>October 1-December 31</td>
+                                                            <td>
+                                                                5
+                                                            </td>
+                                                            <td>25</td>
 
-                                                </div>
+                                                            <td>
+                                                                <a href="#" id="period4weight" data-type="text" data-pk="1" data-title="Period 4 Weight" class="editable editable-click"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal fade" id="modal_mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <textarea class="form-control" rows="6"></textarea>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">Save</button>
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        </div>
+                        </div>
+                        <div class="modal fade" id="modal_mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <textarea class="form-control" rows="6"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="footer">
-                                <div class="pull-right">
-                                    <strong>Version</strong> 2.x.xxxx.
-                                </div>
-                                <div>
-                                    <strong>Copyright</strong> Netika Indonesia &copy; 2016
-                                </div>
+                        </div>
+                        <div class="footer">
+                            <div class="pull-right">
+                                <strong>Version</strong> 2.x.xxxx.
+                            </div>
+                            <div>
+                                <strong>Copyright</strong> Netika Indonesia &copy; 2016
                             </div>
                         </div>
                     </div>

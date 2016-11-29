@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,7 +12,7 @@
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
-    
+
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -404,225 +404,223 @@
 
                 </div>
             </div>
-            <div class="wrapper wrapper-content animated fadeInRight">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-title">
-                                <h5>Various General Settings</h5>
-                                <div class="ibox-tools">
-                                    <a class="collapse-link">
-                                        <i class="fa fa-chevron-up"></i>
-                                    </a>
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <i class="fa fa-wrench"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-user">
-                                        <li>
-                                            <a href="#">Config option 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Config option 2</a>
-                                        </li>
+            <div class="row">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Various General Settings</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="#">Config option 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="tabs-container">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#tab-1">Define Shift</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-2">Assign Shift</a></li>
                                     </ul>
-                                </div>
-                            </div>
-                            <div class="ibox-content">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="tabs-container">
-                                            <ul class="nav nav-tabs">
-                                                <li class="active"><a data-toggle="tab" href="#tab-1">Define Shift</a></li>
-                                                <li class=""><a data-toggle="tab" href="#tab-2">Assign Shift</a></li>
-                                            </ul>
-                                            <div class="tab-content">
-                                                <div id="tab-1" class="tab-pane active">
-                                                    <div class="panel-body">
-                                                        <div class="wrapper wrapper-content animated fadeInRight ecommerce">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="form-group">
-                                                                        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#dimension_new">Filter</button>
-                                                                        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#dimension_new">Add New</button>
-                                                                    </div>
-                                                                    <!-- Modal -->
-                                                                    <div class="modal inmodal" id="dimension_new" tabindex="-1" role="dialog" aria-hidden="true">
-                                                                        <div class="modal-dialog">
-                                                                            <div class="modal-content animated bounceInRight">
-                                                                                <div class="modal-header">
-                                                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                                    <i class="fa fa-eye modal-icon"></i>
-                                                                                    <h4 class="modal-title">Please input Shift</h4>
-                                                                                    <small class="font-bold">Shift use for get start and end of working time</small>
-                                                                                    <label class="text-navy">Shift Of (Company Name)</label>
+                                    <div class="tab-content">
+                                        <div id="tab-1" class="tab-pane active">
+                                            <div class="panel-body">
+                                                <div class="wrapper wrapper-content animated fadeInRight ecommerce">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="form-group">
+                                                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#dimension_new">Filter</button>
+                                                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#dimension_new">Add New</button>
+                                                            </div>
+                                                            <!-- Modal -->
+                                                            <div class="modal inmodal" id="dimension_new" tabindex="-1" role="dialog" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content animated bounceInRight">
+                                                                        <div class="modal-header">
+                                                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                            <i class="fa fa-eye modal-icon"></i>
+                                                                            <h4 class="modal-title">Please input Shift</h4>
+                                                                            <small class="font-bold">Shift use for get start and end of working time</small>
+                                                                            <label class="text-navy">Shift Of (Company Name)</label>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <div class="form-group">
+                                                                                        <label class="control-label" for="status">Label</label>
+                                                                                        <input type="text" id="status" name="status" value="" placeholder="Label" class="form-control">
+                                                                                    </div>
                                                                                 </div>
-                                                                                <div class="modal-body">
-                                                                                    <div class="row">
-                                                                                        <div class="col-sm-12">
-                                                                                            <div class="form-group">
-                                                                                                <label class="control-label" for="status">Label</label>
-                                                                                                <input type="text" id="status" name="status" value="" placeholder="Label" class="form-control">
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="row">
-                                                                                        <div class="col-sm-6">
-                                                                                            <div class="form-group">
-                                                                                                <label class="control-label" for="date_modified">Start Time</label>
-                                                                                                <div class="input-group date">
-                                                                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                                                    <input id="date_modified" type="text" class="form-control" value="03/06/2014">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-sm-6">
-                                                                                            <div class="form-group">
-                                                                                                <label class="control-label" for="date_modified">End Time</label>
-                                                                                                <div class="input-group date">
-                                                                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                                                    <input id="date_modified" type="text" class="form-control" value="03/06/2014">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="row">
-                                                                                        <div class="col-sm-6">
-                                                                                            <div class="form-group">
-                                                                                                <label class="control-label" for="date_modified">Start Break Time</label>
-                                                                                                <div class="input-group date">
-                                                                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                                                    <input id="date_modified" type="text" class="form-control" value="03/06/2014">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-sm-6">
-                                                                                            <div class="form-group">
-                                                                                                <label class="control-label" for="date_modified">End Break Time</label>
-                                                                                                <div class="input-group date">
-                                                                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                                                    <input id="date_modified" type="text" class="form-control" value="03/06/2014">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="row">
-                                                                                        <div class="col-sm-12">
-                                                                                            <div class="form-group">
-                                                                                                <label class="control-label" for="amount">Status</label>
-                                                                                                <div class="radio">
-                                                                                                    <label>
-                                                                                                        <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> Active
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                                <div class="radio">
-                                                                                                    <label>
-                                                                                                        <input type="radio" checked="" value="option2" id="optionsRadios2" name="optionsRadios"> Not Active
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="row">
-                                                                                        <div class="col-sm-12">
-                                                                                            <div class="form-group">
-                                                                                                <label class="control-label" for="customer">Description</label>
-                                                                                                <textarea class="col-sm-8 form-control" rows="5"></textarea>
-                                                                                            </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-6">
+                                                                                    <div class="form-group">
+                                                                                        <label class="control-label" for="date_modified">Start Time</label>
+                                                                                        <div class="input-group date">
+                                                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="modal-footer">
-                                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                                    <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
+                                                                                <div class="col-sm-6">
+                                                                                    <div class="form-group">
+                                                                                        <label class="control-label" for="date_modified">End Time</label>
+                                                                                        <div class="input-group date">
+                                                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-6">
+                                                                                    <div class="form-group">
+                                                                                        <label class="control-label" for="date_modified">Start Break Time</label>
+                                                                                        <div class="input-group date">
+                                                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-6">
+                                                                                    <div class="form-group">
+                                                                                        <label class="control-label" for="date_modified">End Break Time</label>
+                                                                                        <div class="input-group date">
+                                                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                                            <input id="date_modified" type="text" class="form-control" value="03/06/2014">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <div class="form-group">
+                                                                                        <label class="control-label" for="amount">Status</label>
+                                                                                        <div class="radio">
+                                                                                            <label>
+                                                                                                <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> Active
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="radio">
+                                                                                            <label>
+                                                                                                <input type="radio" checked="" value="option2" id="optionsRadios2" name="optionsRadios"> Not Active
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <div class="form-group">
+                                                                                        <label class="control-label" for="customer">Description</label>
+                                                                                        <textarea class="col-sm-8 form-control" rows="5"></textarea>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="ibox">
-                                                                    <div class="ibox-content">
-                                                                        <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th>Label</th>
-                                                                                    <th>Start Time</th>
-                                                                                    <th>End Time</th>
-                                                                                    <th>Start Break Time</th>
-                                                                                    <th>End Break Time</th>
-                                                                                    <th>Description</th>
-                                                                                    <th>Status</th>
-                                                                                    <th class="text-right">Action</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        Standart Shift
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        08.00
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        17.00
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        12.00
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        13.00
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        Standart shift for all employee
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <span class="label label-primary">Active</span>
-                                                                                    </td>
-                                                                                    <td class="text-right">
-                                                                                        <div class="btn-group">
-                                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        Morning Shift AB
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        05.00
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        12.00
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        09.00
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        10.00
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        Morning shift for employee AB
-                                                                                    </td>
-                                                                                    <td>
-                                                                                        <span class="label label-primary">Active</span>
-                                                                                    </td>
-                                                                                    <td class="text-right">
-                                                                                        <div class="btn-group">
-                                                                                            <button class="btn-white btn btn-xs">Edit</button>
-                                                                                            <button class="btn-white btn btn-xs">Delete</button>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                                        </table>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                            <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="ibox">
+                                                            <div class="ibox-content">
+                                                                <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Label</th>
+                                                                            <th>Start Time</th>
+                                                                            <th>End Time</th>
+                                                                            <th>Start Break Time</th>
+                                                                            <th>End Break Time</th>
+                                                                            <th>Description</th>
+                                                                            <th>Status</th>
+                                                                            <th class="text-right">Action</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                Standart Shift
+                                                                            </td>
+                                                                            <td>
+                                                                                08.00
+                                                                            </td>
+                                                                            <td>
+                                                                                17.00
+                                                                            </td>
+                                                                            <td>
+                                                                                12.00
+                                                                            </td>
+                                                                            <td>
+                                                                                13.00
+                                                                            </td>
+                                                                            <td>
+                                                                                Standart shift for all employee
+                                                                            </td>
+                                                                            <td>
+                                                                                <span class="label label-primary">Active</span>
+                                                                            </td>
+                                                                            <td class="text-right">
+                                                                                <div class="btn-group">
+                                                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                Morning Shift AB
+                                                                            </td>
+                                                                            <td>
+                                                                                05.00
+                                                                            </td>
+                                                                            <td>
+                                                                                12.00
+                                                                            </td>
+                                                                            <td>
+                                                                                09.00
+                                                                            </td>
+                                                                            <td>
+                                                                                10.00
+                                                                            </td>
+                                                                            <td>
+                                                                                Morning shift for employee AB
+                                                                            </td>
+                                                                            <td>
+                                                                                <span class="label label-primary">Active</span>
+                                                                            </td>
+                                                                            <td class="text-right">
+                                                                                <div class="btn-group">
+                                                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                                                    <button class="btn-white btn btn-xs">Delete</button>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            <div id="tab-2" class="tab-pane">
-                                                <div class="panel-body">
-                                                  <table class="footable table table-stripped toggle-arrow-tiny">
+                                            </div>
+                                        </div>
+                                        <div id="tab-2" class="tab-pane">
+                                            <div class="panel-body">
+                                                <table class="footable table table-stripped toggle-arrow-tiny">
                                                     <thead>
                                                         <tr>
                                                             <th>No</th>
@@ -654,29 +652,27 @@
                                                         </tr>
                                                     </tfoot>
                                                 </table>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
+
+
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer">
-            <div class="pull-right">
-                <strong>Version</strong> 2.x.xxxx.
+            <div class="footer">
+                <div class="pull-right">
+                    <strong>Version</strong> 2.x.xxxx.
+                </div>
+                <div>
+                    <strong>Copyright</strong> Netika Indonesia &copy; 2016
+                </div>
             </div>
-            <div>
-                <strong>Copyright</strong> Netika Indonesia &copy; 2016
-            </div>
-        </div>
 
-    </div>
+        </div>
     </div>
 
 
