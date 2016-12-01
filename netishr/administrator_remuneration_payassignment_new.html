@@ -32,6 +32,7 @@
     <!-- Chosen -->
     <script src="js/plugins/chosen/chosen.jquery.js"></script>
 
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
 
 </head>
 
@@ -368,7 +369,7 @@
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Pay Item Assignment</h2>
+                            <h2>Pay Assignment</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">Home</a>
@@ -380,7 +381,7 @@
                                     <a>Remuneration</a>
                                 </li>
                                 <li class="active">
-                                    <strong>Pay Item Assignment</strong>
+                                    <strong>Pay Assignment</strong>
                                 </li>
                             </ol>
                         </div>
@@ -392,9 +393,20 @@
                         <div class="ibox float-e-margins">
                             <div class="ibox-content m-b-sm border-bottom">
                                 <div class="row">
+                                    <div class="col-sm-2">
+                                        <div class="form-group" id="monthpicker">
+                                            <label>
+                                                Select month</label>:
+                                            <div class="input-group date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                <input type="text" class="form-control" value="2016">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <!-- Initially select first staff -->
                                             <div>
                                                 <label class="control-label" for="status">Select a person: </label>
                                                 <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
@@ -962,6 +974,9 @@
             <!-- Chosen -->
             <script src="js/plugins/chosen/chosen.jquery.js"></script>
 
+            <!-- Data picker -->
+            <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
             <!-- Page-Level Scripts -->
             <script>
                 $(document).ready(function () {
@@ -1045,6 +1060,18 @@
                     $('#DataTables_Table_6_filter').hide();
                     $('#DataTables_Table_7_filter').hide();
                     $('#DataTables_Table_8_filter').hide();
+
+                    $('#monthpicker .input-group.date').datepicker({
+                        format: 'mm/yyyy',
+                        todayBtn: "linked",
+                        keyboardNavigation: false,
+                        forceParse: false,
+                        calendarWeeks: true,
+                        autoclose: true,
+                        viewMode: "months",
+                        minViewMode: "months"
+                    });
+
 
 
                 });
