@@ -943,7 +943,7 @@
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>1</td>
-                                                                        <td>100 =&lt; SUM(R's) &lt; 150</td>
+                                                                        <td>100 =&lt; (SUM(R_KPI)*40+SUM(R_Competency)*60)/100) &lt; 150</td>
                                                                         <td>E</td>
                                                                         <td>Kurang</td>
                                                                         <td>
@@ -961,7 +961,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>2</td>
-                                                                        <td>150 =&lt; SUM(R's) &lt; 200%</td>
+                                                                        <td>150 =&lt; (SUM(R_KPI)*40+SUM(R_Competency)*60)/100) &lt; 200%</td>
                                                                         <td>D</td>
                                                                         <td>Pengembangan</td>
                                                                         <td>
@@ -978,7 +978,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>3</td>
-                                                                        <td>200 =&lt; SUM(R's) &lt; 250%</td>
+                                                                        <td>200 =&lt; (SUM(R_KPI)*40+SUM(R_Competency)*60)/100) &lt; 250%</td>
                                                                         <td>C</td>
                                                                         <td>Baik</td>
                                                                         <td>
@@ -995,7 +995,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>4</td>
-                                                                        <td>250 =&lt; SUM(R's) &lt; 300%</td>
+                                                                        <td>250 =&lt; (SUM(R_KPI)*40+SUM(R_Competency)*60)/100) &lt; 300%</td>
                                                                         <td>B</td>
                                                                         <td>Sangat Baik</td>
                                                                         <td>
@@ -1012,7 +1012,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>4</td>
-                                                                        <td>300 =&lt; SUM(R's) &lt; 400%</td>
+                                                                        <td>300 =&lt; (SUM(R_KPI)*40+SUM(R_Competency)*60)/100) &lt; 400%</td>
                                                                         <td>A</td>
                                                                         <td>Istimewa</td>
                                                                         <td>
@@ -1040,9 +1040,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                Any: This matches any value of AVERAGE(R's) and SUM(R's)
-                                                <br> AVERAGE(R's): average of all results (R's)
-                                                <br> SUM(R's): total of all results (R's)
+                                                Any: This matches any value
+                                                <br> AVERAGE(R_KPI): average of all R (Result) value of KPI in all phases
+                                                <br> SUM(R_KPI): sum of all R (Result) value of KPI in all phases
+                                                <br> AVERAGE(R_Competency): average of all R (Result) value of competency in all phases
+                                                <br> SUM(R_Competency): sum of all R (Result) value of competency in all phases
 
                                             </div>
 
