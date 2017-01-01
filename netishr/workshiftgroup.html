@@ -6,15 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Manpower Planning</title>
+    <title>NetisHR | Work Shift Group</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <!-- FooTable -->
-    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
 
     <!-- Toastr style -->
     <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <!-- FooTable -->
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
+
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -352,63 +353,21 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Manpower Planning</h2>
+                    <h2>Work Shift Group</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
+                        <li>
+                            <a href="administrator.html">Administrator</a>
+                        </li>
                         <li class="active">
-                            <strong>Manpower Planning</strong>
+                            <strong>Work Shift Group</strong>
                         </li>
                     </ol>
                 </div>
                 <div class="col-lg-2">
-                    <!-- Modal -->
-                    <div class="modal inmodal" id="Edit" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content animated bounceInRight">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                    <i class="fa fa-users modal-icon"></i>
-                                    <h4 class="modal-title">Marketing Staff</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div>
-                                            <div class="form-group">
-                                                <label class="control-label pull-left">Workload Analysis</label>
-                                                <input type="text" class="form-control pull-right" value="7" disabled/>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label pull-left">Existing Employee</label>
-                                                <input type="text" class="form-control pull-right" value="4" disabled/>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label pull-left">Manpower Planning</label>
-                                                <input type="text" class="form-control pull-right" value="3" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label pull-left">Succession</label>
-                                                <input type="text" class="form-control pull-right" value="0" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label pull-left">Internal</label>
-                                                <input type="text" class="form-control pull-right" value="1" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label pull-left">External</label>
-                                                <input type="text" class="form-control pull-right" value="2" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <div class="wrapper wrapper-content  animated fadeInRight">
@@ -421,117 +380,59 @@
                                     <span class="input-group-btn">
                                             <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
                                      </span>
-                                    <div class="col-lg-4 text-right">
-                                        <a href="recruitmentplanning.html" class="btn btn-primary">Go to Recruitment Planning</a>
-                                    </div>
                                 </div>
                                 <br>
-                                <table class="footable table table-stripped toggle-arrow-tiny">
-                                    <thead>
-                                        <tr>
-                                            <th>Job Title</th>
-                                            <th>Workload Analysis</th>
-                                            <th>Existing Employee</th>
-                                            <th>Manpower planning</th>
-                                            <th>Succession</th>
-                                            <th>Internal</th>
-                                            <th>External</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                Marketing Staff
-                                            </td>
-                                            <td>
-                                                7
-                                            </td>
-                                            <td>
-                                                4
-                                            </td>
-                                            <td>
-                                                3
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                1
-                                            </td>
-                                            <td>
-                                                2
-                                            </td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <a href="#">
-                                                        <button data-toggle="modal" data-target="#Edit" class="btn-white btn btn-xs">Edit</button>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                IT Staff
-                                            </td>
-                                            <td>
-                                                3
-                                            </td>
-                                            <td>
-                                                3
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                0
-                                            </td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <a href="#">
-                                                        <button data-toggle="modal" data-target="#Edit" class="btn-white btn btn-xs">Edit</button>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                HR Staff
-                                            </td>
-                                            <td>
-                                                Not Calculated
-                                            </td>
-                                            <td>
-                                                4
-                                            </td>
-                                            <td>
-                                                Not Defined
-                                            </td>
-                                            <td>
-                                                Not Defined
-                                            </td>
-                                            <td>
-                                                Not Defined
-                                            </td>
-                                            <td>
-                                                Not Defined
-                                            </td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <a href="#">
-                                                        <button data-toggle="modal" data-target="#Edit" class="btn-white btn btn-xs">Edit</button>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <a href="workshiftgroup_edit.html">
+                                    <button type="button" class="btn btn-primary btn-xs">New Work Shift Group</button>
+                                </a>
+                    <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th class="text-right">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Shift normal
+                                </td>
+                                <td>
+                                    Shift kerja office hour berangkat pagi pulang petang
+                                </td>
+                                <td class="text-right">
+                                    <div class="btn-group">
+                                        <a href="workshiftgroup_edit.html">
+                                            <button type="button" class="btn btn-primary btn-xs">Edit</button>
+                                        </a>
+                                        <a href="#">
+                                            <button type="button" class="btn btn-primary btn-xs">Delete</button>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Shift jaga toko
+                                </td>
+                                <td>
+                                    Shift jaga toko rotasi kerja pagi-malam-libur
+                                </td>
+                                <td class="text-right">
+                                    <div class="btn-group">
+                                        <a href="workshiftgroup_edit.html">
+                                            <button type="button" class="btn btn-primary btn-xs">Edit</button>
+                                        </a>
+                                        <a href="#">
+                                            <button type="button" class="btn btn-primary btn-xs">Delete</button>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                             </div>
                         </div>
                     </div>
@@ -556,21 +457,21 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- FooTable -->
-    <script src="js/plugins/footable/footable.all.min.js"></script>
 
 
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
     <script src="js/w3data.js"></script>
-    <script>
-        w3IncludeHTML();
-    </script>
+    <!-- FooTable -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.footable').footable();
         });
+    </script>
+    <script>
+        w3IncludeHTML();
     </script>
 </body>
 

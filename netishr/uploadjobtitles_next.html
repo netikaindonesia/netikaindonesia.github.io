@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>NetisHR</title>
+    <title>NetisHR | Upload Job Titles</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -27,6 +27,10 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -365,246 +369,347 @@
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Settings</h2>
+                            <h2>Upload Job Titles</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">Home</a>
                                 </li>
+                                <li>
+                                    <a href="administrator.html">Settings</a>
+                                </li>
                                 <li class="active">
-                                    <strong>Settings</strong>
+                                    <strong>Upload Job Titles</strong>
                                 </li>
                             </ol>
-                        </div>
-                        <div class="col-lg-2">
-
                         </div>
                     </div>
 
                     <div class="wrapper wrapper-content">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-12">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>General</h5>
                                     </div>
                                     <div class="ibox-content">
-                                        <div><a href="administrator_general_settings.html">Settings</a>
-                                            <div class="small">Various general settings</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="corporate_calendar.html">Corporate Annual Calendar</a>
-                                            <div class="small">Calendar of corporate events</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="option_data_type_configuration.html">Option Data Type Configuration</a>
-                                            <div class="small">Configure Option data type across application</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Organisation</h5>
-                                        <div class="ibox-tools">
-                                            <!--<span class="label label-warning-light pull-right">10 Messages</span>-->
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <p></p>
-                                        <div><a href="administrator_groups.html">Groups</a>
-                                            <div class="small">Set up companies and branches</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadjobtitles.html">Upload Job Titles</a>
-                                            <div class="small">Upload Job Titles</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Job</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_job_settings.html">Settings</a>
-                                            <div class="small">Various settings for Job</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_job_wla.html">Workload Analysis</a>
-                                            <div class="small">Settings for workload analysis</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="Administrator_group_competency.html">Group Competency Settings</a>
-                                            <div class="small">Settings for Group Competency</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Person</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <a href="person_information_settings.html">Persons Information Setting</a>
-                                        <div class="small">Information configuration for person information</div>
-                                        <p></p>
-                                        <a href="uploadpersons.html">Upload Persons</a>
-                                        <div class="small">Upload Person information</div>
+                                            <div class="alert alert-danger">
+                                                Kalau ada error pas Save, tulis errornya di sini
+                                            </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Recruitment</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
+                                        <h5>Excel line imported from your file</h5>
+                                    </div>                                    
                                     <div class="ibox-content">
-                                        <a href="uploadapplicants.html">Upload Applicants</a>
-                                        <div class="small">Upload Person information</div>
-                                        <p></p>
-                                        <a href="selectionstagesetting.html">Selection Stage Setting</a>
-                                        <div class="small">Selection Stage Setting</div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Performance</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_performance_settings.html">Settings</a>
-                                            <div class="small">Various settings for Performance</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="performance_mgmt_periods.html">Performance Management Periods</a>
-                                            <div class="small">Manage performance management periods</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_performance_evaluation.html">Performance Evaluation Settings</a>
-                                            <div class="small">Rules for achievement percentages, results and rating</div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Training</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="#">Category</a>
-                                            <div class="small">Settings for categories</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Institution</a>
-                                            <div class="small">Settings for institutions</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Instructor</a>
-                                            <div class="small">Settings for instructors</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Career</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_career_settings.html">Settings</a>
-                                            <div class="small">Various settings for Performance</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Policy Setting</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
+                                         <div class="form-group">
+                                             <label class="col-lg-4 control-label">Excel line 1 of 1</label>
+                                             <button class="btn-xs btn-primary" type="submit">< Previous</button>
+                                             <button class="btn-xs btn-primary" type="submit"> Next ></button>
+                                         </div>
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Column Name</th>
+                                                        <th></th>
+                                                        <th>Assigned To</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Code</td>
+                                                        <td>JOB-01</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                    <option value="11">Unassigned</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Job Title</td>
+                                                        <td>Marketing Staff</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Code Direct Superior</td>
+                                                        <td>Job-02</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Direct Superior</td>
+                                                        <td>Marketing Manager</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Level</td>
+                                                        <td>Staff</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sublevel</td>
+                                                        <td>Staff Marketing</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Job Role Code</td>
+                                                        <td>Role-01</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Job Role Band Code</td>
+                                                        <td>Role Band-01</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Job Clan Code</td>
+                                                        <td>Job Clan-01</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Job Family Code</td>
+                                                        <td>Job Family-01</td>
+                                                        <td>
+                                                            <div class="col-10 input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option value="1">Unassigned</option>
+                                                                    <option value="11">Code</option>
+                                                                    <option value="2">Job Title</option>
+                                                                    <option value="3">Code Direct Superior</option>
+                                                                    <option value="4">Direct Superior</option>
+                                                                    <option value="5">Level</option>
+                                                                    <option value="6">Sublevel</option>
+                                                                    <option value="7">Job Role Code</option>
+                                                                    <option value="8">Job Role Band Code</option>
+                                                                    <option value="9">Job Clan Code</option>
+                                                                    <option value="10">Job Family Code</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <fieldset class="form-horizontal">
+                                                        <div class="form-group">
+                                                            <label class="col-lg-3 control-label">Date Format</label>
+                                                            <div class="input-group">
+                                                                <select data-placeholder="" class="chosen-select input-sm form-control" tabindex="1">
+                                                                    <option selectedvalue="1">DD/MM/YYYY</option>
+                                                                    <option value="2">MM/DD/YYYY</option>
+                                                                    <option value="2">DD/MMM/YYYY</option>
+                                                                    <option value="3">(berikan list standard formal tanggal)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                            <label> <input type="checkbox" checked value=""> Don't import the first line because they are column headings </label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-sm-4 col-sm-offset-5">
+                                                                <button class="btn btn-white" type="submit">Undo</button>
+                                                                <a href="#"><button class="btn btn-primary" type="submit">Save</button></a>
+                                                            </div>
+                                                        </div>                                                        
+                                                </fieldset>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Renumeration</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
+                                        <h5>Based on excel the line you have assigned</h5>
+                                    </div>                                    
                                     <div class="ibox-content">
-                                        <div><a href="administrator_remuneration_settings.html">Settings</a>
-                                            <div class="small">Various settings for Performance</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payitems.html">Pay Items</a>
-                                            <div class="small">Items to be calculated in salary</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payslipitems.html">Payslip Items</a>
-                                            <div class="small">Items to be shown on payslip</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_paysets.html">Paysets</a>
-                                            <div class="small">Create pay sets with pay items</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payslips.html">Payslips</a>
-                                            <div class="small">Create payslip with payslip items</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payassignment.html">Payset/payslip assignment</a>
-                                            <div class="small">Assign pay set and payslip to a person</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadpayrollspecification.html">Upload Payroll Specification</a>
-                                            <div class="small">Upload Payroll Specification</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadpayrollassignment.html">Upload Payroll Assignment</a>
-                                            <div class="small">Upload Payroll Assignment</div>
-                                        </div>
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><span class="badge badge-primary"><i class="fa fa-check"></i></span> Code</td>
+                                                        <td>Tono kartono</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Job Title</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Code Direct Superior</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Direct Superior</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Level</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Sublevel</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Job Role Code</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Job Role Band Code</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Job Clan Code</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="badge badge-danger"><i class="fa fa-warning"></i></span> Job Family Code</td>
+                                                        <td>Unassigned</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
                                     </div>
                                 </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Administration</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div>
-                                            <a href="administrator_shift_settings.html">Settings</a>
-                                            <div class="small">Various settings for shift</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Personnel Administration</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="workshiftgroup.html">Work Shift Group</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Upload</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div>
-                                            <a href="importexcel.html">Impor Excel</a>
-                                            <div class="small">Impor Excel file for various function</div>
-                                        </div>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
                     <div class="footer">
@@ -1118,6 +1223,14 @@
     <!-- Toastr -->
     <script src="js/plugins/toastr/toastr.min.js"></script>
 
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+    <!-- Jasny -->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+
+
 
     <script>
         $(document).ready(function () {
@@ -1224,6 +1337,9 @@
                 options: doughnutOptions
             });
 
+        });
+        $('.chosen-select').chosen({
+            width: "100%"
         });
     </script>
     <script src="js/w3data.js"></script>

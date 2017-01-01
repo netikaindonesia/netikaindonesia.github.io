@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>NetisHR</title>
+    <title>NetisHR | Upload Payroll Assignment</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -27,6 +27,10 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -365,243 +369,65 @@
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Settings</h2>
+                            <h2>Upload Payroll Assignment</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">Home</a>
                                 </li>
+                                <li>
+                                    <a href="administrator.html">Settings</a>
+                                </li>
                                 <li class="active">
-                                    <strong>Settings</strong>
+                                    <strong>Upload Payroll Assignment</strong>
                                 </li>
                             </ol>
-                        </div>
-                        <div class="col-lg-2">
-
                         </div>
                     </div>
 
                     <div class="wrapper wrapper-content">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-12">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>General</h5>
                                     </div>
                                     <div class="ibox-content">
-                                        <div><a href="administrator_general_settings.html">Settings</a>
-                                            <div class="small">Various general settings</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="corporate_calendar.html">Corporate Annual Calendar</a>
-                                            <div class="small">Calendar of corporate events</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="option_data_type_configuration.html">Option Data Type Configuration</a>
-                                            <div class="small">Configure Option data type across application</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Organisation</h5>
-                                        <div class="ibox-tools">
-                                            <!--<span class="label label-warning-light pull-right">10 Messages</span>-->
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <p></p>
-                                        <div><a href="administrator_groups.html">Groups</a>
-                                            <div class="small">Set up companies and branches</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadjobtitles.html">Upload Job Titles</a>
-                                            <div class="small">Upload Job Titles</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Job</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_job_settings.html">Settings</a>
-                                            <div class="small">Various settings for Job</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_job_wla.html">Workload Analysis</a>
-                                            <div class="small">Settings for workload analysis</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="Administrator_group_competency.html">Group Competency Settings</a>
-                                            <div class="small">Settings for Group Competency</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Person</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <a href="person_information_settings.html">Persons Information Setting</a>
-                                        <div class="small">Information configuration for person information</div>
-                                        <p></p>
-                                        <a href="uploadpersons.html">Upload Persons</a>
-                                        <div class="small">Upload Person information</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Recruitment</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <a href="uploadapplicants.html">Upload Applicants</a>
-                                        <div class="small">Upload Person information</div>
-                                        <p></p>
-                                        <a href="selectionstagesetting.html">Selection Stage Setting</a>
-                                        <div class="small">Selection Stage Setting</div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Performance</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_performance_settings.html">Settings</a>
-                                            <div class="small">Various settings for Performance</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="performance_mgmt_periods.html">Performance Management Periods</a>
-                                            <div class="small">Manage performance management periods</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_performance_evaluation.html">Performance Evaluation Settings</a>
-                                            <div class="small">Rules for achievement percentages, results and rating</div>
-                                        </div>
+                                        	<fieldset class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Instruction :</label>
+                                                        <div class="input-group">
+                                                            (developer note:<br>
+                                                            1. Untuk isi kolom silahkan dicek lagi ke struktur tabel database terakhir<br>
+                                                            2. Instruksi silahkan disesuaikan jika ditemukan ada ketentuan khusus
+                                                            )<br><br>
 
-
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Training</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="#">Category</a>
-                                            <div class="small">Settings for categories</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Institution</a>
-                                            <div class="small">Settings for institutions</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Instructor</a>
-                                            <div class="small">Settings for instructors</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Career</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_career_settings.html">Settings</a>
-                                            <div class="small">Various settings for Performance</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Policy Setting</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Renumeration</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_remuneration_settings.html">Settings</a>
-                                            <div class="small">Various settings for Performance</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payitems.html">Pay Items</a>
-                                            <div class="small">Items to be calculated in salary</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payslipitems.html">Payslip Items</a>
-                                            <div class="small">Items to be shown on payslip</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_paysets.html">Paysets</a>
-                                            <div class="small">Create pay sets with pay items</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payslips.html">Payslips</a>
-                                            <div class="small">Create payslip with payslip items</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payassignment.html">Payset/payslip assignment</a>
-                                            <div class="small">Assign pay set and payslip to a person</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadpayrollspecification.html">Upload Payroll Specification</a>
-                                            <div class="small">Upload Payroll Specification</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadpayrollassignment.html">Upload Payroll Assignment</a>
-                                            <div class="small">Upload Payroll Assignment</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Administration</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div>
-                                            <a href="administrator_shift_settings.html">Settings</a>
-                                            <div class="small">Various settings for shift</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Personnel Administration</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="workshiftgroup.html">Work Shift Group</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5>Upload</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div>
-                                            <a href="importexcel.html">Impor Excel</a>
-                                            <div class="small">Impor Excel file for various function</div>
-                                        </div>
-                                        <p></p>
+                                                            1. Download excel template file<br>
+                                                            2. Fill excel based on template. Be aware of Date and numeric data type<br>
+                                                            3. Select Impor button<br>
+                                                            4. Verify the impor result summary<br>
+                                                            5. Select Continue to proceed importing data, select undo to retry importing data
+                                                        </div>
+                                                    </div>											
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Template :</label>
+                                                        <div class="input-group">
+                                                            <a>Upload_Payroll_assignment.xlsx</a>
+                                                        </div>
+                                                    </div>	
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label">Select File to Import :</label>
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <span class="btn btn-default btn-file"><span class="fileinput-new">Browse</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                            <span class="fileinput-filename"></span>
+                                                            <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                                                        </div>
+                                                    </div>	
+                                                    <div class="form-group">
+                                                        <div class="col-sm-4 col-sm-offset-5">
+                                                            <button class="btn btn-white" type="submit">Cancel</button>
+                                                            <a href="uploadpayrollassignment_next.html"><button class="btn btn-primary" type="submit">Upload</button></a>
+                                                        </div>
+                                                    </div>
+                                            </fieldset>
                                     </div>
                                 </div>
                             </div>
@@ -1118,6 +944,14 @@
     <!-- Toastr -->
     <script src="js/plugins/toastr/toastr.min.js"></script>
 
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+    <!-- Jasny -->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+
+
 
     <script>
         $(document).ready(function () {
@@ -1224,6 +1058,9 @@
                 options: doughnutOptions
             });
 
+        });
+        $('.chosen-select').chosen({
+            width: "100%"
         });
     </script>
     <script src="js/w3data.js"></script>

@@ -557,10 +557,65 @@
                                             <a href="#">Download all</a>
                                             |
                                             <a href="#">View all images</a>
-                                            |
-                                            <div class="btn-group">
-                                                        <a href="workloadanalysis_pic_new.html" class="btn-primary btn-xs">Upload evidence file</a>
+                                                                        
+                                                                        
+                                                                        
+                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newindicator">Upload evidence</button>
+                                        <div class="modal fade" id="newindicator" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <h3>New Evidence</h3>
+
+                                                            <p>Please enter information for new evidence</p>
+
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <div class="row">
+                                                                        <label class="col-sm-3 control-label">Description: </label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <label class="col-sm-12 control-label">Evidence file: </label>
+                                                                        <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                                            <div class="form-control col-sm-4" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                                            <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span>
+                                                                            <input type="file" name="...">
+                                                                            </span>
+                                                                            <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div>
+                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!--
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                                -->
+                                                </div>
                                             </div>
+                                        </div>
+
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
                                         </p>
 
                                         <div class="attachment">
