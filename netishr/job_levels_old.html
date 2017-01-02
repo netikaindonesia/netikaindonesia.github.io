@@ -22,7 +22,7 @@
 
     <div id="wrapper">
 
-    <nav class="navbar-default navbar-static-side" role="navigation">
+            <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -34,7 +34,7 @@
                              </span> <span class="text-muted text-xs block">HR Admin <b class="caret"></b></span> </span>
                             </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="myprofile.html">Profile</a></li>
                                 <li><a href="myaccount.html">Account</a></li>
                                 <li><a href="mysettings.html">Settings</a></li>
                                 <li class="divider"></li>
@@ -93,7 +93,8 @@
                     <li>
                         <a href="#"><i class="fa fa-user"></i> <span class="nav-label">Person</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
-                            <li><a href="persons.html">Staffs</a></li>
+                            <li><a href="persons_staffs.html">Staffs</a></li>
+                            <li><a href="persons_applicants.html">Applicants</a></li>
                         </ul>
                     </li>
                     <li>
@@ -163,10 +164,18 @@
                                         <a href="mycalendar.html">My Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="#">Work Shifts</a>
+                                        <a href="#">Work Shifts <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-fourth-level">
+                                            <li>
+                                                <a href="workshiftassignment.html">Work Shift Assignment</a>
+                                            </li>
+                                            <li>
+                                                <a href="workshiftsummary.html">Work Shift Summary</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li><a href="#">Benefits<span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level">
+                                        <ul class="nav nav-fourth-level">
                                             <li>
                                                 <a href="medicalexpense.html">Medical Expense</a>
                                             </li>
@@ -176,9 +185,12 @@
                                         </ul>
                                     </li>
                                     <li><a href="#">Business trips<span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level">
+                                        <ul class="nav nav-fourth-level">
                                             <li>
-                                                <a href="bistripsreimbursement.html">Reimbursement</a>
+                                                <a href="bistripsexpense.html">Expense</a>
+                                            </li>
+                                            <li>
+                                                <a href="bistripsexpensesummary.html">Expense Summary</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -222,6 +234,7 @@
         </nav>
 
         <div id="page-wrapper" class="gray-bg dashbard-1">
+
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
