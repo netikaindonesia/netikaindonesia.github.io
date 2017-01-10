@@ -20,6 +20,7 @@
 
     <!-- X-editable CDN styles -->
     <link href="css/bootstrap-editable.css" rel="stylesheet" />
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
 
 </head>
@@ -388,6 +389,18 @@
                                             <input type="text" id="status" name="status" value="" placeholder="Name" class="form-control">
                                         </div>
                                     </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="order_id">Year</label>
+                                                    <select data-placeholder="Choose a Year Period..." class="chosen-select">
+                                                        <option value="0" selected></option>
+                                                        <option value="1">2016</option>
+                                                        <option value="2">2015</option>
+                                                        <option value="3">2014</option>
+                                                        <option value="4">2013</option>
+                                                    </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
                                     <thead>
@@ -498,6 +511,8 @@
     <!-- X-editable CDN styles -->
     <script src="js/bootstrap-editable.min.js"></script>
 
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
 
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
@@ -506,6 +521,11 @@
     <!-- Page-Level Scripts -->
     <script>
         $(document).ready(function () {
+
+            $('.chosen-select').chosen({
+            width: "100%"
+            });
+
             $('.dataTables-example').DataTable({
                 pageLength: 25,
                 responsive: true,
