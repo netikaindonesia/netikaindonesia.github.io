@@ -19,7 +19,7 @@
 
 <body>
     <div id="wrapper">
-                <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -392,14 +392,16 @@
                             </div>
                         </div>
                         <div class="hr-line-dashed col-sm-12"></div>
+                        <label class="control-label">Filter list by Job Title and/or PIC</label>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="">Job Title</label>
+                                    Job Title
                                     <div class="input-group">
                                         <select data-placeholder="Choose a job title..." class="chosen-select input-sm form-control" tabindex="2">
+                                            <option value="0" selected>Any</option>
                                             <option value="1">DIR-BR Director of Business Development</option>
-                                            <option selected value="2">DIR-FIN Director of Finance</option>
+                                            <option value="2">DIR-FIN Director of Finance</option>
                                             <option value="3">DIR-HR Director of HR</option>
                                         </select>
                                         <span class="input-group-btn">
@@ -467,11 +469,12 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="">PIC</label>
+                                    PIC
                                     <div class="input-group">
                                         <select data-placeholder="Choose a job title..." class="chosen-select input-sm form-control" tabindex="2">
+                                            <option value="0" selected>Any</option>
                                             <option value="1">DIR-BR Director of Business Development</option>
-                                            <option selected value="2">DIR-FIN Director of Finance</option>
+                                            <option value="2">DIR-FIN Director of Finance</option>
                                             <option value="3">DIR-HR Director of HR</option>
                                         </select>
                                         <span class="input-group-btn">
@@ -584,8 +587,14 @@
                                                                     Staff : Makreting
                                                                 </span>
                                     </td>
-                                    <td>Marketing Manager</td>
-                                    <td><span class="label label-primary">Done</span></td>
+                                    <td>Marketing Manager
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
+                                    <td><span class="label label-primary">Done</span>
+                                        <a href="workload_calculation.html">
+                                            <button class="btn-white btn btn-xs">Reanalyze</button>
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="netis_tooltip">
@@ -595,8 +604,14 @@
                                                                     Departement : Makreting
                                                                 </span>
                                     </td>
-                                    <td>Direktur HR & Payroll</td>
-                                    <td><span class="label label-primary">Done</span></td>
+                                    <td>Direktur HR & Payroll
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
+                                    <td><span class="label label-primary">Done</span>
+                                        <a href="workload_calculation.html">
+                                            <button class="btn-white btn btn-xs">Reanalyze</button>
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="netis_tooltip">
@@ -607,8 +622,14 @@
                                                                     Staff : HR Support
                                                                 </span>
                                     </td>
-                                    <td>Human Resource Manager</td>
-                                    <td><span class="label label-primary">Done</span></td>
+                                    <td>Human Resource Manager
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
+                                    <td><span class="label label-primary">Done</span>
+                                        <a href="workload_calculation.html">
+                                            <button class="btn-white btn btn-xs">Reanalyze</button>
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="netis_tooltip">
@@ -618,11 +639,13 @@
                                                                     Departement : HR
                                                                 </span>
                                     </td>
-                                    <td>Direktur HR & Payroll</td>
-                                    <td>
+                                    <td>Direktur HR & Payroll
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
+                                    <td><span class="label label-warning">Undone</span>
                                         <div class="btn-group">
                                             <a href="workload_calculation.html">
-                                                <button class="btn-white btn btn-xs">Analize</button>
+                                                <button class="btn-white btn btn-xs">Analyze</button>
                                             </a>
                                         </div>
                                     </td>
@@ -634,9 +657,15 @@
                                                                     Departement : Operation
                                                                 </span>
                                     </td>
-                                    <td>HR Administrator</td>
+                                    <td>HR Administrator
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
 
-                                    <td><span class="label label-primary">Done</span></td>
+                                    <td><span class="label label-primary">Done</span>
+                                        <a href="workload_calculation.html">
+                                            <button class="btn-white btn btn-xs">Reanalyze</button>
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="netis_tooltip">
@@ -646,8 +675,10 @@
                                                                     Departement : IT Support
                                                                 </span>
                                     </td>
-                                    <td>CEO</td>
-                                    <td>
+                                    <td>CEO
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
+                                    <td><span class="label label-warning">Undone</span>
                                         <div class="btn-group">
                                             <a href="workload_calculation.html">
                                                 <button class="btn-white btn btn-xs">Analyze</button>
@@ -663,9 +694,15 @@
                                                                     Departement : Finance
                                                                 </span>
                                     </td>
-                                    <td>CEO</td>
+                                    <td>CEO
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
 
-                                    <td><span class="label label-primary">Done</span></td>
+                                    <td><span class="label label-primary">Done</span>
+                                        <a href="workload_calculation.html">
+                                            <button class="btn-white btn btn-xs">Reanalyze</button>
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td class="netis_tooltip">
@@ -675,8 +712,10 @@
                                                                     Departement : HR
                                                                 </span>
                                     </td>
-                                    <td>HR Direktur</td>
-                                    <td>
+                                    <td>HR Direktur
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
+                                    <td><span class="label label-warning">Undone</span>
                                         <div class="btn-group">
                                             <a href="workload_calculation.html">
                                                 <button class="btn-white btn btn-xs">Analyze</button>
@@ -693,7 +732,7 @@
                                                                 </span>
                                     </td>
                                     <td>
-
+                                        <span class="label label-warning">Unassigned</span>
                                         <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Assign</button>
                                         <div class="modal" id="ssignpic">
                                             <div class="modal-dialog">
@@ -729,7 +768,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="btn-group">
+                                        <div class="btn-group"><span class="label label-warning">Undone</span>
                                             <a href="workload_calculation.html">
                                                 <button class="btn-white btn btn-xs">Analyze</button>
                                             </a>
@@ -745,8 +784,10 @@
                                                                     Staff : HR Support
                                                                 </span>
                                     </td>
-                                    <td>Human Resource Manager</td>
-                                    <td>
+                                    <td>Human Resource Manager
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Edit</button>
+                                    </td>
+                                    <td><span class="label label-warning">Undone</span>
                                         <div class="btn-group">
                                             <a href="workload_calculation.html">
                                                 <button class="btn-white btn btn-xs">Analyze</button>
@@ -763,8 +804,11 @@
                                                                     Staff : Makreting
                                                                 </span>
                                     </td>
-                                    <td>N/A</td>
-                                    <td>
+                                    <td><span class="label label-warning">Unassigned</span>
+
+                                        <button type="button" class="btn-white btn-primary btn-xs" data-toggle="modal" data-target="#ssignpic">Assign</button>
+                                    </td>
+                                    <td><span class="label label-warning">Undone</span>
                                         <div class="btn-group">
                                             <a href="workload_calculation.html">
                                                 <button class="btn-white btn btn-xs">Analyze</button>
