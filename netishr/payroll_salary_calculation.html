@@ -27,7 +27,7 @@
 
     <div id="wrapper">
 
-                <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -381,7 +381,46 @@
 
                             <div class="panel-body">
                                 <div class="col-sm-9">
-                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newjoblevel">Calculate all</button>
+
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#sendall">Calculate salaries</button>
+                                    <div class="modal" id="sendall">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content animated">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <h4 class="modal-title">Confirmation</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure to calculate the salaries of all staffs?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-primary">Yes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#sendall">Publish payslips</button>
+                                    <div class="modal" id="sendall">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content animated">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <h4 class="modal-title">Confirmation</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure to publish the payslips of all staffs?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-primary">Yes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="form-group" id="monthpicker">
