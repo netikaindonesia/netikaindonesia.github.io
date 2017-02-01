@@ -6,342 +6,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Organization Diagrams </title>
+    <title>NetisHR | Leave Summary</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+
+
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 
-    <script language="javascript" type="text/javascript">
-        function loadChilds(actualElement, successFunction) {
-            console.log(actualElement);
-            var data = "";
-            if (actualElement.id == 2) {
-                var data = JSON.parse('{"result":[{"id":"5","desc":"Sales 1","hasChild":false},{"id":"6","desc":"Sales 2","hasChild":false}]}');
-            }
-            console.log("Loadchilds data for " + actualElement.id + " is " + data);
-            successFunction(data);
-        }
-    </script>
+    <!-- X-editable CDN styles -->
+    <link href="css/bootstrap-editable.css" rel="stylesheet" />
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
-    <style>
-        #jobTitle {
-            cursor: move;
-            height: 700px;
-        }
 
-        .link {
-            fill: none;
-            stroke: #424242;
-            stroke-width: 1.5px;
-        }
-    </style>
-
-    <script>
-        var orgChart = (function() {
-            var _root = {}
-            _margin = {
-                top: 20, 
-                right: 20,
-                bottom: 20,
-                left: 20
-            },
-            _nodes = [],
-            _counter = 0,
-            _svgroot = null,
-            _svg = null,
-            _tree = null,
-            _lineFunction = null,
-            _loadFunction = null,
-            _duration = 750,
-            _rectW = 150,
-            _rectH = 50,
-            _rectSpacing = 20,
-            _fixedDepth = 80;
-
-            defLinearGradient = function(id, x1, y1, x2, y2, stopsdata) {
-                var gradient = _svgroot.append("svg:defs")
-                    .append("svg:linearGradient")
-                    .attr("id", id)
-                    .attr("x1", x1)
-                    .attr("y1", y1)
-                    .attr("x2", x2)
-                    .attr("y2", y2)
-                    .attr("spreadMethod", "pad");
-
-                $.each(stopsdata, function(index, value) {
-                    gradient.append("svg:stop")
-                    .attr("offset", value.offset)
-                    .attr("stop-color", value.color)
-                    .attr("stop-opacity", value.opacity);
-                });
-            },
-
-            defBoxShadow = function(id) {
-                var filter = _svgroot.append("svg:defs")
-                    .append("svg:filter")
-                    .attr("id", id).attr("height", "150%").attr("width", "150%");
-
-                filter.append("svg:feOffset")
-                    .attr("dx", "2").attr("dy", "2").attr("result", "offOut");
-                filter.append("svg:feGaussianBlur")
-                    .attr("in", "offOut").attr("result", "blurOut").attr("stdDeviation", "2");
-                filter.append("svg:feBlend")
-                    .attr("in", "SourceGraphic").attr("in2", "blurOut").attr("mode", "normal");
-            }
-            
-            update = function(source) {
-
-                console.log("Test for root values: ");
-                console.log(_tree.nodes(_root).reverse());
-
-                _nodes = _tree.nodes(_root).reverse();
-                var links = _tree.links(_nodes);
-
-                _nodes.forEach(function(d) {
-                    d.y = d.depth * _fixedDepth;
-                });
-
-                var node = _svg.selectAll("g.node")
-                    .data(_nodes, function(d) {
-                        return d.id || (d.id = ++_counter);
-                });
-                
-                var nodeEnter = node.enter().append("g")
-                    .attr("class", "node")
-                    .attr("transform", function(d) {
-                        return "translate(" + source.x0 + ", " + source.y0 + ")";
-                    })
-                    .on("click", nodeclick);
-                    
-                nodeEnter.append("rect")
-                    .attr("width", _rectW)
-                    .attr("height", _rectH)
-                    .attr("fill", "#898989")
-                    .attr("filter", "url(#boxShadow)");
-
-                nodeEnter.append("rect")
-                    .attr("width", _rectW)
-                    .attr("height", _rectH)
-                    .attr("id", function(d) {
-                        return d.id;
-                    })
-                    .attr("fill", function (d) { return (d.children || d._children || d.hasChild) ? "url(#gradientchilds)" : "url(#gradientnochilds)"; })
-                    .style("cursor", function (d) { return (d.children || d._children || d.hasChild) ? "pointer" : "default"; })
-                    .attr("class", "box");
-               
-                nodeEnter.append("text")
-                    .attr("x", _rectW / 2)
-                    .attr("y", _rectH / 2)
-                    .attr("dy", ".35em")
-                    .attr("text-anchor", "middle")
-                    .style("cursor", function (d) { return (d.children || d._children || d.hasChild) ? "pointer" : "default"; })
-                    .text(function (d) {
-                        return d.desc;
-                    });
-
-                // Transition nodes to their new position
-                var nodeUpdate = node.transition()
-                                    .duration(_duration)
-                                    .attr("transform", function (d) {
-                                        return "translate(" + d.x + ", " + d.y + ")";
-                                    });
-
-                nodeUpdate.select("rect.box")
-                    .attr("fill", function(d) {
-                    return (d.children || d._children || d.hasChild) ? "url(#gradientchilds)" : "url(#gradientnochilds)";
-                    });
-
-                // Transition exiting nodes to the parent's new position
-                var nodeExit = node.exit().transition()
-                                .duration(_duration)
-                                .attr("transform", function (d) {
-                                    return "translate(" + source.x + "," + source.y + ")";
-                                })
-                                .remove();
-
-                // Update the links
-                var link = _svg.selectAll("path.link")
-                            .data(links, function(d) {
-                                return d.target.id;
-                            });
-
-                link.enter().append("path", "g")
-                    .attr("class", "link")
-                    .attr("d", function(d) {
-                                var u_line = (function (d) {
-                                    var u_linedata = [{"x": d.source.x0 + parseInt(_rectW / 2), "y": d.source.y0 + _rectH + 2 },
-                                                    {"x": d.source.x0 + parseInt(_rectW / 2), "y": d.source.y0 + _rectH + 2 },
-                                                    {"x": d.source.x0 + parseInt(_rectW / 2), "y": d.source.y0 + _rectH + 2 },
-                                                    {"x": d.source.x0 + parseInt(_rectW / 2), "y": d.source.y0 + _rectH + 2 }];
-                                    return u_linedata;
-                                })(d);
-
-                                return _lineFunction(u_line);
-                            });
-                            
-                // Transition links to their new position. 
-                link.transition()
-                    .duration(_duration)
-                    .attr("d", function(d) {
-                                var u_line = (function (d) {
-                                    var u_linedata = [{"x": d.source.x + parseInt(_rectW / 2), "y": d.source.y + _rectH },
-                                                        {"x": d.source.x + parseInt(_rectW / 2), "y": d.target.y - _margin.top / 2 },
-                                                        {"x": d.target.x + parseInt(_rectW / 2), "y": d.target.y - _margin.top / 2 },
-                                                        {"x": d.target.x + parseInt(_rectW / 2), "y": d.target.y }];                                                  
-
-                                    return u_linedata;
-                                })(d);
-
-                                return _lineFunction(u_line);
-                                });
-                            
-                // Transition exiting nodes to the parent's new position.
-                link.exit().transition()
-                    .duration(_duration)
-                    .attr("d", function(d) {
-                                    /* This is needed to draw the lines right back to the caller */
-                                    var u_line = (function (d) {
-                                    var u_linedata = [{"x": _callerNode.x + parseInt(_rectW / 2), "y": _callerNode.y + _rectH + 2 },
-                                                        {"x": _callerNode.x + parseInt(_rectW / 2), "y": _callerNode.y + _rectH + 2 },
-                                                        {"x": _callerNode.x + parseInt(_rectW / 2), "y": _callerNode.y + _rectH + 2 },
-                                                        {"x": _callerNode.x + parseInt(_rectW / 2), "y": _callerNode.y + _rectH + 2 }];
-
-                                    return u_linedata;
-                                    })(d);
-
-                                    return _lineFunction(u_line);
-                            }).each("end", function() { _callerNode = null; /* After transition clear the caller node variable */ });
-
-                 // Stash the old positions for transition
-                 _nodes.forEach(function (d) {
-                     d.x0 = d.x;
-                     d.y0 = d.y;
-                 });
-            },
-
-            nodeclick = function(d) {
-                if (!d.children && !d._children && d.hasChild) {
-                    _loadFunction(d, function(childs) {
-                        var response = { id: d.id, 
-                                        desc: d.desc,
-                                        children: childs.result};
-                        
-                        response.children.forEach(function(child) {
-                            if (!_tree.nodes(d)[0]._children) {
-                                _tree.nodes(d)[0]._children = [];
-                            }
-
-                            child.x = d.x;
-                            child.y = d.y;
-                            child.x0 = d.x0;
-                            child.y0 = d.y0;
-                            _tree.nodes(d)[0]._children.push(child);
-                        });
-
-                        if (d.children) {
-                            _callerNode = d;
-                            _callerMode = 0;
-                            d._children = d.children;
-                            d.children = null;
-                        }
-                        else {
-                            _callerNode = null;
-                            _callerMode = 1;
-                            d.children = d._children;
-                            d._children = null;
-                        }
-
-                        update(d);
-                    });
-                }
-                else {
-                    if (d.children) {
-                        _callerNode = d;
-                        _callerMode = 0;     // Collapse
-                        d._children = d.children;
-                        d.children = null;
-                    } else {
-                        _callerNode = d;
-                        _callerMode = 1;     // Expand             
-                        d.children = d._children;
-                        d._children = null;
-                    }
-
-                    update(d);
-                }
-            },
-
-            collapse = function (d) {
-                if (d.children) {
-                    d._children = d.children;
-                    d._children.forEach(collapse);
-                    d.children = null;
-                }
-            },
-
-            redraw = function() {
-                _svg.attr("transform", "translate(" + d3.event.translate + ")" +
-                    "scale(" + d3.event.scale.toFixed(1) + ")");
-            } 
-
-            initTree = function(options) {
-                var u_opts = $.extend({data: {},
-                                        loadFunc: function() {}},options);
-                _root = u_opts.data;
-                _loadFunction = u_opts.loadFunc;
-                _tree = d3.layout.tree().nodeSize([_rectW + _rectSpacing, _rectH + _rectSpacing]);
-
-                $("div#jobTitle").html("");
-
-                var width = $("div#jobTitle").innerWidth() - _margin.left - _margin.right,
-                    height = $("div#jobTitle").innerHeight() - _margin.top - _margin.bottom; 
-
-                _lineFunction = d3.svg.line()
-                                .x(function(d) { return d.x; })
-                                .y(function(d) { return d.y; })
-                                .interpolate("linear");
-
-                var u_childwidth = parseInt((_root.children.length * _rectW) / 2);
-
-                _svgroot = d3.select("div#jobTitle").append("svg").attr("width", width).attr("height", height);
-
-                _svg = _svgroot.append("g")
-                     .attr("transform", "translate(" + parseInt(u_childwidth + ((width - u_childwidth * 2) / 2) - _margin.left / 2) + "," + 20 + ")");
-
-                var u_stops = [{offset: "0%", color: "#03A9F4", opacity: 1}, {offset: "100%", color: "#0288D1", opacity: 1}];
-                defLinearGradient("gradientnochilds", "0%", "0%", "0%", "100%", u_stops);
-                var u_stops = [{offset: "0%", color: "#8BC34A", opacity: 1}, {offset: "100%", color: "#689F38", opacity: 1}];
-                defLinearGradient("gradientchilds", "0%", "0%", "0%", "100%", u_stops);
-
-                _root.x0 = 0;
-                _root.y0 = height / 2;
-                _root.children.forEach(collapse);
-                
-                update(_root);
-
-                d3.select("div#jobTitle").style("height", height + _margin.top + _margin.bottom);
-            };
-
-            return {initTree: initTree};
-        })();
-    </script>
-</head>        
+</head>
 
 <body>
-<script>
-
-var sampleData = JSON.parse('{"id":"1","desc":"Executive office","children":[{"id":"2","desc":"Sales","hasChild":true},{"id":"3","desc":"Marketing","hasChild":false},{"id":"4","desc":"Development","hasChild":false}]}');
-// var sampleData = JSON.parse('{"id":"1","desc":"Executive office","children":[{"id":"2","desc":"Sales","hasChild":false}]}');
-
-</script>
 
     <div id="wrapper">
 
-                <nav class="navbar-default navbar-static-side" role="navigation">
+                        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -673,59 +362,159 @@ var sampleData = JSON.parse('{"id":"1","desc":"Executive office","children":[{"i
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Organization Diagrams</h2>
+                    <h2>Leave Summary</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
-                        <li>
-                            <a>Organization</a>
-                        </li>
                         <li class="active">
-                            <strong>Organization Diagrams</strong>
+                            <strong>Leave Summary</strong>
                         </li>
                     </ol>
                 </div>
-                <div class="col-lg-2">
-
-                </div>
             </div>
-            <div class="row">
-                <div class="tabs-container">
-                    <ul class="nav nav-tabs">
-                        <li class=""><a data-toggle="tab" href="#tab-1">Groups and Units</a></li>
-                        <li class="active"><a data-toggle="tab" href="#tab-2">Job Titles/Persons</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane">
-                            <div class="panel-body">
-                                <strong>Chart showing groups and units</strong>
+                <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">                                                              
 
-                                <p>(Chart showing the company, parent/child companies, branches, departments as well as groups within the company)</p>
-                                <!-- Perhaps use https://codepen.io/siiron/pen/aLkdE ? -->
+                                                                    <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Start Period</th>
+                                                                                <th>End Periode</th>
+                                                                                <th>Initial Leave Quota</th>
+                                                                                <th>Available Leave Quota</th>
+                                                                                <th>Initial Debt Leave Quota</th>
+                                                                                <th>Current Debt Leave Quota</th>
+                                                                                <th>Pending Approval Leave</th>
+                                                                                <th>Extended Period</th>
+                                                                                <th>Status</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    14/10/2014
+                                                                                </td>
+                                                                                <td>
+                                                                                    31/12/2014
+                                                                                </td>
+                                                                                <td>
+                                                                                    2
+                                                                                </td>
+                                                                                <td>
+                                                                                    1
+                                                                                </td>
+                                                                                <td>
+                                                                                    12
+                                                                                </td>
+                                                                                <td>
+                                                                                    0
+                                                                                </td>
+                                                                                <td>
+                                                                                    0
+                                                                                </td>
+                                                                                <td>
+                                                                                    31/12/2014
+                                                                                </td>
+                                                                                <td>
+                                                                                    Expired
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    01/01/2015
+                                                                                </td>
+                                                                                <td>
+                                                                                    31/12/2015
+                                                                                </td>
+                                                                                <td>
+                                                                                    12
+                                                                                </td>
+                                                                                <td>
+                                                                                    5
+                                                                                </td>
+                                                                                <td>
+                                                                                    12
+                                                                                </td>
+                                                                                <td>
+                                                                                    0
+                                                                                </td>
+                                                                                <td>
+                                                                                    0
+                                                                                </td>
+                                                                                <td>
+                                                                                    31/12/2015
+                                                                                </td>
+                                                                                <td>
+                                                                                    Expired
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    01/01/2016
+                                                                                </td>
+                                                                                <td>
+                                                                                    31/12/2016
+                                                                                </td>
+                                                                                <td>
+                                                                                    10
+                                                                                </td>
+                                                                                <td>
+                                                                                    5
+                                                                                </td>
+                                                                                <td>
+                                                                                    12
+                                                                                </td>
+                                                                                <td>
+                                                                                    0
+                                                                                </td>
+                                                                                <td>
+                                                                                    0
+                                                                                </td>
+                                                                                <td>
+                                                                                    31/06/2017
+                                                                                </td>
+                                                                                <td>
+                                                                                    Expired
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    01/01/2017
+                                                                                </td>
+                                                                                <td>
+                                                                                    31/12/2017
+                                                                                </td>
+                                                                                <td>
+                                                                                    10
+                                                                                </td>
+                                                                                <td>
+                                                                                    5
+                                                                                </td>
+                                                                                <td>
+                                                                                    12
+                                                                                </td>
+                                                                                <td>
+                                                                                    0
+                                                                                </td>
+                                                                                <td>
+                                                                                    0
+                                                                                </td>
+                                                                                <td>
+                                                                                    31/06/2017
+                                                                                </td>
+                                                                                <td>
+                                                                                    Expired
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                        </tfoot>
+                                                                    </table>
                             </div>
                         </div>
-                        <div id="tab-2" class="tab-pane active">
-                            <div class="panel-body">
-                                <strong>Chart showing Job Titles and Persons</strong>
-
-                                <p>(Chart showing job titles and persons. Gives a switch to show without or with persons)</p>
-                                <div id="jobTitle"></div>
-                                    
-                                <script>
-                                orgChart.initTree({data : sampleData, loadFunc: loadChilds});
-                                </script>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
-
-
-
-
-            </div>
             <div class="footer">
                 <div class="pull-right">
                     <strong>Version</strong> 2.x.xxxx.
@@ -734,22 +523,201 @@ var sampleData = JSON.parse('{"id":"1","desc":"Executive office","children":[{"i
                     <strong>Copyright</strong> Netika Indonesia &copy; 2016
                 </div>
             </div>
+
         </div>
+    </div>
 
 
-        <!-- Mainly scripts -->
-        <script src="js/jquery-2.1.1.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-        <!-- Custom and plugin javascript -->
-        <script src="js/inspinia.js"></script>
-        <script src="js/plugins/pace/pace.min.js"></script>
-        <script src="js/w3data.js"></script>
-        <script>
-            w3IncludeHTML();
-        </script>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
+
+    <!-- X-editable CDN styles -->
+    <script src="js/bootstrap-editable.min.js"></script>
+
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Page-Level Scripts -->
+    <script>
+        $(document).ready(function () {
+
+            $('.chosen-select').chosen({
+            width: "100%"
+            });
+
+            $('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    {
+                        extend: 'copy'
+                    },
+                    {
+                        extend: 'csv'
+                    },
+                    {
+                        extend: 'excel',
+                        title: 'ExampleFile'
+                    },
+                    {
+                        extend: 'pdf',
+                        title: 'ExampleFile'
+                    },
+
+                    {
+                        extend: 'print',
+                        customize: function (win) {
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                .addClass('compact')
+                                .css('font-size', 'inherit');
+                        }
+                    }
+                ]
+
+            });
+
+        });
+    </script>
+
+    <-- X-Editable scripts --></-->
+    <script>
+        $(function () {
+
+
+            //turn to inline mode
+            $.fn.editable.defaults.mode = 'inline';
+
+            //defaults
+            $.fn.editable.defaults.url = '#';
+
+            //editables
+            $('#username').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'username',
+                title: 'Enter username'
+            });
+
+            $('#plafond').editable({
+                url: '#',
+                type: 'text',
+                pk: 1,
+                name: 'plafond',
+                title: 'Enter plafond'
+            });
+
+            $('#firstname').editable({
+                validate: function (value) {
+                    if ($.trim(value) == '') return 'This field is required';
+                }
+            });
+
+            $('#yesno').editable({
+                prepend: "not selected",
+                source: [
+                    {
+                        value: 0,
+                        text: 'No'
+                    },
+                    {
+                        value: 1,
+                        text: 'Yes'
+                    }
+                ],
+                display: function (value, sourceData) {
+                    var colors = {
+                            "": "gray",
+                            1: "green",
+                            2: "blue"
+                        },
+                        elem = $.grep(sourceData, function (o) {
+                            return o.value == value;
+                        });
+
+                    if (elem.length) {
+                        $(this).text(elem[0].text).css("color", colors[value]);
+                    } else {
+                        $(this).empty();
+                    }
+                }
+            });
+
+            $('#dob').editable();
+
+            $('#event').editable({
+                placement: 'right',
+                combodate: {
+                    firstItem: 'name'
+                }
+            });
+
+            $('#comments').editable({
+                showbuttons: 'bottom'
+            });
+
+            $('#fruits').editable({
+                pk: 1,
+                limit: 3,
+                source: [
+                    {
+                        value: 1,
+                        text: 'banana'
+                    },
+                    {
+                        value: 2,
+                        text: 'peach'
+                    },
+                    {
+                        value: 3,
+                        text: 'apple'
+                    },
+                    {
+                        value: 4,
+                        text: 'watermelon'
+                    },
+                    {
+                        value: 5,
+                        text: 'orange'
+                    }
+                ]
+            });
+
+            $('#user .editable').on('hidden', function (e, reason) {
+                if (reason === 'save' || reason === 'nochange') {
+                    var $next = $(this).closest('tr').next().find('.editable');
+                    if ($('#autoopen').is(':checked')) {
+                        setTimeout(function () {
+                            $next.editable('show');
+                        }, 300);
+                    } else {
+                        $next.focus();
+                    }
+                }
+            });
+            $('.footable').footable();
+
+        });
+    </script>
+    <!-- FooTable -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+
+
 
 </body>
 
