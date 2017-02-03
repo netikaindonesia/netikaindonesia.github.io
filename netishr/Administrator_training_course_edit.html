@@ -20,7 +20,7 @@
 
     <div id="wrapper">
 
-                        <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -136,15 +136,15 @@
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">Training</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
                             <li><a href="training_list.html">Training List</a></li>
-                            <li><a href="training_my.html">My Training</a></li>
-                            <li><a href="#"><span class="nav-label">Administration</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="training_administration_events.html">Training Events</a>
-                                    </li>
-                                </ul>
+                            <li><a href="training_mytrainings.html">My Trainings</a></li>
+                            <li>
+                                <a href="training_administration_elearning.html">eLearning</a>
                             </li>
-                        </ul>
+                            <li>
+                                <a href="training_administration_events.html">Training Events</a>
+                            </li>
+                    </li>
+                    </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-user-md"></i><span class="nav-label">Career</span><span class="fa arrow"></span></a>
@@ -167,7 +167,7 @@
                                         <a href="mycalendar.html">My Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="Attendance.html">Attendance</a>
+                                        <a href="attendance.html">Attendance</a>
                                     </li>
                                     <li>
                                         <a href="#">Work Shifts <span class="fa arrow"></span></a>
@@ -179,6 +179,9 @@
                                                 <a href="workshiftsummary.html">Work Shift Summary</a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        <a href="leave.html">Leave</a>
                                     </li>
                                     <li>
                                         <a href="#">Benefits <span class="fa arrow"></span></a>
@@ -366,70 +369,86 @@
                     </ol>
                 </div>
             </div>
-                <div class="row">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-content">
-                                <button type="button" class="btn btn-white btn">Back</button>
-                                <button type="button" class="btn btn-primary btn">Save</button>
-								<fieldset class="form-horizontal">
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Code</label>
-                                    <div class="col-sm-6">
-                                        <div><input type="text" class="form-control" placeholder="" value="01X"></div>
-                                    </div>                                
+            <div class="row">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <button type="button" class="btn btn-white btn">Back</button>
+                        <button type="button" class="btn btn-primary btn">Save</button>
+                        <fieldset class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Code</label>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="" value="01X">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Name</label>
-                                    <div class="col-sm-6">
-                                        <div><input type="text" class="form-control" placeholder="" value="Public Speaking"></div>
-                                    </div>                                
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="" value="Public Speaking">
+                                    </div>
                                 </div>
-                                    
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Category</label>
-                                    <div class="col-sm-6">
-                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
-                                            <option selected value="1">Communication</option>
-                                            <option value="2">Leadership</option>
-                                            <option value="3">Programming</option>
-                                        </select>
-                                    </div>                                
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Related Competency</label>
-                                    <div class="col-sm-6">
-                                        <select data-placeholder="Choose a Competency..." class="chosen-select" tabindex="2">
-                                            <option selected value="1">Communication Skill</option>
-                                            <option value="2">Basic Competency</option>
-                                            <option value="2">IT Skill</option>
-                                            <option value="3">Marketing Skill</option>
-                                        </select>
-                                    </div>                                
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Description</label>
-                                    <div class="col-sm-6">
-                                        <textarea rows="4" cols="65">Pelajaran mengenai teknik-teknis berbicara di depan umum beserta praktek</textarea>
-                                    </div>                                
-                                </div>
+                            </div>
 
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Target</label>
-                                    <div class="col-sm-6">
-                                        <textarea rows="4" cols="65">Peserta mampu berbicara di depan umum dengan baik dan lancar</textarea>
-                                    </div>                                
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Category</label>
+                                <div class="col-sm-6">
+                                    <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                        <option selected value="1">Communication</option>
+                                        <option value="2">Leadership</option>
+                                        <option value="3">Programming</option>
+                                    </select>
                                 </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-2 control-label">Training Evaluation Method</label>
-                                    <div class="col-sm-6">
-                                        <textarea rows="4" cols="65">Penilaian uji praktek</textarea>
-                                    </div>                                
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Related Competency</label>
+                                <div class="col-sm-6">
+                                    <select data-placeholder="Choose competencies..." class="chosen-select" multiple style="width:350px;" tabindex="4">
+                                        <option selected value="1">CSO Customer Service Orientation</option>
+                                        <option value="2">TW Team Work</option>
+                                        <option value="2">ITL IT Literacy</option>
+                                        <option value="3">BM Basic Marketing</option>
+                                    </select>
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Minimum Competency Level</label>
+                                <div class="col-sm-6">
+                                    <select data-placeholder="Choose a Competency..." class="chosen-select" tabindex="2">
+                                        <option selected value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Description</label>
+                                <div class="col-sm-6">
+                                    <textarea rows="4" cols="65">Pelajaran mengenai teknik-teknis berbicara di depan umum beserta praktek</textarea>
+                                </div>
+                            </div>
 
-training_administration_events_edit.html								</fieldset>
-						</div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Target</label>
+                                <div class="col-sm-6">
+                                    <textarea rows="4" cols="65">Peserta mampu berbicara di depan umum dengan baik dan lancar</textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Training Evaluation Method</label>
+                                <div class="col-sm-6">
+                                    <textarea rows="4" cols="65">Penilaian uji praktek</textarea>
+                                </div>
+                            </div>
+
+                        </fieldset>
                     </div>
+                </div>
 
             </div>
             <div class="footer">
@@ -479,10 +498,10 @@ training_administration_events_edit.html								</fieldset>
 
         });
     </script>
-		<script src="js/w3data.js"></script>
-	<script>
-		w3IncludeHTML();
-	</script>
+    <script src="js/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
 
     <!-- X-editable CDN styles -->
     <script src="js/bootstrap-editable.min.js"></script>
@@ -505,8 +524,8 @@ training_administration_events_edit.html								</fieldset>
                 pk: 1,
                 name: 'name',
                 title: 'Enter name'
-                //contoh validasi
-                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+                    //contoh validasi
+                    //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
             });
 
             //editables
@@ -516,8 +535,8 @@ training_administration_events_edit.html								</fieldset>
                 pk: 1,
                 name: 'City',
                 title: 'Enter City'
-                //contoh validasi
-                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+                    //contoh validasi
+                    //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
             });
 
             $('#Title').editable({
@@ -559,7 +578,7 @@ training_administration_events_edit.html								</fieldset>
                     }
                 ]
             });
-             $('#Country').editable({
+            $('#Country').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -576,7 +595,7 @@ training_administration_events_edit.html								</fieldset>
                     }
                 ]
             });
-             $('#Language').editable({
+            $('#Language').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -592,8 +611,8 @@ training_administration_events_edit.html								</fieldset>
                         text: 'Other'
                     }
                 ]
-            });    
-             $('#Nationality').editable({
+            });
+            $('#Nationality').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -609,8 +628,8 @@ training_administration_events_edit.html								</fieldset>
                         text: 'Other'
                     }
                 ]
-            });    
-             $('#Job_Title').editable({
+            });
+            $('#Job_Title').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -626,8 +645,8 @@ training_administration_events_edit.html								</fieldset>
                         text: 'HC Staff'
                     }
                 ]
-            });        
-             $('#Orgazanition_Unit').editable({
+            });
+            $('#Orgazanition_Unit').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -643,8 +662,8 @@ training_administration_events_edit.html								</fieldset>
                         text: 'HC Team'
                     }
                 ]
-            });        
-             $('#Employment_Type').editable({
+            });
+            $('#Employment_Type').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -656,8 +675,8 @@ training_administration_events_edit.html								</fieldset>
                         text: 'Contract'
                     }
                 ]
-            });             
-             $('#Placement').editable({
+            });
+            $('#Placement').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -669,8 +688,8 @@ training_administration_events_edit.html								</fieldset>
                         text: 'Bandung'
                     }
                 ]
-            });              
-             $('#Status').editable({
+            });
+            $('#Status').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -682,16 +701,17 @@ training_administration_events_edit.html								</fieldset>
                         text: 'Inactive'
                     }
                 ]
-            });             //editables
+            }); //editables
             $('#NIP').editable({
                 url: '#',
                 type: 'text',
                 pk: 1,
                 name: 'name',
                 title: 'Enter name'
-                //contoh validasi
-                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
-            });        });
+                    //contoh validasi
+                    //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+            });
+        });
     </script>
 
 </body>

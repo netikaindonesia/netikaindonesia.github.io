@@ -32,7 +32,7 @@
 
 <body>
     <div id="wrapper">
-                <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -148,15 +148,15 @@
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">Training</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
                             <li><a href="training_list.html">Training List</a></li>
-                            <li><a href="training_my.html">My Training</a></li>
-                            <li><a href="#"><span class="nav-label">Administration</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="training_administration_events.html">Training Events</a>
-                                    </li>
-                                </ul>
+                            <li><a href="training_mytrainings.html">My Trainings</a></li>
+                            <li>
+                                <a href="training_administration_elearning.html">eLearning</a>
                             </li>
-                        </ul>
+                            <li>
+                                <a href="training_administration_events.html">Training Events</a>
+                            </li>
+                    </li>
+                    </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-user-md"></i><span class="nav-label">Career</span><span class="fa arrow"></span></a>
@@ -179,7 +179,7 @@
                                         <a href="mycalendar.html">My Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="Attendance.html">Attendance</a>
+                                        <a href="attendance.html">Attendance</a>
                                     </li>
                                     <li>
                                         <a href="#">Work Shifts <span class="fa arrow"></span></a>
@@ -191,6 +191,9 @@
                                                 <a href="workshiftsummary.html">Work Shift Summary</a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        <a href="leave.html">Leave</a>
                                     </li>
                                     <li>
                                         <a href="#">Benefits <span class="fa arrow"></span></a>
@@ -392,7 +395,7 @@
                             <div class="col-lg-4">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>General</h5>
+                                        <h5 id="general">General</h5>
                                     </div>
                                     <div class="ibox-content">
                                         <div><a href="administrator_general_settings.html">Settings</a>
@@ -416,7 +419,7 @@
                                 </div>
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Organisation</h5>
+                                        <h5 id="organization">Organization</h5>
                                         <div class="ibox-tools">
                                             <!--<span class="label label-warning-light pull-right">10 Messages</span>-->
                                         </div>
@@ -434,7 +437,7 @@
                                 </div>
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Job</h5>
+                                        <h5 id="job">Job</h5>
                                         <div class="ibox-tools">
                                         </div>
                                     </div>
@@ -456,7 +459,7 @@
                                 </div>
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Person</h5>
+                                        <h5 id="person">Person</h5>
                                         <div class="ibox-tools">
                                         </div>
                                     </div>
@@ -472,7 +475,7 @@
                             <div class="col-lg-4">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Recruitment</h5>
+                                        <h5 id="recruitment">Recruitment</h5>
                                         <div class="ibox-tools">
                                         </div>
                                     </div>
@@ -486,7 +489,7 @@
                                 </div>
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Performance</h5>
+                                        <h5 id="performance">Performance</h5>
                                         <div class="ibox-tools">
                                         </div>
                                     </div>
@@ -508,31 +511,32 @@
                                 </div>
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Training</h5>
+                                        <h5 id="training">Training</h5>
                                         <div class="ibox-tools">
                                         </div>
                                     </div>
                                     <div class="ibox-content">
-                                        <div><a href="administrator_training_category.html">Category</a>
-                                            <div class="small">Settings for categories</div>
+                                        <div><a href="administrator_training_configuration_settings.html">Settings</a>
+                                            <div class="small">Various settings for Training</div>
+                                        </div>
+                                        <p></p>
+                                        <div><a href="administrator_training_category.html">Categories</a>
+                                            <div class="small">Manage training categories</div>
                                         </div>
                                         <p></p>
                                         <div><a href="administrator_training_courses.html">Courses</a>
-                                            <div class="small">Settings for Courses</div>
+                                            <div class="small">Manage training courses</div>
                                         </div>
                                         <p></p>
                                         <div><a href="administrator_training_curriculum.html">Curriculums</a>
-                                            <div class="small">Settings for Curriculums</div>
+                                            <div class="small">Settings training curriculums</div>
                                         </div>
                                         <p></p>
-                                        <div><a href="administrator_training_configuration_settings.html">Configuration Settings</a>
-                                            <div class="small">Settings for Training Configuration</div>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Career</h5>
+                                        <h5 id="career">Career</h5>
                                         <div class="ibox-tools">
                                         </div>
                                     </div>
@@ -550,7 +554,7 @@
                             <div class="col-lg-4">
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Renumeration</h5>
+                                        <h5 id="remuneration">Remuneration</h5>
                                         <div class="ibox-tools">
                                         </div>
                                     </div>
@@ -594,7 +598,7 @@
                                 </div>
                                 <div class="ibox float-e-margins">
                                     <div class="ibox-title">
-                                        <h5>Administration</h5>
+                                        <h5 id="administration">Administration</h5>
                                         <div class="ibox-tools">
                                         </div>
                                     </div>

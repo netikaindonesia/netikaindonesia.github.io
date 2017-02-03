@@ -143,15 +143,15 @@
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">Training</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
                             <li><a href="training_list.html">Training List</a></li>
-                            <li><a href="training_my.html">My Training</a></li>
-                            <li><a href="#"><span class="nav-label">Administration</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="training_administration_events.html">Training Events</a>
-                                    </li>
-                                </ul>
+                            <li><a href="training_mytrainings.html">My Trainings</a></li>
+                            <li>
+                                <a href="training_administration_elearning.html">eLearning</a>
                             </li>
-                        </ul>
+                            <li>
+                                <a href="training_administration_events.html">Training Events</a>
+                            </li>
+                    </li>
+                    </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-user-md"></i><span class="nav-label">Career</span><span class="fa arrow"></span></a>
@@ -174,7 +174,7 @@
                                         <a href="mycalendar.html">My Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="Attendance.html">Attendance</a>
+                                        <a href="attendance.html">Attendance</a>
                                     </li>
                                     <li>
                                         <a href="#">Work Shifts <span class="fa arrow"></span></a>
@@ -186,6 +186,9 @@
                                                 <a href="workshiftsummary.html">Work Shift Summary</a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        <a href="leave.html">Leave</a>
                                     </li>
                                     <li>
                                         <a href="#">Benefits <span class="fa arrow"></span></a>
@@ -377,11 +380,11 @@
                             <div class="ibox-title">
                             </div>
                             <div class="ibox-content">
-					                <div class="tabs-container">
-											<fieldset class="form-horizontal">
+                                <div class="row">
+                                    <div class="col-sm-4">
                                                 <div class="form-group">
-													<label class="col-sm-2 control-label">Org. Unit</label>
-													<div class="col-sm-5">
+													<label class="control-label">Org. Unit</label>
+													<div class="">
                                                         <select class="form-control m-b" name="account">
                                                             <option>All</option>
                                                             <option>Marketing</option>
@@ -389,40 +392,1678 @@
                                                         </select>                                                     
 													</div>
 												</div>                                 
+                                    </div>
+                                    <div class="col-sm-4">
+                                                <div class="form-group">
+													<label class="control-label">Year</label>
+													<div class="">
+                                                        <select class="form-control m-b" name="account">
+                                                            <option>2017</option>
+                                                            <option>2016</option>
+                                                            <option>2015</option>
+                                                        </select>                                                     
+													</div>
+												</div>                                 
+                                    </div>
+                                    <div class="col-sm-4">
+                                                <div class="form-group">
+													<label class="control-label">Month</label>
+													<div class="">
+                                                        <select class="form-control m-b" name="account">
+                                                            <option>January</option>
+                                                            <option>February</option>
+                                                            <option>March</option>
+                                                            <option>April</option>
+                                                            <option>May</option>
+                                                            <option>June</option>
+                                                            <option>July</option>
+                                                            <option>August</option>
+                                                            <option>September</option>
+                                                            <option>October</option>
+                                                            <option>November</option>
+                                                            <option>December</option>
+                                                        </select>                                                     
+													</div>
+												</div>                                 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="date_added">NIP</label>
+
+                                            <div>
+                                                <select data-placeholder="Choose a job title..." class="chosen-select">
+                                                    <option value="0" selected>Any</option>
+                                                    <option value="1">1XX</option>
+                                                    <option value="2">2XX</option>
+                                                    <option value="3">3XX</option>
+                                                    <option value="4">4XX</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="date_added">Name</label>
+
+                                            <div>
+                                                <select data-placeholder="Choose a job title..." class="chosen-select">
+                                                    <option value="0" selected>Any</option>
+                                                    <option value="1">Mr. A</option>
+                                                    <option value="2">Mr. B</option>
+                                                    <option value="3">Mr. C</option>
+                                                    <option value="4">Mr. D</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="pull-left">
                                                     <div class="form-group">
-                                                        <label class="col-sm-2 control-label">Start Date</label>
                                                         <div class="col-sm-3">
-                                                                <div class="input-group date">
-                                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                    <input id="date_added" type="text" class="form-control" value="03/04/2014">
-                                                                </div>
+                                                        <button type="button" class="btn btn-primary btn">View</button>
                                                         </div>
                                                     </div>
+                                    </div>
+                                    <div class="pull-left">
                                                     <div class="form-group">
-                                                        <label class="col-sm-2 control-label">End Date</label>
-                                                        <div class="col-sm-3">
-                                                                <div class="input-group date">
-                                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                    <input id="date_added" type="text" class="form-control" value="03/04/2014">
-                                                                </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="col-sm-2 control-label"></label>
                                                         <div class="col-sm-3">
                                                         <button type="button" class="btn btn-primary btn">Download Report</button>
                                                         </div>
                                                     </div>
-											</fieldset>
-                                            <br/>
                                     </div>
+                                </div>
+                            <br/>
+                            <table class="table table-bordered ">
+                                <thead>
+                                <tr>
+                                    <th>NIP</th>
+                                    <th>Name</th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>11</th>
+                                    <th>12</th>
+                                    <th>13</th>
+                                    <th>14</th>
+                                    <th>15</th>
+                                    <th>16</th>
+                                    <th>17</th>
+                                    <th>18</th>
+                                    <th>19</th>
+                                    <th>20</th>
+                                    <th>21</th>
+                                    <th>22</th>
+                                    <th>23</th>
+                                    <th>24</th>
+                                    <th>25</th>
+                                    <th>26</th>
+                                    <th>27</th>
+                                    <th>28</th>
+                                    <th>29</th>
+                                    <th>30</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1XXX</td>
+                                    <td>Mark</td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-success" data-toggle="tooltip" data-placement="bottom" title="Sakit Perut">S</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-warning" data-toggle="tooltip" data-placement="bottom" title="Cuti Tahunan urusan pribadi">I</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title=" ">W</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="tooltip-demo">
+                                            <button type="button" class="btn-xs btn-primary" data-toggle="tooltip" data-placement="bottom" title="07.00 - 17.00">P</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
                                 </div>
                             </div>
                         </div>
                         
                     </div>
                 </div>
-            </div>
             <div class="footer">
                 <div class="pull-right">
                     <strong>Version</strong> 2.x.xxxx.

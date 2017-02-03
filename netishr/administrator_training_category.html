@@ -28,7 +28,7 @@
 
     <div id="wrapper">
 
-                <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -144,15 +144,15 @@
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">Training</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
                             <li><a href="training_list.html">Training List</a></li>
-                            <li><a href="training_my.html">My Training</a></li>
-                            <li><a href="#"><span class="nav-label">Administration</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="training_administration_events.html">Training Events</a>
-                                    </li>
-                                </ul>
+                            <li><a href="training_mytrainings.html">My Trainings</a></li>
+                            <li>
+                                <a href="training_administration_elearning.html">eLearning</a>
                             </li>
-                        </ul>
+                            <li>
+                                <a href="training_administration_events.html">Training Events</a>
+                            </li>
+                    </li>
+                    </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-user-md"></i><span class="nav-label">Career</span><span class="fa arrow"></span></a>
@@ -175,7 +175,7 @@
                                         <a href="mycalendar.html">My Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="Attendance.html">Attendance</a>
+                                        <a href="attendance.html">Attendance</a>
                                     </li>
                                     <li>
                                         <a href="#">Work Shifts <span class="fa arrow"></span></a>
@@ -187,6 +187,9 @@
                                                 <a href="workshiftsummary.html">Work Shift Summary</a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        <a href="leave.html">Leave</a>
                                     </li>
                                     <li>
                                         <a href="#">Benefits <span class="fa arrow"></span></a>
@@ -360,16 +363,19 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Training Category</h2>
+                    <h2>Training Categories</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
-                        <li class="active">
-                            <a href="administrator.html">Administrator</a>
+                        <li>
+                            <a href="administrator.html">Administration</a>
+                        </li>
+                        <li>
+                            <a href="administrator.html#training">Training</a>
                         </li>
                         <li class="active">
-                            <strong>Training Category</strong>
+                            <strong>Categories</strong>
                         </li>
                     </ol>
                 </div>
@@ -435,7 +441,7 @@
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                                         <h4 class="modal-title">Confirmation</h4>
                                                     </div>
-                                                    <div class="modal-body">Are you sure to deactive this field?
+                                                    <div class="modal-body">Are you sure to deactive this item?
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
@@ -529,7 +535,7 @@
                                         Leadership
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#activate">Inactive</button>
+                                        <button type="button" class="btn btn-xs" data-toggle="modal" data-target="#activate">Inactive</button>
                                         <div class="modal inmodal" id="activate" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content animated">
@@ -537,7 +543,7 @@
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                                         <h4 class="modal-title">Confirmation</h4>
                                                     </div>
-                                                    <div class="modal-body">Are you sure to activate this field?
+                                                    <div class="modal-body">Are you sure to activate this item?
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>

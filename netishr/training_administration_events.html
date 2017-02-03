@@ -28,7 +28,7 @@
 
     <div id="wrapper">
 
-                <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -144,15 +144,15 @@
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">Training</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
                             <li><a href="training_list.html">Training List</a></li>
-                            <li><a href="training_my.html">My Training</a></li>
-                            <li><a href="#"><span class="nav-label">Administration</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="training_administration_events.html">Training Events</a>
-                                    </li>
-                                </ul>
+                            <li><a href="training_mytrainings.html">My Trainings</a></li>
+                            <li>
+                                <a href="training_administration_elearning.html">eLearning</a>
                             </li>
-                        </ul>
+                            <li>
+                                <a href="training_administration_events.html">Training Events</a>
+                            </li>
+                    </li>
+                    </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-user-md"></i><span class="nav-label">Career</span><span class="fa arrow"></span></a>
@@ -175,7 +175,7 @@
                                         <a href="mycalendar.html">My Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="Attendance.html">Attendance</a>
+                                        <a href="attendance.html">Attendance</a>
                                     </li>
                                     <li>
                                         <a href="#">Work Shifts <span class="fa arrow"></span></a>
@@ -187,6 +187,9 @@
                                                 <a href="workshiftsummary.html">Work Shift Summary</a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        <a href="leave.html">Leave</a>
                                     </li>
                                     <li>
                                         <a href="#">Benefits <span class="fa arrow"></span></a>
@@ -365,8 +368,11 @@
                         <li>
                             <a href="index.html">Home</a>
                         </li>
+                        <li>
+                            <a href="#">Training</a>
+                        </li>
                         <li class="active">
-                            <strong>Training Events</strong>
+                            <strong>Events</strong>
                         </li>
                     </ol>
                 </div>
@@ -406,6 +412,7 @@
                                                                 <th>Provider</th>
                                                                 <th>Start Date</th>
                                                                 <th>End Date</th>
+                                                                <th>Type</th>
                                                                 <th class="text-right">
                                                                 </th>
                                                             </tr>
@@ -416,7 +423,7 @@
                                                                     01D
                                                                 </td>
                                                                 <td>
-                                                                    Public Speaking
+                                                                    <a href="training_administration_events_edit.html">Public Speaking</a>
                                                                 </td>
                                                                 <td>
                                                                     PT Netika Indonesia
@@ -427,10 +434,13 @@
                                                                 <td>
                                                                     03-Feb-2017
                                                                 </td>
+                                                                <td>
+                                                                    Regular
+                                                                </td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
-                                                                        <a href="training_administration_events_edit.html">
-                                                                            <button type="button" class="btn btn-primary btn-xs">Detail</button>
+                                                                        <a href="training_administration_participants.html">
+                                                                            <button type="button" class="btn btn-white btn-xs">Participants</button>
                                                                         </a>
                                                                         <a>
                                                                             <button class="btn-white btn btn-xs">Delete</button>
@@ -443,7 +453,7 @@
                                                                     01E
                                                                 </td>
                                                                 <td>
-                                                                    Public Speaking
+                                                                    <a href="training_administration_events_edit.html">Public Speaking</a>
                                                                 </td>
                                                                 <td>
                                                                     PT Netika Indonesia
@@ -454,10 +464,13 @@
                                                                 <td>
                                                                     10-Feb-2017
                                                                 </td>
+                                                                <td>
+                                                                    Regular
+                                                                </td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
-                                                                        <a href="training_administration_events_edit.html">
-                                                                            <button type="button" class="btn btn-primary btn-xs">Detail</button>
+                                                                        <a href="training_administration_participants.html">
+                                                                            <button type="button" class="btn btn-white btn-xs">Participants</button>
                                                                         </a>
                                                                         <a>
                                                                             <button class="btn-white btn btn-xs">Delete</button>
@@ -470,7 +483,7 @@
                                                                     01F
                                                                 </td>
                                                                 <td>
-                                                                    Public Speaking
+                                                                    <a href="training_administration_events_edit.html">Public Speaking</a>
                                                                 </td>
                                                                 <td>
                                                                     PT Netika Indonesia
@@ -481,17 +494,20 @@
                                                                 <td>
                                                                     17-Feb-2017
                                                                 </td>
+                                                                <td>
+                                                                    E-learning
+                                                                </td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
-                                                                        <a href="training_administration_events_edit.html">
-                                                                            <button type="button" class="btn btn-primary btn-xs">Detail</button>
+                                                                        <a href="training_administration_participants.html">
+                                                                            <button type="button" class="btn btn-white btn-xs">Participants</button>
                                                                         </a>
                                                                         <a>
                                                                             <button class="btn-white btn btn-xs">Delete</button>
                                                                         </a>
                                                                     </div>
                                                                 </td>
-                                                            </tr>                                                            
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -508,6 +524,7 @@
                                                                 <th>Provider</th>
                                                                 <th>Start Date</th>
                                                                 <th>End Date</th>
+                                                                <th>Type</th>
                                                                 <th class="text-right">
                                                                 </th>
                                                             </tr>
@@ -518,7 +535,7 @@
                                                                     01A
                                                                 </td>
                                                                 <td>
-                                                                    Kepemimpinan di abad 21
+                                                                    <a href="training_administration_events_edit.html">Kepemimpinan di abad 21</a>
                                                                 </td>
                                                                 <td>
                                                                     PT Netika Indonesia
@@ -529,10 +546,13 @@
                                                                 <td>
                                                                     03-Feb-2016
                                                                 </td>
+                                                                <td>
+                                                                    Regular
+                                                                </td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
-                                                                        <a href="training_administration_events_edit.html">
-                                                                            <button type="button" class="btn btn-primary btn-xs">Detail</button>
+                                                                        <a href="training_administration_participants.html">
+                                                                            <button type="button" class="btn btn-white btn-xs">Participants</button>
                                                                         </a>
                                                                         <a>
                                                                             <button class="btn-white btn btn-xs">Delete</button>
@@ -545,7 +565,7 @@
                                                                     01B
                                                                 </td>
                                                                 <td>
-                                                                    Kepemimpinan di abad 21
+                                                                    <a href="training_administration_events_edit.html">Kepemimpinan di abad 21</a>
                                                                 </td>
                                                                 <td>
                                                                     PT Netika Indonesia
@@ -556,10 +576,13 @@
                                                                 <td>
                                                                     10-Feb-2016
                                                                 </td>
+                                                                <td>
+                                                                    Regular
+                                                                </td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
-                                                                        <a href="training_administration_events_edit.html">
-                                                                            <button type="button" class="btn btn-primary btn-xs">Detail</button>
+                                                                        <a href="training_administration_participants.html">
+                                                                            <button type="button" class="btn btn-white btn-xs">Participants</button>
                                                                         </a>
                                                                         <a>
                                                                             <button class="btn-white btn btn-xs">Delete</button>
@@ -572,7 +595,7 @@
                                                                     01C
                                                                 </td>
                                                                 <td>
-                                                                    Kepemimpinan di abad 21
+                                                                    <a href="training_administration_events_edit.html">Kepemimpinan di abad 21</a>
                                                                 </td>
                                                                 <td>
                                                                     PT Netika Indonesia
@@ -583,17 +606,20 @@
                                                                 <td>
                                                                     17-Feb-2016
                                                                 </td>
+                                                                <td>
+                                                                    Regular
+                                                                </td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
-                                                                        <a href="training_administration_events_edit.html">
-                                                                            <button type="button" class="btn btn-primary btn-xs">Detail</button>
+                                                                        <a href="training_administration_participants.html">
+                                                                            <button type="button" class="btn btn-white btn-xs">Participants</button>
                                                                         </a>
                                                                         <a>
                                                                             <button class="btn-white btn btn-xs">Delete</button>
                                                                         </a>
                                                                     </div>
                                                                 </td>
-                                                            </tr>                                                            
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>

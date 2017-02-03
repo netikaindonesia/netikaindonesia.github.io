@@ -20,7 +20,7 @@
 
     <div id="wrapper">
 
-                        <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -136,15 +136,15 @@
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">Training</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
                             <li><a href="training_list.html">Training List</a></li>
-                            <li><a href="training_my.html">My Training</a></li>
-                            <li><a href="#"><span class="nav-label">Administration</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="training_administration_events.html">Training Events</a>
-                                    </li>
-                                </ul>
+                            <li><a href="training_mytrainings.html">My Trainings</a></li>
+                            <li>
+                                <a href="training_administration_elearning.html">eLearning</a>
                             </li>
-                        </ul>
+                            <li>
+                                <a href="training_administration_events.html">Training Events</a>
+                            </li>
+                    </li>
+                    </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-user-md"></i><span class="nav-label">Career</span><span class="fa arrow"></span></a>
@@ -167,7 +167,7 @@
                                         <a href="mycalendar.html">My Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="Attendance.html">Attendance</a>
+                                        <a href="attendance.html">Attendance</a>
                                     </li>
                                     <li>
                                         <a href="#">Work Shifts <span class="fa arrow"></span></a>
@@ -179,6 +179,9 @@
                                                 <a href="workshiftsummary.html">Work Shift Summary</a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        <a href="leave.html">Leave</a>
                                     </li>
                                     <li>
                                         <a href="#">Benefits <span class="fa arrow"></span></a>
@@ -358,191 +361,114 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li class="active">
-                            <a href="administrator.html">Administrator</a>
+                            <a href="#">Training</a>
                         </li>
                         <li class="active">
-                            <strong>Training Courses</strong>
+                            <strong>Events</strong>
                         </li>
                     </ol>
                 </div>
             </div>
-                <div class="row">
-                        <div class="ibox float-e-margins">
-                            <div class="ibox-content">
-                                <button type="button" class="btn btn-white btn">Back</button>
-                                <button type="button" class="btn btn-primary btn">Save</button>
-								<fieldset class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Course Name</label>
-                                        <div class="col-sm-6">
-                                            <select data-placeholder="Choose a Course Name" class="chosen-select" tabindex="2">
-                                                <option selected value="1">Public Speaking</option>
-                                                <option value="2">Kepemimpinan Abad 21</option>
-                                            </select>
-                                        </div>                                
+            <div class="row">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <button type="button" class="btn btn-white btn">Back</button>
+                        <button type="button" class="btn btn-primary btn">Save</button>
+                        <fieldset class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Course Name</label>
+                                <div class="col-sm-6">
+                                    <select data-placeholder="Choose a Course Name" class="chosen-select" tabindex="2">
+                                        <option selected value="1">Public Speaking</option>
+                                        <option value="2">Kepemimpinan Abad 21</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Code</label>
+                                <div class="col-sm-6">
+                                    <div>01E</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Category</label>
+                                <div class="col-sm-6">
+                                    <div>Communication</div>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Related Competency</label>
+                                <div class="col-sm-6">
+                                    <div>Communication Skill</div>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Start Date</label>
+                                <div class="col-sm-3">
+                                    <div class="input-group date">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                        <input id="date_added" type="text" class="form-control" value="03/04/2014">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Code</label>
-                                        <div class="col-sm-6">
-                                            <div>01E</div>
-                                        </div>                                
-                                    </div>                                   
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Category</label>
-                                        <div class="col-sm-6">
-                                            <div>Communication</div>
-                                            </select>
-                                        </div>                                
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">End Date</label>
+                                <div class="col-sm-3">
+                                    <div class="input-group date">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                        <input id="date_added" type="text" class="form-control" value="03/04/2014">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Related Competency</label>
-                                        <div class="col-sm-6">
-                                            <div>Communication Skill</div>
-                                            </select>
-                                        </div>                                
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Provider</label>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="" value="PT Netika Indonesia">
                                     </div>
-                                    <div class="form-group">
-                                            <label class="col-sm-2 control-label">Start Date</label>
-                                            <div class="col-sm-3">
-                                                <div class="input-group date">
-                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                    <input id="date_added" type="text" class="form-control" value="03/04/2014">
-                                                </div>
-                                            </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Instructor</label>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="" value="Willy Nainggolan">
                                     </div>
-                                    <div class="form-group">
-                                            <label class="col-sm-2 control-label">End Date</label>
-                                            <div class="col-sm-3">
-                                                <div class="input-group date">
-                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                    <input id="date_added" type="text" class="form-control" value="03/04/2014">
-                                                </div>
-                                            </div>
-                                    </div>                                
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Provider</label>
-                                        <div class="col-sm-6">
-                                            <div><input type="text" class="form-control" placeholder="" value="PT Netika Indonesia"></div>
-                                        </div>                                
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Capacity</label>
+                                <div class="col-sm-4">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="" value="8">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Instructor</label>
-                                        <div class="col-sm-6">
-                                            <div><input type="text" class="form-control" placeholder="" value="Willy Nainggolan"></div>
-                                        </div>                                
+                                </div>
+                                <label class="col-sm-2 control-label">Orang</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Budget</label>
+                                <div class="col-sm-4">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="" value="30,000,000">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Capacity</label>
-                                        <div class="col-sm-4">
-                                            <div><input type="text" class="form-control" placeholder="" value="8"></div>
-                                        </div>                                
-                                        <label class="col-sm-2 control-label">Orang</label>
+                                </div>
+                                <label class="col-sm-2 control-label">Rupiah</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Fee Per Employee(If Any)</label>
+                                <div class="col-sm-4">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="" value="1,000,000">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Budget</label>
-                                        <div class="col-sm-4">
-                                            <div><input type="text" class="form-control" placeholder="" value="30,000,000"></div>
-                                        </div>                                
-                                        <label class="col-sm-2 control-label">Rupiah</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-2 control-label">Fee Per Employee(If Any)</label>
-                                        <div class="col-sm-4">
-                                            <div><input type="text" class="form-control" placeholder="" value="1,000,000"></div>
-                                        </div>                                
-                                        <label class="col-sm-2 control-label">Rupiah</label>
-                                    </div>
-								</fieldset>
-						</div>
+                                </div>
+                                <label class="col-sm-2 control-label">Rupiah</label>
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="ibox">
-                            <div class="ibox-content">
-                                <h2>Participants</h2>
-                                                <div class="table-responsive">
-                                                    <table class="table table-striped table-hover">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>NIP</th>
-                                                                <th>Name</th>
-                                                                <th>Job Title</th>
-                                                                <th>Status</th>
-                                                                <th>Action</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    011001
-                                                                </td>
-                                                                <td>
-                                                                    Hadi Rasyid Sono
-                                                                </td>
-                                                                <td>
-                                                                    Project Manager
-                                                                </td>
-                                                                <td>
-                                                                    Enrolled
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a>
-                                                                            <button class="btn-danger btn btn-xs">Cancel</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>                                                           
-                                                            <tr>
-                                                                <td>
-                                                                    011002
-                                                                </td>
-                                                                <td>
-                                                                    Wibowo Putra
-                                                                </td>
-                                                                <td>
-                                                                    IT Programmer
-                                                                </td>
-                                                                <td>
-                                                                    Register
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                        <a>
-                                                                            <button class="btn-warning btn btn-xs">Reject</button>
-                                                                        </a>
-                                                                        <a>
-                                                                            <button class="btn-primary btn btn-xs">Approve</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>                                                           
-                                                            <tr>
-                                                                <td>
-                                                                    011003
-                                                                </td>
-                                                                <td>
-                                                                    Rut Aprilia
-                                                                </td>
-                                                                <td>
-                                                                    IT Programmer
-                                                                </td>
-                                                                <td>
-                                                                    Cancelled
-                                                                </td>
-                                                                <td>
-                                                                    <div class="btn-group">
-                                                                    </div>
-                                                                </td>
-                                                            </tr>                                                           
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
+            </div>
             <div class="footer">
                 <div class="pull-right">
                     <strong>Version</strong> 2.x.xxxx.
@@ -590,10 +516,10 @@
 
         });
     </script>
-		<script src="js/w3data.js"></script>
-	<script>
-		w3IncludeHTML();
-	</script>
+    <script src="js/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
 
     <!-- X-editable CDN styles -->
     <script src="js/bootstrap-editable.min.js"></script>
@@ -616,8 +542,8 @@
                 pk: 1,
                 name: 'name',
                 title: 'Enter name'
-                //contoh validasi
-                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+                    //contoh validasi
+                    //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
             });
 
             //editables
@@ -627,8 +553,8 @@
                 pk: 1,
                 name: 'City',
                 title: 'Enter City'
-                //contoh validasi
-                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+                    //contoh validasi
+                    //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
             });
 
             $('#Title').editable({
@@ -670,7 +596,7 @@
                     }
                 ]
             });
-             $('#Country').editable({
+            $('#Country').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -687,7 +613,7 @@
                     }
                 ]
             });
-             $('#Language').editable({
+            $('#Language').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -703,8 +629,8 @@
                         text: 'Other'
                     }
                 ]
-            });    
-             $('#Nationality').editable({
+            });
+            $('#Nationality').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -720,8 +646,8 @@
                         text: 'Other'
                     }
                 ]
-            });    
-             $('#Job_Title').editable({
+            });
+            $('#Job_Title').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -737,8 +663,8 @@
                         text: 'HC Staff'
                     }
                 ]
-            });        
-             $('#Orgazanition_Unit').editable({
+            });
+            $('#Orgazanition_Unit').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -754,8 +680,8 @@
                         text: 'HC Team'
                     }
                 ]
-            });        
-             $('#Employment_Type').editable({
+            });
+            $('#Employment_Type').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -767,8 +693,8 @@
                         text: 'Contract'
                     }
                 ]
-            });             
-             $('#Placement').editable({
+            });
+            $('#Placement').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -780,8 +706,8 @@
                         text: 'Bandung'
                     }
                 ]
-            });              
-             $('#Status').editable({
+            });
+            $('#Status').editable({
                 prepend: "not selected",
                 source: [
                     {
@@ -793,16 +719,17 @@
                         text: 'Inactive'
                     }
                 ]
-            });             //editables
+            }); //editables
             $('#NIP').editable({
                 url: '#',
                 type: 'text',
                 pk: 1,
                 name: 'name',
                 title: 'Enter name'
-                //contoh validasi
-                //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
-            });        });
+                    //contoh validasi
+                    //validate: function (value) {if ($.trim(value) == '') return 'This field is required';}
+            });
+        });
     </script>
 
 </body>

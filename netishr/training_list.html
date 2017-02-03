@@ -28,7 +28,7 @@
 
     <div id="wrapper">
 
-                <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -144,15 +144,15 @@
                         <a href="#"><i class="fa fa-edit"></i><span class="nav-label">Training</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level  ">
                             <li><a href="training_list.html">Training List</a></li>
-                            <li><a href="training_my.html">My Training</a></li>
-                            <li><a href="#"><span class="nav-label">Administration</span><span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="training_administration_events.html">Training Events</a>
-                                    </li>
-                                </ul>
+                            <li><a href="training_mytrainings.html">My Trainings</a></li>
+                            <li>
+                                <a href="training_administration_elearning.html">eLearning</a>
                             </li>
-                        </ul>
+                            <li>
+                                <a href="training_administration_events.html">Training Events</a>
+                            </li>
+                    </li>
+                    </ul>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-user-md"></i><span class="nav-label">Career</span><span class="fa arrow"></span></a>
@@ -175,7 +175,7 @@
                                         <a href="mycalendar.html">My Calendar</a>
                                     </li>
                                     <li>
-                                        <a href="Attendance.html">Attendance</a>
+                                        <a href="attendance.html">Attendance</a>
                                     </li>
                                     <li>
                                         <a href="#">Work Shifts <span class="fa arrow"></span></a>
@@ -187,6 +187,9 @@
                                                 <a href="workshiftsummary.html">Work Shift Summary</a>
                                             </li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        <a href="leave.html">Leave</a>
                                     </li>
                                     <li>
                                         <a href="#">Benefits <span class="fa arrow"></span></a>
@@ -365,8 +368,11 @@
                         <li>
                             <a href="index.html">Home</a>
                         </li>
+                        <li>
+                            Training
+                        </li>
                         <li class="active">
-                            <strong>Training List</strong>
+                            <strong>List</strong>
                         </li>
                     </ol>
                 </div>
@@ -374,158 +380,192 @@
 
                 </div>
             </div>
-        <div class="wrapper wrapper-content animated fadeIn">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ibox">
-                        <div class="ibox-content">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label class="control-label" for="status">Category</label>
-                                        <select name="status" id="status" class="form-control">
-                                            <option value="1" selected>Communication </option>
-                                            <option value="2">Programming </option>
-                                            <option value="3">IT Networking  </option>
-                                            <option value="4">Leadership </option>
-                                        </select>
+            <div class="wrapper wrapper-content animated fadeIn">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox">
+                            <div class="ibox-content">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="status">Curriculum</label>
+                                            <select name="status" id="status" class="form-control">
+                                                <option value="0" selected>Any </option>
+                                                <option value="1">Public Speaking</option>
+                                                <option value="2">Kepemimpinan Abad 21</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>                                
-                                <div class="col-sm-8">
-                                    <div class="input-group">
-                                        <input type="text" placeholder="Search Training Events" class="input form-control">
-                                        <span class="input-group-btn">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="status">Category</label>
+                                            <select name="status" id="status" class="form-control">
+                                                <option value="0" selected>Any </option>
+                                                <option value="1">General </option>
+                                                <option value="2">Communication </option>
+                                                <option value="3">Programming </option>
+                                                <option value="4">IT Networking </option>
+                                                <option value="5">Leadership </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="status">Type</label>
+                                            <select name="status" id="status" class="form-control">
+                                                <option value="0" selected>Any </option>
+                                                <option value="1">eLearning </option>
+                                                <option value="2">In Class </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Search Training Events" class="input form-control">
+                                            <span class="input-group-btn">
                                             <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
                                         </span>
-                                    </div>
-                                </div>                                
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <span class="pull-right">
-                                            <h5>01-Feb-2017 to 03-Feb-2017</h5> 
-                                        </span>                                            
-                                            <h3>Public Speaking</h3> 
                                         </div>
-                                        <div class="panel-body">
-                                            <label>Description</label>
-                                            <p>Pelajaran mengenai teknik-teknis berbicara di depan umum beserta praktek</p>
-                                            <label>Provider</label>
-                                            <p>PT Netika Indonesia </p>
-                                            <label>Instructor</label>
-                                            <p>Willy Nainggolan</p>
-                                            <label>Status</label>
-                                            <p>Unregistered</p>
-                                            <div class="btn-group pull-right">
-                                                 <a>
-                                                     <button class="btn-primary btn btn">Enroll</button>
-                                                 </a>
-                                             </div>
-                                        </div>
-
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <span class="pull-right">
-                                            <h5>01-Feb-2017 to 03-Feb-2017</h5> 
-                                        </span>                                            
-                                            <h3>Public Speaking</h3> 
-                                        </div>
-                                        <div class="panel-body">
-                                            <label>Description</label>
-                                            <p>Pelajaran mengenai teknik-teknis berbicara di depan umum beserta praktek</p>
-                                            <label>Provider</label>
-                                            <p>PT Netika Indonesia </p>
-                                            <label>Instructor</label>
-                                            <p>Willy Nainggolan</p>
-                                            <label>Status</label>
-                                            <p>Unregistered</p>
-                                            <div class="btn-group pull-right">
-                                                 <a>
-                                                     <button class="btn-primary btn btn">Enroll</button>
-                                                 </a>
-                                             </div>
-                                        </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <span class="pull-right">
+                                            <h5>General, eLearning</h5> 
+                                            </span>
+                                                <h3>CI-01 Company Introduction  <span class="label label-warning">Competency-based</span>  </h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <label>Description</label>
+                                                <p>Penjelasan mengenai perusahaan secara umum</p>
+                                                <label>Provider</label>
+                                                <p>Internal </p>
+                                                <label>Instructor</label>
+                                                <p>Admin</p>
+                                                <label>Fee</label>
+                                                <p>Free</p>
+                                                <label>Status</label>
+                                                <p>Enrolled</p>
+                                                <div class="btn-group pull-right">
+                                                    <a href="training_elearning.html">
+                                                        <button class="btn-primary btn btn">Start</button>
+                                                    </a>
+                                                </div>
+                                            </div>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <span class="pull-right">
-                                            <h5>01-Feb-2017 to 03-Feb-2017</h5> 
-                                        </span>                                            
-                                            <h3>Public Speaking</h3> 
-                                        </div>
-                                        <div class="panel-body">
-                                            <label>Description</label>
-                                            <p>Pelajaran mengenai teknik-teknis berbicara di depan umum beserta praktek</p>
-                                            <label>Provider</label>
-                                            <p>PT Netika Indonesia </p>
-                                            <label>Instructor</label>
-                                            <p>Willy Nainggolan</p>
-                                            <label>Status</label>
-                                            <p>Unregistered</p>
-                                            <div class="btn-group pull-right">
-                                                 <a>
-                                                     <button class="btn-primary btn btn">Enroll</button>
-                                                 </a>
-                                             </div>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <span class="pull-right">
+                                            <h5>General, eLearning</h5> 
+                                            </span>
+                                                <h3>CI-02 Company Introduction Level 2 <span class="label label-warning">Competency-based</span>  </h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <label>Description</label>
+                                                <p>Penjelasan mengenai perusahaan secara umum</p>
+                                                <label>Provider</label>
+                                                <p>Internal </p>
+                                                <label>Instructor</label>
+                                                <p>Admin</p>
+                                                <label>Fee</label>
+                                                <p>Free</p>
+                                                <label>Status</label>
+                                                <p>Unregistered</p>
+                                                <div class="btn-group pull-right">
+                                                    <a>
+                                                        <button class="btn-primary btn btn">Enroll</button>
+                                                    </a>
+                                                </div>
+                                            </div>
 
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <span class="pull-right">
-                                            <h5>01-Feb-2017 to 03-Feb-2017</h5> 
-                                        </span>                                            
-                                            <h3>Public Speaking</h3> 
-                                        </div>
-                                        <div class="panel-body">
-                                            <label>Description</label>
-                                            <p>Pelajaran mengenai teknik-teknis berbicara di depan umum beserta praktek</p>
-                                            <label>Provider</label>
-                                            <p>PT Netika Indonesia </p>
-                                            <label>Instructor</label>
-                                            <p>Willy Nainggolan</p>
-                                            <label>Status</label>
-                                            <p>Unregistered</p>
-                                            <div class="btn-group pull-right">
-                                                 <a>
-                                                     <button class="btn-primary btn btn">Enroll</button>
-                                                 </a>
-                                             </div>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <span class="pull-right">
+                                            <h5>Communication, In Class</h5> 
+                                        </span>
+                                                <h3>PS-01 Public Speaking</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <label>Description</label>
+                                                <p>Pelajaran mengenai teknik-teknis berbicara di depan umum beserta praktek</p>
+                                                <label>Next Events</label>
+                                                <p>07/03/2016 - 15/03/2016</p>
+                                                <label>Provider</label>
+                                                <p>PT Netika Indonesia </p>
+                                                <label>Instructor</label>
+                                                <p>Willy Nainggolan</p>
+                                                <label>Fee</label>
+                                                <p>Rp10.000.000,00</p>
+                                                <label>Status</label>
+                                                <p>Unregistered</p>
+                                                <div class="btn-group pull-right">
+                                                    <a>
+                                                        <button class="btn-primary btn btn">Enroll</button>
+                                                    </a>
+                                                </div>
+                                            </div>
 
+                                        </div>
                                     </div>
                                 </div>
-                            <div class="btn-group pull-right">
-                                <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i></button>
-                                <button class="btn btn-white">1</button>
-                                <button class="btn btn-white  active">2</button>
-                                <button class="btn btn-white">3</button>
-                                <button class="btn btn-white">4</button>
-                                <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i> </button>
-                            </div>                            
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <span class="pull-right">
+                                            <h5>Communication, In Class</h5> 
+                                        </span>
+                                                <h3>PS-02 Public Speaking Level 2</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <label>Description</label>
+                                                <p>Pelajaran mengenai teknik-teknis berbicara di depan umum beserta praktek</p>
+                                                <label>Next Events</label>
+                                                <p>07/03/2016 - 15/03/2016</p>
+                                                <label>Provider</label>
+                                                <p>PT Netika Indonesia </p>
+                                                <label>Instructor</label>
+                                                <p>Willy Nainggolan</p>
+                                                <label>Fee</label>
+                                                <p>Rp10.000.000,00</p>
+                                                <label>Status</label>
+                                                <p>Pending Approval</p>
+                                                <div class="btn-group pull-right">
+                                                    <a>
+                                                        <button class="btn-white btn btn">Cancel</button>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group pull-right">
+                                    <button type="button" class="btn btn-white"><i class="fa fa-chevron-left"></i></button>
+                                    <button class="btn btn-white">1</button>
+                                    <button class="btn btn-white  active">2</button>
+                                    <button class="btn btn-white">3</button>
+                                    <button class="btn btn-white">4</button>
+                                    <button type="button" class="btn btn-white"><i class="fa fa-chevron-right"></i> </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
             <div class="footer">
                 <div class="pull-right">
