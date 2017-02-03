@@ -146,10 +146,10 @@
                             <li><a href="training_list.html">Training List</a></li>
                             <li><a href="training_mytrainings.html">My Trainings</a></li>
                             <li>
-                                <a href="training_administration_elearning.html">eLearning</a>
+                                <a href="training_administration_events.html">Training Events</a>
                             </li>
                             <li>
-                                <a href="training_administration_events.html">Training Events</a>
+                                <a href="training_administration_elearning.html">E-learning</a>
                             </li>
                     </li>
                     </ul>
@@ -385,12 +385,52 @@
                     <div class="col-sm-12">
                         <div class="ibox">
                             <div class="ibox-content">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Search Training Events" class="input form-control">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
-                                </span>
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="status">Curriculum</label>
+                                            <select name="status" id="status" class="form-control">
+                                                <option value="0" selected>Any </option>
+                                                <option value="1">Public Speaking</option>
+                                                <option value="2">Kepemimpinan Abad 21</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="status">Category</label>
+                                            <select name="status" id="status" class="form-control">
+                                                <option value="0" selected>Any </option>
+                                                <option value="1">General </option>
+                                                <option value="2">Communication </option>
+                                                <option value="3">Programming </option>
+                                                <option value="4">IT Networking </option>
+                                                <option value="5">Leadership </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="control-label" for="status">Type</label>
+                                            <select name="status" id="status" class="form-control">
+                                                <option value="0" selected>Any </option>
+                                                <option value="1">eLearning </option>
+                                                <option value="2">In Class </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Search Training Events" class="input form-control">
+                                            <span class="input-group-btn">
+                                            <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
+                                        </span>
+                                        </div>
+                                    </div>
                                 </div>
+
+
                                 <br>
                                 <a href="training_administration_events_edit.html">
                                     <button type="button" class="btn btn-primary btn-xs">New Training Events</button>
