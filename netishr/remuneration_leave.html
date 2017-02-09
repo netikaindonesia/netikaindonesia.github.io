@@ -14,19 +14,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>NetisHR</title>
+    <title>NetisHR | Leave Request</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <!-- Toastr style -->
-    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
-
-    <!-- Gritter -->
-    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <!-- Table -->
+    <link href="css/plugins/footable/footable.core.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+    <!-- File upload -->
+    <link href="css/plugins/jasny/jasny-bootstrap.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -359,8 +365,6 @@
                             </ul>
                         </li>
 
-
-
                         <!--<li>
                             <a class="right-sidebar-toggle">
                                 <i class="fa fa-tasks"></i>
@@ -371,17 +375,19 @@
                 </nav>
             </div>
             <div class="row">
-
                 <div class="col-lg-12">
                     <div class="row wrapper border-bottom white-bg page-heading">
                         <div class="col-lg-10">
-                            <h2>Settings</h2>
+                            <h2>Leave Request</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">Home</a>
                                 </li>
+                                <li>
+                                    <a>Remuneration</a>
+                                </li>
                                 <li class="active">
-                                    <strong>Settings</strong>
+                                    <strong>Leave Request</strong>
                                 </li>
                             </ol>
                         </div>
@@ -389,266 +395,150 @@
 
                         </div>
                     </div>
+                    <div class="row">
+                        <!--
+                            <div class="alert alert-success">
+                                <strong>Success!</strong> Indicates a successful or positive action.
+                            </div>
+                            -->
 
-                    <div class="wrapper wrapper-content">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="general">General</h5>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_general_settings.html">Settings</a>
-                                            <div class="small">Various general settings</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="corporate_calendar.html">Corporate Annual Calendar</a>
-                                            <div class="small">Calendar of corporate events</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="option_data_type_configuration.html">Option Data Type Configuration</a>
-                                            <div class="small">Configure Option data type across application</div>
-                                        </div>
-                                        <p></p>
-                                        <div>
-                                            <a href="importexcel.html">Impor Excel</a>
-                                            <div class="small">Impor Excel file for various function</div>
-                                        </div>
 
+                        <div class="ibox-content m-b-sm border-bottom">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label class="control-label pull-left">Type</label>
                                     </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="organization">Organization</h5>
-                                        <div class="ibox-tools">
-                                            <!--<span class="label label-warning-light pull-right">10 Messages</span>-->
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <p></p>
-                                        <div><a href="administrator_groups.html">Groups</a>
-                                            <div class="small">Set up companies and branches</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadjobtitles.html">Upload Job Titles</a>
-                                            <div class="small">Upload Job Titles</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="job">Job</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_job_settings.html">Settings</a>
-                                            <div class="small">Various settings for Job</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_job_wla.html">Workload Analysis</a>
-                                            <div class="small">Settings for workload analysis</div>
-                                        </div>
-                                        <p></p>
-                                        <!--
-                                        <div><a href="administrator_group_competency.html">Group Competency Settings</a>
-                                            <div class="small">Settings for Group Competency</div>
-                                        </div>
--->
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="person">Person</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <a href="administrator_persons_information.html">Persons Information</a>
-                                        <div class="small">Information configuration for person information</div>
-                                        <p></p>
-                                        <a href="#">Upload Staffs</a>
-                                        <div class="small">Upload Staffs</div>
-                                        <p></p>
-                                        <a href="#.html">Upload Applicants</a>
-                                        <div class="small">Upload Applicants</div>
+                                    <div class="col-sm-4">
+                                        <select class="chosen-select" data-live-search="true">
+                                            <option>Annual Leave</option>
+                                            <option>Special Leave</option>
+                                            <option>Unpaid Leave</option>
+                                            <option>Overtime Leave</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="recruitment">Recruitment</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <a href="uploadapplicants.html">Upload Applicants</a>
-                                        <div class="small">Upload Person information</div>
-                                        <p></p>
-                                        <a href="selectionstagesetting.html">Selection Stage Setting</a>
-                                        <div class="small">Selection Stage Setting</div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="performance">Performance</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_performance_settings.html">Settings</a>
-                                            <div class="small">Various settings for Performance</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="performance_mgmt_periods.html">Performance Management Periods</a>
-                                            <div class="small">Manage performance management periods</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_performance_evaluation.html">Performance Evaluation Settings</a>
-                                            <div class="small">Rules for achievement percentages, results and rating</div>
-                                        </div>
+                            <div class="row">
+                                <div class="form-group">
 
+                                    <div class="col-sm-12">
+                                        <label class="control-label pull-left">Developer Notes: akan ada informasi tambahan tergantung tipe cuti yang dipilih apa
+                                            <br> Annual leave : sisa cuti, hutang cuti, dsb Unpaid Leave : sub pilihan Unpaid leave Special Leave : sub pilihan special leave Overtime Leave : sisa cuti overtime
+                                        </label>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label class="control-label pull-left">Start Date</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group date">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            <input id="date_added" type="text" class="form-control pull-right" value="03/04/2014">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="training">Training</h5>
-                                        <div class="ibox-tools">
+
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label class="control-label pull-left">End Date</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group date">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            <input id="date_added" type="text" class="form-control pull-right" value="03/04/2014">
                                         </div>
                                     </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_training_configuration_settings.html">Settings</a>
-                                            <div class="small">Various settings for Training</div>
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-sm-2">
+                                        <label class="control-label pull-left">Attachment</label>
+                                    </div>
+
+                                    <div class="col-sm-4">
+
+                                        <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                            <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                            <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span>
+                                            <input type="file" name="...">
+                                            </span>
+                                            <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                                         </div>
-                                        <p></p>
-                                        <div><a href="administrator_training_courses.html">Courses</a>
-                                            <div class="small">Manage training courses</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_training_curriculum.html">Curriculums</a>
-                                            <div class="small">Settings training curriculums</div>
-                                        </div>
-                                        <p></p>
                                     </div>
                                 </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="career">Career</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_career_settings.html">Settings</a>
-                                            <div class="small">Various settings for Performance</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Policy Setting</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-sm-6">
+                                        <label class="control-label pull-left">Description</label>
+                                        <textarea class="form-control" placeholder="Description" value="Perpanjangan cuti pegawai terkait"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="remuneration">Remuneration</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div><a href="administrator_remuneration_settings.html">Settings</a>
-                                            <div class="small">Various settings for Renumeration</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payitems.html">Pay Items</a>
-                                            <div class="small">Items to be calculated in salary</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payslipitems.html">Payslip Items</a>
-                                            <div class="small">Items to be shown on payslip</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_paysets.html">Paysets</a>
-                                            <div class="small">Create pay sets with pay items</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payslips.html">Payslips</a>
-                                            <div class="small">Create payslip with payslip items</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_remuneration_payassignment.html">Payset/payslip assignment</a>
-                                            <div class="small">Assign pay set and payslip to a person</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadpayrollspecification.html">Upload Payroll Specification</a>
-                                            <div class="small">Upload Payroll Specification</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="uploadpayrollassignment.html">Upload Payroll Assignment</a>
-                                            <div class="small">Upload Payroll Assignment</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="administrator_leave_configuration.html">Leave Configuration</a>
-                                            <div class="small">Leave Configuration</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ibox float-e-margins">
-                                    <div class="ibox-title">
-                                        <h5 id="administration">Administration</h5>
-                                        <div class="ibox-tools">
-                                        </div>
-                                    </div>
-                                    <div class="ibox-content">
-                                        <div>
-                                            <a href="administrator_shift_settings.html">Settings</a>
-                                            <div class="small">Various settings for shift</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="#">Personnel Administration</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
-                                        <p></p>
-                                        <div><a href="workshiftgroup.html">Work Shift Group</a>
-                                            <div class="small">Settings for policy</div>
-                                        </div>
-                                    </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-6 pull-right">
+                                    <button type="button" class="btn btn-white">Close</button>
+                                    <button type="button" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="footer">
-                        <div class="pull-right">
-                            <strong>Version</strong> 2.x.xxxx.
-                        </div>
-                        <div>
-                            <strong>Copyright</strong> Netika Indonesia &copy; 2016
+
+                </div>
+                <div class="modal fade" id="modal_mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
-
+                <div class="footer">
+                    <div class="pull-right">
+                        <strong>Version</strong> 2.x.xxxx.
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> Netika Indonesia &copy; 2016
+                    </div>
+                </div>
             </div>
-
         </div>
         <div class="small-chat-box fadeInRight animated">
-
             <div class="heading" draggable="true">
                 <small class="chat-date pull-right">
-                    02.19.2015
-                </small> Small chat
+                            02.19.2015
+                        </small> Small chat
             </div>
-
             <div class="content">
 
                 <div class="left">
                     <div class="author-name">
                         Monica Jackson <small class="chat-date">
-                        10:02 am
-                    </small>
+                                    10:02 am
+                                </small>
                     </div>
                     <div class="chat-message active">
                         Lorem Ipsum is simply dummy text input.
@@ -659,8 +549,8 @@
                     <div class="author-name">
                         Mick Smith
                         <small class="chat-date">
-                            11:24 am
-                        </small>
+                                    11:24 am
+                                </small>
                     </div>
                     <div class="chat-message">
                         Lorem Ipsum is simpl.
@@ -670,8 +560,8 @@
                     <div class="author-name">
                         Alice Novak
                         <small class="chat-date">
-                            08:45 pm
-                        </small>
+                                    08:45 pm
+                                </small>
                     </div>
                     <div class="chat-message active">
                         Check this stock char.
@@ -681,8 +571,8 @@
                     <div class="author-name">
                         Anna Lamson
                         <small class="chat-date">
-                            11:24 am
-                        </small>
+                                    11:24 am
+                                </small>
                     </div>
                     <div class="chat-message">
                         The standard chunk of Lorem Ipsum
@@ -692,75 +582,68 @@
                     <div class="author-name">
                         Mick Lane
                         <small class="chat-date">
-                            08:45 pm
-                        </small>
+                                    08:45 pm
+                                </small>
                     </div>
                     <div class="chat-message active">
                         I belive that. Lorem Ipsum is simply dummy text.
                     </div>
                 </div>
-
-
             </div>
             <div class="form-chat">
                 <div class="input-group input-group-sm">
                     <input type="text" class="form-control">
-                    <span class="input-group-btn"> <button
-                        class="btn btn-primary" type="button">Send
-                </button> </span></div>
+                    <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">
+                                    Send
+                                </button>
+                            </span>
+                </div>
             </div>
 
         </div>
         <div id="small-chat">
-
             <span class="badge badge-warning pull-right">5</span>
             <a class="open-small-chat">
                 <i class="fa fa-comments"></i>
-
             </a>
         </div>
         <div id="right-sidebar" class="animated">
             <div class="sidebar-container">
-
                 <ul class="nav nav-tabs navs-3">
-
-                    <li class="active"><a data-toggle="tab" href="#tab-1">
-                        Notes
-                    </a></li>
-                    <li><a data-toggle="tab" href="#tab-2">
-                        Projects
-                    </a></li>
+                    <li class="active">
+                        <a data-toggle="tab" href="#tab-1">
+                                    Notes
+                                </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#tab-2">
+                                    Projects
+                                </a>
+                    </li>
                     <li class="">
                         <a data-toggle="tab" href="#tab-3">
                             <i class="fa fa-gear"></i>
                         </a>
                     </li>
                 </ul>
-
                 <div class="tab-content">
-
-
                     <div id="tab-1" class="tab-pane active">
-
                         <div class="sidebar-title">
                             <h3> <i class="fa fa-comments-o"></i> Latest Notes</h3>
                             <small><i class="fa fa-tim"></i> You have 10 new message.</small>
                         </div>
-
                         <div>
-
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
                                         <img alt="image" class="img-circle message-avatar" src="img/a1.jpg">
-
                                         <div class="m-t-xs">
                                             <i class="fa fa-star text-warning"></i>
                                             <i class="fa fa-star text-warning"></i>
                                         </div>
                                     </div>
                                     <div class="media-body">
-
                                         There are many variations of passages of Lorem Ipsum available.
                                         <br>
                                         <small class="text-muted">Today 4:21 pm</small>
@@ -783,7 +666,6 @@
                                 <a href="#">
                                     <div class="pull-left text-center">
                                         <img alt="image" class="img-circle message-avatar" src="img/a3.jpg">
-
                                         <div class="m-t-xs">
                                             <i class="fa fa-star text-warning"></i>
                                             <i class="fa fa-star text-warning"></i>
@@ -802,7 +684,6 @@
                                     <div class="pull-left text-center">
                                         <img alt="image" class="img-circle message-avatar" src="img/a4.jpg">
                                     </div>
-
                                     <div class="media-body">
                                         Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
                                         <br>
@@ -816,7 +697,6 @@
                                         <img alt="image" class="img-circle message-avatar" src="img/a8.jpg">
                                     </div>
                                     <div class="media-body">
-
                                         All the Lorem Ipsum generators on the Internet tend to repeat.
                                         <br>
                                         <small class="text-muted">Today 4:21 pm</small>
@@ -839,7 +719,6 @@
                                 <a href="#">
                                     <div class="pull-left text-center">
                                         <img alt="image" class="img-circle message-avatar" src="img/a3.jpg">
-
                                         <div class="m-t-xs">
                                             <i class="fa fa-star text-warning"></i>
                                             <i class="fa fa-star text-warning"></i>
@@ -866,22 +745,18 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
 
                     <div id="tab-2" class="tab-pane">
-
                         <div class="sidebar-title">
                             <h3> <i class="fa fa-cube"></i> Latest projects</h3>
                             <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
                         </div>
-
                         <ul class="sidebar-list">
                             <li>
                                 <a href="#">
                                     <div class="small pull-right m-t-xs">9 hours ago</div>
                                     <h4>Business valuation</h4> It is a long established fact that a reader will be distracted.
-
                                     <div class="small">Completion with: 22%</div>
                                     <div class="progress progress-mini">
                                         <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
@@ -893,7 +768,6 @@
                                 <a href="#">
                                     <div class="small pull-right m-t-xs">9 hours ago</div>
                                     <h4>Contract with Company </h4> Many desktop publishing packages and web page editors.
-
                                     <div class="small">Completion with: 48%</div>
                                     <div class="progress progress-mini">
                                         <div style="width: 48%;" class="progress-bar"></div>
@@ -904,7 +778,6 @@
                                 <a href="#">
                                     <div class="small pull-right m-t-xs">9 hours ago</div>
                                     <h4>Meeting</h4> By the readable content of a page when looking at its layout.
-
                                     <div class="small">Completion with: 14%</div>
                                     <div class="progress progress-mini">
                                         <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
@@ -923,7 +796,6 @@
                                 <a href="#">
                                     <div class="small pull-right m-t-xs">9 hours ago</div>
                                     <h4>Business valuation</h4> It is a long established fact that a reader will be distracted.
-
                                     <div class="small">Completion with: 22%</div>
                                     <div class="progress progress-mini">
                                         <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
@@ -935,7 +807,6 @@
                                 <a href="#">
                                     <div class="small pull-right m-t-xs">9 hours ago</div>
                                     <h4>Contract with Company </h4> Many desktop publishing packages and web page editors.
-
                                     <div class="small">Completion with: 48%</div>
                                     <div class="progress progress-mini">
                                         <div style="width: 48%;" class="progress-bar"></div>
@@ -946,7 +817,6 @@
                                 <a href="#">
                                     <div class="small pull-right m-t-xs">9 hours ago</div>
                                     <h4>Meeting</h4> By the readable content of a page when looking at its layout.
-
                                     <div class="small">Completion with: 14%</div>
                                     <div class="progress progress-mini">
                                         <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
@@ -963,13 +833,10 @@
                                     <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
                                 </a>
                             </li>
-
                         </ul>
-
                     </div>
 
                     <div id="tab-3" class="tab-pane">
-
                         <div class="sidebar-title">
                             <h3><i class="fa fa-gears"></i> Settings</h3>
                             <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
@@ -977,8 +844,8 @@
 
                         <div class="setings-item">
                             <span>
-                        Show notifications
-                    </span>
+                                        Show notifications
+                                    </span>
                             <div class="switch">
                                 <div class="onoffswitch">
                                     <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
@@ -991,8 +858,8 @@
                         </div>
                         <div class="setings-item">
                             <span>
-                        Disable Chat
-                    </span>
+                                        Disable Chat
+                                    </span>
                             <div class="switch">
                                 <div class="onoffswitch">
                                     <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
@@ -1005,8 +872,8 @@
                         </div>
                         <div class="setings-item">
                             <span>
-                        Enable history
-                    </span>
+                                        Enable history
+                                    </span>
                             <div class="switch">
                                 <div class="onoffswitch">
                                     <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
@@ -1019,8 +886,8 @@
                         </div>
                         <div class="setings-item">
                             <span>
-                        Show charts
-                    </span>
+                                        Show charts
+                                    </span>
                             <div class="switch">
                                 <div class="onoffswitch">
                                     <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
@@ -1033,8 +900,8 @@
                         </div>
                         <div class="setings-item">
                             <span>
-                        Offline users
-                    </span>
+                                        Offline users
+                                    </span>
                             <div class="switch">
                                 <div class="onoffswitch">
                                     <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
@@ -1047,8 +914,8 @@
                         </div>
                         <div class="setings-item">
                             <span>
-                        Global search
-                    </span>
+                                        Global search
+                                    </span>
                             <div class="switch">
                                 <div class="onoffswitch">
                                     <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
@@ -1061,8 +928,8 @@
                         </div>
                         <div class="setings-item">
                             <span>
-                        Update everyday
-                    </span>
+                                        Update everyday
+                                    </span>
                             <div class="switch">
                                 <div class="onoffswitch">
                                     <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
@@ -1085,9 +952,6 @@
                 </div>
 
             </div>
-
-
-
         </div>
     </div>
 
@@ -1096,149 +960,125 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
 
-    <!-- Flot -->
-    <script src="js/plugins/flot/jquery.flot.js"></script>
-    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
-    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
-
-    <!-- Peity -->
-    <script src="js/plugins/peity/jquery.peity.min.js"></script>
-    <script src="js/demo/peity-demo.js"></script>
+    <!-- Table -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
 
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 
-    <!-- jQuery UI -->
-    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- SUMMERNOTE -->
+    <script src="js/plugins/summernote/summernote.min.js"></script>
 
-    <!-- GITTER -->
-    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
 
-    <!-- Sparkline -->
-    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- Jasny -->
+    <script src="js/plugins/jasny/jasny-bootstrap.min.js"></script>
 
-    <!-- Sparkline demo data  -->
-    <script src="js/demo/sparkline-demo.js"></script>
-
-    <!-- ChartJS-->
-    <script src="js/plugins/chartJs/Chart.min.js"></script>
-
-    <!-- Toastr -->
-    <script src="js/plugins/toastr/toastr.min.js"></script>
-
-
+    <!-- Page-Level Scripts -->
     <script>
         $(document).ready(function () {
+            $('.alert-success').hide();
+            $('.netis_saving').hide();
+            $('.netis_cancel').hide();
+            $('.summernote').summernote('disable');
 
-            /*
-            setTimeout(function () {
-                toastr.options = {
-                    closeButton: true,
-                    progressBar: true,
-                    showMethod: 'slideDown',
-                    timeOut: 4000
-                };
-                toastr.success('Integrated Human Capital Management', 'Welcome to NetisHR');
+            $('.footable').footable();
+            $('.footable2').footable();
+            $('.summernote').summernote();
 
-            }, 1300);
-*/
-
-            var data1 = [
-                [0, 4], [1, 8], [2, 5], [3, 10], [4, 4], [5, 16], [6, 5], [7, 11], [8, 6], [9, 11], [10, 30], [11, 10], [12, 13], [13, 4], [14, 3], [15, 3], [16, 6]
-            ];
-            var data2 = [
-                [0, 1], [1, 0], [2, 2], [3, 0], [4, 1], [5, 3], [6, 1], [7, 5], [8, 2], [9, 3], [10, 2], [11, 1], [12, 0], [13, 2], [14, 8], [15, 0], [16, 0]
-            ];
-            $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
-                data1, data2
-            ], {
-                series: {
-                    lines: {
-                        show: false,
-                        fill: true
-                    },
-                    splines: {
-                        show: true,
-                        tension: 0.4,
-                        lineWidth: 1,
-                        fill: 0.4
-                    },
-                    points: {
-                        radius: 0,
-                        show: true
-                    },
-                    shadowSize: 2
-                },
-                grid: {
-                    hoverable: true,
-                    clickable: true,
-                    tickColor: "#d5d5d5",
-                    borderWidth: 1,
-                    color: '#d5d5d5'
-                },
-                colors: ["#1ab394", "#1C84C6"],
-                xaxis: {},
-                yaxis: {
-                    ticks: 4
-                },
-                tooltip: false
+            $('.netis_edit').click(function () {
+                $('.netis_saving').show();
+                $('.netis_cancel').show();
+                $('.netis_edit').hide();
+                $('.summernote').summernote('enable');
             });
-
-            var doughnutData = {
-                labels: ["App", "Software", "Laptop"],
-                datasets: [{
-                    data: [300, 50, 100],
-                    backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
-                }]
-            };
-
-
-            var doughnutOptions = {
-                responsive: false,
-                legend: {
-                    display: false
-                }
-            };
-
-
-            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
-            new Chart(ctx4, {
-                type: 'doughnut',
-                data: doughnutData,
-                options: doughnutOptions
+            $('.netis_cancel').click(function () {
+                $('.netis_saving').hide();
+                $('.netis_cancel').hide();
+                $('.netis_edit').show();
+                $('.alert-success').hide();
+                $('.summernote').summernote('disable');
             });
-
-            var doughnutData = {
-                labels: ["App", "Software", "Laptop"],
-                datasets: [{
-                    data: [70, 27, 85],
-                    backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
-                }]
-            };
-
-
-            var doughnutOptions = {
-                responsive: false,
-                legend: {
-                    display: false
-                }
-            };
-
-
-            var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
-            new Chart(ctx4, {
-                type: 'doughnut',
-                data: doughnutData,
-                options: doughnutOptions
+            $('.netis_saving').click(function () {
+                $('.alert-success').show();
+                $('.netis_saving').hide();
+                $('.netis_cancel').hide();
+                $('.netis_edit').show();
+                $('.summernote').summernote('disable');
             });
+            $('.netis_modal_saving').click(function () {
+                $('.alert-success').show();
+            });
+            $('.netis_modal_close').click(function () {
+                $('.alert-success').hide();
+            });
+            $('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    {
+                        extend: 'copy'
+                            },
+                    {
+                        extend: 'csv'
+                            },
+                    {
+                        extend: 'excel',
+                        title: 'ExampleFile'
+                            },
+                    {
+                        extend: 'pdf',
+                        title: 'ExampleFile'
+                            },
+
+                    {
+                        extend: 'print',
+                        customize: function (win) {
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                .addClass('compact')
+                                .css('font-size', 'inherit');
+                        }
+                            }
+                        ]
+
+            });
+            $('.html5buttons').hide();
+            $('.dataTables_length').hide();
+            $('#DataTables_Table_0_filter').hide();
+            $('#DataTables_Table_1_filter').hide();
+            $('#DataTables_Table_2_filter').hide();
+            $('#DataTables_Table_3_filter').hide();
+            $('#DataTables_Table_4_filter').hide();
+            $('#DataTables_Table_5_filter').hide();
+            $('#DataTables_Table_6_filter').hide();
+            $('#DataTables_Table_7_filter').hide();
+            $('#DataTables_Table_8_filter').hide();
+
 
         });
+
+        $(".netis_competency_btn").click(function () {
+            alert("Open page Competency");
+        });
+
+        $('.chosen-select').chosen({
+            width: "100%"
+        });
+
+        var elem_3 = document.querySelector('.js-switch_3');
+        var switchery_3 = new Switchery(elem_3, {
+            color: '#1AB394'
+        });
     </script>
-    <script src="js/w3data.js"></script>
 
 </body>
 

@@ -22,7 +22,7 @@
     <link href="css/plugins/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">
     <link href="css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">
 
-<link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
 </head>
 
@@ -30,7 +30,7 @@
 
     <div id="wrapper">
 
-                        <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -484,6 +484,8 @@
                                                     </div>
                                                 </div>
 
+                                                <button type="button" class="btn btn-primary btn-xs">Export job levels</button>
+
                                                 <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
                                                     <thead>
                                                         <tr>
@@ -701,65 +703,69 @@
                                                 <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
 
                                                     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newjobsublevel">New Job Sub-level</button>
-<div class="modal" id="newjobsublevel">
-    <div class="modal-dialog">
-        <div class="modal-content animated">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <i class="fa fa-laptop modal-icon"></i>
-                <h4 class="modal-title">New Job Sub-level</h4>
-                <small class="font-bold">Please enter new job sub-level.</small>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <div class="row">
-                        <label class="col-sm-2 control-label">Label: </label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label class="col-sm-2 control-label">Code: </label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label class="col-sm-2 control-label">Description: </label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label class="col-sm-2 control-label">Job Level: </label>
-                        <div class="col-sm-10">
-                            <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
-                                <option value="1">Executive</option>
-                                <option selected value="2">Directorate</option>
-                                <option value="3" selected>Division</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label class="col-sm-2 control-label">Parent Sub-level: </label>
-                        <div class="col-sm-10">
-                            <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
-                                <option value="1">DIR-BR Director of Business Development</option>
-                                <option selected value="2">DIR-FIN Director of Finance</option>
-                                <option value="3">DIR-HR Director of HR</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
+                                                    <div class="modal" id="newjobsublevel">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content animated">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                    <i class="fa fa-laptop modal-icon"></i>
+                                                                    <h4 class="modal-title">New Job Sub-level</h4>
+                                                                    <small class="font-bold">Please enter new job sub-level.</small>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="form-group">
+                                                                        <div class="row">
+                                                                            <label class="col-sm-2 control-label">Label: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label class="col-sm-2 control-label">Code: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label class="col-sm-2 control-label">Description: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label class="col-sm-2 control-label">Job Level: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">Executive</option>
+                                                                                    <option selected value="2">Directorate</option>
+                                                                                    <option value="3" selected>Division</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <label class="col-sm-2 control-label">Parent Sub-level: </label>
+                                                                            <div class="col-sm-10">
+                                                                                <select data-placeholder="Choose a period..." class="chosen-select" tabindex="2">
+                                                                                    <option value="1">DIR-BR Director of Business Development</option>
+                                                                                    <option selected value="2">DIR-FIN Director of Finance</option>
+                                                                                    <option value="3">DIR-HR Director of HR</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newjobsublevel">New Job Sub-level</button>
+
+                                                    <button type="button" class="btn btn-primary btn-xs">Export job sub-levels</button>
 
                                                     <thead>
                                                         <tr>
@@ -929,8 +935,8 @@
     <!-- IonRangeSlider -->
     <script src="js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
 
-<!-- Chosen -->
-<script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
     <script>
         $(document).ready(function () {
 
