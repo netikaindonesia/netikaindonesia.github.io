@@ -376,9 +376,62 @@
                 <div class="col-sm-12">
                     <div class="ibox">
                         <div class="ibox-content">
-                            <div class="row">
 
+                            <div class="row">
                                 <h2>Participants</h2>
+
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#progress">Participants' Progress</button>
+                                    <div class="modal fade" id="progress" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <h3>Set progress for all participants</h3>
+
+                                                        <p>Please set progress for all participants</p>
+
+                                                        <form role="form">
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <label class="col-sm-2 control-label">Progress: </label>
+                                                                    <div class="col-sm-6">
+                                                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                                                            <option selected value="1">Not completed</option>
+                                                                            <option value="2">Completed</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="row">
+                                                                    <label class="col-sm-2 control-label">Score/result: </label>
+                                                                    <div class="col-sm-6">
+                                                                        <input type="text" class="form-control pull-right" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <!--
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                                -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">Course Name:</label>
 
@@ -398,7 +451,7 @@
                                                     <th>NIP</th>
                                                     <th>Name</th>
                                                     <th>Job Title</th>
-                                                    <th>Status</th>
+                                                    <th>Progress</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -414,9 +467,62 @@
                                                         Project Manager
                                                     </td>
                                                     <td>
-                                                        Enrolled training_administration_elearning_edit.html
+                                                        Enrolled
                                                     </td>
-                                                    <td></td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn-white btn btn-xs" data-toggle="modal" data-target="#progress">Progress</button>
+                                                            <div class="modal fade" id="progress" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-body">
+                                                                            <div class="row">
+                                                                                <h3>Set progress</h3>
+
+                                                                                <p>Please set this person's progress</p>
+
+                                                                                <form role="form">
+                                                                                    <div class="form-group">
+                                                                                        <div class="row">
+                                                                                            <label class="col-sm-2 control-label">Progress: </label>
+                                                                                            <div class="col-sm-6">
+                                                                                                <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                                                                                    <option selected value="1">Not completed</option>
+                                                                                                    <option value="2">Completed</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="row">
+                                                                                            <label class="col-sm-2 control-label">Score/result: </label>
+                                                                                            <div class="col-sm-6">
+                                                                                                <input type="text" class="form-control pull-right" />
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="pull-right">
+                                                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                                                    </div>
+                                                                                </form>
+
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <!--
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>
+                                                                -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -429,16 +535,12 @@
                                                         IT Programmer
                                                     </td>
                                                     <td>
-                                                        Register
+                                                        Enrolled
                                                     </td>
                                                     <td>
                                                         <div class="btn-group">
-                                                            <a>
-                                                                <button class="btn-warning btn btn-xs">Reject</button>
-                                                            </a>
-                                                            <a>
-                                                                <button class="btn-primary btn btn-xs">Approve</button>
-                                                            </a>
+                                                            <button type="button" class="btn-white btn btn-xs" data-toggle="modal" data-target="#progress">Progress</button>
+
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -456,8 +558,6 @@
                                                         Cancelled
                                                     </td>
                                                     <td>
-                                                        <div class="btn-group">
-                                                        </div>
                                                     </td>
                                                 </tr>
                                             </tbody>

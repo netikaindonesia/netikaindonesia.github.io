@@ -398,10 +398,7 @@
                                                                 <th>Course Name</th>
                                                                 <th>Type</th>
                                                                 <th>Progress</th>
-                                                                <th>Score</th>
-                                                                <th>
-                                                                    Status
-                                                                </th>
+                                                                <th>Action</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -416,18 +413,12 @@
                                                                     eLearning
                                                                 </td>
                                                                 <td>
-                                                                    100%
+                                                                    95%
                                                                     <div class="progress progress-mini">
                                                                         <div style="width: 100%;" class="progress-bar"></div>
                                                                     </div>
-
                                                                 </td>
-                                                                <td>
-                                                                    80%
-                                                                </td>
-                                                                <td>
-                                                                    Completed
-                                                                </td>
+                                                                <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>
@@ -446,12 +437,8 @@
                                                                     </div>
 
                                                                 </td>
-                                                                <td>
-                                                                    -
-                                                                </td>
-                                                                <td>
-                                                                    Enrolled
-                                                                </td>
+
+                                                                <td></td>
                                                             </tr>
                                                             <tr>
                                                                 <td>
@@ -464,16 +451,89 @@
                                                                     In Class
                                                                 </td>
                                                                 <td>
-                                                                    Not done
-
-                                                                </td>
-                                                                <td>
-                                                                    -
-                                                                </td>
-                                                                <td>
                                                                     Pending Approval
                                                                 </td>
+
+                                                                <td></td>
                                                             </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    PR-01
+                                                                </td>
+                                                                <td>
+                                                                    Public Relations
+                                                                </td>
+                                                                <td>
+                                                                    In Class
+                                                                </td>
+                                                                <td>
+                                                                    Enrolled
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <button type="button" class="btn-white btn btn-xs" data-toggle="modal" data-target="#cancel">Cancel</button>
+                                                                    <div class="modal" id="cancel">
+                                                                        <div class="modal-dialog">
+                                                                            <div class="modal-content animated">
+                                                                                <div class="modal-header">
+                                                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                                    <h4 class="modal-title">Confirmation</h4>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    Are you sure to cancel participating in this training?
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                                                    <button type="button" class="btn btn-primary">Yes</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    MK-01
+                                                                </td>
+                                                                <td>
+                                                                    Marketing
+                                                                </td>
+                                                                <td>
+                                                                    In Class
+                                                                </td>
+                                                                <td>
+                                                                    Cancelled
+                                                                </td>
+
+                                                                <td>
+
+                                                                    <button type="button" class="btn-white btn btn-xs" data-toggle="modal" data-target="#cancel">Uncancel</button>
+                                                                    <div class="modal" id="cancel">
+                                                                        <div class="modal-dialog">
+                                                                            <div class="modal-content animated">
+                                                                                <div class="modal-header">
+                                                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                                    <h4 class="modal-title">Confirmation</h4>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    Are you sure to revert the cancellation of participating in this training?
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                                                    <button type="button" class="btn btn-primary">Yes</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </td>
+                                                            </tr>
+
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -488,10 +548,7 @@
                                                                 <th>Code</th>
                                                                 <th>Course Name</th>
                                                                 <th>Type</th>
-                                                                <th>Score</th>
-                                                                <th>
-                                                                    Status
-                                                                </th>
+                                                                <th>Score/Result</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -500,7 +557,7 @@
                                                                     CI-01
                                                                 </td>
                                                                 <td>
-                                                                    Company Introduction <span class="label label-warning">Mandatory</span>
+                                                                    Leadership <span class="label label-warning">Mandatory</span>
                                                                 </td>
                                                                 <td>
                                                                     eLearning
@@ -508,8 +565,20 @@
                                                                 <td>
                                                                     80%
                                                                 </td>
+                                                            </tr>
+
+                                                            <tr>
                                                                 <td>
-                                                                    Completed
+                                                                    CI-01
+                                                                </td>
+                                                                <td>
+                                                                    Company Introduction <span class="label label-warning">Mandatory</span>
+                                                                </td>
+                                                                <td>
+                                                                    In Class
+                                                                </td>
+                                                                <td>
+                                                                    -
                                                                 </td>
                                                             </tr>
                                                         </tbody>
