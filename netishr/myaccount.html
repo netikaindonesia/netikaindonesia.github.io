@@ -22,7 +22,7 @@
 
     <div id="wrapper">
 
-                        <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -395,13 +395,21 @@
                             </div>
                             <div class="ibox-content">
                                 <form class="form-horizontal">
-                                    <p>You hold more than one role. Select current active role.</p>
+                                    <p>You have one or more administrative roles.</p>
                                     <div class="form-group">
-                                        <label class="col-lg-2 control-label">Active role: </label>
-                                        <select data-placeholder="Choose a role..." class="chosen-select">
-                                            <option value="1">User</option>
-                                            <option value="1">HR Admin</option>
-                                        </select>
+                                        <div class="col-sm-1">
+                                            <div class="onoffswitch">
+                                                <input type="checkbox" checked class="onoffswitch-checkbox" id="wladone">
+                                                <label class="onoffswitch-label" for="wladone">
+                                                    <span class="onoffswitch-inner"></span>
+                                                    <span class="onoffswitch-switch"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            Access as regular staff
+                                        </div>
                                     </div>
                                 </form>
                             </div>
