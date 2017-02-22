@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Employee Development Program</title>
+    <title>NetisHR | Talent Development Program</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -18,6 +18,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
     <!-- X-editable CDN styles -->
     <link href="css/bootstrap-editable.css" rel="stylesheet" />
@@ -355,7 +356,7 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Employee Development Program</h2>
+                    <h2>Talent Development Program</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
@@ -364,7 +365,7 @@
                             Career
                         </li>
                         <li class="active">
-                            <strong>Employee Development Program</strong>
+                            <strong>Talent Development Program</strong>
                         </li>
                     </ol>
                 </div>
@@ -378,25 +379,93 @@
                         <div class="ibox-content">
                             <div class="row">
                                 <div class="col-sm-12">
+
                                     <div class="form-group">
-                                        <label class="control-label" for="status">Target Job Title:</label>
-                                        <select name="status" id="status" class="form-control">
-                                            <option value="0" selected>Any</option>
-                                            <option value="1">IT Developer</option>
-                                            <option value="2">Marketing Staff</option>
-                                        </select>
+                                        <div>View development status and send talents who have completed development program to Talent Readiness
+                                            <p></p>
+                                        </div>
+                                        <label class="control-label" for="status">Select target job title</label>
+                                        <div class="input-group">
+                                            <select data-placeholder="Choose a job title..." class="chosen-select input-sm form-control" tabindex="2">
+                                                <option selected value="0">Any</option>
+                                                <option value="1">DIR-FIN Director of Finance</option>
+                                                <option value="2">DIR-HR Director of HR</option>
+                                                <option value="3">ITD IT Developer</option>
+                                                <option value="4">MS Marketing Staff</option>
+                                            </select>
+                                            <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#searchjobtitle">Browse</button>
+                                                </span>
+                                            <div class="modal" id="searchjobtitle">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content animated">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                            <h4 class="modal-title">Browse for job title</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row">
+                                                                <div class="col-sm-3">
+                                                                    Job level
+                                                                </div>
+                                                                <div class="col-sm-9">
+                                                                    <select data-placeholder="Choose a job level..." class="chosen-select" tabindex="2">
+                                                                        <option value="1">01-EXE EXECUTIVE </option>
+                                                                        <option value="2"> 02-DIR DIREKTORAT</option>
+                                                                        <option value="3">03-DIV DIVISI</option>
+                                                                        <option value="3" selected>04-DEPT DEPARTMENT</option>
+                                                                        <option value="3">05-SEC SECTION</option>
+                                                                        <option value="3">06-STAFF STAFF</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3">
+                                                                    Job sub-level
+                                                                </div>
+                                                                <div class="col-sm-9">
+                                                                    <select data-placeholder="Choose a job sub-level..." class="chosen-select" tabindex="2">
+                                                                        <option value="1">DEPT-HC Department Human Capital</option>
+                                                                        <option value="2">DEPT-FA Department Finance Accounting</option>
+                                                                        <option value="3" selected>DEPT-TECH Department Technology</option>
+                                                                        <option value="3">DEPT-ACC Department Accounting</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3">
+                                                                    Job title
+                                                                </div>
+                                                                <div class="col-sm-9">
+                                                                    <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                                                        <option value="1">MGR-BR Manager of Business Development</option>
+                                                                        <option selected value="2">MGR-FIN Manager of Finance</option>
+                                                                        <option value="3">MGR-HR Manager of HR</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                            <button type="button" class="btn btn-primary">Select</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="input-group">
-                                <input type="text" placeholder="Search staffs" class="input form-control">
+                                <input type="text" placeholder="Any" class="input form-control">
                                 <span class="input-group-btn">
                                         <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
                                 </span>
                             </div>
                             <br>
                             <button type="button" class="btn btn-primary btn-xs">Export list</button>
+                            <!--
                             <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#submitselected">Submit selected persons</button>
                             <div class="modal inmodal" id="submitselected" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -415,6 +484,7 @@
                                 </div>
                             </div>
 
+-->
 
                             <div class="form-group">
                                 <label class="control-label">Show&nbsp;</label>
@@ -527,11 +597,29 @@
 
                                         </div>&nbsp;&nbsp;
 
-                                        <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#">Cancel Development</button>
+                                        <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#">Cancel</button>
                                     </div>
 
                                     <div class="client-detail">
                                         <div class="full-height-scroll">
+
+
+                                            <strong>Talent information</strong>
+                                            <ul class="list-group clear-list">
+                                                <li class="list-group-item fist-item">
+                                                    <span class="pull-right"> 90 </span> Performance score
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="pull-right"> 200</span> Potential score
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="pull-right"> 2 </span> Quadrant
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="pull-right"> System </span> Specified by
+                                                </li>
+                                            </ul>
+
 
                                             <strong>Development items</strong>
 
@@ -633,7 +721,7 @@
                                             </div>
                                             &nbsp;&nbsp;
 
-                                            <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#">Cancel Readiness</button>
+                                            <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#">Cancel</button>
 
                                         </div>
                                     </div>
@@ -732,6 +820,16 @@
     <!-- X-editable CDN styles -->
     <script src="js/bootstrap-editable.min.js"></script>
 
+
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+
+    <script>
+        $('.chosen-select').chosen({
+            width: "100%"
+        });
+    </script>
     <script>
         $(document).ready(function () {
             $('.i-checks').iCheck({
@@ -739,7 +837,6 @@
                 radioClass: 'iradio_square-green',
             });
         });
-
         $(function () {
 
 
