@@ -18,6 +18,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
 
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
 
 
 </head>
@@ -376,7 +377,7 @@
                                 <!-- Get current performance management period from My Settings  -->
                                 <!-- By default, it is the period for current date -->
                                 <div>
-                                    <label class="control-label">Performance Management Period:</label>&nbsp;&nbsp; January 1, 2016 - December 31, 2016
+                                    <label class="control-label">Performance Management Period:</label>&nbsp;&nbsp; January 1, 2017 - December 31, 2017
                                     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#newevidence">Change period</button>
                                 </div>
                             </div>
@@ -519,6 +520,50 @@
                         <div class="col-lg-12">
 
                             <div class="hr-line-dashed"></div>
+                            <div>
+                                <a href="performance_kpi_new.html" class="btn btn-primary btn-xs">New Indicator</a>
+                                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#copyindicators">Copy Indicators</button>
+
+                                <div class="modal" id="copyindicators">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content animated">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title">Copy indicators</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        Copy indicators from the following period to this period (January 1, 2017 - December 31, 2017)
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-1">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <select data-placeholder="Choose a job level..." class="chosen-select" tabindex="2">
+                                                            <option value="1" selected>January 1, 2016 - December 31, 2016</option>
+                                                            <option value="2">January 1, 2015 - December 31, 2015</option>
+                                                        </select>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" class="i-checks" value="">
+                                                            <label for="checkbox">
+                                                                Delete existing indicators in target period
+                                                            </label>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary">Select</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                             <!-- "Status" field is for workflow, and can be implemented later -->
                             <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
                                 <thead>
@@ -532,9 +577,7 @@
                                         <th data-hide="phone,tablet">Formula</th>
                                         <th data-hide="phone">Status</th>
                                         <th class="text-right" data-sort-ignore="true">
-                                            <div class="ibox-tools">
-                                                <a href="performance_kpi_new.html" class="btn btn-primary btn-xs">New KPI</a>
-                                            </div>
+
                                         </th>
                                     </tr>
                                 </thead>
@@ -772,18 +815,24 @@
         <!-- FooTable -->
         <script src="js/plugins/footable/footable.all.min.js"></script>
 
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
+
         <!-- Page-Level Scripts -->
         <script>
             $(document).ready(function () {
 
                 $('.footable').footable();
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
 
             });
             $('.chosen-select').chosen({
                 width: "100%"
             });
         </script>
-
 
 </body>
 
