@@ -1,28 +1,184 @@
-<!DOCTYPE html>
-<html>
+<?php
+/*
+ Template Name: Home Page
+ */
+ ?>
+    <?php
+ get_header(); 
+?>
 
-<head>
+        <section id="slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-24">
+                        <?php 
+					$home = get_site_url();
+					if(get_bloginfo('language')!='en-US'){
+						?>
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                                </ol>
 
-    <title>NetisHR | 404 Error</title>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <a href="#">
+						     <img src="<?php echo get_site_url();?>/wp-content/uploads/2017/04/logo-resize.jpg" alt="SoftBank Telecom Indonesia">
+							  </a>
+                                    </div>
+                                    <!-- http://softbank.co.id/wp_sbid/wp-content/uploads/2017/04/logo-resize.jpg -->
+                                    <!--<div class="item active">
+							  <a href="https://www.softbanktelecomamerica.com/seminar-02-24-2016/">
+						      <img src="https://www.softbanktelecomamerica.com/wp/wp-content/themes/softbank/images/slider02.jpg" alt="AIとロボティクスが変革する企業経営 JCCI NY / SoftBank Telecom America共催">
+							  </a>
+						    </div>-->
+                                    <div class="item">
+                                        <a href="#">
+						     <img  src="<?php echo get_site_url();?>/wp-content/uploads/2017/04/logo-resize.jpg" alt="SoftBank Telecom Indonesia">
+							  </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#">
+						     <img  src="<?php echo get_site_url();?>/wp-content/uploads/2017/04/logo-resize.jpg" alt="SoftBank Telecom Indonesia">
+							  </a>
+                                    </div>
+                                </div>
 
-    <script>
-        function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-        }
-    </script>
+                                <!-- Left and right controls -->
+                                <!-- 						  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a> -->
+                            </div>
+                            <?php
+					}
+					else{
+						?>
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                                    </ol>
 
-</head>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <a href="#">
+						      <img  src="<?php echo get_site_url();?>/wp-content/uploads/2017/04/logo-resize.jpg" alt="SoftBank Telecom Indonesia">
+							  </a>
+                                        </div>
+                                        <div class="item">
+                                            <!--<a href="#" target="_blank">-->
+                                            <img src="<?php echo get_site_url();?>/wp-content/uploads/2017/04/logo-resize.jpg" alt="SoftBank Telecom Indonesia">
+                                            <!--</a>-->
+                                        </div>
+                                        <div class="item">
+                                            <!--<a href="#" target="_blank">-->
+                                            <img src="<?php echo get_site_url();?>/wp-content/uploads/2017/04/logo-resize.jpg" alt="SoftBank Telecom Indonesia">
+                                            <!--</a>-->
+                                        </div>
 
-<body>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <!-- 						  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a> -->
+                                </div>
+                                <?php
+						// echo do_shortcode("[carousel id='myCarouselEn' items='1' auto_play='true' stop_on_hover='true' inifnity_loop='true' navigation='true'][item img_link='" . $home . "/wp-content/uploads/2016/09/dealer_wifi_slider-1.jpg' href='" .$home . "/dealer-wifi' ][item img_link='" . $home . "/wp-content/uploads/2016/09/slider01e2-1.jpg'][/carousel] ");
+					}
+				?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-content">
+            <div class="container">
+                <div class="row">
+                    <?php if(!is_front_page() ){  ?>
+                        <div class="col-sm-24">
+                            <?php if (function_exists('breadcrumbs')) breadcrumbs(); ?>
+                        </div>
+                        <?php 
+				}
+			?>
+                            <!-- right content -->
+                            <div class="col-md-18 col-md-push-6 col-sm-16 col-sm-push-8">
+                                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                                    <!-- <?php  
+								$title1 = "";
+								$title2= "";
+								$id=get_the_ID();
+								$post = get_page($id); 
+
+					$title = $post->post_title;
+					$title_en = qtranxf_use('en', $post->post_title, true);
+					$title_ja = qtranxf_use('ja', $post->post_title, true);
+					$title_in = qtranxf_use('in', $post->post_title, true);
+					/* echo "<pre>" . var_dump(get_class_vars ($post)) . "</pre>"; */
 
 
+								if (qtranxf_getLanguage() == "ja") 
+								{ 	
+									$title1 = qtranxf_use('ja', $post->post_title,false);
+									$title2 = qtranxf_use('en', $post->post_title,false);  
+								}
+								else
+								{ 
+									$title1 = qtranxf_use('en', $post->post_title,false);
+								}
+							?> -->
+                                    <?php if(is_front_page() ){  ?>
+                                        <!-- <h2 class='border'>Information</h2> -->
+                                        <!-- <div style="padding:15px;"> -->
+                                        <!-- <h2 class="border" style="font-size:21px;">
+<?php echo $title1; ?><span>
+<?php echo $title2; ?></span></h2> -->
+                                        <?php
+									the_content();
+							?>
+                                            <!-- </div> -->
+                                            <?php
+						}
+						else { ?>
+                                                <!-- <h2 class='border'><?php echo get_the_title(); ?></h2> -->
+                                                <!-- <h2 class="border" style="font-size:21px;"><?php echo $title1; ?><span><?php echo $title2; ?></span></h2>	-->
+                                                <?php 
+							the_content();
+						} ?>
 
-    <iframe src="http://v2.netishr.com/Applicants/Apply/d1b057f0-c192-48a2-9cda-fa5ed72bb070" frameborder="0" />
 
+                                                    <?php endwhile; ?>
+                                                        <?php else : ?>
 
-</body>
+                                                            <?php endif; ?>
+                            </div>
+                            <!-- right content -->
+                            <!-- left content -->
+                            <div class="col-md-6 col-md-pull-18 col-sm-8 col-sm-pull-16" id="main-sidebar" style="margin-top:47px;">
+                                <?php get_sidebar(); ?>
+                            </div>
+                            <!-- left content -->
+                </div>
+            </div>
+        </section>
 
-</html>
+        <?php get_footer(); ?>
