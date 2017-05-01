@@ -44,7 +44,7 @@
 
 <body>
     <div id="wrapper">
-                <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -265,7 +265,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR</span>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to NetisHR.<br>Sunday, 17:31, April 30, 2017</span>
                         </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
@@ -1039,20 +1039,7 @@
 
 
     <script>
-        $(document).ready(function () {
-            setTimeout(function () {
-                toastr.options = {
-                    closeButton: true,
-                    progressBar: true,
-                    showMethod: 'slideDown',
-                    timeOut: 4000
-                };
-                toastr.success('Integrated Human Capital Management', 'Welcome to NetisHR');
-
-            }, 1300);
-
-
-            var data1 = [
+        var data1 = [
                 [1, 10.23],
                 [2, 10.10],
                 [3, 10.40],
@@ -1084,7 +1071,7 @@
                 [29, 10.1],
                 [30, 10.40]
             ];
-            var data2 = [
+        var data2 = [
                 [1, 9.10],
                 [2, 9.10],
                 [3, 9.40],
@@ -1116,89 +1103,89 @@
                 [29, 9.1],
                 [30, 8.40]
             ];
-            $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+        $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
                 data1, data2
             ], {
-                series: {
-                    lines: {
-                        show: false,
-                        fill: true
-                    },
-                    splines: {
-                        show: true,
-                        tension: 0.4,
-                        lineWidth: 1,
-                        fill: 0.4
-                    },
-                    points: {
-                        radius: 0,
-                        show: true
-                    },
-                    shadowSize: 2,
-                    label: ["Average", "Mine"],
+            series: {
+                lines: {
+                    show: false,
+                    fill: true
                 },
-                grid: {
-                    hoverable: true,
-                    clickable: true,
-                    tickColor: "#d5d5d5",
-                    borderWidth: 1,
-                    color: '#d5d5d5'
+                splines: {
+                    show: true,
+                    tension: 0.4,
+                    lineWidth: 1,
+                    fill: 0.4
                 },
-                colors: ["#1ab394", "#1C84C6"],
-                xaxis: {},
-                yaxis: {
-                    ticks: 4
+                points: {
+                    radius: 0,
+                    show: true
                 },
-                tooltip: false
-            });
+                shadowSize: 2,
+                label: ["Average", "Mine"],
+            },
+            grid: {
+                hoverable: true,
+                clickable: true,
+                tickColor: "#d5d5d5",
+                borderWidth: 1,
+                color: '#d5d5d5'
+            },
+            colors: ["#1ab394", "#1C84C6"],
+            xaxis: {},
+            yaxis: {
+                ticks: 4
+            },
+            tooltip: false
+        });
 
-            var doughnutData = {
-                labels: ["App", "Software", "Laptop"],
-                datasets: [{
-                    data: [300, 50, 100],
-                    backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
+        var doughnutData = {
+            labels: ["App", "Software", "Laptop"],
+            datasets: [{
+                data: [300, 50, 100],
+                backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
                 }]
-            };
+        };
 
 
-            var doughnutOptions = {
-                responsive: false,
-                legend: {
-                    display: false
-                }
-            };
+        var doughnutOptions = {
+            responsive: false,
+            legend: {
+                display: false
+            }
+        };
 
 
-            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
-            new Chart(ctx4, {
-                type: 'doughnut',
-                data: doughnutData,
-                options: doughnutOptions
-            });
+        var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+        new Chart(ctx4, {
+            type: 'doughnut',
+            data: doughnutData,
+            options: doughnutOptions
+        });
 
-            var doughnutData = {
-                labels: ["App", "Software", "Laptop"],
-                datasets: [{
-                    data: [70, 27, 85],
-                    backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
+        var doughnutData = {
+            labels: ["App", "Software", "Laptop"],
+            datasets: [{
+                data: [70, 27, 85],
+                backgroundColor: ["#a3e1d4", "#dedede", "#9CC3DA"]
                 }]
-            };
+        };
 
 
-            var doughnutOptions = {
-                responsive: false,
-                legend: {
-                    display: false
-                }
-            };
+        var doughnutOptions = {
+            responsive: false,
+            legend: {
+                display: false
+            }
+        };
 
 
-            var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
-            new Chart(ctx4, {
-                type: 'doughnut',
-                data: doughnutData,
-                options: doughnutOptions
-            });
+        var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
+        new Chart(ctx4, {
+        type: 'doughnut',
+        data: doughnutData,
+        options: doughnutOptions
+        });
 
         });
     </script>
