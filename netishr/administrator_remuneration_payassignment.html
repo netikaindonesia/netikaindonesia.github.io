@@ -39,7 +39,7 @@
 
 <body>
     <div id="wrapper">
-                        <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -394,14 +394,86 @@
 
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="wrapper wrapper-content">
                         <div class="row">
                             <div class="col-lg-12">
 
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title">
+                                        <h5>Search</h5>
+                                        <div class="ibox-tools">
+                                            <a class="collapse-link">
+                                                <i class="fa fa-chevron-up"></i>
+                                            </a>
+
+                                            <!--
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">Config option 1</a>
+                                        </li>
+                                        <li><a href="#">Config option 2</a>
+                                        </li>
+                                    </ul>
+-->
+                                        </div>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label class="control-label">Keywords: </label>
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="Keywords" class="input form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Pay set</label>
+
+                                                    <div>
+                                                        <select data-placeholder="filter by a pay slip" class="chosen-select">
+                                                            <option value="0" selected>Any</option>
+                                                            <option value="1">payset1</option>
+                                                            <option value="2">payset2</option>
+                                                            <option value="3">payset3</option>
+                                                            <option value="4">payset4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Pay slip</label>
+
+                                                    <div>
+                                                        <select data-placeholder="filter by a pay slip" class="chosen-select">
+                                                            <option value="0" selected>Any</option>
+                                                            <option value="1">payslip1</option>
+                                                            <option value="2">payslip2</option>
+                                                            <option value="3">payslip3</option>
+                                                            <option value="4">payslip4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn btn-primary pull-right"> <i class="fa fa-search"></i> Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
                                 <div class="ibox">
                                     <div class="ibox-content">
-
-
                                         <div class="panel-body">
                                             <div class="col-sm-9">
                                                 <a href="administrator_remuneration_payassignment_new.html" class="btn btn-primary btn-xs">Make new assignment</a>
@@ -419,8 +491,6 @@
                                             </div>
 
                                         </div>
-
-
                                         <table class="footable table table-stripped toggle-arrow-tiny">
                                             <thead>
                                                 <tr>
@@ -428,7 +498,7 @@
                                                     <th data-toggle="true">Name</th>
                                                     <th data-toggle="true">Pay set</th>
                                                     <th data-toggle="true">Payslip</th>
-                                                    <th></th>
+                                                    <th>Action</th>
 
                                                 </tr>
                                             </thead>
@@ -436,8 +506,8 @@
                                                 <tr>
                                                     <td>20130101001</td>
                                                     <td>Jono Karjono</td>
-                                                    <td>xx</td>
-                                                    <td>xx</td>
+                                                    <td>payset1</td>
+                                                    <td>payslip2</td>
                                                     <td>
                                                         <td class="text-right">
                                                             <div class="btn-group">
@@ -452,8 +522,8 @@
                                                 <tr>
                                                     <td>20130101002</td>
                                                     <td>Tono Kartono</td>
-                                                    <td>yy</td>
-                                                    <td>yy</td>
+                                                    <td>payset4</td>
+                                                    <td>payslip3</td>
                                                     <td>
                                                         <td class="text-right">
                                                             <div class="btn-group">
@@ -507,88 +577,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="small-chat-box fadeInRight animated">
-                    <div class="heading" draggable="true">
-                        <small class="chat-date pull-right">
-                            02.19.2015
-                        </small> Small chat
-                    </div>
-                    <div class="content">
-
-                        <div class="left">
-                            <div class="author-name">
-                                Monica Jackson <small class="chat-date">
-                                    10:02 am
-                                </small>
-                            </div>
-                            <div class="chat-message active">
-                                Lorem Ipsum is simply dummy text input.
-                            </div>
-
-                        </div>
-                        <div class="right">
-                            <div class="author-name">
-                                Mick Smith
-                                <small class="chat-date">
-                                    11:24 am
-                                </small>
-                            </div>
-                            <div class="chat-message">
-                                Lorem Ipsum is simpl.
-                            </div>
-                        </div>
-                        <div class="left">
-                            <div class="author-name">
-                                Alice Novak
-                                <small class="chat-date">
-                                    08:45 pm
-                                </small>
-                            </div>
-                            <div class="chat-message active">
-                                Check this stock char.
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="author-name">
-                                Anna Lamson
-                                <small class="chat-date">
-                                    11:24 am
-                                </small>
-                            </div>
-                            <div class="chat-message">
-                                The standard chunk of Lorem Ipsum
-                            </div>
-                        </div>
-                        <div class="left">
-                            <div class="author-name">
-                                Mick Lane
-                                <small class="chat-date">
-                                    08:45 pm
-                                </small>
-                            </div>
-                            <div class="chat-message active">
-                                I belive that. Lorem Ipsum is simply dummy text.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-chat">
-                        <div class="input-group input-group-sm">
-                            <input type="text" class="form-control">
-                            <span class="input-group-btn">
-                                <button class="btn btn-primary" type="button">
-                                    Send
-                                </button>
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="small-chat">
-                    <span class="badge badge-warning pull-right">5</span>
-                    <a class="open-small-chat">
-                        <i class="fa fa-comments"></i>
-                    </a>
                 </div>
                 <div id="right-sidebar" class="animated">
                     <div class="sidebar-container">
