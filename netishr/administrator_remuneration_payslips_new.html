@@ -17,13 +17,18 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
 </head>
 
 <body>
 
     <div id="wrapper">
 
-                        <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -706,6 +711,113 @@
             $('.footable').footable();
             $('.footable2').footable();
 
+        });
+    </script>
+
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <!-- Page-Level Scripts -->
+    <script>
+        $(document).ready(function () {
+            $('.alert-success').hide();
+            $('.netis_saving').hide();
+            $('.netis_cancel').hide();
+            $('.summernote').summernote('disable');
+
+            $('.footable').footable();
+            $('.footable2').footable();
+            $('.summernote').summernote();
+
+            $('.netis_edit').click(function () {
+                $('.netis_saving').show();
+                $('.netis_cancel').show();
+                $('.netis_edit').hide();
+                $('.summernote').summernote('enable');
+            });
+            $('.netis_cancel').click(function () {
+                $('.netis_saving').hide();
+                $('.netis_cancel').hide();
+                $('.netis_edit').show();
+                $('.alert-success').hide();
+                $('.summernote').summernote('disable');
+            });
+            $('.netis_saving').click(function () {
+                $('.alert-success').show();
+                $('.netis_saving').hide();
+                $('.netis_cancel').hide();
+                $('.netis_edit').show();
+                $('.summernote').summernote('disable');
+            });
+            $('.netis_modal_saving').click(function () {
+                $('.alert-success').show();
+            });
+            $('.netis_modal_close').click(function () {
+                $('.alert-success').hide();
+            });
+            $('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    {
+                        extend: 'copy'
+                            },
+                    {
+                        extend: 'csv'
+                            },
+                    {
+                        extend: 'excel',
+                        title: 'ExampleFile'
+                            },
+                    {
+                        extend: 'pdf',
+                        title: 'ExampleFile'
+                            },
+
+                    {
+                        extend: 'print',
+                        customize: function (win) {
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                .addClass('compact')
+                                .css('font-size', 'inherit');
+                        }
+                            }
+                        ]
+
+            });
+            $('.html5buttons').hide();
+            $('.dataTables_length').hide();
+            $('#DataTables_Table_0_filter').hide();
+            $('#DataTables_Table_1_filter').hide();
+            $('#DataTables_Table_2_filter').hide();
+            $('#DataTables_Table_3_filter').hide();
+            $('#DataTables_Table_4_filter').hide();
+            $('#DataTables_Table_5_filter').hide();
+            $('#DataTables_Table_6_filter').hide();
+            $('#DataTables_Table_7_filter').hide();
+            $('#DataTables_Table_8_filter').hide();
+
+            $('#monthpicker .input-group.date').datepicker({
+                format: 'mm/yyyy',
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true,
+                viewMode: "months",
+                minViewMode: "months"
+            });
+
+        });
+
+        $(".netis_competency_btn").click(function () {
+            alert("Open page Competency");
+        });
+        $('.chosen-select').chosen({
+            width: "100%"
         });
     </script>
 
