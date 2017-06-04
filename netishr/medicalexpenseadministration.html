@@ -17,10 +17,15 @@
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
+    <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet">
 
     <!-- X-editable CDN styles -->
     <link href="css/bootstrap-editable.css" rel="stylesheet" />
     <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+
+    <!-- Chosen -->
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
 
 
 </head>
@@ -366,7 +371,7 @@
                                  <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
-                                            <label class="control-label" for="order_id">NIP</label>
+                                            <label class="control-label" for="order_id">ID</label>
                                             <input type="text" id="order_id" name="order_id" value="" placeholder="NIP" class="form-control">
                                         </div>
                                     </div>
@@ -379,93 +384,338 @@
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label class="control-label" for="order_id">Year</label>
-                                                    <select data-placeholder="Choose a Year Period..." class="chosen-select">
-                                                        <option value="0" selected></option>
-                                                        <option value="1">2016</option>
-                                                        <option value="2">2015</option>
-                                                        <option value="3">2014</option>
-                                                        <option value="4">2013</option>
-                                                    </select>
+                                <div class="form-group" id="yearpicker">
+                                    <div class="input-group date">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                        <input type="text" class="form-control" value="2016">
+                                    </div>
+                                </div>
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#addnew">Add New</button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal inmodal" id="addnew" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content animated">
+                                            <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>                                     <h4 class="modal-title">Medical Expense Plafond</h4>
+                                                    <small class="font-bold">Shift use for get start and end of working time</small>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                    <div class="form-group" id="absencedates">
+                                                    <label class="control-label">Dates:</label>
+                                                            <div class="col-sm-8 input-daterange input-group" id="datepicker">
+                                                                <input type="text" class="input-sm form-control" name="start" value="11/14/2016" />
+                                                                <span class="input-group-addon">to</span>
+                                                                <input type="text" class="input-sm form-control" name="end" value="11/14/2016" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group">
+                                                <select data-placeholder="Choose a person..." class="chosen-select  form-control" multiple tabindex="2">
+                                                    <option value="1">DIR-BR Director of Business Development - Tono Kartono</option>
+                                                    <option selected value="2">DIR-FIN Director of Finance - Jono Karjono</option>
+                                                    <option value="3">DIR-HR Director of HR - Sono Karsono</option>
+                                                </select>
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-sm btn-white" data-toggle="modal" data-target="#browseperson">Browse</button>
+                                                </span>
+                                                <div class="modal" id="browseperson">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content animated">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                                <h4 class="modal-title">Select person(s)</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+
+
+                                                                <div class="tabs-container">
+                                                                    <ul class="nav nav-tabs">
+                                                                        <li class="active"><a data-toggle="tab" href="#tab-1">Browse person</a></li>
+                                                                        <li class=""><a data-toggle="tab" href="#tab-2">Select job sub-levels</a></li>
+                                                                        <li class=""><a data-toggle="tab" href="#tab-3">Select units</a></li>
+                                                                    </ul>
+                                                                    <div class="tab-content">
+                                                                        <div id="tab-1" class="tab-pane active">
+                                                                            <div class="panel-body">
+
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-3">
+                                                                                        Job level
+                                                                                    </div>
+                                                                                    <div class="col-sm-9">
+                                                                                        <select data-placeholder="Choose a job level..." class="chosen-select" tabindex="2">
+                                                                                            <option value="1">01-EXE EXECUTIVE </option>
+                                                                                            <option value="2"> 02-DIR DIREKTORAT</option>
+                                                                                            <option value="3">03-DIV DIVISI</option>
+                                                                                            <option value="3" selected>04-DEPT DEPARTMENT</option>
+                                                                                            <option value="3">05-SEC SECTION</option>
+                                                                                            <option value="3">06-STAFF STAFF</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-3">
+                                                                                        Job sub-level
+                                                                                    </div>
+                                                                                    <div class="col-sm-9">
+                                                                                        <select data-placeholder="Choose a job sub-level..." class="chosen-select" tabindex="2">
+                                                                                            <option value="1">DEPT-HC Department Human Capital</option>
+                                                                                            <option value="2">DEPT-FA Department Finance Accounting</option>
+                                                                                            <option value="3" selected>DEPT-TECH Department Technology</option>
+                                                                                            <option value="3">DEPT-ACC Department Accounting</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-3">
+                                                                                        Job title
+                                                                                    </div>
+                                                                                    <div class="col-sm-9">
+                                                                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                                                                            <option value="1">MGR-BR Manager of Business Development</option>
+                                                                                            <option selected value="2">MGR-FIN Manager of Finance</option>
+                                                                                            <option value="3">MGR-HR Manager of HR</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-3">
+                                                                                        Staff
+                                                                                    </div>
+                                                                                    <div class="col-sm-9">
+                                                                                        <select data-placeholder="Choose a staff..." class="chosen-select" multiple tabindex="2">
+                                                                                            <option value="1">Jono Karjono</option>
+                                                                                            <option value="2">Tono Martono</option>
+                                                                                            <option value="3">Nini Karnini</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="tab-2" class="tab-pane">
+                                                                            <div class="panel-body">
+
+
+                                                                                <!--<div class="col-sm-10">
+                                                                                    <div class="i-checks">
+                                                                                        <label>
+                                                                                            <input type="radio" checked="" value="option1" name="a"> <i></i> Job level/sub-level </label>
+                                                                                        <label>
+                                                                                            <input type="radio" value="option2" name="a"> <i></i> Unit </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                -->
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-3">
+                                                                                        Job level
+                                                                                    </div>
+                                                                                    <div class="col-sm-9">
+                                                                                        <select data-placeholder="Choose a job level..." class="chosen-select" tabindex="2">
+                                                                                            <option value="1">01-EXE EXECUTIVE </option>
+                                                                                            <option value="2"> 02-DIR DIREKTORAT</option>
+                                                                                            <option value="3">03-DIV DIVISI</option>
+                                                                                            <option value="3" selected>04-DEPT DEPARTMENT</option>
+                                                                                            <option value="3">05-SEC SECTION</option>
+                                                                                            <option value="3">06-STAFF STAFF</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-3">
+                                                                                        Job sub-level
+                                                                                    </div>
+                                                                                    <div class="col-sm-9">
+                                                                                        <select data-placeholder="Choose a job sub-level..." class="chosen-select" tabindex="2">
+                                                                                            <option value="1" selected>All job sub-levels</option>
+                                                                                            <option value="2">DEPT-HC Department Human Capital</option>
+                                                                                            <option value="3">DEPT-FA Department Finance Accounting</option>
+                                                                                            <option value="4">DEPT-TECH Department Technology</option>
+                                                                                            <option value="5">DEPT-ACC Department Accounting</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-3">
+                                                                                        Job title
+                                                                                    </div>
+                                                                                    <div class="col-sm-9">
+                                                                                        <select data-placeholder="Choose a job title..." class="chosen-select" tabindex="2">
+                                                                                            <option value="1" selected>All job titles</option>
+                                                                                            <option value="2">MGR-BR Manager of Business Development</option>
+                                                                                            <option value="3">MGR-FIN Manager of Finance</option>
+                                                                                            <option value="4">MGR-HR Manager of HR</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="tab-3" class="tab-pane">
+                                                                            <div class="panel-body">
+
+
+                                                                                <!--<div class="col-sm-10">
+                                                                                    <div class="i-checks">
+                                                                                        <label>
+                                                                                            <input type="radio" checked="" value="option1" name="a"> <i></i> Job level/sub-level </label>
+                                                                                        <label>
+                                                                                            <input type="radio" value="option2" name="a"> <i></i> Unit </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                -->
+                                                                                <div class="row">
+                                                                                    <div class="col-sm-3">
+                                                                                        Unit
+                                                                                    </div>
+                                                                                    <div class="col-sm-9">
+                                                                                        <select data-placeholder="Choose units..." class="chosen-select" multiple tabindex="2">
+                                                                                            <option value="1">HR Consulting Department </option>
+                                                                                            <option value="2"> Finance and Administration Department</option>
+                                                                                            <option value="3">IT Solutions Department</option>
+                                                                                            <option value="4">Marketing Department</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+
+
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-white" data-dismiss="modal">Cancel</button>
+                                                                <button type="button" class="btn btn-primary">Select</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                                        <!--
+                                                        <div class="form-group">
+                                                    <label class="control-label" for="status">Select a staff: </label>
+                                                    <div class="input-group">
+                                                    <select data-placeholder="Choose a person..." class="chosen-select input-sm form-control" tabindex="2">
+                                                        <option value="1" selected>All staffs</option>
+                                                        <option value="1">Director of Business Development - Tono Kartono</option>
+                                                        <option  value="2">Director of Finance - Jono Karjono</option>
+                                                        <option value="3">Director of HR - Sono Karsono</option>
+                                                    </select>
+                                                </div>
+                                            </div>                         -->            
+                                              </div>                                                                </div>
+                                                <div class="row">
+                                                <div class="col-sm-6">
+                                                                                    <div class="form-group">
+                                                                                        <label class="control-label" for="customer">Plafond</label>
+                                    <input type="number" min="0" id="Plafond" name="Plafond" placeholder="Plafond" class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                            <button type="button" class="btn btn-primary showtoast" data-dismiss="modal">Save</button>
+                                                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
                                 <table class="footable table table-stripped toggle-arrow-tiny" data-page-size="15">
                                     <thead>
                                         <tr>
-                                            <th>NIP</th>
+                                            <th>ID</th>
                                             <th>Name</th>
-                                            <th>Year</th>
-                                            <th>Balance</th>
                                             <th>Plafond</th>
+                                            <th>Balance</th>
+                                            <thd></thd>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>
-                                                123
+                                                201603070001
                                             </td>
                                             <td>
-                                                Hadi R.S.
-                                            </td>
-                                            <td>
-                                                2016
-                                            </td>                                            
-                                            <td>
-                                                1,000,000
+                                                Arnold Norman Sapakoly<br>
+                                                <small>Finance & Administration Staff</small>
                                             </td>    
                                             <td>
                                                 <a href="#" id="plafond" data-type="text" data-pk="1" data-title="Enter Plafond" class="editable editable-click">2,000,000</a>
-                                            </td>     
+                                            </td>                                           
+                                            <td>
+                                                1,000,000
+                                            </td>
+                                            <td><div class="btn-group">
+                                                <a href="persons_applicants_profile.html">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                </a>
+                                                <a href="#">
+                                                    <button class="btn-danger btn btn-xs" data-toggle="modal" data-target="#comment">Delete</button>
+                                                </a>
+                                                </div>
+                                            </td>
                                         </tr>                              
                                         <tr>
                                             <td>
-                                                123
+                                                201301019002
                                             </td>
                                             <td>
-                                                Hadi R.S.
-                                            </td>
-                                            <td>
-                                                2016
-                                            </td>                                            
-                                            <td>
-                                                1,000,000
+                                                Christian Hamonangan Siboro<br>
+                                                <small>Consulting Services Department Head</small>
                                             </td>    
                                             <td>
                                                 <a href="#" id="plafond" data-type="text" data-pk="1" data-title="Enter Plafond" class="editable editable-click">2,000,000</a>
+                                            </td>                                         
+                                            <td>
+                                                1,000,000
+                                            </td>
+                                            <td><div class="btn-group">
+                                                <a href="persons_applicants_profile.html">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                </a>
+                                                <a href="#">
+                                                    <button class="btn-danger btn btn-xs" data-toggle="modal" data-target="#comment">Delete</button>
+                                                </a>
+                                                </div>
                                             </td>     
                                         </tr> 
                                         <tr>
                                             <td>
-                                                123
+                                                201609130001
                                             </td>
                                             <td>
-                                                Hadi R.S.
-                                            </td>
-                                            <td>
-                                                2016
-                                            </td>                                            
-                                            <td>
-                                                1,000,000
+                                                Afwan Syawal<br>
+                                                <small>Software Engineer</small>
                                             </td>    
                                             <td>
                                                 <a href="#" id="plafond" data-type="text" data-pk="1" data-title="Enter Plafond" class="editable editable-click">2,000,000</a>
-                                            </td>     
-                                        </tr> 
-                                        <tr>
-                                            <td>
-                                                (All Employee)
-                                            </td>
-                                            <td>
-                                                (All Employee)
-                                            </td>
-                                            <td>
-                                                2016
-                                            </td>                                            
+                                            </td>                                    
                                             <td>
                                                 1,000,000
-                                            </td>    
-                                            <td>
-                                                <a href="#" id="plafond" data-type="text" data-pk="1" data-title="Enter Plafond" class="editable editable-click">2,000,000</a>
+                                            </td>
+                                            <td><div class="btn-group">
+                                                <a href="persons_applicants_profile.html">
+                                                    <button class="btn-white btn btn-xs">Edit</button>
+                                                </a>
+                                                <a href="#">
+                                                    <button class="btn-danger btn btn-xs" data-toggle="modal" data-target="#comment">Delete</button>
+                                                </a>
+                                                </div>
                                             </td>     
                                         </tr> 
                                     </tbody>
@@ -505,14 +755,19 @@
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
 
+    <!-- Full Calendar -->
+    <script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+    <!-- Data picker -->
+    <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
     <!-- Page-Level Scripts -->
     <script>
         $(document).ready(function () {
-
-            $('.chosen-select').chosen({
-            width: "100%"
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green'
             });
-
             $('.dataTables-example').DataTable({
                 pageLength: 25,
                 responsive: true,
@@ -548,7 +803,95 @@
 
             });
 
+            /* initialize the calendar
+             -----------------------------------------------------------------*/
+            var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var y = date.getFullYear();
+
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                editable: true,
+                droppable: true, // this allows things to be dropped onto the calendar
+                drop: function () {
+                    // is the "remove after drop" checkbox checked?
+                    if ($('#drop-remove').is(':checked')) {
+                        // if so, remove the element from the "Draggable Events" list
+                        $(this).remove();
+                    }
+                },
+                events: [
+                    {
+                        title: 'All Day Event',
+                        start: new Date(y, m, 1)
+                },
+                    {
+                        title: 'Long Event',
+                        start: new Date(y, m, d - 5),
+                        end: new Date(y, m, d - 2)
+                },
+                    {
+                        id: 999,
+                        title: 'Repeating Event',
+                        start: new Date(y, m, d - 3, 16, 0),
+                        allDay: false
+                },
+                    {
+                        id: 999,
+                        title: 'Repeating Event',
+                        start: new Date(y, m, d + 4, 16, 0),
+                        allDay: false
+                },
+                    {
+                        title: 'Meeting',
+                        start: new Date(y, m, d, 10, 30),
+                        allDay: false
+                },
+                    {
+                        title: 'Lunch',
+                        start: new Date(y, m, d, 12, 0),
+                        end: new Date(y, m, d, 14, 0),
+                        allDay: false
+                },
+                    {
+                        title: 'Birthday Party',
+                        start: new Date(y, m, d + 1, 19, 0),
+                        end: new Date(y, m, d + 1, 22, 30),
+                        allDay: false
+                },
+                    {
+                        title: 'Click for Google',
+                        start: new Date(y, m, 28),
+                        end: new Date(y, m, 29),
+                        url: 'http://google.com/'
+                }
+            ]
+            });
+            $('#yearpicker .input-group.date').datepicker({
+                format: ' yyyy',
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true,
+                viewMode: "years",
+                minViewMode: "years"
+            });
+            $('#absencedates .input-daterange').datepicker({
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true
+            });
+            $('.clockpicker').clockpicker();
         });
+                        $('.chosen-select').chosen({
+                    width: "100%"
+                });
     </script>
 
     <-- X-Editable scripts --></-->
@@ -671,6 +1014,8 @@
 
         });
     </script>
+
+    
     <!-- FooTable -->
     <script src="js/plugins/footable/footable.all.min.js"></script>
 

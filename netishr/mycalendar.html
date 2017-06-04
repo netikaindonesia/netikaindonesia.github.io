@@ -31,7 +31,7 @@
 
     <div id="wrapper">
 
-                                                <nav class="navbar-default navbar-static-side" role="navigation">
+        <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
@@ -409,71 +409,69 @@
                                 <div class="pull-right">
 
                                     Apply:
-                                    <a href="remuneration_leave.html"><button type="button" class="btn btn-primary btn-xs">Leave</button></a>
-                                                <div class="modal inmodal" id="applyleave" tabindex="-1" role="dialog" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content animated bounceInRight">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                                <i class="fa fa-laptop modal-icon"></i>
-                                                                <h4 class="modal-title">Leave Request</h4>
-                                                                <small class="font-bold">Please fill Leave request from</small>
+                                    <a href="remuneration_leave.html">
+                                        <button type="button" class="btn btn-primary btn-xs">Leave</button>
+                                    </a>
+                                    <div class="modal inmodal" id="applyleave" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content animated">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <i class="fa fa-laptop modal-icon"></i>
+                                                    <h4 class="modal-title">Leave Request</h4>
+                                                    <small class="font-bold">Please fill Leave request from</small>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div>
+                                                            <div class="form-group">
+                                                                <label class="control-label pull-left">Type</label>
+                                                                <select class="chosen-select" data-live-search="true">
+                                                                    <option>Annual Leave</option>
+                                                                    <option>Special Leave</option>
+                                                                    <option>Unpaid Leave</option>
+                                                                    <option>Overtime Leave</option>
+                                                                </select>
                                                             </div>
-                                                            <div class="modal-body">
-                                                                <div class="row">
-                                                                    <div>
-                                                                        <div class="form-group">
-                                                                            <label class="control-label pull-left">Type</label>
-                                                                            <select class="chosen-select" data-live-search="true">
-                                                                                <option>Annual Leave</option>
-                                                                                <option>Special Leave</option>
-                                                                                <option>Unpaid Leave</option>
-                                                                                <option>Overtime Leave</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <label class="control-label pull-left">Developer Notes: akan ada informasi tambahan tergantung tipe cuti yang dipilih apa
-                                                                                <br>
-                                                                                Annual leave : sisa cuti, hutang cuti, dsb
-                                                                                Unpaid Leave : sub pilihan Unpaid leave
-                                                                                Special Leave : sub pilihan special leave
-                                                                                Overtime Leave : sisa cuti overtime
-                                                                            </label>
+                                                            <div class="form-group">
+                                                                <label class="control-label pull-left">Developer Notes: akan ada informasi tambahan tergantung tipe cuti yang dipilih apa
+                                                                    <br> Annual leave : sisa cuti, hutang cuti, dsb Unpaid Leave : sub pilihan Unpaid leave Special Leave : sub pilihan special leave Overtime Leave : sisa cuti overtime
+                                                                </label>
 
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <label class="control-label pull-left">Start Date</label>
-                                                                                    <div class="input-group date">
-                                                                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                                        <input id="date_added" type="text" class="form-control pull-right" value="03/04/2014">
-                                                                                    </div>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <label class="control-label pull-left">End Date</label>
-                                                                                    <div class="input-group date">
-                                                                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                                                        <input id="date_added" type="text" class="form-control pull-right" value="03/04/2014">
-                                                                                    </div>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <label class="control-label pull-left">Description</label>
-                                                                            <input type="text" class="form-control pull-right" value="Perpanjangan cuti pegawai terkait" />
-                                                                        </div>
-                                                                    </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label pull-left">Start Date</label>
+                                                                <div class="input-group date">
+                                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                    <input id="date_added" type="text" class="form-control pull-right" value="03/04/2014">
                                                                 </div>
                                                             </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary">Submit</button>
+                                                            <div class="form-group">
+                                                                <label class="control-label pull-left">End Date</label>
+                                                                <div class="input-group date">
+                                                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                                    <input id="date_added" type="text" class="form-control pull-right" value="03/04/2014">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label pull-left">Description</label>
+                                                                <input type="text" class="form-control pull-right" value="Perpanjangan cuti pegawai terkait" />
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>   
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#applyovertime">Overtime</button>
                                     <div class="modal inmodal" id="applyovertime" tabindex="-1" role="dialog" aria-hidden="true">
                                         <div class="modal-dialog">
-                                            <div class="modal-content animated bounceInRight">
+                                            <div class="modal-content animated">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                                     <i class="fa fa-laptop modal-icon"></i>
@@ -547,7 +545,7 @@
                                     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#applyattendance">Attendance</button>
                                     <div class="modal inmodal" id="applyattendance" tabindex="-1" role="dialog" aria-hidden="true">
                                         <div class="modal-dialog">
-                                            <div class="modal-content animated bounceInRight">
+                                            <div class="modal-content animated">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                                     <i class="fa fa-laptop modal-icon"></i>
@@ -704,7 +702,6 @@
             /* initialize the external events
              -----------------------------------------------------------------*/
 
-
             $('#external-events div.external-event').each(function () {
 
                 // store data so the calendar knows to render an event upon drop
@@ -721,7 +718,6 @@
                 });
 
             });
-
 
             /* initialize the calendar
              -----------------------------------------------------------------*/
@@ -792,7 +788,6 @@
                 }
             ]
             });
-
             $('#yearpicker .input-group.date').datepicker({
                 format: ' yyyy',
                 todayBtn: "linked",
@@ -803,19 +798,14 @@
                 viewMode: "years",
                 minViewMode: "years"
             });
-
-
             $('#absencedates .input-daterange').datepicker({
                 keyboardNavigation: false,
                 forceParse: false,
                 autoclose: true
             });
-
-
             $('.chosen-select').chosen({
                 width: "100%"
             });
-
             $('.clockpicker').clockpicker();
 
         });
