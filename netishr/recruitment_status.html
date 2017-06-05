@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NetisHR | Cost Summaries</title>
+    <title>NetisHR | Recruitment Status</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -344,19 +344,19 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Cost Summaries</h2>
+                    <h2>Recruitment Status</h2>
                     <ol class="breadcrumb">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="administrator.html">Administration</a>
+                            <a href="administrator.html">Administrator</a>
                         </li>
                         <li>
                             <a href="reports.html">Reports</a>
                         </li>
                         <li class="active">
-                            <strong>Cost Summaries</strong>
+                            <strong>Recruitment Status</strong>
                         </li>
                     </ol>
                 </div>
@@ -366,31 +366,6 @@
             <div class="row">
                 <div class="ibox float-e-margins">
                     <div class="ibox-content">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label class="control-label">Pay Items: </label>
-                                    <select data-placeholder="Choose a pay item..." class="chosen-select input-sm form-control" multiple tabindex="2">
-                                        <option value="0" selected>BPJS-JHTP - Tunjangan BPJS TK (JHT-P)</option>
-                                        <option value="1">BPJS-JPK - Jaminan Pensiun (JP-K)</option>
-                                        <option value="2" selected>BPJS-JKK - Tunjangan BPJS TK (JKK)</option>
-                                        <option value="3">BTGJ - Bonus, THR, Gratifikasi & Jaspro</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group" id="monthpicker">
-                                    <label>Select dates</label>:
-                                    <div class="form-group" id="data_5">
-                                        <div class="input-daterange input-group" id="datepicker">
-                                            <input type="text" class="input-sm form-control" name="start" value="01/01/2017" />
-                                            <span class="input-group-addon">to</span>
-                                            <input type="text" class="input-sm form-control" name="end" value="02/28/2017" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="ibox float-e-margins">
@@ -496,14 +471,15 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn btn-primary pull-right">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <button type="button" class="btn btn btn-primary pull-right">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -511,7 +487,7 @@
                             <div class="panel-body">
                                 <div class="col-sm-12">
 
-                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#sendall">Export Summary</button>
+                                    <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#sendall">Export</button>
 
 
                                     <div class="form-group">
@@ -523,50 +499,22 @@
                                             <table class="table table-hover table-stripped toggle-arrow-tiny">
                                                 <thead>
                                                     <tr>
-                                                        <th width="20%" data-toggle="true">ID</th>
                                                         <th width="20%" data-toggle="true">Name</th>
-                                                        <th width="20%" data-hide="all">BPJS-JHTP - Tunjangan BPJS TK (JHT-P)</th>
-                                                        <th width="20%" data-hide="all">BPJS-JKK - Tunjangan BPJS TK (JKK)</th>
-                                                        <th width="20%" data-toggle="true">Total</th>
+                                                        <th width="20%" data-hide="all">Applied job title</th>
+                                                        <th width="20%" data-hide="all">Progress</th>
 
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>201304010012</td>
-                                                        <td>Nana Karyana</td>
-                                                        <td>257,450</td>
-                                                        <td>301,100</td>
-                                                        <td>558,550</td>
+                                                        <td><a href="persons_applicants_profile.html">Tono Kartono</a></td>
+                                                        <td><a href="">Software Developer</a></td>
+                                                        <td>Administration Screening</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>201304010013</td>
-                                                        <td>Nono Karyono</td>
-                                                        <td>244,000</td>
-                                                        <td>200,100</td>
-                                                        <td>444,100</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
-                                            <table class="table table-hover table-stripped toggle-arrow-tiny">
-                                                <thead>
-                                                    <tr>
-                                                        <th width="20%" data-toggle="true"></th>
-                                                        <th width="20%" data-toggle="true"></th>
-                                                        <th width="20%" data-toggle="true"></th>
-                                                        <th width="20%" data-toggle="true"></th>
-                                                        <th width="20%" data-toggle="true"></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td>Total</td>
-                                                        <td>501,450</td>
-
-                                                        <td>501,200</td>
-                                                        <td>1,002,650</td>
+                                                        <td><a href="persons_applicants_profile.html">Nono Karyono</a></td>
+                                                        <td><a href="">Technical Consultant</a></td>
+                                                        <td>Written Test</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
