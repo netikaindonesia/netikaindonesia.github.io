@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>hc_JobTitle - netis_netika Database</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+  <!-- Code Mirror -->
+  <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+  <!-- Fonts -->
+  <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+  <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+  <!-- Salvattore -->
+  <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+  <!-- SchemaSpy -->
+  <link rel="stylesheet" href="../schemaSpy.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="../bower/html5shiv/html5shiv.min.js"></script>
+  <script src="../bower/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../index.html" class="navbar-brand"><b>netis_netika</b> Database</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>            
+			<!--<li><a href="../components.html" title="List of system components">Components</a></li>-->
+			<li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+			<li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+			<li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+			<li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>				
+			<li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Main content -->
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+          <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>hc_JobTitle</h1></br>
+		<div class="box box-primary">
+            <div class="box-header with-border">
+              <i class="fa fa-file-text-o"></i>
+              <h3 id="Description" class="box-title">Description</h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>			  
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body clearfix">
+				<p><p><p><strong><em>Table</em> yang berkaitan dengan jabatan dan akan berhubungan dengan struktur <span style="background-color: #00ffff;">organisasi fungsional</span></strong></p><ol><li><strong><span style="background-color: #00ffff;">A</span></strong></li><li><strong><span style="background-color: #00ffff;">B</span></strong></li><li><strong><span style="background-color: #00ffff;">C</span></strong></li></ol></p></p>              
+            </div>
+            <!-- /.box-body -->
+		</div>
+		      </section>
+      <!-- Main content -->
+      <section class="content">
+		<div class="box box-primary">
+			<div class="box-header with-border">
+			  <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+              <h3 id="Columns" class="box-title">Columns</h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>	
+            <div class="box-body">
+				<table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+				<thead align='left'>
+				<tr>
+				  <th>Column</th>
+				  <th>Type</th>
+				  <th>Size</th>
+				  <th title='Are nulls allowed?'>Nulls</th>
+				  <th title='Is column automatically updated?'>Auto</th>
+				  <th title='Default value'>Default</th>
+				  <th title='Columns in tables that reference this column'>Children</th>
+				  <th title='Columns in tables that are referenced by this column'>Parents</th>
+				  <th title='Comments' class="toggle"><span>Comments</span></th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				 <td><span id="Id">Id</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="Guid">Guid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td title="hc_CompetencyMatrix.CompetencyGuid references hc_JobTitle.Guid via FK_hc_CompetencyMatrix_hc_JobTitle">
+						<a href='hc_CompetencyMatrix.html'>hc_CompetencyMatrix</a><span class='relatedKey'>.CompetencyGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_CompetencyMatrix_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescAuthority.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescAuthority_hc_JobTitle">
+						<a href='hc_JobDescAuthority.html'>hc_JobDescAuthority</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescAuthority_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescDimension.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescDimension_hc_JobTitle">
+						<a href='hc_JobDescDimension.html'>hc_JobDescDimension</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescDimension_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescMainFunction.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescMainFunction_hc_JobTitle">
+						<a href='hc_JobDescMainFunction.html'>hc_JobDescMainFunction</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescMainFunction_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescManagerResponsibility.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescManagerResponsibility_hc_JobTitle">
+						<a href='hc_JobDescManagerResponsibility.html'>hc_JobDescManagerResponsibility</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescManagerResponsibility_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescResponsibility.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescResponsibility_hc_JobTitle">
+						<a href='hc_JobDescResponsibility.html'>hc_JobDescResponsibility</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescResponsibility_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescSpecExperience.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescSpecExperience_hc_JobTitle">
+						<a href='hc_JobDescSpecExperience.html'>hc_JobDescSpecExperience</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescSpecExperience_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescSpecFormalEducation.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescSpecFormalEducation_hc_JobTitle">
+						<a href='hc_JobDescSpecFormalEducation.html'>hc_JobDescSpecFormalEducation</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescSpecFormalEducation_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescSpecProfile.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescSpecProfile_hc_JobTitle">
+						<a href='hc_JobDescSpecProfile.html'>hc_JobDescSpecProfile</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescSpecProfile_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				   <tr>
+					<td title="hc_JobDescWorkingRelationship.JobTitleGuid references hc_JobTitle.Guid via FK_hc_JobDescWorkingRelationship_hc_JobTitle">
+						<a href='hc_JobDescWorkingRelationship.html'>hc_JobDescWorkingRelationship</a><span class='relatedKey'>.JobTitleGuid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobDescWorkingRelationship_hc_JobTitle <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="AttachmentId">AttachmentId</span></td>
+				 <td>nvarchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="ClanGuid">ClanGuid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td><p>relasi ke table jobclan</p></td>
+				</tr>
+				<tr>
+				 <td><span id="ClanId">ClanId</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="CreateUserId">CreateUserId</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="CreateDate">CreateDate</span></td>
+				 <td>datetime2</td>
+				 <td>16,7</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="Deleted">Deleted</span></td>
+				 <td>bit</td>
+				 <td>1</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="Description">Description</span></td>
+				 <td>nvarchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="DimensionGuid">DimensionGuid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="DimensionId">DimensionId</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="FamilyGuid">FamilyGuid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td title="hc_JobTitle.FamilyGuid references hc_JobFamily.Guid via FK_hc_JobTitle_hc_JobFamily">
+						<a href='hc_JobFamily.html'>hc_JobFamily</a><span class='relatedKey'>.Guid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobTitle_hc_JobFamily <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="FamilyId">FamilyId</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="IsActive">IsActive</span></td>
+				 <td>nvarchar</td>
+				 <td>2</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="JobDirectSuperior">JobDirectSuperior</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="JobLevel">JobLevel</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="JobLevelGuid">JobLevelGuid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td title="hc_JobTitle.JobLevelGuid references hc_JobLevel.Guid via FK_hc_JobTitle_hc_JobLevel">
+						<a href='hc_JobLevel.html'>hc_JobLevel</a><span class='relatedKey'>.Guid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobTitle_hc_JobLevel <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="JobLevelId">JobLevelId</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="JobTitleCode">JobTitleCode</span></td>
+				 <td>nvarchar</td>
+				 <td>100</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="JobTitleLabel">JobTitleLabel</span></td>
+				 <td>nvarchar</td>
+				 <td>300</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="Name">Name</span></td>
+				 <td>nvarchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="RaciPositionType">RaciPositionType</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="RoleBandGuid">RoleBandGuid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="RoleBandId">RoleBandId</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="RoleGuid">RoleGuid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td title="hc_JobTitle.RoleGuid references hc_JobRole.Guid via FK_hc_JobTitle_hc_JobRole">
+						<a href='hc_JobRole.html'>hc_JobRole</a><span class='relatedKey'>.Guid</span>
+					</td>
+					<td class="constraint detail">
+						FK_hc_JobTitle_hc_JobRole <span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span>
+					</td>
+				   </tr>
+				  </table>					 
+				 </td>
+				 <td><p>Relasi ke Job Role</p></td>
+				</tr>
+				<tr>
+				 <td><span id="RoleId">RoleId</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="SiteId">SiteId</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="StatusId">StatusId</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="SubLevelGuid">SubLevelGuid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="SubLevelId">SubLevelId</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="TemplateId">TemplateId</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="UpdateDate">UpdateDate</span></td>
+				 <td>datetime2</td>
+				 <td>16,7</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="UpdateUserId">UpdateUserId</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="Version">Version</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="OrgLevelGuid">OrgLevelGuid</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="Grade">Grade</span></td>
+				 <td>int</td>
+				 <td>4</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+				<tr>
+				 <td><span id="GroupId">GroupId</span></td>
+				 <td>uniqueidentifier</td>
+				 <td>16</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>				 
+				 </td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				  </table>					 
+				 </td>
+				 <td></td>
+				</tr>
+								</tbody>
+				</table>
+				<p title='37 columns'>Table contained <span id="recordNumber">25</span> rows<p/>
+			</div>
+		</div>
+		<div class="box box-primary">		
+			<div class="box-header with-border">
+              <i class="fa fa-sitemap"></i>
+
+              <h3 id="Indexes" class="box-title">Indexes</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>	
+			<div class="box-body">
+				<table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+				<thead>
+				 <tr>
+				  <th>Constraint Name</th>
+				  <th>Type</th>
+				  <th>Sort</th>
+				  <th>Column(s)</th>
+				 </tr>
+				</thead>
+				<tbody>
+				 <tr>
+				  <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> PK_hc_JobTitle</td>
+				  <td>Primary key</td>
+				  <td><span title='Ascending'>Asc</span></td>
+				  <td>Guid</td>
+				 </tr>				 
+				</tbody>
+				</table>   			  
+			</div><!-- /.box-body -->
+		</div>
+				<div class="box box-primary">		
+			<div class="box-header with-border">
+              <i class="fa fa-code-fork"></i>
+
+              <h3 id="Relationships" class="box-title">Relationships</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>	
+			<div class="box-body">	
+			<div class="nav-tabs-custom" style="cursor: move;">
+            <!-- Tabs within a box -->
+			<h5>Close relationships within degrees of separation</h5>
+            <ul class="nav nav-tabs pull-left ui-sortable-handle">
+			  			              <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>			  			 
+			  			              <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>			  			 
+            </ul>
+            <div class="tab-content no-padding">            
+				<div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">					
+					<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="hc_CompetencyMatrix.html" title="hc_CompetencyMatrix" alt="" coords="645,5,916,152">
+<area shape="rect" id="node2" href="hc_JobTitle.html" title="hc_JobTitle" alt="" coords="225,609,572,1764">
+<area shape="rect" id="node12" href="hc_JobFamily.html" title="hc_JobFamily" alt="" coords="5,905,181,1052">
+<area shape="rect" id="node13" href="hc_JobLevel.html" title="hc_JobLevel" alt="" coords="7,1081,179,1199">
+<area shape="rect" id="node14" href="hc_JobRole.html" title="hc_JobRole" alt="" coords="11,1316,176,1433">
+<area shape="rect" id="node3" href="hc_JobDescAuthority.html" title="hc_JobDescAuthority" alt="" coords="665,169,896,287">
+<area shape="rect" id="node4" href="hc_JobDescDimension.html" title="hc_JobDescDimension" alt="" coords="659,304,902,421">
+<area shape="rect" id="node5" href="hc_JobDescMainFunction.html" title="hc_JobDescMainFunction" alt="" coords="649,439,913,556">
+<area shape="rect" id="node6" href="hc_JobDescManagerResponsibility.html" title="hc_JobDescManagerResponsibility" alt="" coords="616,573,945,691">
+<area shape="rect" id="node7" href="hc_JobDescResponsibility.html" title="hc_JobDescResponsibility" alt="" coords="647,708,915,825">
+<area shape="rect" id="node8" href="hc_JobDescSpecExperience.html" title="hc_JobDescSpecExperience" alt="" coords="638,843,923,960">
+<area shape="rect" id="node9" href="hc_JobDescSpecFormalEducation.html" title="hc_JobDescSpecFormalEducation" alt="" coords="619,977,942,1153">
+<area shape="rect" id="node10" href="hc_JobDescSpecProfile.html" title="hc_JobDescSpecProfile" alt="" coords="655,1171,906,1288">
+<area shape="rect" id="node11" href="hc_JobDescWorkingRelationship.html" title="hc_JobDescWorkingRelationship" alt="" coords="623,1305,938,1423">
+</map>
+
+					<a name='diagram'><img id='oneDegreeImg' src='../diagrams/hc_JobTitle.1degree.png' usemap='#oneDegreeRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
+				</div>
+				<div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">					
+					<map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="hc_CompetencyMatrix.html" title="hc_CompetencyMatrix" alt="" coords="853,5,1124,152">
+<area shape="rect" id="node2" href="hc_Competency.html" title="hc_Competency" alt="" coords="510,37,703,125">
+<area shape="rect" id="node3" href="hc_JobTitle.html" title="hc_JobTitle" alt="" coords="433,541,780,1696">
+<area shape="rect" id="node15" href="hc_JobFamily.html" title="hc_JobFamily" alt="" coords="213,837,389,984">
+<area shape="rect" id="node18" href="hc_JobRole.html" title="hc_JobRole" alt="" coords="219,1125,384,1243">
+<area shape="rect" id="node20" href="hc_JobLevel.html" title="hc_JobLevel" alt="" coords="215,1424,387,1541">
+<area shape="rect" id="node4" href="hc_JobDescAuthority.html" title="hc_JobDescAuthority" alt="" coords="873,977,1104,1095">
+<area shape="rect" id="node5" href="hc_JobDescDimension.html" title="hc_JobDescDimension" alt="" coords="867,1112,1110,1229">
+<area shape="rect" id="node6" href="hc_JobDescMainFunction.html" title="hc_JobDescMainFunction" alt="" coords="857,169,1121,287">
+<area shape="rect" id="node7" href="hc_JobDescManagerResponsibility.html" title="hc_JobDescManagerResponsibility" alt="" coords="824,304,1153,421">
+<area shape="rect" id="node8" href="hc_JobDescResponsibility.html" title="hc_JobDescResponsibility" alt="" coords="855,439,1123,556">
+<area shape="rect" id="node9" href="hc_JobDescSpecExperience.html" title="hc_JobDescSpecExperience" alt="" coords="846,573,1131,691">
+<area shape="rect" id="node10" href="hc_JobDescSpecFormalEducation.html" title="hc_JobDescSpecFormalEducation" alt="" coords="827,1787,1150,1963">
+<area shape="rect" id="node11" href="hc_JobEducation.html" title="hc_JobEducation" alt="" coords="505,1924,708,2012">
+<area shape="rect" id="node12" href="hc_JobEducationMajor.html" title="hc_JobEducationMajor" alt="" coords="485,1819,728,1907">
+<area shape="rect" id="node13" href="hc_JobDescSpecProfile.html" title="hc_JobDescSpecProfile" alt="" coords="863,708,1114,825">
+<area shape="rect" id="node14" href="hc_JobDescWorkingRelationship.html" title="hc_JobDescWorkingRelationship" alt="" coords="831,843,1146,960">
+<area shape="rect" id="node16" href="hc_JobClan.html" title="hc_JobClan" alt="" coords="5,840,169,928">
+<area shape="rect" id="node17" href="hc_JobRoleBand.html" title="hc_JobRoleBand" alt="" coords="506,436,707,524">
+<area shape="rect" id="node19" href="hc_JobSubLevel.html" title="hc_JobSubLevel" alt="" coords="507,1713,707,1801">
+</map>
+
+					<a name='diagram'><img id='twodegreesDegreeImg' src='../diagrams/hc_JobTitle.2degrees.png' usemap='#twoDegreesRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
+				</div>
+			  			</div>
+			</div>
+		  </div><!-- /.box-body -->
+		</div>
+	      </section>
+    
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div>
+      <div class="pull-right hidden-xs">
+        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      </div>
+      <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.0.0-rc2</a></strong>
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+<script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+<script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+<script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+<script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+<!-- Salvattore -->
+<script src="../bower/salvattore/salvattore.min.js"></script>
+<!-- AnchorJS -->
+<script src="../bower/anchor-js/anchor.min.js"></script>
+<!-- CodeMirror -->
+<script src="../bower/codemirror/codemirror.js"></script>
+<script src="../bower/codemirror/sql.js"></script>
+<!-- AdminLTE App -->
+<script src="../bower/admin-lte/dist/js/app.min.js"></script>
+<script src="table.js"></script>
+<script src="../schemaSpy.js"></script>
+</body>
+</html>

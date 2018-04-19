@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>netis_netika Database</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+  <!-- Code Mirror -->
+  <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+  <!-- Fonts -->
+  <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+  <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+  <!-- Salvattore -->
+  <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+  <!-- SchemaSpy -->
+  <link rel="stylesheet" href="schemaSpy.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="bower/html5shiv/html5shiv.min.js"></script>
+  <script src="bower/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><b>netis_netika</b> Database</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>            
+			<!--<li><a href="components.html" title="List of system components">Components</a></li>-->
+			<li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+			<li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+			<li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+			<li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>				
+			<li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Main content -->
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+          <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>Constraints</h1>
+      </section>
+      <!-- Main content -->
+      <section class="content">
+		<div class="box box-primary">
+			<div class="box-header with-border">
+			  <i class="ion ion-key"></i>
+              <h3 class="box-title">50 Foreign Key Constraints</h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>	
+            <div class="box-body">
+				<table id="constraint_table" class="table table-bordered table-striped dataTable" role="grid">
+				<thead align='left'>
+				<tr>
+				  <th>Constraint Name</th>
+				  <th>Child Column</th>
+				  <th>Parent Column</th>				  
+				  <th>Delete Rule</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				 <td>FK_hcis_kpi_kpi_job_title_hcis_kpi_kpi_job_title</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hcis_kpi_kpi_job_title.html'>hcis_kpi_kpi_job_title</a><span>.ParentId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hcis_kpi_kpi_job_title.html'>hcis_kpi_kpi_job_title</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySetItem2SlipItemMap_hc_PayrollPaySetItem</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetItem2SlipItemMap.html'>hc_PayrollPaySetItem2SlipItemMap</a><span>.hc_PayrollPaySetItemId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetItem.html'>hc_PayrollPaySetItem</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_CompetencyIndicator_hc_CompetencyLevel</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_CompetencyIndicator.html'>hc_CompetencyIndicator</a><span>.CompetencyLevelGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_CompetencyLevel.html'>hc_CompetencyLevel</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_AccountabilityRaci_hc_AccountabilityMatrix</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityRaci.html'>hc_AccountabilityRaci</a><span>.AccMatrixGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityMatrix.html'>hc_AccountabilityMatrix</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_AccountabilityRaci_hc_AccountabilityActor</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityRaci.html'>hc_AccountabilityRaci</a><span>.AccActorGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityActor.html'>hc_AccountabilityActor</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_AccountabilityRaci_hc_AccountabilityActivity</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityRaci.html'>hc_AccountabilityRaci</a><span>.AccActivityGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityActivity.html'>hc_AccountabilityActivity</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_AccountabilityActivity_hc_AccountabilityMatrix</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityActivity.html'>hc_AccountabilityActivity</a><span>.AccMatrixGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityMatrix.html'>hc_AccountabilityMatrix</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPayAssignment_hc_PersonMainInfo</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPayAssignment.html'>hc_PayrollPayAssignment</a><span>.hc_PersonId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PersonMainInfo.html'>hc_PersonMainInfo</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPayAssignment_hc_PayrollPaySet</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPayAssignment.html'>hc_PayrollPayAssignment</a><span>.hc_PayrollPaySetId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySet.html'>hc_PayrollPaySet</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPayAssignment_hc_PayrollPaySlip</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPayAssignment.html'>hc_PayrollPayAssignment</a><span>.hc_PayrollPaySlipId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySlip.html'>hc_PayrollPaySlip</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_AccountabilityMatrix_hc_AccountabilityActor</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityMatrix.html'>hc_AccountabilityMatrix</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_AccountabilityActor.html'>hc_AccountabilityActor</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PersonMainInfo_hc_OrgLevel</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PersonMainInfo.html'>hc_PersonMainInfo</a><span>.OrganizationUnitId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_OrgLevel.html'>hc_OrgLevel</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_CompetencyLevel_hc_Competency</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_CompetencyLevel.html'>hc_CompetencyLevel</a><span>.CompetencyGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_Competency.html'>hc_Competency</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobTitle_hc_JobLevel</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.JobLevelGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobLevel.html'>hc_JobLevel</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobTitle_hc_JobFamily</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.FamilyGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobFamily.html'>hc_JobFamily</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobTitle_hc_JobRole</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.RoleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobRole.html'>hc_JobRole</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescDimension_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescDimension.html'>hc_JobDescDimension</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_Competency_hc_CompetencyCategory</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_Competency.html'>hc_Competency</a><span>.CompetencyCategoryGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_CompetencyCategory.html'>hc_CompetencyCategory</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobFamily_hc_JobClan</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobFamily.html'>hc_JobFamily</a><span>.ClanGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobClan.html'>hc_JobClan</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescResponsibility_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescResponsibility.html'>hc_JobDescResponsibility</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_OrgLevel_cs_Site</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_OrgLevel.html'>hc_OrgLevel</a><span>.SiteId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/cs_Site.html'>cs_Site</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hcis_pms_couching_hc_PersonMainInfo</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hcis_pms_couching.html'>hcis_pms_couching</a><span>.SubordinateId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PersonMainInfo.html'>hc_PersonMainInfo</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollSalaryEntry_hc_PayrollPaySlipType</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollSalaryEntry.html'>hc_PayrollSalaryEntry</a><span>.hc_PayrollPaySlipTypeId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySlipType.html'>hc_PayrollPaySlipType</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollSalaryEntry_hc_PersonMainInfo</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollSalaryEntry.html'>hc_PayrollSalaryEntry</a><span>.PersonId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PersonMainInfo.html'>hc_PersonMainInfo</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollSalaryEntry_hc_PayrollPaySetItem</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollSalaryEntry.html'>hc_PayrollSalaryEntry</a><span>.hc_PayrollPaySetItemId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetItem.html'>hc_PayrollPaySetItem</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescSpecFormalEducation_hc_JobEducation</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescSpecFormalEducation.html'>hc_JobDescSpecFormalEducation</a><span>.EducationGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobEducation.html'>hc_JobEducation</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescSpecFormalEducation_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescSpecFormalEducation.html'>hc_JobDescSpecFormalEducation</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescSpecFormalEducation_hc_JobEducationMajor</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescSpecFormalEducation.html'>hc_JobDescSpecFormalEducation</a><span>.MajorGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobEducationMajor.html'>hc_JobEducationMajor</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescSpecProfile_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescSpecProfile.html'>hc_JobDescSpecProfile</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySet2SetItemMap_hc_PayrollPaySet</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySet2SetItemMap.html'>hc_PayrollPaySet2SetItemMap</a><span>.hc_PayrollPaySetId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySet.html'>hc_PayrollPaySet</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySet2SetItemMap_hc_PayrollPaySetItem</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySet2SetItemMap.html'>hc_PayrollPaySet2SetItemMap</a><span>.hc_PayrollPaySetItemId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetItem.html'>hc_PayrollPaySetItem</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescWorkingRelationship_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescWorkingRelationship.html'>hc_JobDescWorkingRelationship</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescSpecExperience_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescSpecExperience.html'>hc_JobDescSpecExperience</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescManagerResponsibility_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescManagerResponsibility.html'>hc_JobDescManagerResponsibility</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescAuthority_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescAuthority.html'>hc_JobDescAuthority</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySlipItem_hc_PayrollPaySlipType</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySlipItem.html'>hc_PayrollPaySlipItem</a><span>.hc_PayrollPaySlipTypeId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySlipType.html'>hc_PayrollPaySlipType</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySetItem_hc_PayrollPaySetSubType</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetItem.html'>hc_PayrollPaySetItem</a><span>.hc_PayrollPaySetSubTypeId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetSubType.html'>hc_PayrollPaySetSubType</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySetItem_hc_PayrollPaySetType</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetItem.html'>hc_PayrollPaySetItem</a><span>.hc_PayrollPaySetTypeId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetType.html'>hc_PayrollPaySetType</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySetItem_hc_PayrollPaySetItemType</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetItem.html'>hc_PayrollPaySetItem</a><span>.hc_PayrollPaySetItemTypeId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetItemType.html'>hc_PayrollPaySetItemType</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobRoleBand_hc_JobRole</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobRoleBand.html'>hc_JobRoleBand</a><span>.RoleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobRole.html'>hc_JobRole</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hcis_pms_person_hc_PersonMainInfo</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hcis_pms_person.html'>hcis_pms_person</a><span>.PersonId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PersonMainInfo.html'>hc_PersonMainInfo</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hcis_pms_person_hcis_kpi_kpi_job_title</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hcis_pms_person.html'>hcis_pms_person</a><span>.KpiJobTitleId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hcis_kpi_kpi_job_title.html'>hcis_kpi_kpi_job_title</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hcis_pms_person_hcis_pms_group_planning</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hcis_pms_person.html'>hcis_pms_person</a><span>.GroupPlanningId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hcis_pms_group_planning.html'>hcis_pms_group_planning</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobDescMainFunction_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobDescMainFunction.html'>hc_JobDescMainFunction</a><span>.JobTitleGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySetSubType_hc_PayrollPaySetType</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetSubType.html'>hc_PayrollPaySetSubType</a><span>.hc_PayrollPaySetTypeId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySetType.html'>hc_PayrollPaySetType</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_JobSubLevel_hc_JobLevel</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobSubLevel.html'>hc_JobSubLevel</a><span>.LevelGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobLevel.html'>hc_JobLevel</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_CompetencyMatrix_hc_JobTitle</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_CompetencyMatrix.html'>hc_CompetencyMatrix</a><span>.CompetencyGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_JobTitle.html'>hc_JobTitle</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_CompetencyMatrix_hc_Competency</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_CompetencyMatrix.html'>hc_CompetencyMatrix</a><span>.CompetencyGuid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_Competency.html'>hc_Competency</a><span>.Guid</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySlip2SlipItemMap_hc_PayrollPaySlip</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySlip2SlipItemMap.html'>hc_PayrollPaySlip2SlipItemMap</a><span>.hc_PayrollPaySlipId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySlip.html'>hc_PayrollPaySlip</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+				<tr>
+				 <td>FK_hc_PayrollPaySlip2SlipItemMap_hc_PayrollPaySlipItem</td>
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySlip2SlipItemMap.html'>hc_PayrollPaySlip2SlipItemMap</a><span>.hc_PayrollPaySlipItemId</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>			 
+				 <td>
+				  <table border='0' cellspacing='0' cellpadding='0'>
+				   <tr>
+					<td>
+						<a href='tables/hc_PayrollPaySlipItem.html'>hc_PayrollPaySlipItem</a><span>.Id</span>
+					</td>
+				   </tr>
+				  </table>				 
+				 </td>	
+				 <td><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>Restrict delete</span></td>
+				</tr>
+								</tbody>
+				</table>				
+			</div>
+		</div>	
+		<div class="box box-primary">
+			<div class="box-header with-border">
+              <i class="fa fa-sitemap"></i>
+              <h3 class="box-title">Check Constraints</h3>
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>	
+            <div class="box-body">
+				<table id="constraint_table" class="table table-bordered table-striped dataTable" role="grid">
+				<thead align='left'>
+				<tr>
+				  <th>Table</th>
+				  <th>Constraint Name</th>				  
+				  <th>Constraint</th>				  
+				</tr>
+				</thead>
+				<tbody>
+								<tr><td colspan="3">None detected</td></tr>
+								</tbody>
+				</table>				
+			</div>
+		</div>			
+      </section>    
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div>
+      <div class="pull-right hidden-xs">
+        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      </div>
+      <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.0.0-rc2</a></strong>
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+<script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+<script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+<!-- Salvattore -->
+<script src="bower/salvattore/salvattore.min.js"></script>
+<!-- AnchorJS -->
+<script src="bower/anchor-js/anchor.min.js"></script>
+<!-- CodeMirror -->
+<script src="bower/codemirror/codemirror.js"></script>
+<script src="bower/codemirror/sql.js"></script>
+<!-- AdminLTE App -->
+<script src="bower/admin-lte/dist/js/app.min.js"></script>
+<script src="constraint.js"></script>
+<script src="schemaSpy.js"></script>
+</body>
+</html>

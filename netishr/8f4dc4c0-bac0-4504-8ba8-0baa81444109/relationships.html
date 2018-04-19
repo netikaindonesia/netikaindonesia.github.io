@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>netis_netika Database</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+  <!-- Code Mirror -->
+  <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+  <!-- Fonts -->
+  <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+  <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+  <!-- Salvattore -->
+  <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+  <!-- SchemaSpy -->
+  <link rel="stylesheet" href="schemaSpy.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="bower/html5shiv/html5shiv.min.js"></script>
+  <script src="bower/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><b>netis_netika</b> Database</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>            
+			<!--<li><a href="components.html" title="List of system components">Components</a></li>-->
+			<li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+			<li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+			<li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+			<li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>				
+			<li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Main content -->
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+          <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>All Relationships</h1>
+      </section>
+      <!-- Main content -->
+      <section class="content">
+				<div class="box box-primary">		
+			<div class="box-header with-border">
+              <i class="fa fa-code-fork"></i>
+              <h3 class="box-title">Diagrams</h3>
+            </div>	
+			<div class="box-body">	
+			<div class="nav-tabs-custom" style="cursor: move;">
+            <!-- Tabs within a box -->
+			<h5>By default only columns that are primary keys, foreign keys or indexes are shown.</h5>
+            <ul class="nav nav-tabs pull-left ui-sortable-handle">
+			  			              <li class="active"><a href="#compactDegreeImg-chart" data-toggle="tab" aria-expanded="true">Compact</a></li>			  			 
+			  			              <li class=""><a href="#largeDegreeImg-chart" data-toggle="tab" aria-expanded="true">Large</a></li>			  			 
+			  			              <li class=""><a href="#compactimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Compact Implied</a></li>			  			 
+			  			              <li class=""><a href="#largeimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Large Implied</a></li>			  			 
+            </ul>
+            <div class="tab-content no-padding">            
+				<div class="chart tab-pane active" id="compactDegreeImg-chart" style="position: relative; overflow-x:auto;">
+																					<map id="compactRelationshipsDiagram" name="compactRelationshipsDiagram">
+<area shape="rect" id="node1" href="tables/cs_Site.html" title="cs_Site" alt="" coords="213,2435,523,2552">
+<area shape="rect" id="node2" href="tables/hc_AccountabilityActivity.html" title="hc_AccountabilityActivity" alt="" coords="932,1676,1187,1823">
+<area shape="rect" id="node4" href="tables/hc_AccountabilityMatrix.html" title="hc_AccountabilityMatrix" alt="" coords="577,1705,825,1823">
+<area shape="rect" id="node3" href="tables/hc_AccountabilityActor.html" title="hc_AccountabilityActor" alt="" coords="247,1753,489,1871">
+<area shape="rect" id="node5" href="tables/hc_AccountabilityRaci.html" title="hc_AccountabilityRaci" alt="" coords="1331,1647,1565,1823">
+<area shape="rect" id="node6" href="tables/hc_Competency.html" title="hc_Competency" alt="" coords="575,88,826,235">
+<area shape="rect" id="node7" href="tables/hc_CompetencyCategory.html" title="hc_CompetencyCategory" alt="" coords="239,88,497,205">
+<area shape="rect" id="node8" href="tables/hc_CompetencyIndicator.html" title="hc_CompetencyIndicator" alt="" coords="1298,5,1598,152">
+<area shape="rect" id="node9" href="tables/hc_CompetencyLevel.html" title="hc_CompetencyLevel" alt="" coords="943,5,1176,152">
+<area shape="rect" id="node10" href="tables/hc_CompetencyMatrix.html" title="hc_CompetencyMatrix" alt="" coords="924,169,1195,316">
+<area shape="rect" id="node28" href="tables/hc_JobTitle.html" title="hc_JobTitle" alt="" coords="607,804,795,1009">
+<area shape="rect" id="node11" href="tables/hc_JobClan.html" title="hc_JobClan" alt="" coords="5,699,169,816">
+<area shape="rect" id="node12" href="tables/hc_JobDescAuthority.html" title="hc_JobDescAuthority" alt="" coords="944,468,1175,585">
+<area shape="rect" id="node13" href="tables/hc_JobDescDimension.html" title="hc_JobDescDimension" alt="" coords="938,603,1181,720">
+<area shape="rect" id="node14" href="tables/hc_JobDescMainFunction.html" title="hc_JobDescMainFunction" alt="" coords="927,737,1191,855">
+<area shape="rect" id="node15" href="tables/hc_JobDescManagerResponsibility.html" title="hc_JobDescManagerResponsibility" alt="" coords="895,872,1224,989">
+<area shape="rect" id="node16" href="tables/hc_JobDescResponsibility.html" title="hc_JobDescResponsibility" alt="" coords="925,1007,1193,1124">
+<area shape="rect" id="node17" href="tables/hc_JobDescSpecExperience.html" title="hc_JobDescSpecExperience" alt="" coords="917,1141,1202,1259">
+<area shape="rect" id="node18" href="tables/hc_JobDescSpecFormalEducation.html" title="hc_JobDescSpecFormalEducation" alt="" coords="898,1411,1221,1587">
+<area shape="rect" id="node21" href="tables/hc_JobEducation.html" title="hc_JobEducation" alt="" coords="599,1539,802,1656">
+<area shape="rect" id="node22" href="tables/hc_JobEducationMajor.html" title="hc_JobEducationMajor" alt="" coords="579,1404,822,1521">
+<area shape="rect" id="node19" href="tables/hc_JobDescSpecProfile.html" title="hc_JobDescSpecProfile" alt="" coords="934,1276,1185,1393">
+<area shape="rect" id="node20" href="tables/hc_JobDescWorkingRelationship.html" title="hc_JobDescWorkingRelationship" alt="" coords="902,333,1217,451">
+<area shape="rect" id="node23" href="tables/hc_JobFamily.html" title="hc_JobFamily" alt="" coords="280,699,456,845">
+<area shape="rect" id="node24" href="tables/hc_JobLevel.html" title="hc_JobLevel" alt="" coords="282,863,454,980">
+<area shape="rect" id="node25" href="tables/hc_JobRole.html" title="hc_JobRole" alt="" coords="285,1012,451,1129">
+<area shape="rect" id="node26" href="tables/hc_JobRoleBand.html" title="hc_JobRoleBand" alt="" coords="600,1027,801,1144">
+<area shape="rect" id="node27" href="tables/hc_JobSubLevel.html" title="hc_JobSubLevel" alt="" coords="601,640,801,787">
+<area shape="rect" id="node29" href="tables/hc_OrgLevel.html" title="hc_OrgLevel" alt="" coords="614,2405,787,2552">
+<area shape="rect" id="node30" href="tables/hc_PayrollPayAssignment.html" title="hc_PayrollPayAssignment" alt="" coords="1317,2467,1579,2643">
+<area shape="rect" id="node31" href="tables/hc_PayrollPaySet.html" title="hc_PayrollPaySet" alt="" coords="942,2205,1177,2323">
+<area shape="rect" id="node38" href="tables/hc_PayrollPaySlip.html" title="hc_PayrollPaySlip" alt="" coords="940,2540,1179,2657">
+<area shape="rect" id="node43" href="tables/hc_PersonMainInfo.html" title="hc_PersonMainInfo" alt="" coords="931,2376,1187,2523">
+<area shape="rect" id="node32" href="tables/hc_PayrollPaySet2SetItemMap.html" title="hc_PayrollPaySet2SetItemMap" alt="" coords="1301,1975,1595,2121">
+<area shape="rect" id="node33" href="tables/hc_PayrollPaySetItem.html" title="hc_PayrollPaySetItem" alt="" coords="925,1983,1193,2188">
+<area shape="rect" id="node35" href="tables/hc_PayrollPaySetItemType.html" title="hc_PayrollPaySetItemType" alt="" coords="567,2205,835,2323">
+<area shape="rect" id="node36" href="tables/hc_PayrollPaySetSubType.html" title="hc_PayrollPaySetSubType" alt="" coords="568,2041,833,2188">
+<area shape="rect" id="node37" href="tables/hc_PayrollPaySetType.html" title="hc_PayrollPaySetType" alt="" coords="249,2019,487,2136">
+<area shape="rect" id="node34" href="tables/hc_PayrollPaySetItem2SlipItemMap.html" title="hc_PayrollPaySetItem2SlipItemMap" alt="" coords="1284,1840,1612,1957">
+<area shape="rect" id="node39" href="tables/hc_PayrollPaySlip2SlipItemMap.html" title="hc_PayrollPaySlip2SlipItemMap" alt="" coords="1297,2660,1599,2807">
+<area shape="rect" id="node40" href="tables/hc_PayrollPaySlipItem.html" title="hc_PayrollPaySlipItem" alt="" coords="925,2675,1194,2821">
+<area shape="rect" id="node41" href="tables/hc_PayrollPaySlipType.html" title="hc_PayrollPaySlipType" alt="" coords="580,2637,821,2755">
+<area shape="rect" id="node42" href="tables/hc_PayrollSalaryEntry.html" title="hc_PayrollSalaryEntry" alt="" coords="1329,2139,1567,2315">
+<area shape="rect" id="node44" href="tables/hcis_kpi_kpi_job_title.html" title="hcis_kpi_kpi_job_title" alt="" coords="943,2997,1176,3144">
+<area shape="rect" id="node45" href="tables/hcis_pms_couching.html" title="hcis_pms_couching" alt="" coords="1338,2332,1558,2449">
+<area shape="rect" id="node46" href="tables/hcis_pms_group_planning.html" title="hcis_pms_group_planning" alt="" coords="879,2839,1240,2956">
+<area shape="rect" id="node47" href="tables/hcis_pms_person.html" title="hcis_pms_person" alt="" coords="1345,2839,1551,3015">
+</map>
+
+					<a name='diagram'><img id='compactDegreeImg' src='diagrams/summary/relationships.real.compact.png' usemap='#compactRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
+				</div>
+				<div class="chart tab-pane " id="largeDegreeImg-chart" style="position: relative; overflow-x:auto;">
+																					<map id="largeRelationshipsDiagram" name="largeRelationshipsDiagram">
+<area shape="rect" id="node1" href="tables/cs_Site.html" title="cs_Site" alt="" coords="213,12661,523,15131">
+<area shape="rect" id="node2" href="tables/hc_AccountabilityActivity.html" title="hc_AccountabilityActivity" alt="" coords="932,7320,1187,7912">
+<area shape="rect" id="node4" href="tables/hc_AccountabilityMatrix.html" title="hc_AccountabilityMatrix" alt="" coords="577,7379,825,7912">
+<area shape="rect" id="node3" href="tables/hc_AccountabilityActor.html" title="hc_AccountabilityActor" alt="" coords="247,7633,489,8196">
+<area shape="rect" id="node5" href="tables/hc_AccountabilityRaci.html" title="hc_AccountabilityRaci" alt="" coords="1331,6880,1565,7795">
+<area shape="rect" id="node6" href="tables/hc_Competency.html" title="hc_Competency" alt="" coords="575,501,826,1181">
+<area shape="rect" id="node7" href="tables/hc_CompetencyCategory.html" title="hc_CompetencyCategory" alt="" coords="239,355,497,888">
+<area shape="rect" id="node8" href="tables/hc_CompetencyIndicator.html" title="hc_CompetencyIndicator" alt="" coords="1298,93,1598,627">
+<area shape="rect" id="node9" href="tables/hc_CompetencyLevel.html" title="hc_CompetencyLevel" alt="" coords="943,5,1176,597">
+<area shape="rect" id="node10" href="tables/hc_CompetencyMatrix.html" title="hc_CompetencyMatrix" alt="" coords="924,615,1195,1236">
+<area shape="rect" id="node28" href="tables/hc_JobTitle.html" title="hc_JobTitle" alt="" coords="607,3693,795,4843">
+<area shape="rect" id="node11" href="tables/hc_JobClan.html" title="hc_JobClan" alt="" coords="5,2967,169,3676">
+<area shape="rect" id="node12" href="tables/hc_JobDescAuthority.html" title="hc_JobDescAuthority" alt="" coords="944,1833,1175,2396">
+<area shape="rect" id="node13" href="tables/hc_JobDescDimension.html" title="hc_JobDescDimension" alt="" coords="938,2413,1181,3005">
+<area shape="rect" id="node14" href="tables/hc_JobDescMainFunction.html" title="hc_JobDescMainFunction" alt="" coords="927,3023,1191,3556">
+<area shape="rect" id="node15" href="tables/hc_JobDescManagerResponsibility.html" title="hc_JobDescManagerResponsibility" alt="" coords="895,3573,1224,4077">
+<area shape="rect" id="node16" href="tables/hc_JobDescResponsibility.html" title="hc_JobDescResponsibility" alt="" coords="925,4095,1193,4892">
+<area shape="rect" id="node17" href="tables/hc_JobDescSpecExperience.html" title="hc_JobDescSpecExperience" alt="" coords="917,4909,1202,5472">
+<area shape="rect" id="node18" href="tables/hc_JobDescSpecFormalEducation.html" title="hc_JobDescSpecFormalEducation" alt="" coords="898,6363,1221,6955">
+<area shape="rect" id="node21" href="tables/hc_JobEducation.html" title="hc_JobEducation" alt="" coords="599,6887,802,7361">
+<area shape="rect" id="node22" href="tables/hc_JobEducationMajor.html" title="hc_JobEducationMajor" alt="" coords="579,6395,822,6869">
+<area shape="rect" id="node19" href="tables/hc_JobDescSpecProfile.html" title="hc_JobDescSpecProfile" alt="" coords="934,5489,1185,6345">
+<area shape="rect" id="node20" href="tables/hc_JobDescWorkingRelationship.html" title="hc_JobDescWorkingRelationship" alt="" coords="902,1253,1217,1816">
+<area shape="rect" id="node23" href="tables/hc_JobFamily.html" title="hc_JobFamily" alt="" coords="280,3201,456,3940">
+<area shape="rect" id="node24" href="tables/hc_JobLevel.html" title="hc_JobLevel" alt="" coords="282,3957,454,4784">
+<area shape="rect" id="node25" href="tables/hc_JobRole.html" title="hc_JobRole" alt="" coords="285,4992,451,5701">
+<area shape="rect" id="node26" href="tables/hc_JobRoleBand.html" title="hc_JobRoleBand" alt="" coords="600,4860,801,5687">
+<area shape="rect" id="node27" href="tables/hc_JobSubLevel.html" title="hc_JobSubLevel" alt="" coords="601,2937,801,3676">
+<area shape="rect" id="node29" href="tables/hc_OrgLevel.html" title="hc_OrgLevel" alt="" coords="614,12544,787,13136">
+<area shape="rect" id="node30" href="tables/hc_PayrollPayAssignment.html" title="hc_PayrollPayAssignment" alt="" coords="1317,9383,1579,9975">
+<area shape="rect" id="node31" href="tables/hc_PayrollPaySet.html" title="hc_PayrollPaySet" alt="" coords="942,8223,1177,8815">
+<area shape="rect" id="node38" href="tables/hc_PayrollPaySlip.html" title="hc_PayrollPaySlip" alt="" coords="940,9881,1179,10444">
+<area shape="rect" id="node43" href="tables/hc_PersonMainInfo.html" title="hc_PersonMainInfo" alt="" coords="931,11312,1187,12989">
+<area shape="rect" id="node32" href="tables/hc_PayrollPaySet2SetItemMap.html" title="hc_PayrollPaySet2SetItemMap" alt="" coords="1301,7812,1595,8375">
+<area shape="rect" id="node33" href="tables/hc_PayrollPaySetItem.html" title="hc_PayrollPaySetItem" alt="" coords="925,8832,1193,9864">
+<area shape="rect" id="node35" href="tables/hc_PayrollPaySetItemType.html" title="hc_PayrollPaySetItemType" alt="" coords="567,9881,835,10385">
+<area shape="rect" id="node36" href="tables/hc_PayrollPaySetSubType.html" title="hc_PayrollPaySetSubType" alt="" coords="568,9272,833,9864">
+<area shape="rect" id="node37" href="tables/hc_PayrollPaySetType.html" title="hc_PayrollPaySetType" alt="" coords="249,9440,487,9944">
+<area shape="rect" id="node34" href="tables/hc_PayrollPaySetItem2SlipItemMap.html" title="hc_PayrollPaySetItem2SlipItemMap" alt="" coords="1284,8392,1612,8925">
+<area shape="rect" id="node39" href="tables/hc_PayrollPaySlip2SlipItemMap.html" title="hc_PayrollPaySlip2SlipItemMap" alt="" coords="1297,9992,1599,10555">
+<area shape="rect" id="node40" href="tables/hc_PayrollPaySlipItem.html" title="hc_PayrollPaySlipItem" alt="" coords="925,10461,1194,11259">
+<area shape="rect" id="node41" href="tables/hc_PayrollPaySlipType.html" title="hc_PayrollPaySlipType" alt="" coords="580,11055,821,11588">
+<area shape="rect" id="node42" href="tables/hc_PayrollSalaryEntry.html" title="hc_PayrollSalaryEntry" alt="" coords="1329,10611,1567,11349">
+<area shape="rect" id="node44" href="tables/hcis_kpi_kpi_job_title.html" title="hcis_kpi_kpi_job_title" alt="" coords="943,16749,1176,17547">
+<area shape="rect" id="node45" href="tables/hcis_pms_couching.html" title="hcis_pms_couching" alt="" coords="1338,11367,1558,12223">
+<area shape="rect" id="node46" href="tables/hcis_pms_group_planning.html" title="hcis_pms_group_planning" alt="" coords="879,13007,1240,16708">
+<area shape="rect" id="node47" href="tables/hcis_pms_person.html" title="hcis_pms_person" alt="" coords="1345,12596,1551,15124">
+</map>
+
+					<a name='diagram'><img id='largeDegreeImg' src='diagrams/summary/relationships.real.large.png' usemap='#largeRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
+				</div>
+				<div class="chart tab-pane " id="compactimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+																											<map id="compactImpliedRelationshipsDiagram" name="compactImpliedRelationshipsDiagram">
+<area shape="rect" id="node1" href="tables/cs_GeoCountry.html" title="cs_GeoCountry" alt="" coords="397,1985,588,2103">
+<area shape="rect" id="node4" href="tables/cs_Site.html" title="cs_Site" alt="" coords="5,2457,315,2575">
+<area shape="rect" id="node2" href="tables/cs_GeoZone.html" title="cs_GeoZone" alt="" coords="408,2120,577,2237">
+<area shape="rect" id="node3" href="tables/cs_Role.html" title="cs_Role" alt="" coords="386,2255,599,2372">
+<area shape="rect" id="node5" href="tables/cs_SiteHost.html" title="cs_SiteHost" alt="" coords="410,2389,575,2507">
+<area shape="rect" id="node6" href="tables/cs_SystemLog.html" title="cs_SystemLog" alt="" coords="401,2524,584,2641">
+<area shape="rect" id="node7" href="tables/cs_TokenClaim.html" title="cs_TokenClaim" alt="" coords="398,2659,587,2776">
+<area shape="rect" id="node8" href="tables/cs_User.html" title="cs_User" alt="" coords="372,2793,613,2911">
+<area shape="rect" id="node9" href="tables/cs_UserClaim.html" title="cs_UserClaim" alt="" coords="404,2928,581,3045">
+<area shape="rect" id="node10" href="tables/cs_UserLocation.html" title="cs_UserLocation" alt="" coords="393,1851,593,1968">
+<area shape="rect" id="node11" href="tables/hc_AccountabilityActivity.html" title="hc_AccountabilityActivity" alt="" coords="1113,1640,1368,1787">
+<area shape="rect" id="node13" href="tables/hc_AccountabilityMatrix.html" title="hc_AccountabilityMatrix" alt="" coords="727,1669,975,1787">
+<area shape="rect" id="node12" href="tables/hc_AccountabilityActor.html" title="hc_AccountabilityActor" alt="" coords="372,1716,613,1833">
+<area shape="rect" id="node14" href="tables/hc_AccountabilityRaci.html" title="hc_AccountabilityRaci" alt="" coords="1483,1611,1717,1787">
+<area shape="rect" id="node15" href="tables/hc_Competency.html" title="hc_Competency" alt="" coords="726,88,977,235">
+<area shape="rect" id="node16" href="tables/hc_CompetencyCategory.html" title="hc_CompetencyCategory" alt="" coords="364,88,621,205">
+<area shape="rect" id="node17" href="tables/hc_CompetencyIndicator.html" title="hc_CompetencyIndicator" alt="" coords="1450,5,1750,152">
+<area shape="rect" id="node18" href="tables/hc_CompetencyLevel.html" title="hc_CompetencyLevel" alt="" coords="1124,5,1357,152">
+<area shape="rect" id="node19" href="tables/hc_CompetencyMatrix.html" title="hc_CompetencyMatrix" alt="" coords="1105,169,1376,316">
+<area shape="rect" id="node37" href="tables/hc_JobTitle.html" title="hc_JobTitle" alt="" coords="757,805,945,1011">
+<area shape="rect" id="node20" href="tables/hc_JobClan.html" title="hc_JobClan" alt="" coords="78,700,242,817">
+<area shape="rect" id="node21" href="tables/hc_JobDescAuthority.html" title="hc_JobDescAuthority" alt="" coords="1125,468,1356,585">
+<area shape="rect" id="node22" href="tables/hc_JobDescDimension.html" title="hc_JobDescDimension" alt="" coords="1119,603,1362,720">
+<area shape="rect" id="node23" href="tables/hc_JobDescMainFunction.html" title="hc_JobDescMainFunction" alt="" coords="1109,737,1373,855">
+<area shape="rect" id="node24" href="tables/hc_JobDescManagerResponsibility.html" title="hc_JobDescManagerResponsibility" alt="" coords="1076,872,1405,989">
+<area shape="rect" id="node25" href="tables/hc_JobDescResponsibility.html" title="hc_JobDescResponsibility" alt="" coords="1107,1007,1375,1124">
+<area shape="rect" id="node26" href="tables/hc_JobDescSpecExperience.html" title="hc_JobDescSpecExperience" alt="" coords="1098,1141,1383,1259">
+<area shape="rect" id="node27" href="tables/hc_JobDescSpecFormalEducation.html" title="hc_JobDescSpecFormalEducation" alt="" coords="1079,1411,1402,1587">
+<area shape="rect" id="node30" href="tables/hc_JobEducation.html" title="hc_JobEducation" alt="" coords="750,1501,953,1619">
+<area shape="rect" id="node31" href="tables/hc_JobEducationMajor.html" title="hc_JobEducationMajor" alt="" coords="730,1367,973,1484">
+<area shape="rect" id="node28" href="tables/hc_JobDescSpecProfile.html" title="hc_JobDescSpecProfile" alt="" coords="1115,1276,1366,1393">
+<area shape="rect" id="node29" href="tables/hc_JobDescWorkingRelationship.html" title="hc_JobDescWorkingRelationship" alt="" coords="1083,333,1398,451">
+<area shape="rect" id="node32" href="tables/hc_JobFamily.html" title="hc_JobFamily" alt="" coords="405,700,581,847">
+<area shape="rect" id="node33" href="tables/hc_JobLevel.html" title="hc_JobLevel" alt="" coords="407,864,579,981">
+<area shape="rect" id="node34" href="tables/hc_JobRole.html" title="hc_JobRole" alt="" coords="410,1013,575,1131">
+<area shape="rect" id="node35" href="tables/hc_JobRoleBand.html" title="hc_JobRoleBand" alt="" coords="751,1028,952,1145">
+<area shape="rect" id="node36" href="tables/hc_JobSubLevel.html" title="hc_JobSubLevel" alt="" coords="751,641,951,788">
+<area shape="rect" id="node38" href="tables/hc_OrgLevel.html" title="hc_OrgLevel" alt="" coords="406,3397,579,3544">
+<area shape="rect" id="node39" href="tables/hc_PayrollPayAssignment.html" title="hc_PayrollPayAssignment" alt="" coords="1110,3175,1371,3351">
+<area shape="rect" id="node40" href="tables/hc_PayrollPaySet.html" title="hc_PayrollPaySet" alt="" coords="734,2809,969,2927">
+<area shape="rect" id="node49" href="tables/hc_PayrollPaySlip.html" title="hc_PayrollPaySlip" alt="" coords="732,4053,971,4171">
+<area shape="rect" id="node56" href="tables/hc_PersonMainInfo.html" title="hc_PersonMainInfo" alt="" coords="723,3368,979,3515">
+<area shape="rect" id="node41" href="tables/hc_PayrollPaySet2SetItemMap.html" title="hc_PayrollPaySet2SetItemMap" alt="" coords="1093,2876,1388,3023">
+<area shape="rect" id="node44" href="tables/hc_PayrollPaySetItem.html" title="hc_PayrollPaySetItem" alt="" coords="717,3040,985,3245">
+<area shape="rect" id="node42" href="tables/hc_PayrollPaySet2SetTypeMap.html" title="hc_PayrollPaySet2SetTypeMap" alt="" coords="1091,2607,1391,2724">
+<area shape="rect" id="node43" href="tables/hc_PayrollPaySetDetailCalc.html" title="hc_PayrollPaySetDetailCalc" alt="" coords="1103,2741,1378,2859">
+<area shape="rect" id="node46" href="tables/hc_PayrollPaySetItemType.html" title="hc_PayrollPaySetItemType" alt="" coords="359,3263,627,3380">
+<area shape="rect" id="node47" href="tables/hc_PayrollPaySetSubType.html" title="hc_PayrollPaySetSubType" alt="" coords="360,3099,625,3245">
+<area shape="rect" id="node48" href="tables/hc_PayrollPaySetType.html" title="hc_PayrollPaySetType" alt="" coords="41,3076,279,3193">
+<area shape="rect" id="node45" href="tables/hc_PayrollPaySetItem2SlipItemMap.html" title="hc_PayrollPaySetItem2SlipItemMap" alt="" coords="1077,3040,1405,3157">
+<area shape="rect" id="node50" href="tables/hc_PayrollPaySlip2SlipItemMap.html" title="hc_PayrollPaySlip2SlipItemMap" alt="" coords="1449,3872,1751,4019">
+<area shape="rect" id="node53" href="tables/hc_PayrollPaySlipItem.html" title="hc_PayrollPaySlipItem" alt="" coords="1106,3925,1375,4101">
+<area shape="rect" id="node51" href="tables/hc_PayrollPaySlip2SlipTypeMap.html" title="hc_PayrollPaySlip2SlipTypeMap" alt="" coords="1088,4119,1393,4236">
+<area shape="rect" id="node52" href="tables/hc_PayrollPaySlipDetailCalc.html" title="hc_PayrollPaySlipDetailCalc" alt="" coords="1102,4253,1379,4371">
+<area shape="rect" id="node54" href="tables/hc_PayrollPaySlipType.html" title="hc_PayrollPaySlipType" alt="" coords="731,3919,972,4036">
+<area shape="rect" id="node55" href="tables/hc_PayrollSalaryEntry.html" title="hc_PayrollSalaryEntry" alt="" coords="1121,3503,1360,3679">
+<area shape="rect" id="node57" href="tables/hcis_kpi_kpi_job_title.html" title="hcis_kpi_kpi_job_title" alt="" coords="735,3755,968,3901">
+<area shape="rect" id="node58" href="tables/hcis_pms_couching.html" title="hcis_pms_couching" alt="" coords="1131,3368,1351,3485">
+<area shape="rect" id="node59" href="tables/hcis_pms_group_planning.html" title="hcis_pms_group_planning" alt="" coords="671,3596,1032,3713">
+<area shape="rect" id="node60" href="tables/hcis_pms_person.html" title="hcis_pms_person" alt="" coords="1138,3696,1343,3872">
+</map>
+
+					<a name='diagram'><img id='compactimpliedDegreeImg' src='diagrams/summary/relationships.implied.compact.png' usemap='#compactImpliedRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
+				</div>
+				<div class="chart tab-pane " id="largeimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+																											<map id="largeImpliedRelationshipsDiagram" name="largeImpliedRelationshipsDiagram">
+<area shape="rect" id="node1" href="tables/cs_GeoCountry.html" title="cs_GeoCountry" alt="" coords="397,11107,588,11317">
+<area shape="rect" id="node4" href="tables/cs_Site.html" title="cs_Site" alt="" coords="5,10299,315,12768">
+<area shape="rect" id="node2" href="tables/cs_GeoZone.html" title="cs_GeoZone" alt="" coords="408,11335,577,11516">
+<area shape="rect" id="node3" href="tables/cs_Role.html" title="cs_Role" alt="" coords="386,11533,599,11715">
+<area shape="rect" id="node5" href="tables/cs_SiteHost.html" title="cs_SiteHost" alt="" coords="410,8213,575,8365">
+<area shape="rect" id="node6" href="tables/cs_SystemLog.html" title="cs_SystemLog" alt="" coords="401,8383,584,8799">
+<area shape="rect" id="node7" href="tables/cs_TokenClaim.html" title="cs_TokenClaim" alt="" coords="398,8816,587,8997">
+<area shape="rect" id="node8" href="tables/cs_User.html" title="cs_User" alt="" coords="372,9015,613,10281">
+<area shape="rect" id="node9" href="tables/cs_UserClaim.html" title="cs_UserClaim" alt="" coords="404,10299,581,10509">
+<area shape="rect" id="node10" href="tables/cs_UserLocation.html" title="cs_UserLocation" alt="" coords="393,10527,593,11089">
+<area shape="rect" id="node11" href="tables/hc_AccountabilityActivity.html" title="hc_AccountabilityActivity" alt="" coords="1113,7320,1368,7912">
+<area shape="rect" id="node13" href="tables/hc_AccountabilityMatrix.html" title="hc_AccountabilityMatrix" alt="" coords="727,7379,975,7912">
+<area shape="rect" id="node12" href="tables/hc_AccountabilityActor.html" title="hc_AccountabilityActor" alt="" coords="372,7633,613,8196">
+<area shape="rect" id="node14" href="tables/hc_AccountabilityRaci.html" title="hc_AccountabilityRaci" alt="" coords="1483,6880,1717,7795">
+<area shape="rect" id="node15" href="tables/hc_Competency.html" title="hc_Competency" alt="" coords="726,501,977,1181">
+<area shape="rect" id="node16" href="tables/hc_CompetencyCategory.html" title="hc_CompetencyCategory" alt="" coords="364,355,621,888">
+<area shape="rect" id="node17" href="tables/hc_CompetencyIndicator.html" title="hc_CompetencyIndicator" alt="" coords="1450,93,1750,627">
+<area shape="rect" id="node18" href="tables/hc_CompetencyLevel.html" title="hc_CompetencyLevel" alt="" coords="1124,5,1357,597">
+<area shape="rect" id="node19" href="tables/hc_CompetencyMatrix.html" title="hc_CompetencyMatrix" alt="" coords="1105,615,1376,1236">
+<area shape="rect" id="node37" href="tables/hc_JobTitle.html" title="hc_JobTitle" alt="" coords="757,3695,945,4844">
+<area shape="rect" id="node20" href="tables/hc_JobClan.html" title="hc_JobClan" alt="" coords="78,2968,242,3677">
+<area shape="rect" id="node21" href="tables/hc_JobDescAuthority.html" title="hc_JobDescAuthority" alt="" coords="1125,1833,1356,2396">
+<area shape="rect" id="node22" href="tables/hc_JobDescDimension.html" title="hc_JobDescDimension" alt="" coords="1119,2413,1362,3005">
+<area shape="rect" id="node23" href="tables/hc_JobDescMainFunction.html" title="hc_JobDescMainFunction" alt="" coords="1109,3023,1373,3556">
+<area shape="rect" id="node24" href="tables/hc_JobDescManagerResponsibility.html" title="hc_JobDescManagerResponsibility" alt="" coords="1076,3573,1405,4077">
+<area shape="rect" id="node25" href="tables/hc_JobDescResponsibility.html" title="hc_JobDescResponsibility" alt="" coords="1107,4095,1375,4892">
+<area shape="rect" id="node26" href="tables/hc_JobDescSpecExperience.html" title="hc_JobDescSpecExperience" alt="" coords="1098,4909,1383,5472">
+<area shape="rect" id="node27" href="tables/hc_JobDescSpecFormalEducation.html" title="hc_JobDescSpecFormalEducation" alt="" coords="1079,6363,1402,6955">
+<area shape="rect" id="node30" href="tables/hc_JobEducation.html" title="hc_JobEducation" alt="" coords="750,6887,953,7361">
+<area shape="rect" id="node31" href="tables/hc_JobEducationMajor.html" title="hc_JobEducationMajor" alt="" coords="730,6395,973,6869">
+<area shape="rect" id="node28" href="tables/hc_JobDescSpecProfile.html" title="hc_JobDescSpecProfile" alt="" coords="1115,5489,1366,6345">
+<area shape="rect" id="node29" href="tables/hc_JobDescWorkingRelationship.html" title="hc_JobDescWorkingRelationship" alt="" coords="1083,1253,1398,1816">
+<area shape="rect" id="node32" href="tables/hc_JobFamily.html" title="hc_JobFamily" alt="" coords="405,3203,581,3941">
+<area shape="rect" id="node33" href="tables/hc_JobLevel.html" title="hc_JobLevel" alt="" coords="407,3959,579,4785">
+<area shape="rect" id="node34" href="tables/hc_JobRole.html" title="hc_JobRole" alt="" coords="410,4993,575,5703">
+<area shape="rect" id="node35" href="tables/hc_JobRoleBand.html" title="hc_JobRoleBand" alt="" coords="751,4861,952,5688">
+<area shape="rect" id="node36" href="tables/hc_JobSubLevel.html" title="hc_JobSubLevel" alt="" coords="751,2939,951,3677">
+<area shape="rect" id="node38" href="tables/hc_OrgLevel.html" title="hc_OrgLevel" alt="" coords="406,13860,579,14452">
+<area shape="rect" id="node39" href="tables/hc_PayrollPayAssignment.html" title="hc_PayrollPayAssignment" alt="" coords="1110,12895,1371,13487">
+<area shape="rect" id="node40" href="tables/hc_PayrollPaySet.html" title="hc_PayrollPaySet" alt="" coords="734,11011,969,11603">
+<area shape="rect" id="node49" href="tables/hc_PayrollPaySlip.html" title="hc_PayrollPaySlip" alt="" coords="732,19763,971,20325">
+<area shape="rect" id="node56" href="tables/hc_PersonMainInfo.html" title="hc_PersonMainInfo" alt="" coords="723,12960,979,14637">
+<area shape="rect" id="node41" href="tables/hc_PayrollPaySet2SetItemMap.html" title="hc_PayrollPaySet2SetItemMap" alt="" coords="1093,10891,1388,11453">
+<area shape="rect" id="node44" href="tables/hc_PayrollPaySetItem.html" title="hc_PayrollPaySetItem" alt="" coords="717,11911,985,12943">
+<area shape="rect" id="node42" href="tables/hc_PayrollPaySet2SetTypeMap.html" title="hc_PayrollPaySet2SetTypeMap" alt="" coords="1091,9760,1391,10293">
+<area shape="rect" id="node43" href="tables/hc_PayrollPaySetDetailCalc.html" title="hc_PayrollPaySetDetailCalc" alt="" coords="1103,10311,1378,10873">
+<area shape="rect" id="node46" href="tables/hc_PayrollPaySetItemType.html" title="hc_PayrollPaySetItemType" alt="" coords="359,12984,627,13488">
+<area shape="rect" id="node47" href="tables/hc_PayrollPaySetSubType.html" title="hc_PayrollPaySetSubType" alt="" coords="360,12375,625,12967">
+<area shape="rect" id="node48" href="tables/hc_PayrollPaySetType.html" title="hc_PayrollPaySetType" alt="" coords="41,12785,279,13289">
+<area shape="rect" id="node45" href="tables/hc_PayrollPaySetItem2SlipItemMap.html" title="hc_PayrollPaySetItem2SlipItemMap" alt="" coords="1077,11471,1405,12004">
+<area shape="rect" id="node50" href="tables/hc_PayrollPaySlip2SlipItemMap.html" title="hc_PayrollPaySlip2SlipItemMap" alt="" coords="1449,18323,1751,18885">
+<area shape="rect" id="node53" href="tables/hc_PayrollPaySlipItem.html" title="hc_PayrollPaySlipItem" alt="" coords="1106,18801,1375,19599">
+<area shape="rect" id="node51" href="tables/hc_PayrollPaySlip2SlipTypeMap.html" title="hc_PayrollPaySlip2SlipTypeMap" alt="" coords="1088,20196,1393,20729">
+<area shape="rect" id="node52" href="tables/hc_PayrollPaySlipDetailCalc.html" title="hc_PayrollPaySlipDetailCalc" alt="" coords="1102,19616,1379,20179">
+<area shape="rect" id="node54" href="tables/hc_PayrollPaySlipType.html" title="hc_PayrollPaySlipType" alt="" coords="731,19212,972,19745">
+<area shape="rect" id="node55" href="tables/hc_PayrollSalaryEntry.html" title="hc_PayrollSalaryEntry" alt="" coords="1121,13504,1360,14243">
+<area shape="rect" id="node57" href="tables/hcis_kpi_kpi_job_title.html" title="hcis_kpi_kpi_job_title" alt="" coords="735,18397,968,19195">
+<area shape="rect" id="node58" href="tables/hcis_pms_couching.html" title="hcis_pms_couching" alt="" coords="1131,12021,1351,12877">
+<area shape="rect" id="node59" href="tables/hcis_pms_group_planning.html" title="hcis_pms_group_planning" alt="" coords="671,14655,1032,18356">
+<area shape="rect" id="node60" href="tables/hcis_pms_person.html" title="hcis_pms_person" alt="" coords="1138,14260,1343,16788">
+</map>
+
+					<a name='diagram'><img id='largeimpliedDegreeImg' src='diagrams/summary/relationships.implied.large.png' usemap='#largeImpliedRelationshipsDiagram' class='diagram' border='0' alt='' align='left'></a>							
+				</div>
+			  			</div>
+			</div>
+		  </div><!-- /.box-body -->
+		</div>
+		      </section>    
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div>
+      <div class="pull-right hidden-xs">
+        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      </div>
+      <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.0.0-rc2</a></strong>
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+<script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+<script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+<!-- Salvattore -->
+<script src="bower/salvattore/salvattore.min.js"></script>
+<!-- AnchorJS -->
+<script src="bower/anchor-js/anchor.min.js"></script>
+<!-- CodeMirror -->
+<script src="bower/codemirror/codemirror.js"></script>
+<script src="bower/codemirror/sql.js"></script>
+<!-- AdminLTE App -->
+<script src="bower/admin-lte/dist/js/app.min.js"></script>
+<script src="relationships.js"></script>
+<script src="schemaSpy.js"></script>
+</body>
+</html>

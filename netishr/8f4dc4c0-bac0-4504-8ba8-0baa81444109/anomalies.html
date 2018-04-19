@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>netis_netika Database</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+  <!-- Code Mirror -->
+  <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+  <!-- Fonts -->
+  <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+  <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+  <!-- Salvattore -->
+  <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+  <!-- SchemaSpy -->
+  <link rel="stylesheet" href="schemaSpy.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="bower/html5shiv/html5shiv.min.js"></script>
+  <script src="bower/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><b>netis_netika</b> Database</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>            
+			<!--<li><a href="components.html" title="List of system components">Components</a></li>-->
+			<li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+			<li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+			<li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+			<li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>				
+			<li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Main content -->
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+          <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>Anomalies</h1></br>
+		<div class="callout callout-warning">        
+			<p>Things that might not be 'quite right' about your database and schema</p>
+		</div>		
+      </section>
+      <!-- Main content -->
+      <section class="content">
+	  <div class="row">
+		<div class="col-md-6"> <!-- Implied Relationship -->
+			<div class="box box-success">
+				<div class="box-header with-border">
+				  <h3 class="box-title">Columns whose name and type imply a relationship to another table's primary key</h3>
+				  <div class="box-tools pull-right">
+					<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+					</button>
+					<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+				  </div>
+				</div>	
+				<div class="box-body">
+					<table id="implied_constraints" class="table table-bordered table-striped dataTable" role="grid">
+					<thead align='left'>
+					<tr>
+					  <th>Child Column</th>					  
+					  <th>Implied Parent Column</th>						  
+					</tr>
+					</thead>
+					<tbody>
+									<tr>
+					 <td><a href='tables/cs_GeoCountry.html'>cs_GeoCountry</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_GeoZone.html'>cs_GeoZone</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Role.html'>cs_Role</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_SiteHost.html'>cs_SiteHost</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_SystemLog.html'>cs_SystemLog</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_TokenClaim.html'>cs_TokenClaim</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_User.html'>cs_User</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_UserClaim.html'>cs_UserClaim</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_UserLocation.html'>cs_UserLocation</a>.[Id]</td>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySet2SetTypeMap.html'>hc_PayrollPaySet2SetTypeMap</a>.[hc_PayrollPaySetId]</td>
+					 <td><a href='tables/hc_PayrollPaySet.html'>hc_PayrollPaySet</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySetDetailCalc.html'>hc_PayrollPaySetDetailCalc</a>.[hc_PayrollPaySetCalcId]</td>
+					 <td><a href='tables/hc_PayrollPaySet.html'>hc_PayrollPaySet</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySlip2SlipTypeMap.html'>hc_PayrollPaySlip2SlipTypeMap</a>.[hc_PayrollPaySlipId]</td>
+					 <td><a href='tables/hc_PayrollPaySlip.html'>hc_PayrollPaySlip</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySlipDetailCalc.html'>hc_PayrollPaySlipDetailCalc</a>.[hc_PayrollPaySlipCalcId]</td>
+					 <td><a href='tables/hc_PayrollPaySlip.html'>hc_PayrollPaySlip</a>.[Id]</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySlipItem.html'>hc_PayrollPaySlipItem</a>.[hc_PayrollPaySlipSubTypeId]</td>
+					 <td><a href='tables/hc_PayrollPaySlip.html'>hc_PayrollPaySlip</a>.[Id]</td>
+					</tr>				
+													</tbody>
+					</table>				
+				</div>
+			</div>	
+		</div>	
+		<div class="col-md-6"> <!-- Tables without indexes -->
+			<div class="box box-danger">
+				<div class="box-header with-border">
+				  <h3 class="box-title">Tables without indexes</h3>
+				  <div class="box-tools pull-right">
+					<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+					</button>
+					<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+				  </div>
+				</div>	
+				<div class="box-body">
+					<table id="un_indexed_tables" class="table table-bordered table-striped dataTable" role="grid">
+					<thead align='left'>
+					<tr>
+					  <th>Table</th>
+					  <th>Rows</th>		
+				  					</tr>
+					</thead>
+					<tbody>
+									<tr>
+					 <td><a href='tables/__EFMigrationsHistory.html'>__EFMigrationsHistory</a></td>
+					 <td>30</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/AttachmentDocuments.html'>AttachmentDocuments</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Configuration.html'>cs_Configuration</a></td>
+					 <td>20</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_ConfigurationGroup.html'>cs_ConfigurationGroup</a></td>
+					 <td>5</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_ConfigurationScope.html'>cs_ConfigurationScope</a></td>
+					 <td>10</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_ContentProject.html'>cs_ContentProject</a></td>
+					 <td>3</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Currency.html'>cs_Currency</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_DocAttachment.html'>cs_DocAttachment</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_DocFooter.html'>cs_DocFooter</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_DocHeader.html'>cs_DocHeader</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_DocHistory.html'>cs_DocHistory</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_DocSample.html'>cs_DocSample</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_DocStatus.html'>cs_DocStatus</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_GeoCountry.html'>cs_GeoCountry</a></td>
+					 <td>238</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_GeoLocation.html'>cs_GeoLocation</a></td>
+					 <td>348</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_GeoZone.html'>cs_GeoZone</a></td>
+					 <td>371</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Language.html'>cs_Language</a></td>
+					 <td>184</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_LicenseList.html'>cs_LicenseList</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_LicenseRule.html'>cs_LicenseRule</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_LicenseRuleOption.html'>cs_LicenseRuleOption</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_LicenseType.html'>cs_LicenseType</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Menu.html'>cs_Menu</a></td>
+					 <td>188</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_MenuDesignMeta.html'>cs_MenuDesignMeta</a></td>
+					 <td>18</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_MenuEditPemissionMeta.html'>cs_MenuEditPemissionMeta</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_MenuLocalization.html'>cs_MenuLocalization</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_MenuRole.html'>cs_MenuRole</a></td>
+					 <td>79</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Page.html'>cs_Page</a></td>
+					 <td>20</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_PageCategory.html'>cs_PageCategory</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_PageComment.html'>cs_PageComment</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Post.html'>cs_Post</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_PostCategory.html'>cs_PostCategory</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_PostComment.html'>cs_PostComment</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Role.html'>cs_Role</a></td>
+					 <td>20</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_SiteHost.html'>cs_SiteHost</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_SystemLog.html'>cs_SystemLog</a></td>
+					 <td>20486</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_TokenClaim.html'>cs_TokenClaim</a></td>
+					 <td>32</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_User.html'>cs_User</a></td>
+					 <td>53</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_UserClaim.html'>cs_UserClaim</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_UserLocation.html'>cs_UserLocation</a></td>
+					 <td>906</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_UserLogin.html'>cs_UserLogin</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_UserRole.html'>cs_UserRole</a></td>
+					 <td>130</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowActionDraft.html'>cs_WorkflowActionDraft</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowActionMaster.html'>cs_WorkflowActionMaster</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowActionTransaction.html'>cs_WorkflowActionTransaction</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowActorDetailDraft.html'>cs_WorkflowActorDetailDraft</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowActorDetailMaster.html'>cs_WorkflowActorDetailMaster</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowActorDraft.html'>cs_WorkflowActorDraft</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowActorMaster.html'>cs_WorkflowActorMaster</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowConditionDraft.html'>cs_WorkflowConditionDraft</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowConditionMaster.html'>cs_WorkflowConditionMaster</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowConditionTransaction.html'>cs_WorkflowConditionTransaction</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowHeaderDraft.html'>cs_WorkflowHeaderDraft</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowHeaderMaster.html'>cs_WorkflowHeaderMaster</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowInstanceHeader.html'>cs_WorkflowInstanceHeader</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowIntanceDetail.html'>cs_WorkflowIntanceDetail</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowNextActorDraft.html'>cs_WorkflowNextActorDraft</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowNextActorMaster.html'>cs_WorkflowNextActorMaster</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowParamDraft.html'>cs_WorkflowParamDraft</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_WorkflowParamMaster.html'>cs_WorkflowParamMaster</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_AccountabilityRaci.html'>hc_AccountabilityRaci</a></td>
+					 <td>119</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_BusinessTrip.html'>hc_BusinessTrip</a></td>
+					 <td>16</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CareerDevProgram.html'>hc_CareerDevProgram</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CareerIndividualPlan.html'>hc_CareerIndividualPlan</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CareerSetting.html'>hc_CareerSetting</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CareerSystemTalentPool.html'>hc_CareerSystemTalentPool</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CorporateEvent.html'>hc_CorporateEvent</a></td>
+					 <td>26</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CorporateEventType.html'>hc_CorporateEventType</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CorporateEventTypeVariable.html'>hc_CorporateEventTypeVariable</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CorporateWorkPeriod.html'>hc_CorporateWorkPeriod</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempAccountabilityMatrixActivity.html'>hc_CsvTempAccountabilityMatrixActivity</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempAccountabilityMatrixActor.html'>hc_CsvTempAccountabilityMatrixActor</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempAccountabilityMatrixBP.html'>hc_CsvTempAccountabilityMatrixBP</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempAccountabilityMatrixRaci.html'>hc_CsvTempAccountabilityMatrixRaci</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempApplicant.html'>hc_CsvTempApplicant</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempCompany.html'>hc_CsvTempCompany</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempCompetency.html'>hc_CsvTempCompetency</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempCompetencyCategory.html'>hc_CsvTempCompetencyCategory</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempCompetencyIndicator.html'>hc_CsvTempCompetencyIndicator</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempCompetencyLevel.html'>hc_CsvTempCompetencyLevel</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempCompetencyMatrix.html'>hc_CsvTempCompetencyMatrix</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempCorporateEvent.html'>hc_CsvTempCorporateEvent</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempEventType.html'>hc_CsvTempEventType</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobClan.html'>hc_CsvTempJobClan</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobDescAuthority.html'>hc_CsvTempJobDescAuthority</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobDescMainFunction.html'>hc_CsvTempJobDescMainFunction</a></td>
+					 <td>4</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobDescResponsibilty.html'>hc_CsvTempJobDescResponsibilty</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobDescSpecCompetency.html'>hc_CsvTempJobDescSpecCompetency</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobDescSpecExperience.html'>hc_CsvTempJobDescSpecExperience</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobDescSpecFormalEducation.html'>hc_CsvTempJobDescSpecFormalEducation</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobDescSpecProfile.html'>hc_CsvTempJobDescSpecProfile</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobDescSpecSkill.html'>hc_CsvTempJobDescSpecSkill</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobFamily.html'>hc_CsvTempJobFamily</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobLevel.html'>hc_CsvTempJobLevel</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobRole.html'>hc_CsvTempJobRole</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobRoleBand.html'>hc_CsvTempJobRoleBand</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobRoleResponsibility.html'>hc_CsvTempJobRoleResponsibility</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobSubLevel.html'>hc_CsvTempJobSubLevel</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempJobTitle.html'>hc_CsvTempJobTitle</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempManpowerPlanning.html'>hc_CsvTempManpowerPlanning</a></td>
+					 <td>6</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempPayrollAssignment.html'>hc_CsvTempPayrollAssignment</a></td>
+					 <td>6</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempPayrollConfiguration.html'>hc_CsvTempPayrollConfiguration</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempPerson.html'>hc_CsvTempPerson</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempPersonAttendance.html'>hc_CsvTempPersonAttendance</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempPersonAttendanceHeader.html'>hc_CsvTempPersonAttendanceHeader</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempPersonData.html'>hc_CsvTempPersonData</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempRecruitmentJobVacancyApply.html'>hc_CsvTempRecruitmentJobVacancyApply</a></td>
+					 <td>7</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempRecruitmentPlanning.html'>hc_CsvTempRecruitmentPlanning</a></td>
+					 <td>7</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempUnit.html'>hc_CsvTempUnit</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_Dates.html'>hc_Dates</a></td>
+					 <td>274</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_EventType.html'>hc_EventType</a></td>
+					 <td>4</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_FieldValues.html'>hc_FieldValues</a></td>
+					 <td>4</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_GeneralSetting.html'>hc_GeneralSetting</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_GradeLabel.html'>hc_GradeLabel</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_GradeMap.html'>hc_GradeMap</a></td>
+					 <td>4</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_GradeSetting.html'>hc_GradeSetting</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_GroupSettingPersonInformation.html'>hc_GroupSettingPersonInformation</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescAuthority.html'>hc_JobDescAuthority</a></td>
+					 <td>14</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescDimension.html'>hc_JobDescDimension</a></td>
+					 <td>10</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescEnvironment.html'>hc_JobDescEnvironment</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescMainFunction.html'>hc_JobDescMainFunction</a></td>
+					 <td>9</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescManagerResponsibility.html'>hc_JobDescManagerResponsibility</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescResponsibility.html'>hc_JobDescResponsibility</a></td>
+					 <td>8</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescSpecCompetency.html'>hc_JobDescSpecCompetency</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescSpecDynamicSetting.html'>hc_JobDescSpecDynamicSetting</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescSpecExperience.html'>hc_JobDescSpecExperience</a></td>
+					 <td>14</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescSpecFormalEducation.html'>hc_JobDescSpecFormalEducation</a></td>
+					 <td>12</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescSpecListGroupSetting.html'>hc_JobDescSpecListGroupSetting</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescSpecProfile.html'>hc_JobDescSpecProfile</a></td>
+					 <td>7</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescSpecSkill.html'>hc_JobDescSpecSkill</a></td>
+					 <td>12</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDescWorkingRelationship.html'>hc_JobDescWorkingRelationship</a></td>
+					 <td>5</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobDimension.html'>hc_JobDimension</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobLevelSkill.html'>hc_JobLevelSkill</a></td>
+					 <td>3</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobRoleBand.html'>hc_JobRoleBand</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobRoleResponsibility.html'>hc_JobRoleResponsibility</a></td>
+					 <td>21</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobSetting.html'>hc_JobSetting</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobSkill.html'>hc_JobSkill</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobTitleGroup.html'>hc_JobTitleGroup</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobTitleHistory.html'>hc_JobTitleHistory</a></td>
+					 <td>16</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobWorkloadAnalysisCalcDetail.html'>hc_JobWorkloadAnalysisCalcDetail</a></td>
+					 <td>163</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobWorkloadAnalysisCalcEvidence.html'>hc_JobWorkloadAnalysisCalcEvidence</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobWorkloadAnalysisCalcHeader.html'>hc_JobWorkloadAnalysisCalcHeader</a></td>
+					 <td>30</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobWorkloadAnalysisPic.html'>hc_JobWorkloadAnalysisPic</a></td>
+					 <td>24</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_JobWorkloadAnalysisSetting.html'>hc_JobWorkloadAnalysisSetting</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_LeaveAnnualAdditionalConfig.html'>hc_LeaveAnnualAdditionalConfig</a></td>
+					 <td>5</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_LeaveAnnualConfig.html'>hc_LeaveAnnualConfig</a></td>
+					 <td>3</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_LeaveHistory.html'>hc_LeaveHistory</a></td>
+					 <td>133</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_LeaveOvertimeConfig.html'>hc_LeaveOvertimeConfig</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_LeaveServiceConfig.html'>hc_LeaveServiceConfig</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_LeaveSpecialConfig.html'>hc_LeaveSpecialConfig</a></td>
+					 <td>7</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_LeaveUnpaidConfig.html'>hc_LeaveUnpaidConfig</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_LeaveUserConfig.html'>hc_LeaveUserConfig</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_ManpowerPlanning.html'>hc_ManpowerPlanning</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_MedicalAdministration.html'>hc_MedicalAdministration</a></td>
+					 <td>39</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_MedicalExpenseForm.html'>hc_MedicalExpenseForm</a></td>
+					 <td>7</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_MedicalExpenseFormDetails.html'>hc_MedicalExpenseFormDetails</a></td>
+					 <td>12</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_NotificationInfo.html'>hc_NotificationInfo</a></td>
+					 <td>217</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_OrganizationSetting.html'>hc_OrganizationSetting</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollBasicSalary.html'>hc_PayrollBasicSalary</a></td>
+					 <td>30</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPayAssignment.html'>hc_PayrollPayAssignment</a></td>
+					 <td>30</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySet2SetItemMap.html'>hc_PayrollPaySet2SetItemMap</a></td>
+					 <td>81</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySet2SetTypeMap.html'>hc_PayrollPaySet2SetTypeMap</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySetCalc.html'>hc_PayrollPaySetCalc</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySetDetailCalc.html'>hc_PayrollPaySetDetailCalc</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySetItem2SlipItemMap.html'>hc_PayrollPaySetItem2SlipItemMap</a></td>
+					 <td>15</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySlip2SlipItemMap.html'>hc_PayrollPaySlip2SlipItemMap</a></td>
+					 <td>13</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySlip2SlipTypeMap.html'>hc_PayrollPaySlip2SlipTypeMap</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySlipCalc.html'>hc_PayrollPaySlipCalc</a></td>
+					 <td>102</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySlipDetailCalc.html'>hc_PayrollPaySlipDetailCalc</a></td>
+					 <td>1402</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPaySlipSubType.html'>hc_PayrollPaySlipSubType</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPayTaxCalc.html'>hc_PayrollPayTaxCalc</a></td>
+					 <td>60</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPersonAttendance.html'>hc_PayrollPersonAttendance</a></td>
+					 <td>40</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPersonAttendanceHeader.html'>hc_PayrollPersonAttendanceHeader</a></td>
+					 <td>23</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPersonAttendanceRule.html'>hc_PayrollPersonAttendanceRule</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPersonLeave.html'>hc_PayrollPersonLeave</a></td>
+					 <td>22</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPersonLeaveDetail.html'>hc_PayrollPersonLeaveDetail</a></td>
+					 <td>115</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPersonLeaveOvertime.html'>hc_PayrollPersonLeaveOvertime</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPersonLeaveType.html'>hc_PayrollPersonLeaveType</a></td>
+					 <td>6</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollPersonOverTime.html'>hc_PayrollPersonOverTime</a></td>
+					 <td>24</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollSalaryEntry.html'>hc_PayrollSalaryEntry</a></td>
+					 <td>1170</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollTaxDeduction.html'>hc_PayrollTaxDeduction</a></td>
+					 <td>12</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollTaxFare.html'>hc_PayrollTaxFare</a></td>
+					 <td>4</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollTaxPercentage.html'>hc_PayrollTaxPercentage</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PayrollTaxReport.html'>hc_PayrollTaxReport</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PersonAttachment.html'>hc_PersonAttachment</a></td>
+					 <td>5</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PersonBirthInfo.html'>hc_PersonBirthInfo</a></td>
+					 <td>49</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_PersonContactInfo.html'>hc_PersonContactInfo</a></td>
+					 <td>13</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_RecruitmentChannel.html'>hc_RecruitmentChannel</a></td>
+					 <td>3</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_RecruitmentJobVacancy.html'>hc_RecruitmentJobVacancy</a></td>
+					 <td>15</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_RecruitmentJobVacancyApply.html'>hc_RecruitmentJobVacancyApply</a></td>
+					 <td>9</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_RecruitmentSelectionStageSetting.html'>hc_RecruitmentSelectionStageSetting</a></td>
+					 <td>5</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_RemunerationLeaveHistory.html'>hc_RemunerationLeaveHistory</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_RemunerationLeaveOvertimeConfig.html'>hc_RemunerationLeaveOvertimeConfig</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_RenumerationAttachment.html'>hc_RenumerationAttachment</a></td>
+					 <td>14</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_RenumerationSetting.html'>hc_RenumerationSetting</a></td>
+					 <td>28</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_SettingPersonInformation.html'>hc_SettingPersonInformation</a></td>
+					 <td>5</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_TrainingCategory.html'>hc_TrainingCategory</a></td>
+					 <td>4</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_TrainingConfSetting.html'>hc_TrainingConfSetting</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_TrainingCourse.html'>hc_TrainingCourse</a></td>
+					 <td>4</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_TrainingCourseCompetency.html'>hc_TrainingCourseCompetency</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_TrainingCurriculum.html'>hc_TrainingCurriculum</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_TrainingCurriculumCourse.html'>hc_TrainingCurriculumCourse</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_TrainingEnrollment.html'>hc_TrainingEnrollment</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_TrainingEvent.html'>hc_TrainingEvent</a></td>
+					 <td>5</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_UserSetting.html'>hc_UserSetting</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkflowData.html'>hc_WorkflowData</a></td>
+					 <td>123</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkflowDataRoute.html'>hc_WorkflowDataRoute</a></td>
+					 <td>213</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkflowDataRouteHistory.html'>hc_WorkflowDataRouteHistory</a></td>
+					 <td>173</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkflowRoute.html'>hc_WorkflowRoute</a></td>
+					 <td>12</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkflowSetting.html'>hc_WorkflowSetting</a></td>
+					 <td>8</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkflowType.html'>hc_WorkflowType</a></td>
+					 <td>7</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkflowTypeData.html'>hc_WorkflowTypeData</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkshiftAssignment.html'>hc_WorkshiftAssignment</a></td>
+					 <td>31</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkshiftGroupDetail.html'>hc_WorkshiftGroupDetail</a></td>
+					 <td>10</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkshiftGroupHeader.html'>hc_WorkshiftGroupHeader</a></td>
+					 <td>3</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_WorkshiftPersonSchedule.html'>hc_WorkshiftPersonSchedule</a></td>
+					 <td>13038</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_client_logging.html'>hcis_NATU_client_logging</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_client_nipconfig.html'>hcis_NATU_client_nipconfig</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_client_processlog.html'>hcis_NATU_client_processlog</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_client_reallog.html'>hcis_NATU_client_reallog</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_client_setting.html'>hcis_NATU_client_setting</a></td>
+					 <td>10</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_manufacturer.html'>hcis_NATU_manufacturer</a></td>
+					 <td>2</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_model.html'>hcis_NATU_model</a></td>
+					 <td>3</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_periode.html'>hcis_NATU_periode</a></td>
+					 <td>3</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_sourcetype.html'>hcis_NATU_sourcetype</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_task.html'>hcis_NATU_task</a></td>
+					 <td>23</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_task_destination.html'>hcis_NATU_task_destination</a></td>
+					 <td>23</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_task_periode.html'>hcis_NATU_task_periode</a></td>
+					 <td>25</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_NATU_task_source.html'>hcis_NATU_task_source</a></td>
+					 <td>24</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_pms_couching.html'>hcis_pms_couching</a></td>
+					 <td>51</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_pms_current_job_title.html'>hcis_pms_current_job_title</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_pms_evaluation_setting.html'>hcis_pms_evaluation_setting</a></td>
+					 <td>16</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_pms_evidence.html'>hcis_pms_evidence</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_pms_person.html'>hcis_pms_person</a></td>
+					 <td>113</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_pms_person_result_overall.html'>hcis_pms_person_result_overall</a></td>
+					 <td>87</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_pms_various_setting.html'>hcis_pms_various_setting</a></td>
+					 <td>1</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/HistoryDocuments.html'>HistoryDocuments</a></td>
+					 <td>81</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/StatusDocuments.html'>StatusDocuments</a></td>
+					 <td>75</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/TempTable.html'>TempTable</a></td>
+					 <td>0</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/vwOrganization.html'>vwOrganization</a></td>
+					 <td>25</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/vwSources.html'>vwSources</a></td>
+					 <td>3</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/vwTaskPeriodes.html'>vwTaskPeriodes</a></td>
+					 <td>25</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/vwTasks.html'>vwTasks</a></td>
+					 <td>59</td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/vwTaskSources.html'>vwTaskSources</a></td>
+					 <td>24</td>
+					</tr>				
+													</tbody>
+					</table>				
+				</div>
+			</div>			
+		</div>
+		<div class="col-md-6"> <!-- Tables that contain a single column -->
+			<div class="box box-info">
+				<div class="box-header with-border">
+				  <h3 class="box-title">Tables that contain a single column</h3>
+				  <div class="box-tools pull-right">
+					<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+					</button>
+					<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+				  </div>
+				</div>	
+				<div class="box-body">
+					<table id="un_indexed_tables" class="table table-bordered table-striped dataTable" role="grid">
+					<thead align='left'>
+					<tr>
+					  <th>Table</th>					  
+					  <th>Column</th>					  
+					</tr>
+					</thead>
+					<tbody>
+									<tr>
+					 <td><a href='tables/hc_Dates.html'>hc_Dates</a></td>
+					 <td></td>					 
+					</tr>				
+													</tbody>
+					</table>				
+				</div>
+			</div>			
+		</div>
+		<div class="col-md-6"> <!-- Tables with incrementing column names, potentially indicating denormalization -->
+			<div class="box box-danger">
+				<div class="box-header with-border">
+				  <h3 class="box-title">Tables with incrementing column names, potentially indicating denormalization</h3>
+				  <div class="box-tools pull-right">
+					<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+					</button>
+					<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+				  </div>
+				</div>	
+				<div class="box-body">
+					<table id="un_indexed_tables" class="table table-bordered table-striped dataTable" role="grid">
+					<thead align='left'>
+					<tr>
+					  <th>Table</th>				  
+					</tr>
+					</thead>
+					<tbody>
+									<tr>
+					 <td><a href='tables/cs_GeoCountry.html'>cs_GeoCountry</a></td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/cs_Site.html'>cs_Site</a></td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hc_CsvTempPersonData.html'>hc_CsvTempPersonData</a></td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/hcis_pms_couching.html'>hcis_pms_couching</a></td>
+					</tr>				
+									<tr>
+					 <td><a href='tables/TempTable.html'>TempTable</a></td>
+					</tr>				
+													</tbody>
+					</table>				
+				</div>
+			</div>			
+		</div>	
+		<div class="col-md-6"> <!-- Columns whose default value is the word 'NULL' or 'null', but the SQL NULL value may have been intended -->
+			<div class="box box-primary">
+				<div class="box-header with-border">
+				  <h3 class="box-title" title="Columns whose default value is the word 'NULL' or 'null', but the SQL NULL value may have been intende">Columns whose default value is the word 'NULL' or 'null'</h3>
+				  <div class="box-tools pull-right">
+					<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+					</button>
+					<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+				  </div>
+				</div>	
+				<div class="box-body">
+					<table id="un_indexed_tables" class="table table-bordered table-striped dataTable" role="grid">
+					<thead align='left'>
+					<tr>
+					  <th>Table</th>				  
+					</tr>
+					</thead>
+					<tbody>
+									<tr><td colspan="3">Anomaly not detected</td></tr>
+									</tbody>
+					</table>				
+				</div>
+			</div>			
+		</div>			
+	 </div>
+	 </section>    
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div>
+      <div class="pull-right hidden-xs">
+        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      </div>
+      <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.0.0-rc2</a></strong>
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+<script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+<script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+<!-- Salvattore -->
+<script src="bower/salvattore/salvattore.min.js"></script>
+<!-- AnchorJS -->
+<script src="bower/anchor-js/anchor.min.js"></script>
+<!-- CodeMirror -->
+<script src="bower/codemirror/codemirror.js"></script>
+<script src="bower/codemirror/sql.js"></script>
+<!-- AdminLTE App -->
+<script src="bower/admin-lte/dist/js/app.min.js"></script>
+<script src="anomalies.js"></script>
+<script src="schemaSpy.js"></script>
+</body>
+</html>
